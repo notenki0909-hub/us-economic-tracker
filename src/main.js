@@ -86,6 +86,15 @@ function starsText(n) {
   return "★".repeat(filled) + "☆".repeat(5 - filled);
 }
 
+/** "2026-10-02" → "2026年10月2日（金）" */
+function fmtJpDateWithWeekday(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  if (!m) return iso;
+  const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+  const wd = ["日", "月", "火", "水", "木", "金", "土"][d.getUTCDay()];
+  return `${+m[1]}年${+m[2]}月${+m[3]}日（${wd}）`;
+}
+
 /** target/neutral/context の目安ラインの色 */
 function refColor(kind) {
   const v = getComputedStyle(document.documentElement).getPropertyValue(`--ref-${kind}`).trim();
@@ -307,9 +316,11 @@ function openDetail(id) {
     <p class="judgment__caveat">⚠️ ${j.caveat}</p>`
     : "";
 
-  document.getElementById("d-release").innerHTML = ind.releaseSchedule
-    ? `📅 発表スケジュールの目安：${ind.releaseSchedule}`
-    : "";
+  const nextReleaseText = ind.nextRelease ? fmtJpDateWithWeekday(ind.nextRelease) : "未定";
+  const consensusText = ind.marketConsensus ?? "未定（無償で配信する公式データ源が見つかっていません）";
+  document.getElementById("d-release").innerHTML = `
+    <p>📅 次回発表予定日：<b>${nextReleaseText}</b>${ind.releaseSchedule ? `　（目安：${ind.releaseSchedule}）` : ""}</p>
+    <p>📊 市場予想（コンセンサス）：<b>${consensusText}</b></p>`;
 
   document.getElementById("d-ranges").innerHTML = RANGES.map(
     (r) => `<button class="range-btn" data-range="${r.key}" aria-pressed="${r.key === currentRange}">${r.label}</button>`

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T10:31:16.194Z",
+  "generatedAt": "2026-09-11T10:39:32.343Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 21,
@@ -94,6 +94,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BEAが四半期終了の約1か月後に速報を公表、その後2回改定（合計3回発表）。",
+      "nextRelease": "2026-09-30",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Real GDP, % Change from Preceding Period (BEA)",
@@ -732,6 +734,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "ミシガン大学が毎月2回（月中に速報、月末に確報）公表。",
+      "nextRelease": "2026-09-25",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "University of Michigan: Consumer Sentiment",
@@ -2542,6 +2546,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが対象月の翌月中旬ごろに公表。",
+      "nextRelease": "2026-09-18",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Industrial Production Index (Federal Reserve)",
@@ -4349,6 +4355,8 @@
         "label": "3か月移動平均"
       },
       "releaseSchedule": "Census Bureauが対象月の翌月下旬ごろに公表。",
+      "nextRelease": "2026-09-25",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Manufacturers' New Orders: Durable Goods (Census Bureau)",
@@ -6059,6 +6067,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "Census Bureauが対象月の翌月中旬ごろ8:30 ETに公表。",
+      "nextRelease": "2026-09-16",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Advance Retail Sales: Retail Trade and Food Services (Census Bureau)",
@@ -7774,6 +7784,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが対象月の翌月中旬ごろ8:30 ET（日本時間 夜〜深夜）に公表。",
+      "nextRelease": "2026-09-11",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Consumer Price Index for All Urban Consumers (BLS)",
@@ -9580,6 +9592,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BEAが対象月の翌月末ごろ、個人所得・支出統計の一部として8:30 ETに公表。",
+      "nextRelease": "2026-09-30",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "PCE Price Index Excluding Food and Energy (BEA)",
@@ -11390,6 +11404,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが毎月第1金曜日8:30 ETに、非農業部門雇用者数と同時発表。",
+      "nextRelease": "2026-10-02",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Unemployment Rate (BLS)",
@@ -13200,6 +13216,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが毎月第1金曜日8:30 ETに公表。",
+      "nextRelease": "2026-10-02",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "All Employees, Total Nonfarm (BLS)",
@@ -15014,6 +15032,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが四半期終了の約1か月後に公表。",
+      "nextRelease": "2026-10-21",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Usual Weekly Real Earnings, Full-Time Wage and Salary Workers (BLS)",
@@ -15648,6 +15668,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米国労働省が毎週木曜日8:30 ETに公表。",
+      "nextRelease": "2026-09-17",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Initial Claims (U.S. Department of Labor)",
@@ -17928,6 +17950,8 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "BLSが対象月の翌々月上旬ごろ（雇用統計の約1か月後）に公表。",
+      "nextRelease": "2026-09-29",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Job Openings: Total Nonfarm (BLS, JOLTS)",
@@ -19214,6 +19238,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BEAが四半期終了の約3か月後に公表。",
+      "nextRelease": "2026-09-24",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Balance on Current Account (BEA)",
@@ -19704,6 +19730,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "Census Bureau・BEAが対象月の翌々月上旬ごろに公表。",
+      "nextRelease": "2026-10-06",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Trade Balance: Goods and Services (Census Bureau/BEA)",
@@ -21418,6 +21446,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
+      "nextRelease": "2026-09-11",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Federal Funds Effective Rate (Federal Reserve)",
@@ -23232,6 +23262,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
+      "nextRelease": "2026-09-11",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -33968,6 +34000,8 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "FRBが毎週木曜日（H.4.1統計）に公表。",
+      "nextRelease": "2026-09-17",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Total Assets (Federal Reserve H.4.1)",
@@ -36254,6 +36288,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
+      "nextRelease": "2026-09-11",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -47000,6 +47036,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが毎営業日（H.10統計）に公表。",
+      "nextRelease": "2026-09-14",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Trade Weighted U.S. Dollar Index: Broad (Federal Reserve H.10)",
@@ -57700,6 +57738,8 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
+      "nextRelease": "2026-09-11",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -67806,6 +67846,8 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
+      "nextRelease": "2026-09-11",
+      "marketConsensus": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",

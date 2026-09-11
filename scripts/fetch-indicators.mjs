@@ -12,6 +12,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 import { INDICATORS, CATEGORY_GUIDES } from "./indicators.config.mjs";
 import { fetchFredSeries } from "./fetch-fred-series.mjs";
+import { fetchNextReleaseDate } from "./fetch-fred-release-date.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = resolve(__dirname, "../public/data");
@@ -61,6 +62,14 @@ async function main() {
     process.stdout.write(`- ${ind.id} ... `);
     try {
       const points = await fetchFredSeries(ind.api.seriesId, ind.api.transform, ind.api.since);
+
+      let nextRelease = null;
+      try {
+        nextRelease = await fetchNextReleaseDate(ind.api.seriesId);
+      } catch {
+        // 次回発表予定日の取得に失敗しても、本体データの取得は継続する（フロントは「未定」表示）
+      }
+
       out.push({
         id: ind.id,
         name: ind.name,
@@ -77,6 +86,8 @@ async function main() {
         referenceLines: ind.referenceLines ?? [],
         movingAverage: ind.movingAverage ?? null,
         releaseSchedule: ind.releaseSchedule,
+        nextRelease, // "YYYY-MM-DD" または null（未定）。FREDのNext Release Dateから取得
+        marketConsensus: null, // 市場予想（コンセンサス）。無償データ源が無いため常にnull＝「未定」表示
         source: {
           provider: "FRED（セントルイス連邦準備銀行）",
           statName: ind.api.statName,

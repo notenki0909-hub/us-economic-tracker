@@ -611,9 +611,20 @@ a {
 
 .detail__release {
   padding: 12px 24px 0;
-  margin: 0;
   font-size: 0.8rem;
   color: var(--text-dim);
+}
+
+.detail__release p {
+  margin: 0 0 4px;
+}
+
+.detail__release p:last-child {
+  margin-bottom: 0;
+}
+
+.detail__release b {
+  color: var(--text);
 }
 
 .detail__source {

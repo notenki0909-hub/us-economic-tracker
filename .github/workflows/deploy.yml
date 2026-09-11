@@ -1,0 +1,76 @@
+name: データ更新 & 公開
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+  schedule:
+    # 平日 毎日 22:00 UTC（米東部時間 17〜18時ごろ、市場引け後）。
+    # 主要指標（8:30 ET発表）・株価指数（引け後）ともに、その日のFRED反映後をカバー。
+    - cron: "0 22 * * 1-5"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # push 以外（定期実行 / 手動）のときだけ FRED から取り直してコミット
+      - name: 経済指標データを取得
+        if: github.event_name != 'push'
+        run: npm run fetch
+
+      - name: 変更があればコミット
+        if: github.event_name != 'push'
+        run: |
+          if ! git diff --quiet -- public/data/indicators.json; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/data/indicators.json
+            git commit -m "chore(data): 経済指標データを更新 ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "データに変更なし"
+          fi
+
+  build-deploy:
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main # update-data がコミットした最新を取得
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

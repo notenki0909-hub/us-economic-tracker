@@ -38,10 +38,11 @@ function findClosestOnOrBefore(points, fromIdx, targetMs) {
 
 /**
  * @param {string} seriesId
- * @param {"level"|"yoy"|"mom_diff"} transform
+ * @param {"level"|"yoy"|"mom_diff"|"mom_pct"} transform
  *   level    : そのまま
  *   yoy      : 365日前に最も近い点との前年同月比(%)
  *   mom_diff : 1つ前の点との差分（水準の変化量。例：雇用者数の増減）
+ *   mom_pct  : 1つ前の点との変化率(%)。例：小売売上高の前月比
  * @param {string} [since] 収録下限日（省略時 DEFAULT_SINCE）。日次・週次系列はデータ量が
  *   非常に多くなるため、個別に短い期間を指定することを想定。
  */
@@ -57,6 +58,10 @@ export async function fetchFredSeries(seriesId, transform = "level", since = DEF
     if (transform === "mom_diff") {
       if (i === 0) continue;
       out.push({ t: raw[i].date, date: raw[i].date, value: raw[i].value - raw[i - 1].value });
+    } else if (transform === "mom_pct") {
+      if (i === 0 || raw[i - 1].value === 0) continue;
+      const pct = ((raw[i].value - raw[i - 1].value) / Math.abs(raw[i - 1].value)) * 100;
+      out.push({ t: raw[i].date, date: raw[i].date, value: Math.round(pct * 100) / 100 });
     } else if (transform === "yoy") {
       const targetMs = new Date(raw[i].date).getTime() - 365 * 86400000;
       const prior = findClosestOnOrBefore(raw, i - 1, targetMs);

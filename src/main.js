@@ -43,7 +43,7 @@ function unitScale(unit, v = 0) {
     if (abs >= 1e3) return { unit: "十億ドル", div: 1e3, digits: 2 };
     return { unit: "百万ドル", div: 1, digits: 0 };
   }
-  if (unit === "千人") return { unit, div: 1, digits: 0 };
+  if (unit === "千人" || unit === "千件") return { unit, div: 1, digits: 0 };
   if (unit === "件") return { unit, div: 1, digits: 0 };
   if (unit === "%" || unit === "倍") return { unit, div: 1, digits: 2 };
   if (unit === "円" || unit === "ドル") return { unit, div: 1, digits: 2 };

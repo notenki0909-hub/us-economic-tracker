@@ -108,6 +108,31 @@ export const INDICATORS = [
     api: { provider: "fred", seriesId: "DGORDER", transform: "level", statName: "Manufacturers' New Orders: Durable Goods (Census Bureau)" },
   },
   {
+    id: "retail_sales_us",
+    importance: 5,
+    name: "小売売上高",
+    shortName: "小売売上高",
+    category: "景気",
+    unit: "%",
+    unitLabel: "前月比 %",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "Census Bureauが毎月公表する、小売業者の売上高（自動車・外食含む）の前月比。個人消費が" +
+      "GDPの約7割を占める米国経済において、消費の『いま』を最も速報的に示す指標。雇用統計と並んで" +
+      "月次指標の中で特に市場インパクトが大きい。",
+    judgment: {
+      summary: "個人消費の強さをそのまま反映する。強すぎず弱すぎない、緩やかな増加が続く状態が最も安定的とされる。",
+      goodWhen: "前月比0.3〜0.5%程度の安定的な増加が続いている状態。",
+      badWhen: "マイナスが継続、または急減速している状態（消費者マインドの悪化・景気減速のサイン）。",
+      caveat: "名目値（物価変動を調整していない）のため、ガソリン価格の変動等で実態以上に振れることがある。自動車・ガソリンを除いた『コア小売売上高』と合わせて見ると基調がより正確に分かる。",
+    },
+    referenceLines: [{ value: 0, label: "0%＝増加・減少の分岐", kind: "neutral" }],
+    releaseSchedule: "Census Bureauが対象月の翌月中旬ごろ8:30 ETに公表。",
+    api: { provider: "fred", seriesId: "RSAFS", transform: "mom_pct", statName: "Advance Retail Sales: Retail Trade and Food Services (Census Bureau)" },
+  },
+  {
     id: "cpi_yoy_us",
     importance: 5,
     name: "消費者物価指数（CPI）",
@@ -258,6 +283,31 @@ export const INDICATORS = [
     api: { provider: "fred", seriesId: "ICSA", transform: "level", since: "2016-01-01", statName: "Initial Claims (U.S. Department of Labor)" },
   },
   {
+    id: "job_openings_us",
+    importance: 4,
+    name: "JOLTS求人件数",
+    shortName: "JOLTS求人件数",
+    category: "雇用・所得",
+    unit: "千件",
+    unitLabel: "千件",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "BLSが公表する『雇用動態調査（JOLTS）』のうち、企業が募集している求人の件数。非農業部門雇用者数や" +
+      "失業率が雇用の『結果』を示すのに対し、こちらは企業の採用意欲という『需要側』を映す。FRBが労働市場の" +
+      "需給逼迫度（求人数と失業者数の比率など）を判断する際に重視する。",
+    judgment: {
+      summary: "求人が多いほど労働需要が強く、企業の採用意欲が旺盛な状態。ただし多すぎる求人は人手不足による賃金・物価上昇圧力にもつながる。",
+      goodWhen: "緩やかに減少しながらも高水準を維持している状態（過熱していた労働需給が『軟着陸』しつつある局面）。",
+      badWhen: "急激な減少（企業が採用を凍結し始めているサイン。しばしば本格的な雇用悪化・レイオフに先行する）。",
+      caveat: "非農業部門雇用者数より公表が1か月ほど遅く、速報性に劣る。改定も大きいことがあるため、単月の増減より数か月のトレンドで判断する。",
+    },
+    referenceLines: [],
+    releaseSchedule: "BLSが対象月の翌々月上旬ごろ（雇用統計の約1か月後）に公表。",
+    api: { provider: "fred", seriesId: "JTSJOL", transform: "level", statName: "Job Openings: Total Nonfarm (BLS, JOLTS)" },
+  },
+  {
     id: "current_account_us",
     importance: 2,
     name: "経常収支",
@@ -375,6 +425,34 @@ export const INDICATORS = [
     referenceLines: [],
     releaseSchedule: "FRBが毎週木曜日（H.4.1統計）に公表。",
     api: { provider: "fred", seriesId: "WALCL", transform: "level", since: "2016-01-01", statName: "Total Assets (Federal Reserve H.4.1)" },
+  },
+  {
+    id: "yield_curve_spread_us",
+    importance: 5,
+    name: "長短金利差（10年-2年国債利回り）",
+    shortName: "長短金利差",
+    category: "金利",
+    unit: "%",
+    unitLabel: "%ポイント（10年債-2年債、日次）",
+    frequency: "daily",
+    seasonalAdjustment: "原数値",
+    betterWhen: "up",
+    description:
+      "米10年国債利回りから2年国債利回りを差し引いた、長短金利の差。通称『イールドカーブ』の形状を" +
+      "示す代表的な指標で、これがマイナスになる『逆イールド』は、過去数十年の米国の景気後退の多くに" +
+      "先行して発生してきた、最も有名な景気後退の予兆指標の一つ。",
+    judgment: {
+      summary: "プラス（順イールド）が平常な状態。マイナス（逆イールド）は、短期金利が長期金利を上回る" +
+        "異例の状態で、市場が将来の利下げ・景気減速を織り込んでいることを示唆する。",
+      goodWhen: "小幅〜中程度のプラス圏で安定的に推移している状態（正常なイールドカーブ）。",
+      badWhen: "マイナス（逆イールド）が長期間続く状態。ただし歴史的には『逆イールドが解消してプラスに" +
+        "転じるタイミング（un-inversion）』の方が、実際の景気後退開始・株価下落により近いとの指摘もある。",
+      caveat: "逆イールド発生から実際の景気後退までには、過去平均で1〜2年程度のタイムラグがあることが多い。" +
+        "『いつ』景気後退が来るかの精密なタイミング予測には使えない点に注意。",
+    },
+    referenceLines: [{ value: 0, label: "0＝逆イールド（景気後退シグナル）との分岐", kind: "neutral" }],
+    releaseSchedule: "米財務省・FRBが毎営業日、取引終了後に公表。",
+    api: { provider: "fred", seriesId: "T10Y2Y", transform: "level", since: "2016-01-01", statName: "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)" },
   },
   {
     id: "dollar_index_us",

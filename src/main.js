@@ -7,11 +7,13 @@ Chart.register(annotationPlugin);
 const DATA_URL = import.meta.env.BASE_URL + "data/indicators.json";
 const CATEGORIES = ["景気", "物価", "雇用・所得", "対外", "金利", "為替・市場"];
 
+const now = new Date();
 const state = {
   category: "すべて",
   q: "",
   sort: "category",
   data: null,
+  calMonth: new Date(Date.UTC(now.getFullYear(), now.getMonth(), 1)),
 };
 
 /* ---------- helpers ---------- */
@@ -261,6 +263,93 @@ function renderCategoryGuide() {
   el.hidden = false;
   el.querySelectorAll(".category-guide__link").forEach((btn) => {
     btn.addEventListener("click", () => openDetail(btn.dataset.id));
+  });
+}
+
+/* ---------- release calendar ---------- */
+
+function shiftMonth(d, delta) {
+  return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + delta, 1));
+}
+
+function renderCalendar() {
+  const el = document.getElementById("release-calendar");
+  if (!el || !state.data) return;
+
+  const byDate = new Map();
+  state.data.indicators.forEach((ind) => {
+    if (!ind.nextRelease) return;
+    if (!byDate.has(ind.nextRelease)) byDate.set(ind.nextRelease, []);
+    byDate.get(ind.nextRelease).push(ind);
+  });
+
+  const year = state.calMonth.getUTCFullYear();
+  const month = state.calMonth.getUTCMonth();
+  const startOffset = new Date(Date.UTC(year, month, 1)).getUTCDay(); // 0=日
+  const todayStr = new Date().toISOString().slice(0, 10);
+
+  const cells = [];
+  for (let i = 0; i < 42; i++) {
+    const d = new Date(Date.UTC(year, month, 1 - startOffset + i));
+    const dateStr = d.toISOString().slice(0, 10);
+    cells.push({ d, dateStr, inMonth: d.getUTCMonth() === month, items: byDate.get(dateStr) || [] });
+  }
+  // 最終週が丸ごと翌月かつ発表予定もなければ間引く（5週で収まる月がほとんどのため）
+  while (cells.length > 35) {
+    const lastWeek = cells.slice(-7);
+    if (lastWeek.some((c) => c.inMonth || c.items.length)) break;
+    cells.length -= 7;
+  }
+
+  const weekdayHtml = ["日", "月", "火", "水", "木", "金", "土"].map((w) => `<span>${w}</span>`).join("");
+
+  const cellsHtml = cells
+    .map((c) => {
+      const dow = c.d.getUTCDay();
+      const cls = [
+        "calendar__cell",
+        c.inMonth ? "" : "calendar__cell--outside",
+        c.dateStr === todayStr ? "calendar__cell--today" : "",
+        dow === 0 ? "calendar__cell--sun" : dow === 6 ? "calendar__cell--sat" : "",
+      ]
+        .filter(Boolean)
+        .join(" ");
+      const pills = c.items
+        .map((ind) => {
+          const color = catColor(ind.category);
+          return `<button type="button" class="calendar__pill" style="background:${color}22;color:${color};border-color:${color}66" data-id="${ind.id}" title="${ind.name}">${ind.shortName}</button>`;
+        })
+        .join("");
+      return `
+        <div class="${cls}">
+          <span class="calendar__daynum">${c.d.getUTCDate()}</span>
+          <div class="calendar__pills">${pills}</div>
+        </div>`;
+    })
+    .join("");
+
+  el.innerHTML = `
+    <div class="calendar__head">
+      <h2 class="calendar__title">📅 発表予定カレンダー</h2>
+      <div class="calendar__nav">
+        <button type="button" class="calendar__navbtn" id="cal-prev" aria-label="前月">←</button>
+        <span class="calendar__month">${year}年${month + 1}月</span>
+        <button type="button" class="calendar__navbtn" id="cal-next" aria-label="次月">→</button>
+      </div>
+    </div>
+    <div class="calendar__weekdays">${weekdayHtml}</div>
+    <div class="calendar__grid">${cellsHtml}</div>`;
+
+  el.querySelectorAll(".calendar__pill").forEach((btn) => {
+    btn.addEventListener("click", () => openDetail(btn.dataset.id));
+  });
+  document.getElementById("cal-prev").addEventListener("click", () => {
+    state.calMonth = shiftMonth(state.calMonth, -1);
+    renderCalendar();
+  });
+  document.getElementById("cal-next").addEventListener("click", () => {
+    state.calMonth = shiftMonth(state.calMonth, 1);
+    renderCalendar();
   });
 }
 
@@ -526,6 +615,7 @@ function initTheme() {
     }
     updateThemeToggleIcon();
     renderGrid(); // カテゴリ色・目安ラインのSVGは属性描画のため色変更を反映し直す
+    renderCalendar(); // カレンダーのピル色も同様にインラインstyleで描画しているため再描画
     if (chart) drawChart(); // 開いている詳細グラフの配色も更新
   });
 }
@@ -567,6 +657,7 @@ async function init() {
 
   renderGrid();
   renderCategoryGuide();
+  renderCalendar();
 }
 
 init();

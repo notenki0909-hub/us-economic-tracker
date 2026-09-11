@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T10:48:37.691Z",
+  "generatedAt": "2026-09-11T23:51:24.685Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 21,
@@ -7779,7 +7779,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが対象月の翌月中旬ごろ8:30 ET（日本時間 夜〜深夜）に公表。",
-      "nextRelease": "2026-09-11",
+      "nextRelease": "2026-10-14",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Consumer Price Index for All Urban Consumers (BLS)",
@@ -7787,12 +7787,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-07-01",
-          "value": 3.3,
+          "t": "2026-08-01",
+          "value": 3.35,
           "provisional": false
         },
-        "changeFromPrev": -0.16,
-        "changeFromYearAgo": 0.62,
+        "changeFromPrev": 0.05,
+        "changeFromYearAgo": 0.61,
         "min": {
           "t": "2009-07-01",
           "value": -1.96
@@ -7801,7 +7801,7 @@
           "t": "2022-06-01",
           "value": 8.98
         },
-        "count": 438,
+        "count": 439,
         "start": "1990-01-01"
       },
       "points": [
@@ -9556,6 +9556,10 @@
         {
           "t": "2026-07-01",
           "value": 3.3
+        },
+        {
+          "t": "2026-08-01",
+          "value": 3.35
         }
       ]
     },
@@ -21432,7 +21436,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
-      "nextRelease": "2026-09-11",
+      "nextRelease": "2026-09-14",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Federal Funds Effective Rate (Federal Reserve)",
@@ -23247,7 +23251,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-11",
+      "nextRelease": "2026-09-14",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -23255,12 +23259,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-09",
-          "value": 4.83,
+          "t": "2026-09-10",
+          "value": 4.95,
           "provisional": false
         },
-        "changeFromPrev": 0.03,
-        "changeFromYearAgo": 0.75,
+        "changeFromPrev": 0.12,
+        "changeFromYearAgo": 0.91,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -23269,7 +23273,7 @@
           "t": "2023-10-19",
           "value": 4.98
         },
-        "count": 2672,
+        "count": 2673,
         "start": "2016-01-04"
       },
       "points": [
@@ -33960,6 +33964,10 @@
         {
           "t": "2026-09-09",
           "value": 4.83
+        },
+        {
+          "t": "2026-09-10",
+          "value": 4.95
         }
       ]
     },
@@ -36271,7 +36279,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-11",
+      "nextRelease": "2026-09-14",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -36279,12 +36287,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-10",
-          "value": 0.39,
+          "t": "2026-09-11",
+          "value": 0.33,
           "provisional": false
         },
-        "changeFromPrev": -0.01,
-        "changeFromYearAgo": -0.11,
+        "changeFromPrev": -0.06,
+        "changeFromYearAgo": -0.16,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -36293,7 +36301,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2673,
+        "count": 2674,
         "start": "2016-01-04"
       },
       "points": [
@@ -46988,6 +46996,10 @@
         {
           "t": "2026-09-10",
           "value": 0.39
+        },
+        {
+          "t": "2026-09-11",
+          "value": 0.33
         }
       ]
     },
@@ -67826,7 +67838,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-11",
+      "nextRelease": "2026-09-14",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -67834,12 +67846,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-09",
-          "value": 16.46,
+          "t": "2026-09-10",
+          "value": 17.84,
           "provisional": false
         },
-        "changeFromPrev": 0.74,
-        "changeFromYearAgo": 1.42,
+        "changeFromPrev": 1.38,
+        "changeFromYearAgo": 2.49,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -67848,7 +67860,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2719,
+        "count": 2720,
         "start": "2016-01-04"
       },
       "points": [
@@ -78727,6 +78739,10 @@
         {
           "t": "2026-09-09",
           "value": 16.46
+        },
+        {
+          "t": "2026-09-10",
+          "value": 17.84
         }
       ]
     }

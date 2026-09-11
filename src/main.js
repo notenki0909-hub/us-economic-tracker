@@ -2,6 +2,7 @@ import "./style.css";
 import Chart from "chart.js/auto";
 import annotationPlugin from "chartjs-plugin-annotation";
 import { initTheme } from "./theme.js";
+import { RECESSIONS } from "./recessions.js";
 
 Chart.register(annotationPlugin);
 
@@ -96,6 +97,13 @@ function fmtJpDateWithWeekday(iso) {
   const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
   const wd = ["日", "月", "火", "水", "木", "金", "土"][d.getUTCDay()];
   return `${+m[1]}年${+m[2]}月${+m[3]}日（${wd}）`;
+}
+
+/** "2026-09" → その月の最終日 23:59:59（UTC）epoch ms */
+function monthEndMs(ym) {
+  const m = /^(\d{4})-(\d{2})$/.exec(ym);
+  if (!m) return NaN;
+  return Date.UTC(+m[1], +m[2], 0, 23, 59, 59);
 }
 
 /** target/neutral/context の目安ラインの色 */
@@ -490,6 +498,20 @@ function drawChart() {
   const multi = datasets.length > 1;
 
   const annotations = {};
+  const recessionColor = css.getPropertyValue("--recession").trim();
+  RECESSIONS.forEach((rec, i) => {
+    const xMin = parseT(rec.start);
+    const xMax = monthEndMs(rec.end);
+    if (!Number.isFinite(xMin) || !Number.isFinite(xMax) || xMax < cutoff) return;
+    annotations["recession" + i] = {
+      type: "box",
+      xMin,
+      xMax,
+      backgroundColor: recessionColor,
+      borderWidth: 0,
+      drawTime: "beforeDatasetsDraw",
+    };
+  });
   (ind.referenceLines || []).forEach((rl, i) => {
     const c = refColor(rl.kind);
     annotations["ref" + i] = {

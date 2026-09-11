@@ -317,10 +317,8 @@ function openDetail(id) {
     : "";
 
   const nextReleaseText = ind.nextRelease ? fmtJpDateWithWeekday(ind.nextRelease) : "未定";
-  const consensusText = ind.marketConsensus ?? "なし（無償で配信する公式データ源が存在しないため掲載していません）";
-  document.getElementById("d-release").innerHTML = `
-    <p>📅 次回発表予定日：<b>${nextReleaseText}</b>${ind.releaseSchedule ? `　（目安：${ind.releaseSchedule}）` : ""}</p>
-    <p>📊 市場予想（コンセンサス）：<b>${consensusText}</b></p>`;
+  document.getElementById("d-release").innerHTML =
+    `<p>📅 次回発表予定日：<b>${nextReleaseText}</b>${ind.releaseSchedule ? `　（目安：${ind.releaseSchedule}）` : ""}</p>`;
 
   document.getElementById("d-ranges").innerHTML = RANGES.map(
     (r) => `<button class="range-btn" data-range="${r.key}" aria-pressed="${r.key === currentRange}">${r.label}</button>`

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // 保存済みテーマを最初の描画前に反映（チラつき防止）
+      (function () {
+        try {
+          var t = localStorage.getItem("us-tracker-theme");
+          if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>使い方ガイド | 米国経済指標トラッカー</title>
+    <meta
+      name="description"
+      content="米国経済指標トラッカーの指標カード・詳細画面・発表予定カレンダーの見方を解説します。"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%B5%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <div class="site-header__top">
+            <h1>使い方ガイド</h1>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替え" title="表示テーマを切り替え">🌙</button>
+          </div>
+          <p class="site-header__lead">
+            米国経済指標トラッカーの指標カード・詳細画面・発表予定カレンダーの見方をまとめました。
+          </p>
+          <p><a class="back-link" href="./index.html">← トップに戻る</a></p>
+        </div>
+      </header>
+
+      <main class="container guide">
+        <section class="guide-section">
+          <h2>① 指標カード（トップページ一覧）の見方</h2>
+          <p>各カードは1つの経済指標を表します。</p>
+          <ul>
+            <li><b>カテゴリタグ</b>：景気・物価・雇用所得・対外・金利・為替市場の6カテゴリ。色で識別。</li>
+            <li><b>重要度★</b>：株価（S&P500等）への影響度の目安。★が多いほど市場インパクトが大きい。</li>
+            <li><b>最新値と発表月</b>：直近で取得できた値と、その対象年月（速報の場合は「（速報）」と表示）。</li>
+            <li><b>折れ線（スパークライン）</b>：直近の推移を簡易グラフ化したもの。点線は目安ライン（あれば）。</li>
+            <li><b>前月比・前年比</b>：▲▼の色は「良い方向への変化か」で決まり、必ずしも▲＝プラス＝良い、ではない
+              （例：失業率は下がる＝▼の方が良いと判断されるため緑になる）。</li>
+          </ul>
+          <p>カードをクリックすると、その指標の詳細画面が開く。</p>
+        </section>
+
+        <section class="guide-section">
+          <h2>② 絞り込み・並び替え</h2>
+          <ul>
+            <li><b>カテゴリチップ</b>：カテゴリで絞り込み。1つ選ぶと、そのカテゴリの「①まず見る／②次に見る」ガイドが表示される。</li>
+            <li><b>指標名で絞り込み</b>：フリーワード検索。</li>
+            <li><b>並び替え</b>：カテゴリ順・前期比の大きさ順・名称順など。</li>
+          </ul>
+        </section>
+
+        <section class="guide-section">
+          <h2>③ 詳細画面の見方</h2>
+          <p>カードをクリックすると開くモーダルには、以下の情報がある。</p>
+          <ul>
+            <li><b>統計サマリー</b>：最新値・過去最大／最小・データ数・季節調整の有無。</li>
+            <li><b>判断の目安</b>：「良いとされる状態」「注意が必要な状態」の一般的な傾向と、判断時の注意点（⚠️）。</li>
+            <li><b>次回発表予定日</b>：下記④で詳しく説明。</li>
+            <li><b>グラフ</b>：1年〜全期間で表示期間を切替可能。目安ラインや移動平均線があれば重ねて表示。</li>
+            <li><b>出典</b>：FRED（セントルイス連邦準備銀行）の系列名・公表元ページへのリンク・単位。</li>
+          </ul>
+        </section>
+
+        <section class="guide-section">
+          <h2>④ 次回発表予定日・発表予定カレンダーについて</h2>
+          <p>
+            各指標の「次回発表予定日」は、FRED（セントルイス連邦準備銀行）の各系列ページが持つ
+            公式メタデータ（BLS・BEA・FRB等が公表する発表スケジュール）をそのまま表示している。
+          </p>
+          <p>トップページ最上部の<b>発表予定カレンダー</b>では、この日付を月間カレンダー形式で一覧できる。
+            日付の枠に表示されている指標名のピルをクリックすると、その指標の詳細画面が開く。</p>
+          <div class="guide-note">
+            <b>⚠️ なぜ数ヶ月先の予定が空欄になるのか</b><br />
+            FREDのメタデータは「次の1回分」の発表予定日しか保持していない（将来の発表スケジュール全体を
+            配信しているわけではない）。そのため、カレンダーには常に「向こう1〜2ヶ月分」程度しか
+            表示されない。毎日の自動データ更新で、発表日を過ぎた指標は自動的に「その次の予定日」に
+            更新されるため、時間が経てば該当月にも予定が表示されるようになる。
+          </div>
+        </section>
+
+        <section class="guide-section">
+          <h2>⑤ 市場予想（コンセンサス）について</h2>
+          <p>
+            経済指標には「発表される実際の値」のほかに、事前に経済アナリストが予想する
+            「市場予想（コンセンサス）」という数値がある。本ツールでは<b>市場予想は掲載していない</b>。
+            市場予想は政府統計機関ではなく民間データベンダー（Bloomberg・Reuters等）が
+            エコノミストへの調査を集計する商用データであり、無償・登録不要で配信するソースが
+            構造的に存在しないため。
+          </p>
+        </section>
+
+        <section class="guide-section">
+          <h2>⑥ データ出典・更新頻度</h2>
+          <p>
+            全指標を FRED（セントルイス連邦準備銀行）から取得。BEA・BLS・FRB・Census Bureau・CBOE等の
+            公的統計をFRED経由で一括取得している。GitHub Actionsにより平日毎日データを再取得し、
+            変化があれば自動的にサイトへ反映される（蓄積レイヤーは持たず、毎回全期間を取り直すため、
+            速報値の改定にも自動追従する）。
+          </p>
+        </section>
+
+        <p><a class="back-link" href="./index.html">← トップに戻る</a></p>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          出典：FRED（セントルイス連邦準備銀行）経由で、BEA・BLS・FRB・Census Bureau等の公的統計を取得・加工。
+          本サイトは公的統計を分かりやすく表示することを目的とした非公式ツールです。
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/guide.js"></script>
+  </body>
+</html>

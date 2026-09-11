@@ -235,6 +235,79 @@ a {
   outline-offset: 1px;
 }
 
+/* ---------- guide link / guide page ---------- */
+.guide-link {
+  margin-left: 10px;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+.guide-section {
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.guide-section h2 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+}
+
+.guide-section p {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
+.guide-section ul {
+  margin: 0 0 8px;
+  padding-left: 1.2em;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
+.guide-section li {
+  margin-bottom: 4px;
+}
+
+.guide-section b {
+  color: var(--text);
+}
+
+.guide-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
 /* ---------- release calendar ---------- */
 .calendar {
   margin-bottom: 20px;

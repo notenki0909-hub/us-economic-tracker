@@ -6,6 +6,8 @@
 日本版 [経済指標トラッカー](../keizai-shihyo-tracker) の姉妹サイト。UI・機能は共通、
 データと指標構成のみ米国向け。
 
+**公開URL**: https://notenki0909-hub.github.io/us-economic-tracker/
+
 - **データ源**: [FRED（セントルイス連邦準備銀行）](https://fred.stlouisfed.org/) のみ
   （**利用登録・APIキー不要**）。BEA・BLS・FRB・Census Bureau・CBOE等の公的統計をFRED経由で
   一括取得できるため、日本版（4つのデータソースを使い分け）より構成がシンプル。

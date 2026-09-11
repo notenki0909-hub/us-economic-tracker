@@ -87,7 +87,7 @@ async function main() {
         movingAverage: ind.movingAverage ?? null,
         releaseSchedule: ind.releaseSchedule,
         nextRelease, // "YYYY-MM-DD" または null（未定）。FREDのNext Release Dateから取得
-        marketConsensus: null, // 市場予想（コンセンサス）。無償データ源が無いため常にnull＝「未定」表示
+        marketConsensus: null, // 市場予想（コンセンサス）。無償データ源が無いため常にnull＝「なし」表示
         source: {
           provider: "FRED（セントルイス連邦準備銀行）",
           statName: ind.api.statName,

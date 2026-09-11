@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T09:45:24.423Z",
+  "generatedAt": "2026-09-11T10:31:16.194Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 21,

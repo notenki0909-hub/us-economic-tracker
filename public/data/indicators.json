@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T16:59:24.553Z",
+  "generatedAt": "2026-09-14T21:25:50.912Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 21,
@@ -67,15 +67,126 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-14T16:59:24.558Z",
+    "generatedAt": "2026-09-14T21:25:50.914Z",
     "stats": {
       "total": 21,
       "improving": 8,
       "worsening": 6,
       "neutral": 7,
-      "surpriseCount": 3
+      "surpriseCount": 1
     },
     "headline": "21指標中、改善傾向が8件、悪化傾向が6件、横ばい・中立が7件です。",
+    "improvingList": [
+      {
+        "id": "consumer_sentiment_us",
+        "name": "ミシガン大学消費者信頼感指数",
+        "category": "景気"
+      },
+      {
+        "id": "industrial_production_us",
+        "name": "鉱工業生産指数",
+        "category": "景気"
+      },
+      {
+        "id": "durable_goods_orders_us",
+        "name": "耐久財受注",
+        "category": "景気"
+      },
+      {
+        "id": "nonfarm_payrolls_us",
+        "name": "非農業部門雇用者数",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "jobless_claims_us",
+        "name": "新規失業保険申請件数",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "job_openings_us",
+        "name": "JOLTS求人件数",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "sp500_us",
+        "name": "S&P500種株価指数",
+        "category": "為替・市場"
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場"
+      }
+    ],
+    "worseningList": [
+      {
+        "id": "gdp_growth_us",
+        "name": "実質GDP成長率",
+        "category": "景気"
+      },
+      {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気"
+      },
+      {
+        "id": "real_earnings_yoy_us",
+        "name": "実質週給（フルタイム労働者）",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "current_account_us",
+        "name": "経常収支",
+        "category": "対外"
+      },
+      {
+        "id": "trade_balance_us",
+        "name": "貿易収支",
+        "category": "対外"
+      },
+      {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利"
+      }
+    ],
+    "neutralList": [
+      {
+        "id": "cpi_yoy_us",
+        "name": "消費者物価指数（CPI）",
+        "category": "物価"
+      },
+      {
+        "id": "core_pce_yoy_us",
+        "name": "コアPCE物価指数",
+        "category": "物価"
+      },
+      {
+        "id": "unemployment_rate_us",
+        "name": "失業率",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "fed_funds_rate_us",
+        "name": "FF金利（政策金利）",
+        "category": "金利"
+      },
+      {
+        "id": "treasury_10y_us",
+        "name": "米10年国債利回り",
+        "category": "金利"
+      },
+      {
+        "id": "fed_balance_sheet_us",
+        "name": "FRBバランスシート（総資産）",
+        "category": "金利"
+      },
+      {
+        "id": "dollar_index_us",
+        "name": "貿易加重ドル指数",
+        "category": "為替・市場"
+      }
+    ],
     "statusFindings": [
       {
         "id": "retail_sales_us",
@@ -115,24 +226,6 @@
         "level": "high",
         "detail": "非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。",
         "text": "貿易収支で非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。"
-      },
-      {
-        "id": "treasury_10y_us",
-        "name": "米10年国債利回り",
-        "category": "金利",
-        "z": 2.3,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.3）。",
-        "text": "米10年国債利回りでやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.3）。"
-      },
-      {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "z": -1.7,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。",
-        "text": "長短金利差（10年-2年国債利回り）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。"
       }
     ]
   },
@@ -21506,7 +21599,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
-      "nextRelease": "2026-09-14",
+      "nextRelease": "2026-09-15",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Federal Funds Effective Rate (Federal Reserve)",
@@ -23321,7 +23414,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-14",
+      "nextRelease": "2026-09-15",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -23329,12 +23422,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-10",
-          "value": 4.95,
+          "t": "2026-09-11",
+          "value": 4.96,
           "provisional": false
         },
-        "changeFromPrev": 0.12,
-        "changeFromYearAgo": 0.91,
+        "changeFromPrev": 0.01,
+        "changeFromYearAgo": 0.95,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -23343,7 +23436,7 @@
           "t": "2023-10-19",
           "value": 4.98
         },
-        "count": 2673,
+        "count": 2674,
         "start": "2016-01-04"
       },
       "points": [
@@ -34038,6 +34131,10 @@
         {
           "t": "2026-09-10",
           "value": 4.95
+        },
+        {
+          "t": "2026-09-11",
+          "value": 4.96
         }
       ]
     },
@@ -36349,7 +36446,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-14",
+      "nextRelease": "2026-09-15",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -36357,12 +36454,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-11",
-          "value": 0.33,
+          "t": "2026-09-14",
+          "value": 0.32,
           "provisional": false
         },
-        "changeFromPrev": -0.06,
-        "changeFromYearAgo": -0.16,
+        "changeFromPrev": -0.01,
+        "changeFromYearAgo": -0.18,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -36371,7 +36468,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2674,
+        "count": 2675,
         "start": "2016-01-04"
       },
       "points": [
@@ -47070,6 +47167,10 @@
         {
           "t": "2026-09-11",
           "value": 0.33
+        },
+        {
+          "t": "2026-09-14",
+          "value": 0.32
         }
       ]
     },
@@ -47100,7 +47201,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが毎営業日（H.10統計）に公表。",
-      "nextRelease": "2026-09-14",
+      "nextRelease": "2026-09-21",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Trade Weighted U.S. Dollar Index: Broad (Federal Reserve H.10)",
@@ -47108,12 +47209,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-04",
-          "value": 118.0732,
+          "t": "2026-09-11",
+          "value": 118.2126,
           "provisional": false
         },
-        "changeFromPrev": -0.0538,
-        "changeFromYearAgo": -2.6897,
+        "changeFromPrev": 0.1339,
+        "changeFromYearAgo": -1.7408,
         "min": {
           "t": "2018-02-01",
           "value": 106.4877
@@ -47122,7 +47223,7 @@
           "t": "2025-01-13",
           "value": 130.0413
         },
-        "count": 2663,
+        "count": 2667,
         "start": "2016-01-04"
       },
       "points": [
@@ -57777,6 +57878,22 @@
         {
           "t": "2026-09-04",
           "value": 118.0732
+        },
+        {
+          "t": "2026-09-08",
+          "value": 117.9127
+        },
+        {
+          "t": "2026-09-09",
+          "value": 117.8834
+        },
+        {
+          "t": "2026-09-10",
+          "value": 118.0787
+        },
+        {
+          "t": "2026-09-11",
+          "value": 118.2126
         }
       ]
     },

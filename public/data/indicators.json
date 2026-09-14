@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T23:51:24.685Z",
+  "generatedAt": "2026-09-14T16:59:24.553Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 21,
@@ -65,6 +65,76 @@
         "reason": "S&P500の値動き（結果）だけでは『どれだけの不安・警戒感を伴っているか』が分からない。VIX（恐怖指数）を合わせて見ることで、値動きの背景にある市場心理の強さを確認できる。"
       }
     }
+  },
+  "econSummary": {
+    "generatedAt": "2026-09-14T16:59:24.558Z",
+    "stats": {
+      "total": 21,
+      "improving": 8,
+      "worsening": 6,
+      "neutral": 7,
+      "surpriseCount": 3
+    },
+    "headline": "21指標中、改善傾向が8件、悪化傾向が6件、横ばい・中立が7件です。",
+    "statusFindings": [
+      {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気",
+        "detail": "目安「0%＝増加・減少の分岐」を下回っており、注意が必要な水準です。",
+        "text": "小売売上高は現在、目安「0%＝増加・減少の分岐」を下回っており、注意が必要な水準です。"
+      },
+      {
+        "id": "unemployment_rate_us",
+        "name": "失業率",
+        "category": "雇用・所得",
+        "detail": "目安「自然失業率の目安 4%前後」を上回っており、注意が必要な水準です。",
+        "text": "失業率は現在、目安「自然失業率の目安 4%前後」を上回っており、注意が必要な水準です。"
+      },
+      {
+        "id": "current_account_us",
+        "name": "経常収支",
+        "category": "対外",
+        "detail": "目安「0＝黒字・赤字の分岐」を下回っており、注意が必要な水準です。",
+        "text": "経常収支は現在、目安「0＝黒字・赤字の分岐」を下回っており、注意が必要な水準です。"
+      },
+      {
+        "id": "trade_balance_us",
+        "name": "貿易収支",
+        "category": "対外",
+        "detail": "目安「0＝黒字・赤字の分岐」を下回っており、注意が必要な水準です。",
+        "text": "貿易収支は現在、目安「0＝黒字・赤字の分岐」を下回っており、注意が必要な水準です。"
+      }
+    ],
+    "surpriseFindings": [
+      {
+        "id": "trade_balance_us",
+        "name": "貿易収支",
+        "category": "対外",
+        "z": -2.9,
+        "level": "high",
+        "detail": "非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。",
+        "text": "貿易収支で非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。"
+      },
+      {
+        "id": "treasury_10y_us",
+        "name": "米10年国債利回り",
+        "category": "金利",
+        "z": 2.3,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.3）。",
+        "text": "米10年国債利回りでやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.3）。"
+      },
+      {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "z": -1.7,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。",
+        "text": "長短金利差（10年-2年国債利回り）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。"
+      }
+    ]
   },
   "indicators": [
     {
@@ -57731,7 +57801,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-11",
+      "nextRelease": "2026-09-14",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -57739,12 +57809,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-10",
-          "value": 7591.7,
+          "t": "2026-09-11",
+          "value": 7656.98,
           "provisional": false
         },
-        "changeFromPrev": -44.66,
-        "changeFromYearAgo": 1059.66,
+        "changeFromPrev": 65.28,
+        "changeFromYearAgo": 1069.51,
         "min": {
           "t": "2016-11-04",
           "value": 2085.18
@@ -57753,7 +57823,7 @@
           "t": "2026-08-13",
           "value": 7798.99
         },
-        "count": 2513,
+        "count": 2514,
         "start": "2016-09-12"
       },
       "points": [
@@ -67808,6 +67878,10 @@
         {
           "t": "2026-09-10",
           "value": 7591.7
+        },
+        {
+          "t": "2026-09-11",
+          "value": 7656.98
         }
       ]
     },
@@ -67838,7 +67912,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-14",
+      "nextRelease": "2026-09-15",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -67846,12 +67920,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-10",
-          "value": 17.84,
+          "t": "2026-09-11",
+          "value": 15.84,
           "provisional": false
         },
-        "changeFromPrev": 1.38,
-        "changeFromYearAgo": 2.49,
+        "changeFromPrev": -2,
+        "changeFromYearAgo": 1.13,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -67860,7 +67934,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2720,
+        "count": 2721,
         "start": "2016-01-04"
       },
       "points": [
@@ -78743,6 +78817,10 @@
         {
           "t": "2026-09-10",
           "value": 17.84
+        },
+        {
+          "t": "2026-09-11",
+          "value": 15.84
         }
       ]
     }

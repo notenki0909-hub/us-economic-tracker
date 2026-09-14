@@ -13,45 +13,73 @@ const CATEGORIES = ["景気", "物価", "雇用・所得", "対外", "金利", "
 /**
  * 「有名な指標比較」として、経済学・投資の分野でよく知られている組み合わせをおすすめ表示する。
  * type: "correlation"（順相関・逆相関の確認）/ "divergence"（普段は連動する2指標が乖離していないか確認）
+ * summary   : 一言でいうとどんな関係か
+ * howToRead : グラフの2本の線をどう見ればよいか（初心者向け）
+ * takeaway  : そこから何を判断すればよいか（初心者向け）
  */
 const RECOMMENDED_PAIRS = [
   {
     a: "vix_us",
     b: "sp500_us",
     type: "correlation",
-    reason:
-      "VIX指数（恐怖指数）とS&P500は逆相関で知られる。株価が急落するとVIXが急上昇する典型的な" +
-      "値動きを確認できる（VIXは目安として10〜20で安定、30超で警戒、40超はパニック水準とされる）。",
+    title: "VIX指数 × S&P500",
+    summary: "株価が急落するとVIX（恐怖指数）が跳ね上がる、逆方向に動きやすい関係。",
+    howToRead:
+      "S&P500が下がっている時にVIXが上がっていれば『いつも通り』の動き。逆にS&P500が大きく" +
+      "下がっているのにVIXがあまり動かない場合は、下落が一時的・限定的だと市場が見ている" +
+      "可能性がある。",
+    takeaway:
+      "VIXが10〜20なら市場は落ち着いている状態。30を超えたら警戒、40を超えたら『パニック相場』の" +
+      "目安とされる。VIXが急上昇している局面は、無理に売買せず様子を見る人が多い。",
   },
   {
     a: "gdp_growth_us",
     b: "sp500_us",
     type: "divergence",
-    reason:
-      "株価（先行指標）とGDP成長率（実体経済）は必ずしも同じ方向に動かない。『Wall Street vs " +
-      "Main Street』と呼ばれる株価と実体経済の乖離が起きていないか確認できる。",
+    title: "実質GDP成長率 × S&P500",
+    summary: "株価は『将来の期待』、GDPは『今の実体経済』を映すため、必ずしも同じ方向には動かない。",
+    howToRead:
+      "本来は『景気が良い→企業業績が伸びる→株価が上がる』という関係が期待されるが、実際には" +
+      "GDPが伸び悩んでいるのに株価だけが上昇を続ける『乖離』が起きることがある" +
+      "（『Wall Street vs Main Street』と呼ばれる）。2本の線が長期間逆方向を向いていないか確認する。",
+    takeaway:
+      "株価だけが先行して上がっている状態が続く場合、『期待が先行しすぎている（割高）』可能性が" +
+      "あるという警戒材料として使われる。GDPが実際に追いついてくるかどうかを継続的に見ることが大切。",
   },
   {
     a: "yield_curve_spread_us",
     b: "sp500_us",
     type: "divergence",
-    reason:
-      "長短金利差のマイナス化（逆イールド）は歴史的に景気後退の先行指標とされる。金利差の悪化から" +
-      "株価が実際に反応するまでのタイムラグを確認できる。",
+    title: "長短金利差（10年-2年金利差） × S&P500",
+    summary: "長短金利差がマイナス（逆イールド）になると、歴史的に1〜2年後の景気後退と高い確率で重なってきた。",
+    howToRead:
+      "長短金利差の線が0を下回っている（グラフの目安ラインより下にある）期間をチェックする。" +
+      "そこから株価がすぐには反応せず、しばらく経ってから下落するケースが多いため、" +
+      "『金利差が先に動き、株価が後から追いかける』時間差を確認する。",
+    takeaway:
+      "長短金利差がマイナスに沈んでいる＝将来の景気後退への警戒シグナルが出ている状態。" +
+      "すぐに株価が下がるわけではないが、中長期的なリスク管理の材料として使われる。",
   },
   {
     a: "unemployment_rate_us",
     b: "cpi_yoy_us",
     type: "divergence",
-    reason:
-      "失業率と物価はどちらも遅行指標。雇用と物価のトレードオフ（フィリップス曲線的な関係）が" +
-      "崩れていないか確認できる。",
+    title: "失業率 × 消費者物価指数（CPI）",
+    summary: "雇用が良くなる（失業率が下がる）と物価が上がりやすい、というトレードオフの関係（フィリップス曲線）。",
+    howToRead:
+      "失業率が下がっているのに物価上昇率（CPI）も落ち着いている場合は『理想的な状態』。逆に" +
+      "失業率が高いままなのに物価だけ上がっている場合は、景気が弱いのに生活費だけ上がる" +
+      "『スタグフレーション』的な状態を警戒する。",
+    takeaway:
+      "両方とも改善（失業率低下・物価安定）していれば経済は健全。失業率が高止まりしたまま" +
+      "物価が上がっている場合は要注意のサイン。",
   },
 ];
 
 const now = new Date();
 const state = {
   category: "すべて",
+  view: "list", // "list"（通常の一覧）/ "compare"（おすすめの比較ペア一覧）
   q: "",
   sort: "category",
   data: null,
@@ -256,8 +284,79 @@ function visibleIndicators() {
   return list;
 }
 
+/** 「おすすめの比較ペア」をすべて一覧表示する（📊比較タブ）。カードをクリックすると2指標を重ねた詳細画面を開く */
+function renderComparePairs(grid) {
+  document.getElementById("empty").hidden = true;
+
+  const pairs = RECOMMENDED_PAIRS.map((p) => ({
+    ...p,
+    indA: state.data.indicators.find((i) => i.id === p.a),
+    indB: state.data.indicators.find((i) => i.id === p.b),
+  })).filter((p) => p.indA && p.indB);
+
+  grid.innerHTML = `
+    <div class="pair-intro">
+      <p>経済学・投資の世界でよく知られている「2指標セットで見ると発見がある」組み合わせをまとめました。
+      カードをクリックすると、その2指標を重ねたグラフがすぐに開きます。</p>
+      <p class="pair-intro__note">
+        <b>🔗 相関確認</b>＝2本の線がいつも同じ方向・逆方向に動くかを確認するペア／
+        <b>⚠️ ダイバージェンス確認</b>＝普段は連動する2つが逆方向に乖離していないか（早期警戒）を確認するペア。
+        ただし2つの線が似た動きをしていても、それが「片方が原因でもう片方が結果」とは限りません
+        （相関関係は因果関係を意味しません）。
+      </p>
+    </div>
+    ${pairs
+      .map((p) => {
+        const icon = p.type === "divergence" ? "⚠️" : "🔗";
+        const label = p.type === "divergence" ? "ダイバージェンス確認" : "相関確認";
+        return `
+      <div class="pair-card" data-a="${p.a}" data-b="${p.b}" role="button" tabindex="0">
+        <span class="pair-card__type pair-card__type--${p.type}">${icon} ${label}</span>
+        <h3 class="pair-card__title">${p.title}</h3>
+        <p class="pair-card__summary">${p.summary}</p>
+        <div class="pair-card__detail">
+          <div><span>📈 どう見る？</span><p>${p.howToRead}</p></div>
+          <div><span>💡 何を判断する？</span><p>${p.takeaway}</p></div>
+        </div>
+        <span class="pair-card__open">この比較をグラフで見る →</span>
+      </div>`;
+      })
+      .join("")}`;
+
+  grid.querySelectorAll(".pair-card").forEach((el) => {
+    const open = () => openComparePair(el.dataset.a, el.dataset.b);
+    el.addEventListener("click", open);
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
+    });
+  });
+}
+
+/** 指標Aの詳細を開き、指標Bを比較指標として自動選択した状態にする */
+function openComparePair(aId, bId) {
+  openDetail(aId);
+  const bInd = state.data.indicators.find((i) => i.id === bId);
+  if (!bInd) return;
+  compareInd = bInd;
+  const sel = document.getElementById("d-compare");
+  if (sel) sel.value = bId;
+  drawChart();
+}
+
 function renderGrid() {
   const grid = document.getElementById("grid");
+  const toolbarRight = document.querySelector(".toolbar__right");
+  if (state.view === "compare") {
+    if (toolbarRight) toolbarRight.style.display = "none"; // .toolbar__right の display:flex が hidden 属性より優先されてしまうため
+    grid.classList.add("grid--compare");
+    renderComparePairs(grid);
+    return;
+  }
+  if (toolbarRight) toolbarRight.style.display = "";
+  grid.classList.remove("grid--compare");
   const list = visibleIndicators();
   document.getElementById("empty").hidden = list.length > 0;
 
@@ -334,15 +433,22 @@ function renderGrid() {
 function renderChips() {
   const wrap = document.getElementById("category-chips");
   const cats = ["すべて", ...CATEGORIES];
-  wrap.innerHTML = cats
-    .map(
-      (c) =>
-        `<button class="chip" data-cat="${c}" aria-pressed="${c === state.category}">${c}</button>`
-    )
-    .join("");
+  wrap.innerHTML =
+    cats
+      .map(
+        (c) =>
+          `<button class="chip" data-cat="${c}" aria-pressed="${state.view === "list" && c === state.category}">${c}</button>`
+      )
+      .join("") +
+    `<button class="chip chip--compare" data-cat="__compare__" aria-pressed="${state.view === "compare"}">📊 比較</button>`;
   wrap.querySelectorAll(".chip").forEach((el) => {
     el.addEventListener("click", () => {
-      state.category = el.dataset.cat;
+      if (el.dataset.cat === "__compare__") {
+        state.view = "compare";
+      } else {
+        state.view = "list";
+        state.category = el.dataset.cat;
+      }
       renderChips();
       renderGrid();
       renderCategoryGuide();
@@ -353,7 +459,10 @@ function renderChips() {
 /** 選択中カテゴリの「まず見る／次に見る」ガイドを表示 */
 function renderCategoryGuide() {
   const el = document.getElementById("category-guide");
-  const guide = state.data && state.category !== "すべて" ? state.data.categoryGuides?.[state.category] : null;
+  const guide =
+    state.data && state.view === "list" && state.category !== "すべて"
+      ? state.data.categoryGuides?.[state.category]
+      : null;
   if (!guide) {
     el.hidden = true;
     el.innerHTML = "";
@@ -539,7 +648,7 @@ function renderCompareSuggestions(ind) {
   if (!el) return;
 
   const suggestions = RECOMMENDED_PAIRS.filter((p) => p.a === ind.id || p.b === ind.id)
-    .map((p) => ({ partnerId: p.a === ind.id ? p.b : p.a, type: p.type, reason: p.reason }))
+    .map((p) => ({ partnerId: p.a === ind.id ? p.b : p.a, type: p.type, summary: p.summary }))
     .map((s) => ({ ...s, partner: state.data.indicators.find((i) => i.id === s.partnerId) }))
     .filter((s) => s.partner);
 
@@ -559,7 +668,7 @@ function renderCompareSuggestions(ind) {
           <button type="button" class="compare-suggest__btn" data-compare-id="${s.partnerId}">
             ${icon} ${label}：${s.partner.name}と比較
           </button>
-          <p class="compare-suggest__reason">${s.reason}</p>
+          <p class="compare-suggest__reason">${s.summary}</p>
         </div>`;
     })
     .join("");

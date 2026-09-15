@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T15:23:17.299Z",
+  "generatedAt": "2026-09-15T15:56:48.504Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,7 +67,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-15T15:23:17.303Z",
+    "generatedAt": "2026-09-15T15:56:48.508Z",
     "stats": {
       "total": 22,
       "improving": 7,
@@ -278,6 +278,67 @@
           "from": "2026-09-10",
           "to": "2026-09-11"
         }
+      }
+    ],
+    "continuingImprovingList": [
+      {
+        "id": "unemployment_rate_us",
+        "name": "失業率",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "sahm_rule_us",
+        "name": "サーム・ルール（景気後退シグナル）",
+        "category": "雇用・所得"
+      }
+    ],
+    "continuingWorseningList": [
+      {
+        "id": "real_earnings_yoy_us",
+        "name": "実質週給（フルタイム労働者）",
+        "category": "雇用・所得"
+      },
+      {
+        "id": "trade_balance_us",
+        "name": "貿易収支",
+        "category": "対外"
+      },
+      {
+        "id": "sp500_us",
+        "name": "S&P500種株価指数",
+        "category": "為替・市場"
+      }
+    ],
+    "continuingNeutralList": [
+      {
+        "id": "cpi_yoy_us",
+        "name": "消費者物価指数（CPI）",
+        "category": "物価"
+      },
+      {
+        "id": "core_pce_yoy_us",
+        "name": "コアPCE物価指数",
+        "category": "物価"
+      },
+      {
+        "id": "fed_funds_rate_us",
+        "name": "FF金利（政策金利）",
+        "category": "金利"
+      },
+      {
+        "id": "treasury_10y_us",
+        "name": "米10年国債利回り",
+        "category": "金利"
+      },
+      {
+        "id": "fed_balance_sheet_us",
+        "name": "FRBバランスシート（総資産）",
+        "category": "金利"
+      },
+      {
+        "id": "dollar_index_us",
+        "name": "貿易加重ドル指数",
+        "category": "為替・市場"
       }
     ],
     "statusFindings": [

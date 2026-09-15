@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T13:28:36.287Z",
+  "generatedAt": "2026-09-15T14:44:01.980Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-15T13:28:36.292Z",
+    "generatedAt": "2026-09-15T14:44:01.985Z",
     "stats": {
       "total": 22,
-      "improving": 8,
-      "worsening": 7,
+      "improving": 7,
+      "worsening": 8,
       "neutral": 7,
       "surpriseCount": 1
     },
-    "headline": "22指標中、改善傾向が8件、悪化傾向が7件、横ばい・中立が7件です。",
+    "headline": "22指標中、改善傾向が7件、悪化傾向が8件、横ばい・中立が7件です。",
     "improvingList": [
       {
         "id": "consumer_sentiment_us",
@@ -111,11 +111,6 @@
         "id": "job_openings_us",
         "name": "JOLTS求人件数",
         "category": "雇用・所得"
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場"
       }
     ],
     "worseningList": [
@@ -152,6 +147,11 @@
       {
         "id": "sp500_us",
         "name": "S&P500種株価指数",
+        "category": "為替・市場"
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
         "category": "為替・市場"
       }
     ],
@@ -233,63 +233,84 @@
         "text": "貿易収支で非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。"
       }
     ],
-    "turningPointFindings": [
+    "turningSignalFindings": [
       {
         "id": "gdp_growth_us",
         "name": "実質GDP成長率",
         "category": "景気",
-        "turnedGood": true,
-        "detail": "直近の傾向が改善方向に転じた可能性があります（変化の向きが直前の期間から反転）。",
-        "text": "実質GDP成長率は、直近の傾向が改善方向に転じた可能性があります（変化の向きが直前の期間から反転）。"
+        "favorable": true,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が改善方向に転じました（転換点を通過）。",
+        "text": "実質GDP成長率は、直近の傾向が改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "consumer_sentiment_us",
         "name": "ミシガン大学消費者信頼感指数",
         "category": "景気",
-        "turnedGood": true,
-        "detail": "直近の傾向が改善方向に転じた可能性があります（変化の向きが直前の期間から反転）。",
-        "text": "ミシガン大学消費者信頼感指数は、直近の傾向が改善方向に転じた可能性があります（変化の向きが直前の期間から反転）。"
+        "favorable": true,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が改善方向に転じました（転換点を通過）。",
+        "text": "ミシガン大学消費者信頼感指数は、直近の傾向が改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "durable_goods_orders_us",
         "name": "耐久財受注",
         "category": "景気",
-        "turnedGood": false,
-        "detail": "直近の傾向が悪化方向に転じた可能性があります（変化の向きが直前の期間から反転）。",
-        "text": "耐久財受注は、直近の傾向が悪化方向に転じた可能性があります（変化の向きが直前の期間から反転）。"
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が悪化方向に転じました（転換点を通過）。",
+        "text": "耐久財受注は、直近の傾向が悪化方向に転じました（転換点を通過）。"
       },
       {
         "id": "retail_sales_us",
         "name": "小売売上高",
         "category": "景気",
-        "turnedGood": false,
-        "detail": "直近の傾向が悪化方向に転じた可能性があります（変化の向きが直前の期間から反転）。",
-        "text": "小売売上高は、直近の傾向が悪化方向に転じた可能性があります（変化の向きが直前の期間から反転）。"
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が悪化方向に転じました（転換点を通過）。",
+        "text": "小売売上高は、直近の傾向が悪化方向に転じました（転換点を通過）。"
       },
       {
         "id": "jobless_claims_us",
         "name": "新規失業保険申請件数",
         "category": "雇用・所得",
-        "turnedGood": true,
-        "detail": "直近の傾向が改善方向に転じた可能性があります（変化の向きが直前の期間から反転）。",
-        "text": "新規失業保険申請件数は、直近の傾向が改善方向に転じた可能性があります（変化の向きが直前の期間から反転）。"
+        "favorable": true,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が改善方向に転じました（転換点を通過）。",
+        "text": "新規失業保険申請件数は、直近の傾向が改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "job_openings_us",
         "name": "JOLTS求人件数",
         "category": "雇用・所得",
-        "turnedGood": false,
-        "detail": "直近の傾向が悪化方向に転じた可能性があります（変化の向きが直前の期間から反転）。",
-        "text": "JOLTS求人件数は、直近の傾向が悪化方向に転じた可能性があります（変化の向きが直前の期間から反転）。"
-      }
-    ],
-    "momentumFindings": [
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が悪化方向に転じました（転換点を通過）。",
+        "text": "JOLTS求人件数は、直近の傾向が悪化方向に転じました（転換点を通過）。"
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "detail": "直近の傾向が悪化方向に転じました（転換点を通過）。",
+        "text": "VIX指数（恐怖指数）は、直近の傾向が悪化方向に転じました（転換点を通過）。"
+      },
       {
         "id": "current_account_us",
         "name": "経常収支",
         "category": "対外",
+        "favorable": true,
+        "flipped": false,
         "proximity": 79,
-        "currentlyGood": true,
         "detail": "現在は改善方向ですが、直近の勢いが直前期間の21%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
         "text": "経常収支は現在改善方向ですが、直近の勢いが直前期間の21%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
       },
@@ -297,8 +318,9 @@
         "id": "industrial_production_us",
         "name": "鉱工業生産指数",
         "category": "景気",
+        "favorable": true,
+        "flipped": false,
         "proximity": 68,
-        "currentlyGood": true,
         "detail": "現在は改善方向ですが、直近の勢いが直前期間の32%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
         "text": "鉱工業生産指数は現在改善方向ですが、直近の勢いが直前期間の32%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
       },
@@ -306,19 +328,11 @@
         "id": "nonfarm_payrolls_us",
         "name": "非農業部門雇用者数",
         "category": "雇用・所得",
+        "favorable": true,
+        "flipped": false,
         "proximity": 55,
-        "currentlyGood": true,
         "detail": "現在は改善方向ですが、直近の勢いが直前期間の45%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
         "text": "非農業部門雇用者数は現在改善方向ですが、直近の勢いが直前期間の45%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
-      },
-      {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "proximity": 42,
-        "currentlyGood": false,
-        "detail": "現在は悪化方向ですが、直近の勢いが直前期間の58%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
-        "text": "長短金利差（10年-2年国債利回り）は現在悪化方向ですが、直近の勢いが直前期間の58%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
       }
     ],
     "recoverySignal": {
@@ -69981,7 +69995,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-15",
+      "nextRelease": "2026-09-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -69989,12 +70003,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-11",
-          "value": 15.84,
+          "t": "2026-09-14",
+          "value": 17.1,
           "provisional": false
         },
-        "changeFromPrev": -2,
-        "changeFromYearAgo": 1.13,
+        "changeFromPrev": 1.26,
+        "changeFromYearAgo": 2.34,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -70003,7 +70017,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2721,
+        "count": 2722,
         "start": "2016-01-04"
       },
       "points": [
@@ -80890,6 +80904,10 @@
         {
           "t": "2026-09-11",
           "value": 15.84
+        },
+        {
+          "t": "2026-09-14",
+          "value": 17.1
         }
       ]
     }

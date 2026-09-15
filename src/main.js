@@ -580,29 +580,22 @@ function renderEconSummary() {
       </div>`
     : "";
 
-  const turningPointHtml = sum.turningPointFindings?.length
-    ? `<div class="econ-summary__block">
-        <h3>🔄 傾向の転換点</h3>
-        <ul>${sum.turningPointFindings.map(findingRow).join("")}</ul>
-      </div>`
-    : "";
-
-  const momentumRow = (f) => `
+  const turningSignalRow = (f) => `
     <li class="econ-summary__momentum-item">
       <div class="econ-summary__momentum-head">
         <button type="button" class="econ-summary__link" data-id="${f.id}">${f.name}</button>
-        <span class="econ-summary__momentum-pct">転換まで${f.proximity}%</span>
+        <span class="econ-summary__momentum-pct">${f.flipped ? "転換済み" : `転換まで${f.proximity}%`}</span>
       </div>
       <div class="econ-summary__momentum-bar">
-        <div class="econ-summary__momentum-fill econ-summary__momentum-fill--${f.currentlyGood ? "up" : "down"}" style="width:${f.proximity}%"></div>
+        <div class="econ-summary__momentum-fill econ-summary__momentum-fill--${f.favorable ? "up" : "down"}" style="width:${f.proximity}%"></div>
       </div>
       <p class="econ-summary__momentum-detail">${f.detail}</p>
     </li>`;
 
-  const momentumHtml = sum.momentumFindings?.length
+  const turningSignalHtml = sum.turningSignalFindings?.length
     ? `<div class="econ-summary__block">
-        <h3>🌡️ 転換の気配（勢いの変化）</h3>
-        <ul class="econ-summary__momentum-list">${sum.momentumFindings.map(momentumRow).join("")}</ul>
+        <h3>🔄 転換シグナル</h3>
+        <ul class="econ-summary__momentum-list">${sum.turningSignalFindings.map(turningSignalRow).join("")}</ul>
       </div>`
     : "";
 
@@ -645,8 +638,7 @@ function renderEconSummary() {
     </div>
     ${statusHtml}
     ${surpriseHtml}
-    ${turningPointHtml}
-    ${momentumHtml}
+    ${turningSignalHtml}
     ${recoveryHtml}
     ${recessionHtml}
     <p class="econ-summary__disclaimer">

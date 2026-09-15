@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T21:25:50.912Z",
+  "generatedAt": "2026-09-15T00:13:21.883Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 21,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-14T21:25:50.914Z",
+    "generatedAt": "2026-09-15T00:13:21.887Z",
     "stats": {
       "total": 21,
-      "improving": 8,
-      "worsening": 6,
+      "improving": 7,
+      "worsening": 7,
       "neutral": 7,
       "surpriseCount": 1
     },
-    "headline": "21指標中、改善傾向が8件、悪化傾向が6件、横ばい・中立が7件です。",
+    "headline": "21指標中、改善傾向が7件、悪化傾向が7件、横ばい・中立が7件です。",
     "improvingList": [
       {
         "id": "consumer_sentiment_us",
@@ -106,11 +106,6 @@
         "id": "job_openings_us",
         "name": "JOLTS求人件数",
         "category": "雇用・所得"
-      },
-      {
-        "id": "sp500_us",
-        "name": "S&P500種株価指数",
-        "category": "為替・市場"
       },
       {
         "id": "vix_us",
@@ -148,6 +143,11 @@
         "id": "yield_curve_spread_us",
         "name": "長短金利差（10年-2年国債利回り）",
         "category": "金利"
+      },
+      {
+        "id": "sp500_us",
+        "name": "S&P500種株価指数",
+        "category": "為替・市場"
       }
     ],
     "neutralList": [
@@ -57918,7 +57918,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-14",
+      "nextRelease": "2026-09-15",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -57926,12 +57926,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-11",
-          "value": 7656.98,
+          "t": "2026-09-14",
+          "value": 7619.98,
           "provisional": false
         },
-        "changeFromPrev": 65.28,
-        "changeFromYearAgo": 1069.51,
+        "changeFromPrev": -37,
+        "changeFromYearAgo": 1035.69,
         "min": {
           "t": "2016-11-04",
           "value": 2085.18
@@ -57940,22 +57940,10 @@
           "t": "2026-08-13",
           "value": 7798.99
         },
-        "count": 2514,
-        "start": "2016-09-12"
+        "count": 2512,
+        "start": "2016-09-15"
       },
       "points": [
-        {
-          "t": "2016-09-12",
-          "value": 2159.04
-        },
-        {
-          "t": "2016-09-13",
-          "value": 2127.02
-        },
-        {
-          "t": "2016-09-14",
-          "value": 2125.77
-        },
         {
           "t": "2016-09-15",
           "value": 2147.26
@@ -67999,6 +67987,10 @@
         {
           "t": "2026-09-11",
           "value": 7656.98
+        },
+        {
+          "t": "2026-09-14",
+          "value": 7619.98
         }
       ]
     },

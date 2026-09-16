@@ -326,9 +326,12 @@ export const INDICATORS = [
       summary: "低いほど雇用は堅調、急増は雇用情勢の急速な悪化のサイン。",
       goodWhen: "20万件台前半〜半ばで安定的に推移している状態。",
       badWhen: "30万件を超えて上昇傾向にある状態（景気後退の警戒サインとされることが多い）。",
-      caveat: "祝日・天候（ハリケーン等）・自動車工場の一時休業などで単週の数値が大きく振れることがある。4週移動平均で基調を見るのが一般的。",
+      caveat: "祝日・天候（ハリケーン等）・自動車工場の一時休業などで単週の数値が大きく振れることがある。4週移動平均で基調を見るのが一般的（グラフにも重ねて表示）。",
     },
     referenceLines: [{ value: 300000, label: "景気後退の警戒目安 30万件", kind: "target" }],
+    // 単週の振れが大きい指標のため、詳細グラフに4週移動平均を重ねて基調を見やすくする
+    // （30万件の目安ライン＝kind:targetと色が被らないよう個別に色を指定）。
+    movingAverage: { window: 4, label: "4週移動平均", color: "accent" },
     releaseSchedule: "米国労働省が毎週木曜日8:30 ETに公表。",
     api: { provider: "fred", seriesId: "ICSA", transform: "level", since: "2016-01-01", statName: "Initial Claims (U.S. Department of Labor)" },
   },

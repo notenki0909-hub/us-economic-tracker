@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T16:19:21.529Z",
+  "generatedAt": "2026-09-16T16:45:28.506Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,7 +67,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-16T16:19:21.538Z",
+    "generatedAt": "2026-09-16T16:45:28.517Z",
     "stats": {
       "total": 22,
       "improving": 9,
@@ -18238,7 +18238,7 @@
         "summary": "低いほど雇用は堅調、急増は雇用情勢の急速な悪化のサイン。",
         "goodWhen": "20万件台前半〜半ばで安定的に推移している状態。",
         "badWhen": "30万件を超えて上昇傾向にある状態（景気後退の警戒サインとされることが多い）。",
-        "caveat": "祝日・天候（ハリケーン等）・自動車工場の一時休業などで単週の数値が大きく振れることがある。4週移動平均で基調を見るのが一般的。"
+        "caveat": "祝日・天候（ハリケーン等）・自動車工場の一時休業などで単週の数値が大きく振れることがある。4週移動平均で基調を見るのが一般的（グラフにも重ねて表示）。"
       },
       "referenceLines": [
         {
@@ -18247,7 +18247,11 @@
           "kind": "target"
         }
       ],
-      "movingAverage": null,
+      "movingAverage": {
+        "window": 4,
+        "label": "4週移動平均",
+        "color": "accent"
+      },
       "releaseSchedule": "米国労働省が毎週木曜日8:30 ETに公表。",
       "nextRelease": "2026-09-17",
       "source": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:36:57.060Z",
+  "generatedAt": "2026-09-16T15:06:50.624Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-16T09:36:57.069Z",
+    "generatedAt": "2026-09-16T15:06:50.632Z",
     "stats": {
       "total": 22,
-      "improving": 8,
-      "worsening": 7,
+      "improving": 9,
+      "worsening": 6,
       "neutral": 7,
       "surpriseCount": 1
     },
-    "headline": "22指標中、改善傾向が8件、悪化傾向が7件、横ばい・中立が7件です。",
+    "headline": "22指標中、改善傾向が9件、悪化傾向が6件、横ばい・中立が7件です。",
     "improvingList": [
       {
         "id": "consumer_sentiment_us",
@@ -102,6 +102,15 @@
         "period": {
           "from": "2026-06-01",
           "to": "2026-07-01"
+        }
+      },
+      {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気",
+        "period": {
+          "from": "2026-07-01",
+          "to": "2026-08-01"
         }
       },
       {
@@ -161,15 +170,6 @@
         }
       },
       {
-        "id": "retail_sales_us",
-        "name": "小売売上高",
-        "category": "景気",
-        "period": {
-          "from": "2026-06-01",
-          "to": "2026-07-01"
-        }
-      },
-      {
         "id": "real_earnings_yoy_us",
         "name": "実質週給（フルタイム労働者）",
         "category": "雇用・所得",
@@ -210,8 +210,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-11",
-          "to": "2026-09-14"
+          "from": "2026-09-14",
+          "to": "2026-09-15"
         }
       }
     ],
@@ -282,6 +282,15 @@
     ],
     "continuingImprovingList": [
       {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気",
+        "period": {
+          "from": "2026-06-01",
+          "to": "2026-08-01"
+        }
+      },
+      {
         "id": "unemployment_rate_us",
         "name": "失業率",
         "category": "雇用・所得",
@@ -336,6 +345,15 @@
           "from": "2026-09-01",
           "to": "2026-09-15"
         }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "period": {
+          "from": "2026-09-02",
+          "to": "2026-09-15"
+        }
       }
     ],
     "continuingNeutralList": [
@@ -385,6 +403,16 @@
           "label": "0%＝拡大・縮小の分岐",
           "value": 0,
           "current": 1.5
+        }
+      },
+      {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気",
+        "reference": {
+          "label": "0%＝増加・減少の分岐",
+          "value": 0,
+          "current": 1.24
         }
       },
       {
@@ -444,21 +472,11 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 17.1
+          "current": 17.2
         }
       }
     ],
     "currentUnfavorableList": [
-      {
-        "id": "retail_sales_us",
-        "name": "小売売上高",
-        "category": "景気",
-        "reference": {
-          "label": "0%＝増加・減少の分岐",
-          "value": 0,
-          "current": -0.58
-        }
-      },
       {
         "id": "unemployment_rate_us",
         "name": "失業率",
@@ -560,13 +578,6 @@
     ],
     "statusFindings": [
       {
-        "id": "retail_sales_us",
-        "name": "小売売上高",
-        "category": "景気",
-        "detail": "目安「0%＝増加・減少の分岐」を下回っており、注意が必要な水準です。",
-        "text": "小売売上高は現在、目安「0%＝増加・減少の分岐」を下回っており、注意が必要な水準です。"
-      },
-      {
         "id": "unemployment_rate_us",
         "name": "失業率",
         "category": "雇用・所得",
@@ -661,26 +672,6 @@
         "text": "耐久財受注は、直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。"
       },
       {
-        "id": "retail_sales_us",
-        "name": "小売売上高",
-        "category": "景気",
-        "favorable": false,
-        "flipped": true,
-        "proximity": 100,
-        "period": {
-          "recent": {
-            "from": "2026-05-01",
-            "to": "2026-07-01"
-          },
-          "prior": {
-            "from": "2026-02-01",
-            "to": "2026-04-01"
-          }
-        },
-        "detail": "直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。",
-        "text": "小売売上高は、直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。"
-      },
-      {
         "id": "jobless_claims_us",
         "name": "新規失業保険申請件数",
         "category": "雇用・所得",
@@ -719,26 +710,6 @@
         },
         "detail": "直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。",
         "text": "JOLTS求人件数は、直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。"
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "favorable": false,
-        "flipped": true,
-        "proximity": 100,
-        "period": {
-          "recent": {
-            "from": "2026-09-01",
-            "to": "2026-09-14"
-          },
-          "prior": {
-            "from": "2026-08-18",
-            "to": "2026-08-31"
-          }
-        },
-        "detail": "直近（2026-09-01〜2026-09-14）の傾向が、その前（2026-08-18〜2026-08-31）から悪化方向に転じました（転換点を通過）。",
-        "text": "VIX指数（恐怖指数）は、直近（2026-09-01〜2026-09-14）の傾向が、その前（2026-08-18〜2026-08-31）から悪化方向に転じました（転換点を通過）。"
       },
       {
         "id": "current_account_us",
@@ -6855,7 +6826,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "Census Bureauが対象月の翌月中旬ごろ8:30 ETに公表。",
-      "nextRelease": "2026-09-16",
+      "nextRelease": "2026-10-15",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Advance Retail Sales: Retail Trade and Food Services (Census Bureau)",
@@ -6863,12 +6834,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-07-01",
-          "value": -0.58,
+          "t": "2026-08-01",
+          "value": 1.24,
           "provisional": false
         },
-        "changeFromPrev": -0.83,
-        "changeFromYearAgo": -1.65,
+        "changeFromPrev": 1.78,
+        "changeFromYearAgo": 0.94,
         "min": {
           "t": "2020-04-01",
           "value": -14.37
@@ -6877,7 +6848,7 @@
           "t": "2020-05-01",
           "value": 19.31
         },
-        "count": 414,
+        "count": 415,
         "start": "1992-02-01"
       },
       "points": [
@@ -8487,15 +8458,15 @@
         },
         {
           "t": "2025-07-01",
-          "value": 1.07
+          "value": 1.16
         },
         {
           "t": "2025-08-01",
-          "value": 0.62
+          "value": 0.3
         },
         {
           "t": "2025-09-01",
-          "value": 0.07
+          "value": 0.3
         },
         {
           "t": "2025-10-01",
@@ -8531,11 +8502,15 @@
         },
         {
           "t": "2026-06-01",
-          "value": 0.25
+          "value": 0.31
         },
         {
           "t": "2026-07-01",
-          "value": -0.58
+          "value": -0.54
+        },
+        {
+          "t": "2026-08-01",
+          "value": 1.24
         }
       ]
     },
@@ -70469,7 +70444,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-16",
+      "nextRelease": "2026-09-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -70477,12 +70452,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-14",
-          "value": 17.1,
+          "t": "2026-09-15",
+          "value": 17.2,
           "provisional": false
         },
-        "changeFromPrev": 1.26,
-        "changeFromYearAgo": 2.34,
+        "changeFromPrev": 0.1,
+        "changeFromYearAgo": 1.51,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -70491,7 +70466,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2722,
+        "count": 2723,
         "start": "2016-01-04"
       },
       "points": [
@@ -81382,6 +81357,10 @@
         {
           "t": "2026-09-14",
           "value": 17.1
+        },
+        {
+          "t": "2026-09-15",
+          "value": 17.2
         }
       ]
     }

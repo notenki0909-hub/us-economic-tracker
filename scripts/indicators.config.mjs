@@ -207,6 +207,15 @@ export const INDICATORS = [
       caveat: "求職をあきらめた人は労働力人口に含まれず失業率に反映されないため、実態より低く出ることがある。非農業部門雇用者数と合わせて見る。",
     },
     referenceLines: [{ value: 4, label: "自然失業率の目安 4%前後", kind: "target" }],
+    // サーム・ルールの計算そのもの（3か月移動平均 − 過去12か月の最低値）をグラフ上で
+    // 確認できるようにする。4%の目安ライン（kind: target）と色が被らないよう、
+    // 個別に色を指定する（target色は既に4%ラインで使用済みのため）。
+    movingAverage: {
+      window: 3,
+      label: "3か月移動平均",
+      color: "accent",
+      rollingMin: { window: 12, label: "過去12か月の最低値", color: "neutral" },
+    },
     releaseSchedule: "BLSが毎月第1金曜日8:30 ETに、非農業部門雇用者数と同時発表。",
     api: { provider: "fred", seriesId: "UNRATE", transform: "level", statName: "Unemployment Rate (BLS)" },
   },

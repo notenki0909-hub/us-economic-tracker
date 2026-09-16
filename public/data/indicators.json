@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T15:06:50.624Z",
+  "generatedAt": "2026-09-16T16:19:21.529Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,7 +67,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-16T15:06:50.632Z",
+    "generatedAt": "2026-09-16T16:19:21.538Z",
     "stats": {
       "total": 22,
       "improving": 9,
@@ -12166,7 +12166,16 @@
           "kind": "target"
         }
       ],
-      "movingAverage": null,
+      "movingAverage": {
+        "window": 3,
+        "label": "3か月移動平均",
+        "color": "accent",
+        "rollingMin": {
+          "window": 12,
+          "label": "過去12か月の最低値",
+          "color": "neutral"
+        }
+      },
       "releaseSchedule": "BLSが毎月第1金曜日8:30 ETに、非農業部門雇用者数と同時発表。",
       "nextRelease": "2026-10-02",
       "source": {

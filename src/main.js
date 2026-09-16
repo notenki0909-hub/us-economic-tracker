@@ -1006,7 +1006,9 @@ function drawChart() {
   const grid = css.getPropertyValue("--border").trim();
   const tick = css.getPropertyValue("--text-faint").trim();
   const labelText = css.getPropertyValue("--surface").trim();
-  const maColor = refColor("target");
+  // movingAverage.color / rollingMin.color を指定すれば任意の目安ライン色を使える
+  // （未指定時は従来通りtarget色。4%ラインなどkind:targetの目安線と被る場合に個別指定する）。
+  const maColor = refColor(ind.movingAverage?.color || "target");
 
   const datasets = [
     {
@@ -1041,6 +1043,31 @@ function drawChart() {
       fill: false,
       tension: 0.15,
     });
+
+    // rollingMin: 移動平均線そのものの「直近N点における最低値」を追う線
+    // （例：サーム・ルールが比較している「3か月移動平均の過去12か月最低値」を可視化する）。
+    const rm = ind.movingAverage.rollingMin;
+    if (rm) {
+      const rmColor = refColor(rm.color || "neutral");
+      const rmWin = rm.window;
+      const rmAll = [];
+      for (let i = rmWin - 1; i < maAll.length; i++) {
+        const slice = maAll.slice(i - rmWin + 1, i + 1);
+        const min = slice.reduce((m, p) => Math.min(m, p.y), Infinity);
+        rmAll.push({ x: maAll[i].x, y: min });
+      }
+      datasets.push({
+        label: rm.label,
+        data: rmAll.filter((p) => Number.isFinite(p.x) && p.x >= cutoff),
+        borderColor: rmColor,
+        borderWidth: 1.75,
+        borderDash: [2, 2],
+        pointRadius: 0,
+        pointHoverRadius: 3,
+        fill: false,
+        tension: 0.15,
+      });
+    }
   }
   if (compareInd) {
     // 比較指標がメイン指標と同じカテゴリだと色が被るため、カテゴリ色ではなく常に高コントラストな

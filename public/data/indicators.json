@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T00:02:52.730Z",
+  "generatedAt": "2026-09-17T23:52:59.681Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-17T00:02:52.736Z",
+    "generatedAt": "2026-09-17T23:52:59.688Z",
     "stats": {
       "total": 22,
       "improving": 8,
-      "worsening": 7,
-      "neutral": 7,
-      "surpriseCount": 2
+      "worsening": 6,
+      "neutral": 8,
+      "surpriseCount": 1
     },
-    "headline": "22指標中、改善傾向が8件、悪化傾向が7件、横ばい・中立が7件です。",
+    "headline": "22指標中、改善傾向が8件、悪化傾向が6件、横ばい・中立が8件です。",
     "improvingList": [
       {
         "id": "consumer_sentiment_us",
@@ -136,8 +136,8 @@
         "name": "新規失業保険申請件数",
         "category": "雇用・所得",
         "period": {
-          "from": "2026-08-29",
-          "to": "2026-09-05"
+          "from": "2026-09-05",
+          "to": "2026-09-12"
         }
       },
       {
@@ -188,21 +188,12 @@
         }
       },
       {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "period": {
-          "from": "2026-09-15",
-          "to": "2026-09-16"
-        }
-      },
-      {
         "id": "sp500_us",
         "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-14",
-          "to": "2026-09-15"
+          "from": "2026-09-15",
+          "to": "2026-09-16"
         }
       },
       {
@@ -210,8 +201,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-14",
-          "to": "2026-09-15"
+          "from": "2026-09-15",
+          "to": "2026-09-16"
         }
       }
     ],
@@ -257,8 +248,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-09-14",
-          "to": "2026-09-15"
+          "from": "2026-09-15",
+          "to": "2026-09-16"
         }
       },
       {
@@ -266,8 +257,17 @@
         "name": "FRBバランスシート（総資産）",
         "category": "金利",
         "period": {
-          "from": "2026-09-02",
-          "to": "2026-09-09"
+          "from": "2026-09-09",
+          "to": "2026-09-16"
+        }
+      },
+      {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "period": {
+          "from": "2026-09-16",
+          "to": "2026-09-17"
         }
       },
       {
@@ -333,8 +333,8 @@
         "name": "長短金利差（10年-2年国債利回り）",
         "category": "金利",
         "period": {
-          "from": "2026-09-02",
-          "to": "2026-09-16"
+          "from": "2026-09-03",
+          "to": "2026-09-17"
         }
       },
       {
@@ -342,8 +342,8 @@
         "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-01",
-          "to": "2026-09-15"
+          "from": "2026-09-02",
+          "to": "2026-09-16"
         }
       },
       {
@@ -351,8 +351,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-02",
-          "to": "2026-09-15"
+          "from": "2026-09-03",
+          "to": "2026-09-16"
         }
       }
     ],
@@ -452,7 +452,7 @@
         "reference": {
           "label": "景気後退の警戒目安 30万件",
           "value": 300000,
-          "current": 206000
+          "current": 196000
         }
       },
       {
@@ -472,7 +472,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 17.2
+          "current": 17.71
         }
       }
     ],
@@ -608,15 +608,6 @@
         "level": "high",
         "detail": "非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。",
         "text": "貿易収支で非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。"
-      },
-      {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "z": -1.7,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。",
-        "text": "長短金利差（10年-2年国債利回り）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。"
       }
     ],
     "turningSignalFindings": [
@@ -689,16 +680,16 @@
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-08-15",
-            "to": "2026-09-05"
+            "from": "2026-08-22",
+            "to": "2026-09-12"
           },
           "prior": {
-            "from": "2026-07-18",
-            "to": "2026-08-08"
+            "from": "2026-07-25",
+            "to": "2026-08-15"
           }
         },
-        "detail": "直近（2026-08-15〜2026-09-05）の傾向が、その前（2026-07-18〜2026-08-08）から改善方向に転じました（転換点を通過）。",
-        "text": "新規失業保険申請件数は、直近（2026-08-15〜2026-09-05）の傾向が、その前（2026-07-18〜2026-08-08）から改善方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-08-22〜2026-09-12）の傾向が、その前（2026-07-25〜2026-08-15）から改善方向に転じました（転換点を通過）。",
+        "text": "新規失業保険申請件数は、直近（2026-08-22〜2026-09-12）の傾向が、その前（2026-07-25〜2026-08-15）から改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "job_openings_us",
@@ -18262,7 +18253,7 @@
         "color": "accent"
       },
       "releaseSchedule": "米国労働省が毎週木曜日8:30 ETに公表。",
-      "nextRelease": "2026-09-17",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Initial Claims (U.S. Department of Labor)",
@@ -18270,12 +18261,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-05",
-          "value": 206000,
+          "t": "2026-09-12",
+          "value": 196000,
           "provisional": false
         },
-        "changeFromPrev": -1000,
-        "changeFromYearAgo": -30000,
+        "changeFromPrev": -10000,
+        "changeFromYearAgo": -63000,
         "min": {
           "t": "2026-07-18",
           "value": 189000
@@ -18284,7 +18275,7 @@
           "t": "2020-04-04",
           "value": 6137000
         },
-        "count": 558,
+        "count": 559,
         "start": "2016-01-02"
       },
       "points": [
@@ -20519,6 +20510,10 @@
         {
           "t": "2026-09-05",
           "value": 206000
+        },
+        {
+          "t": "2026-09-12",
+          "value": 196000
         }
       ]
     },
@@ -24036,7 +24031,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
-      "nextRelease": "2026-09-17",
+      "nextRelease": "2026-09-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Federal Funds Effective Rate (Federal Reserve)",
@@ -25851,7 +25846,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-17",
+      "nextRelease": "2026-09-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -25859,21 +25854,21 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-15",
-          "value": 5,
+          "t": "2026-09-16",
+          "value": 5.01,
           "provisional": false
         },
-        "changeFromPrev": 0.03,
-        "changeFromYearAgo": 0.95,
+        "changeFromPrev": 0.01,
+        "changeFromYearAgo": 0.97,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
         },
         "max": {
-          "t": "2026-09-15",
-          "value": 5
+          "t": "2026-09-16",
+          "value": 5.01
         },
-        "count": 2676,
+        "count": 2677,
         "start": "2016-01-04"
       },
       "points": [
@@ -36580,6 +36575,10 @@
         {
           "t": "2026-09-15",
           "value": 5
+        },
+        {
+          "t": "2026-09-16",
+          "value": 5.01
         }
       ]
     },
@@ -36604,7 +36603,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "FRBが毎週木曜日（H.4.1統計）に公表。",
-      "nextRelease": "2026-09-17",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Total Assets (Federal Reserve H.4.1)",
@@ -36612,12 +36611,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-09",
-          "value": 6740619,
+          "t": "2026-09-16",
+          "value": 6746548,
           "provisional": false
         },
-        "changeFromPrev": 3415,
-        "changeFromYearAgo": 138548,
+        "changeFromPrev": 5929,
+        "changeFromYearAgo": 140586,
         "min": {
           "t": "2019-08-28",
           "value": 3759946
@@ -36626,7 +36625,7 @@
           "t": "2022-04-13",
           "value": 8965487
         },
-        "count": 558,
+        "count": 559,
         "start": "2016-01-06"
       },
       "points": [
@@ -38861,6 +38860,10 @@
         {
           "t": "2026-09-09",
           "value": 6740619
+        },
+        {
+          "t": "2026-09-16",
+          "value": 6746548
         }
       ]
     },
@@ -38891,7 +38894,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-17",
+      "nextRelease": "2026-09-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -38899,12 +38902,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-16",
+          "t": "2026-09-17",
           "value": 0.27,
           "provisional": false
         },
-        "changeFromPrev": -0.06,
-        "changeFromYearAgo": -0.26,
+        "changeFromPrev": 0,
+        "changeFromYearAgo": -0.27,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -38913,7 +38916,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2677,
+        "count": 2678,
         "start": "2016-01-04"
       },
       "points": [
@@ -49623,6 +49626,10 @@
         },
         {
           "t": "2026-09-16",
+          "value": 0.27
+        },
+        {
+          "t": "2026-09-17",
           "value": 0.27
         }
       ]
@@ -60371,7 +60378,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-16",
+      "nextRelease": "2026-09-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -60379,12 +60386,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-15",
-          "value": 7585.73,
+          "t": "2026-09-16",
+          "value": 7551.81,
           "provisional": false
         },
-        "changeFromPrev": -34.25,
-        "changeFromYearAgo": 970.45,
+        "changeFromPrev": -33.92,
+        "changeFromYearAgo": 945.05,
         "min": {
           "t": "2016-11-04",
           "value": 2085.18
@@ -60394,13 +60401,9 @@
           "value": 7798.99
         },
         "count": 2512,
-        "start": "2016-09-16"
+        "start": "2016-09-19"
       },
       "points": [
-        {
-          "t": "2016-09-16",
-          "value": 2139.16
-        },
         {
           "t": "2016-09-19",
           "value": 2139.12
@@ -70444,6 +70447,10 @@
         {
           "t": "2026-09-15",
           "value": 7585.73
+        },
+        {
+          "t": "2026-09-16",
+          "value": 7551.81
         }
       ]
     },
@@ -70474,7 +70481,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-17",
+      "nextRelease": "2026-09-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -70482,12 +70489,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-15",
-          "value": 17.2,
+          "t": "2026-09-16",
+          "value": 17.71,
           "provisional": false
         },
-        "changeFromPrev": 0.1,
-        "changeFromYearAgo": 1.51,
+        "changeFromPrev": 0.51,
+        "changeFromYearAgo": 1.35,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -70496,7 +70503,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2723,
+        "count": 2724,
         "start": "2016-01-04"
       },
       "points": [
@@ -81391,6 +81398,10 @@
         {
           "t": "2026-09-15",
           "value": 17.2
+        },
+        {
+          "t": "2026-09-16",
+          "value": 17.71
         }
       ]
     }

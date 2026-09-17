@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T16:45:28.506Z",
+  "generatedAt": "2026-09-17T00:02:52.730Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-16T16:45:28.517Z",
+    "generatedAt": "2026-09-17T00:02:52.736Z",
     "stats": {
       "total": 22,
-      "improving": 9,
-      "worsening": 6,
+      "improving": 8,
+      "worsening": 7,
       "neutral": 7,
-      "surpriseCount": 1
+      "surpriseCount": 2
     },
-    "headline": "22指標中、改善傾向が9件、悪化傾向が6件、横ばい・中立が7件です。",
+    "headline": "22指標中、改善傾向が8件、悪化傾向が7件、横ばい・中立が7件です。",
     "improvingList": [
       {
         "id": "consumer_sentiment_us",
@@ -148,15 +148,6 @@
           "from": "2026-06-01",
           "to": "2026-07-01"
         }
-      },
-      {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "period": {
-          "from": "2026-09-14",
-          "to": "2026-09-15"
-        }
       }
     ],
     "worseningList": [
@@ -194,6 +185,15 @@
         "period": {
           "from": "2026-06-01",
           "to": "2026-07-01"
+        }
+      },
+      {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "period": {
+          "from": "2026-09-15",
+          "to": "2026-09-16"
         }
       },
       {
@@ -257,8 +257,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-09-11",
-          "to": "2026-09-14"
+          "from": "2026-09-14",
+          "to": "2026-09-15"
         }
       },
       {
@@ -333,8 +333,8 @@
         "name": "長短金利差（10年-2年国債利回り）",
         "category": "金利",
         "period": {
-          "from": "2026-09-01",
-          "to": "2026-09-15"
+          "from": "2026-09-02",
+          "to": "2026-09-16"
         }
       },
       {
@@ -462,7 +462,7 @@
         "reference": {
           "label": "0＝逆イールド（景気後退シグナル）との分岐",
           "value": 0,
-          "current": 0.33
+          "current": 0.27
         }
       },
       {
@@ -608,6 +608,15 @@
         "level": "high",
         "detail": "非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。",
         "text": "貿易収支で非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。"
+      },
+      {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "z": -1.7,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。",
+        "text": "長短金利差（10年-2年国債利回り）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。"
       }
     ],
     "turningSignalFindings": [
@@ -24027,7 +24036,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
-      "nextRelease": "2026-09-16",
+      "nextRelease": "2026-09-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Federal Funds Effective Rate (Federal Reserve)",
@@ -25842,7 +25851,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-16",
+      "nextRelease": "2026-09-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -25850,21 +25859,21 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-14",
-          "value": 4.97,
+          "t": "2026-09-15",
+          "value": 5,
           "provisional": false
         },
-        "changeFromPrev": 0.01,
-        "changeFromYearAgo": 0.91,
+        "changeFromPrev": 0.03,
+        "changeFromYearAgo": 0.95,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
         },
         "max": {
-          "t": "2023-10-19",
-          "value": 4.98
+          "t": "2026-09-15",
+          "value": 5
         },
-        "count": 2675,
+        "count": 2676,
         "start": "2016-01-04"
       },
       "points": [
@@ -36567,6 +36576,10 @@
         {
           "t": "2026-09-14",
           "value": 4.97
+        },
+        {
+          "t": "2026-09-15",
+          "value": 5
         }
       ]
     },
@@ -38878,7 +38891,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-16",
+      "nextRelease": "2026-09-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -38886,12 +38899,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-15",
-          "value": 0.33,
+          "t": "2026-09-16",
+          "value": 0.27,
           "provisional": false
         },
-        "changeFromPrev": 0.01,
-        "changeFromYearAgo": -0.18,
+        "changeFromPrev": -0.06,
+        "changeFromYearAgo": -0.26,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -38900,7 +38913,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2676,
+        "count": 2677,
         "start": "2016-01-04"
       },
       "points": [
@@ -49607,6 +49620,10 @@
         {
           "t": "2026-09-15",
           "value": 0.33
+        },
+        {
+          "t": "2026-09-16",
+          "value": 0.27
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T23:58:17.294Z",
+  "generatedAt": "2026-09-24T00:12:20.686Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,13 +67,13 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-22T23:58:17.302Z",
+    "generatedAt": "2026-09-24T00:12:20.692Z",
     "stats": {
       "total": 22,
       "improving": 10,
       "worsening": 5,
       "neutral": 7,
-      "surpriseCount": 2
+      "surpriseCount": 1
     },
     "headline": "22指標中、改善傾向が10件、悪化傾向が5件、横ばい・中立が7件です。",
     "improvingList": [
@@ -154,17 +154,17 @@
         "name": "長短金利差（10年-2年国債利回り）",
         "category": "金利",
         "period": {
-          "from": "2026-09-21",
-          "to": "2026-09-22"
+          "from": "2026-09-22",
+          "to": "2026-09-23"
         }
       },
       {
-        "id": "sp500_us",
-        "name": "S&P500種株価指数",
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-18",
-          "to": "2026-09-21"
+          "from": "2026-09-21",
+          "to": "2026-09-22"
         }
       }
     ],
@@ -206,12 +206,12 @@
         }
       },
       {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
+        "id": "sp500_us",
+        "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-18",
-          "to": "2026-09-21"
+          "from": "2026-09-22",
+          "to": "2026-09-23"
         }
       }
     ],
@@ -257,8 +257,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-09-18",
-          "to": "2026-09-21"
+          "from": "2026-09-21",
+          "to": "2026-09-22"
         }
       },
       {
@@ -307,24 +307,6 @@
           "from": "2026-06-01",
           "to": "2026-08-01"
         }
-      },
-      {
-        "id": "sp500_us",
-        "name": "S&P500種株価指数",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-09-08",
-          "to": "2026-09-21"
-        }
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-09-08",
-          "to": "2026-09-21"
-        }
       }
     ],
     "continuingWorseningList": [
@@ -351,8 +333,8 @@
         "name": "長短金利差（10年-2年国債利回り）",
         "category": "金利",
         "period": {
-          "from": "2026-09-09",
-          "to": "2026-09-22"
+          "from": "2026-09-10",
+          "to": "2026-09-23"
         }
       }
     ],
@@ -462,7 +444,7 @@
         "reference": {
           "label": "0＝逆イールド（景気後退シグナル）との分岐",
           "value": 0,
-          "current": 0.25
+          "current": 0.26
         }
       },
       {
@@ -472,7 +454,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 14.87
+          "current": 14.21
         }
       }
     ],
@@ -608,15 +590,6 @@
         "level": "high",
         "detail": "非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。",
         "text": "貿易収支で非常に大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.9）。"
-      },
-      {
-        "id": "sp500_us",
-        "name": "S&P500種株価指数",
-        "category": "為替・市場",
-        "z": 2.5,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.5）。",
-        "text": "S&P500種株価指数でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.5）。"
       }
     ],
     "turningSignalFindings": [
@@ -719,6 +692,46 @@
         },
         "detail": "直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。",
         "text": "JOLTS求人件数は、直近（2026-05-01〜2026-07-01）の傾向が、その前（2026-02-01〜2026-04-01）から悪化方向に転じました（転換点を通過）。"
+      },
+      {
+        "id": "sp500_us",
+        "name": "S&P500種株価指数",
+        "category": "為替・市場",
+        "favorable": true,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-09-10",
+            "to": "2026-09-23"
+          },
+          "prior": {
+            "from": "2026-08-26",
+            "to": "2026-09-09"
+          }
+        },
+        "detail": "直近（2026-09-10〜2026-09-23）の傾向が、その前（2026-08-26〜2026-09-09）から改善方向に転じました（転換点を通過）。",
+        "text": "S&P500種株価指数は、直近（2026-09-10〜2026-09-23）の傾向が、その前（2026-08-26〜2026-09-09）から改善方向に転じました（転換点を通過）。"
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "favorable": true,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-09-09",
+            "to": "2026-09-22"
+          },
+          "prior": {
+            "from": "2026-08-26",
+            "to": "2026-09-08"
+          }
+        },
+        "detail": "直近（2026-09-09〜2026-09-22）の傾向が、その前（2026-08-26〜2026-09-08）から改善方向に転じました（転換点を通過）。",
+        "text": "VIX指数（恐怖指数）は、直近（2026-09-09〜2026-09-22）の傾向が、その前（2026-08-26〜2026-09-08）から改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "current_account_us",
@@ -24044,7 +24057,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
-      "nextRelease": "2026-09-23",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Federal Funds Effective Rate (Federal Reserve)",
@@ -25859,7 +25872,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-23",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -25867,12 +25880,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-21",
+          "t": "2026-09-22",
           "value": 4.96,
           "provisional": false
         },
-        "changeFromPrev": -0.05,
-        "changeFromYearAgo": 0.82,
+        "changeFromPrev": 0,
+        "changeFromYearAgo": 0.81,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -25881,7 +25894,7 @@
           "t": "2026-09-16",
           "value": 5.01
         },
-        "count": 2680,
+        "count": 2681,
         "start": "2016-01-04"
       },
       "points": [
@@ -36604,6 +36617,10 @@
         {
           "t": "2026-09-21",
           "value": 4.96
+        },
+        {
+          "t": "2026-09-22",
+          "value": 4.96
         }
       ]
     },
@@ -38919,7 +38936,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-09-23",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -38927,12 +38944,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-22",
-          "value": 0.25,
+          "t": "2026-09-23",
+          "value": 0.26,
           "provisional": false
         },
-        "changeFromPrev": 0.05,
-        "changeFromYearAgo": -0.29,
+        "changeFromPrev": 0.01,
+        "changeFromYearAgo": -0.33,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -38941,7 +38958,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2681,
+        "count": 2682,
         "start": "2016-01-04"
       },
       "points": [
@@ -49668,6 +49685,10 @@
         {
           "t": "2026-09-22",
           "value": 0.25
+        },
+        {
+          "t": "2026-09-23",
+          "value": 0.26
         }
       ]
     },
@@ -60435,7 +60456,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-22",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -60443,12 +60464,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-21",
-          "value": 7764.7,
+          "t": "2026-09-23",
+          "value": 7706.03,
           "provisional": false
         },
-        "changeFromPrev": 114.2,
-        "changeFromYearAgo": 1100.34,
+        "changeFromPrev": -58.61,
+        "changeFromYearAgo": 1049.11,
         "min": {
           "t": "2016-11-04",
           "value": 2085.18
@@ -60458,17 +60479,9 @@
           "value": 7798.99
         },
         "count": 2512,
-        "start": "2016-09-22"
+        "start": "2016-09-26"
       },
       "points": [
-        {
-          "t": "2016-09-22",
-          "value": 2177.18
-        },
-        {
-          "t": "2016-09-23",
-          "value": 2164.69
-        },
         {
           "t": "2016-09-26",
           "value": 2146.1
@@ -70508,6 +70521,14 @@
         {
           "t": "2026-09-21",
           "value": 7764.7
+        },
+        {
+          "t": "2026-09-22",
+          "value": 7764.64
+        },
+        {
+          "t": "2026-09-23",
+          "value": 7706.03
         }
       ]
     },
@@ -70538,7 +70559,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-09-23",
+      "nextRelease": "2026-09-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -70546,12 +70567,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-21",
-          "value": 14.87,
+          "t": "2026-09-22",
+          "value": 14.21,
           "provisional": false
         },
-        "changeFromPrev": 0.06,
-        "changeFromYearAgo": -0.58,
+        "changeFromPrev": -0.66,
+        "changeFromYearAgo": -1.89,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -70560,7 +70581,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2727,
+        "count": 2728,
         "start": "2016-01-04"
       },
       "points": [
@@ -81471,6 +81492,10 @@
         {
           "t": "2026-09-21",
           "value": 14.87
+        },
+        {
+          "t": "2026-09-22",
+          "value": 14.21
         }
       ]
     }

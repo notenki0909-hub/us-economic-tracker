@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:33:22.734Z",
+  "generatedAt": "2026-09-28T15:39:45.862Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,7 +67,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-09-28T15:33:22.753Z",
+    "generatedAt": "2026-09-28T15:39:45.873Z",
     "stats": {
       "total": 22,
       "improving": 9,
@@ -5156,7 +5156,7 @@
         "label": "3か月移動平均"
       },
       "releaseSchedule": "Census Bureauが対象月の翌月下旬ごろに公表。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-10-27",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Manufacturers' New Orders: Durable Goods (Census Bureau)",

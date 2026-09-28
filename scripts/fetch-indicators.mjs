@@ -14,6 +14,7 @@ import { INDICATORS, CATEGORY_GUIDES } from "./indicators.config.mjs";
 import { fetchFredSeries } from "./fetch-fred-series.mjs";
 import { fetchNextReleaseDate } from "./fetch-fred-release-date.mjs";
 import { fetchNextFomcDecisionDate } from "./fetch-fomc-calendar.mjs";
+import { fetchNextCensusReleaseDate } from "./fetch-census-calendar.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = resolve(__dirname, "../public/data");
@@ -447,10 +448,17 @@ async function main() {
 
       let nextRelease = null;
       try {
-        nextRelease =
-          ind.nextReleaseSource === "fomc"
-            ? await fetchNextFomcDecisionDate()
-            : await fetchNextReleaseDate(ind.api.seriesId);
+        // 一部のFRED系列は、FREDのNext Release Dateメタデータが実際の発表元とは別の
+        // 「リリースファミリー」に紐づいており、誤った日付を返す（例：FEDFUNDSはH.15の
+        // 日次更新日、DGORDERはM3 Full Reportの確定値公表日になってしまう）。
+        // nextReleaseSourceが指定されている指標は、FRED以外の一次情報源から直接取得する。
+        if (ind.nextReleaseSource?.type === "fomc") {
+          nextRelease = await fetchNextFomcDecisionDate();
+        } else if (ind.nextReleaseSource?.type === "census") {
+          nextRelease = await fetchNextCensusReleaseDate(ind.nextReleaseSource.match);
+        } else {
+          nextRelease = await fetchNextReleaseDate(ind.api.seriesId);
+        }
       } catch {
         // 次回発表予定日の取得に失敗しても、本体データの取得は継続する（フロントは「未定」表示）
       }

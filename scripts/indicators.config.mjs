@@ -105,6 +105,11 @@ export const INDICATORS = [
     referenceLines: [],
     movingAverage: { window: 3, label: "3か月移動平均" },
     releaseSchedule: "Census Bureauが対象月の翌月下旬ごろに公表。",
+    // DGORDERはFRED上で「M3 Full Report」（確定値、翌月2日頃）のリリースファミリーに
+    // 紐づいており、FREDのNext Release Dateメタデータをそのまま使うと、実際に新しい
+    // 月次値が最初に公表される「Advance Report on Durable Goods」（速報値、当月下旬）の
+    // 日付と一致しない。そのためCensus公式カレンダーから直接取得する。
+    nextReleaseSource: { type: "census", match: "Advance Report on Durable Goods" },
     api: { provider: "fred", seriesId: "DGORDER", transform: "level", statName: "Manufacturers' New Orders: Durable Goods (Census Bureau)" },
   },
   {
@@ -434,7 +439,7 @@ export const INDICATORS = [
     // 月次平均値の更新日ともFOMC会合の日程とも一致しない誤った日付になる（詳細は
     // fetch-fomc-calendar.mjs参照）。そのためFF金利だけは次回発表予定日の取得元を
     // FRB公式のFOMC会合カレンダーに切り替える。
-    nextReleaseSource: "fomc",
+    nextReleaseSource: { type: "fomc" },
     api: { provider: "fred", seriesId: "FEDFUNDS", transform: "level", statName: "Federal Funds Effective Rate (Federal Reserve)" },
   },
   {

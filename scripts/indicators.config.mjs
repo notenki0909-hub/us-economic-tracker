@@ -428,7 +428,13 @@ export const INDICATORS = [
       caveat: "FOMC会合（年8回）の結果を受けて段階的に変わるため、会合前後で市場の思惑により大きく振れやすい。10年国債利回りと合わせてイールドカーブを見ると金融環境をより正確に把握できる。",
     },
     referenceLines: [{ value: 0, label: "0%＝ゼロ金利との分岐", kind: "neutral" }],
-    releaseSchedule: "FRBが月次平均値を翌月初旬に公表。FOMCでの政策変更は年8回の会合直後に判明。",
+    releaseSchedule: "月次平均値はFRBが翌月初旬に公表。「次回発表予定日」はFRBが公式発表するFOMC会合の最終日（政策決定発表日）を表示している。",
+    // FEDFUNDSはFRED上で「H.15 Selected Interest Rates」というほぼ毎営業日更新される
+    // リリースの一部として扱われており、FREDのNext Release Dateメタデータをそのまま使うと
+    // 月次平均値の更新日ともFOMC会合の日程とも一致しない誤った日付になる（詳細は
+    // fetch-fomc-calendar.mjs参照）。そのためFF金利だけは次回発表予定日の取得元を
+    // FRB公式のFOMC会合カレンダーに切り替える。
+    nextReleaseSource: "fomc",
     api: { provider: "fred", seriesId: "FEDFUNDS", transform: "level", statName: "Federal Funds Effective Rate (Federal Reserve)" },
   },
   {

@@ -13,6 +13,7 @@ import { dirname, resolve } from "node:path";
 import { INDICATORS, CATEGORY_GUIDES } from "./indicators.config.mjs";
 import { fetchFredSeries } from "./fetch-fred-series.mjs";
 import { fetchNextReleaseDate } from "./fetch-fred-release-date.mjs";
+import { fetchNextFomcDecisionDate } from "./fetch-fomc-calendar.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = resolve(__dirname, "../public/data");
@@ -446,7 +447,10 @@ async function main() {
 
       let nextRelease = null;
       try {
-        nextRelease = await fetchNextReleaseDate(ind.api.seriesId);
+        nextRelease =
+          ind.nextReleaseSource === "fomc"
+            ? await fetchNextFomcDecisionDate()
+            : await fetchNextReleaseDate(ind.api.seriesId);
       } catch {
         // 次回発表予定日の取得に失敗しても、本体データの取得は継続する（フロントは「未定」表示）
       }

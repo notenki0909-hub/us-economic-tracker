@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T01:16:05.755Z",
+  "generatedAt": "2026-10-03T00:54:40.652Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 22,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-02T01:16:05.761Z",
+    "generatedAt": "2026-10-03T00:54:40.658Z",
     "stats": {
       "total": 22,
-      "improving": 7,
-      "worsening": 8,
-      "neutral": 7,
+      "improving": 4,
+      "worsening": 12,
+      "neutral": 6,
       "surpriseCount": 1
     },
-    "headline": "22指標中、改善傾向が7件、悪化傾向が8件、横ばい・中立が7件です。",
+    "headline": "22指標中、改善傾向が4件、悪化傾向が12件、横ばい・中立が6件です。",
     "improvingList": [
       {
         "id": "industrial_production_us",
@@ -96,24 +96,6 @@
         }
       },
       {
-        "id": "sahm_rule_us",
-        "name": "サーム・ルール（景気後退シグナル）",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
-        }
-      },
-      {
-        "id": "nonfarm_payrolls_us",
-        "name": "非農業部門雇用者数",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
-        }
-      },
-      {
         "id": "jobless_claims_us",
         "name": "新規失業保険申請件数",
         "category": "雇用・所得",
@@ -123,21 +105,12 @@
         }
       },
       {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "period": {
-          "from": "2026-09-30",
-          "to": "2026-10-01"
-        }
-      },
-      {
         "id": "sp500_us",
         "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-30",
-          "to": "2026-10-01"
+          "from": "2026-10-01",
+          "to": "2026-10-02"
         }
       }
     ],
@@ -167,6 +140,33 @@
         "period": {
           "from": "2026-07-01",
           "to": "2026-08-01"
+        }
+      },
+      {
+        "id": "unemployment_rate_us",
+        "name": "失業率",
+        "category": "雇用・所得",
+        "period": {
+          "from": "2026-08-01",
+          "to": "2026-09-01"
+        }
+      },
+      {
+        "id": "sahm_rule_us",
+        "name": "サーム・ルール（景気後退シグナル）",
+        "category": "雇用・所得",
+        "period": {
+          "from": "2026-08-01",
+          "to": "2026-09-01"
+        }
+      },
+      {
+        "id": "nonfarm_payrolls_us",
+        "name": "非農業部門雇用者数",
+        "category": "雇用・所得",
+        "period": {
+          "from": "2026-08-01",
+          "to": "2026-09-01"
         }
       },
       {
@@ -206,12 +206,21 @@
         }
       },
       {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "period": {
+          "from": "2026-10-01",
+          "to": "2026-10-02"
+        }
+      },
+      {
         "id": "vix_us",
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-09-29",
-          "to": "2026-09-30"
+          "from": "2026-09-30",
+          "to": "2026-10-01"
         }
       }
     ],
@@ -235,15 +244,6 @@
         }
       },
       {
-        "id": "unemployment_rate_us",
-        "name": "失業率",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
-        }
-      },
-      {
         "id": "fed_funds_rate_us",
         "name": "FF金利（政策金利）",
         "category": "金利",
@@ -257,8 +257,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-09-29",
-          "to": "2026-09-30"
+          "from": "2026-09-30",
+          "to": "2026-10-01"
         }
       },
       {
@@ -280,26 +280,7 @@
         }
       }
     ],
-    "continuingImprovingList": [
-      {
-        "id": "unemployment_rate_us",
-        "name": "失業率",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-06-01",
-          "to": "2026-08-01"
-        }
-      },
-      {
-        "id": "sahm_rule_us",
-        "name": "サーム・ルール（景気後退シグナル）",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-06-01",
-          "to": "2026-08-01"
-        }
-      }
-    ],
+    "continuingImprovingList": [],
     "continuingWorseningList": [
       {
         "id": "real_earnings_yoy_us",
@@ -318,6 +299,15 @@
           "from": "2026-05-01",
           "to": "2026-07-01"
         }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "period": {
+          "from": "2026-09-18",
+          "to": "2026-10-01"
+        }
       }
     ],
     "continuingNeutralList": [
@@ -331,6 +321,12 @@
         "id": "core_pce_yoy_us",
         "name": "コアPCE物価指数",
         "category": "物価",
+        "period": null
+      },
+      {
+        "id": "unemployment_rate_us",
+        "name": "失業率",
+        "category": "雇用・所得",
         "period": null
       },
       {
@@ -386,7 +382,7 @@
         "reference": {
           "label": "景気後退シグナルの目安 0.5ポイント",
           "value": 0.5,
-          "current": -0.07
+          "current": 0
         }
       },
       {
@@ -396,7 +392,7 @@
         "reference": {
           "label": "0＝増加・減少の分岐",
           "value": 0,
-          "current": 162
+          "current": 29
         }
       },
       {
@@ -426,7 +422,7 @@
         "reference": {
           "label": "0＝逆イールド（景気後退シグナル）との分岐",
           "value": 0,
-          "current": 0.46
+          "current": 0.45
         }
       },
       {
@@ -436,7 +432,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 16.34
+          "current": 16.39
         }
       }
     ],
@@ -448,7 +444,7 @@
         "reference": {
           "label": "自然失業率の目安 4%前後",
           "value": 4,
-          "current": 4.1
+          "current": 4.2
         }
       },
       {
@@ -684,16 +680,16 @@
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-09-18",
-            "to": "2026-10-01"
+            "from": "2026-09-21",
+            "to": "2026-10-02"
           },
           "prior": {
-            "from": "2026-09-03",
-            "to": "2026-09-17"
+            "from": "2026-09-04",
+            "to": "2026-09-18"
           }
         },
-        "detail": "直近（2026-09-18〜2026-10-01）の傾向が、その前（2026-09-03〜2026-09-17）から改善方向に転じました（転換点を通過）。",
-        "text": "長短金利差（10年-2年国債利回り）は、直近（2026-09-18〜2026-10-01）の傾向が、その前（2026-09-03〜2026-09-17）から改善方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-09-21〜2026-10-02）の傾向が、その前（2026-09-04〜2026-09-18）から改善方向に転じました（転換点を通過）。",
+        "text": "長短金利差（10年-2年国債利回り）は、直近（2026-09-21〜2026-10-02）の傾向が、その前（2026-09-04〜2026-09-18）から改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "sp500_us",
@@ -704,36 +700,36 @@
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-09-18",
-            "to": "2026-10-01"
+            "from": "2026-09-21",
+            "to": "2026-10-02"
           },
           "prior": {
-            "from": "2026-09-03",
-            "to": "2026-09-17"
+            "from": "2026-09-04",
+            "to": "2026-09-18"
           }
         },
-        "detail": "直近（2026-09-18〜2026-10-01）の傾向が、その前（2026-09-03〜2026-09-17）から改善方向に転じました（転換点を通過）。",
-        "text": "S&P500種株価指数は、直近（2026-09-18〜2026-10-01）の傾向が、その前（2026-09-03〜2026-09-17）から改善方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-09-21〜2026-10-02）の傾向が、その前（2026-09-04〜2026-09-18）から改善方向に転じました（転換点を通過）。",
+        "text": "S&P500種株価指数は、直近（2026-09-21〜2026-10-02）の傾向が、その前（2026-09-04〜2026-09-18）から改善方向に転じました（転換点を通過）。"
       },
       {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "favorable": true,
-        "flipped": true,
-        "proximity": 100,
+        "id": "nonfarm_payrolls_us",
+        "name": "非農業部門雇用者数",
+        "category": "雇用・所得",
+        "favorable": false,
+        "flipped": false,
+        "proximity": 99,
         "period": {
           "recent": {
-            "from": "2026-09-17",
-            "to": "2026-09-30"
+            "from": "2026-07-01",
+            "to": "2026-09-01"
           },
           "prior": {
-            "from": "2026-09-03",
-            "to": "2026-09-16"
+            "from": "2026-04-01",
+            "to": "2026-06-01"
           }
         },
-        "detail": "直近（2026-09-17〜2026-09-30）の傾向が、その前（2026-09-03〜2026-09-16）から改善方向に転じました（転換点を通過）。",
-        "text": "VIX指数（恐怖指数）は、直近（2026-09-17〜2026-09-30）の傾向が、その前（2026-09-03〜2026-09-16）から改善方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-07-01〜2026-09-01）は悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが1%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
+        "text": "非農業部門雇用者数は直近（2026-07-01〜2026-09-01）悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが1%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
       },
       {
         "id": "durable_goods_orders_us",
@@ -741,7 +737,7 @@
         "category": "景気",
         "favorable": true,
         "flipped": false,
-        "proximity": 73,
+        "proximity": 74,
         "period": {
           "recent": {
             "from": "2026-06-01",
@@ -752,28 +748,8 @@
             "to": "2026-05-01"
           }
         },
-        "detail": "直近（2026-06-01〜2026-08-01）は改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが27%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
-        "text": "耐久財受注は直近（2026-06-01〜2026-08-01）改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが27%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
-      },
-      {
-        "id": "nonfarm_payrolls_us",
-        "name": "非農業部門雇用者数",
-        "category": "雇用・所得",
-        "favorable": true,
-        "flipped": false,
-        "proximity": 55,
-        "period": {
-          "recent": {
-            "from": "2026-06-01",
-            "to": "2026-08-01"
-          },
-          "prior": {
-            "from": "2026-03-01",
-            "to": "2026-05-01"
-          }
-        },
-        "detail": "直近（2026-06-01〜2026-08-01）は改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが45%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
-        "text": "非農業部門雇用者数は直近（2026-06-01〜2026-08-01）改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが45%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
+        "detail": "直近（2026-06-01〜2026-08-01）は改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが26%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
+        "text": "耐久財受注は直近（2026-06-01〜2026-08-01）改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが26%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
       },
       {
         "id": "retail_sales_us",
@@ -794,6 +770,26 @@
         },
         "detail": "直近（2026-06-01〜2026-08-01）は改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが53%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
         "text": "小売売上高は直近（2026-06-01〜2026-08-01）改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが53%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
+      },
+      {
+        "id": "sahm_rule_us",
+        "name": "サーム・ルール（景気後退シグナル）",
+        "category": "雇用・所得",
+        "favorable": true,
+        "flipped": false,
+        "proximity": 46,
+        "period": {
+          "recent": {
+            "from": "2026-07-01",
+            "to": "2026-09-01"
+          },
+          "prior": {
+            "from": "2026-04-01",
+            "to": "2026-06-01"
+          }
+        },
+        "detail": "直近（2026-07-01〜2026-09-01）は改善方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが54%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
+        "text": "サーム・ルール（景気後退シグナル）は直近（2026-07-01〜2026-09-01）改善方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが54%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
       },
       {
         "id": "industrial_production_us",
@@ -5176,11 +5172,11 @@
       "summary": {
         "latest": {
           "t": "2026-08-01",
-          "value": 338604,
+          "value": 338458,
           "provisional": false
         },
-        "changeFromPrev": -58,
-        "changeFromYearAgo": 26466,
+        "changeFromPrev": -242,
+        "changeFromYearAgo": 26320,
         "min": {
           "t": "1992-02-01",
           "value": 114535
@@ -6847,11 +6843,11 @@
         },
         {
           "t": "2026-07-01",
-          "value": 338662
+          "value": 338700
         },
         {
           "t": "2026-08-01",
-          "value": 338604
+          "value": 338458
         }
       ]
     },
@@ -12237,7 +12233,7 @@
         }
       },
       "releaseSchedule": "BLSが毎月第1金曜日8:30 ETに、非農業部門雇用者数と同時発表。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-11-06",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Unemployment Rate (BLS)",
@@ -12245,12 +12241,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": 4.1,
+          "t": "2026-09-01",
+          "value": 4.2,
           "provisional": false
         },
-        "changeFromPrev": 0,
-        "changeFromYearAgo": -0.2,
+        "changeFromPrev": 0.1,
+        "changeFromYearAgo": -0.1,
         "min": {
           "t": "2023-04-01",
           "value": 3.4
@@ -12259,7 +12255,7 @@
           "t": "2020-04-01",
           "value": 14.8
         },
-        "count": 439,
+        "count": 440,
         "start": "1990-01-01"
       },
       "points": [
@@ -14018,6 +14014,10 @@
         {
           "t": "2026-08-01",
           "value": 4.1
+        },
+        {
+          "t": "2026-09-01",
+          "value": 4.2
         }
       ]
     },
@@ -14048,7 +14048,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが毎月第1金曜日に発表する失業率（雇用統計）を基に、本ツールが自動計算・取得。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-11-06",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Real-time Sahm Rule Recession Indicator (Federal Reserve Bank of St. Louis)",
@@ -14056,12 +14056,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": -0.07,
+          "t": "2026-09-01",
+          "value": 0,
           "provisional": false
         },
-        "changeFromPrev": -0.04,
-        "changeFromYearAgo": -0.17,
+        "changeFromPrev": 0.07,
+        "changeFromYearAgo": -0.13,
         "min": {
           "t": "2021-09-01",
           "value": -0.37
@@ -14070,7 +14070,7 @@
           "t": "2020-06-01",
           "value": 9.5
         },
-        "count": 439,
+        "count": 440,
         "start": "1990-01-01"
       },
       "points": [
@@ -15829,6 +15829,10 @@
         {
           "t": "2026-08-01",
           "value": -0.07
+        },
+        {
+          "t": "2026-09-01",
+          "value": 0
         }
       ]
     },
@@ -15859,7 +15863,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "BLSが毎月第1金曜日8:30 ETに公表。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-11-06",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "All Employees, Total Nonfarm (BLS)",
@@ -15867,12 +15871,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": 162,
+          "t": "2026-09-01",
+          "value": 29,
           "provisional": false
         },
-        "changeFromPrev": 141,
-        "changeFromYearAgo": 232,
+        "changeFromPrev": -104,
+        "changeFromYearAgo": -47,
         "min": {
           "t": "2020-04-01",
           "value": -20469
@@ -15881,7 +15885,7 @@
           "t": "2020-06-01",
           "value": 4631
         },
-        "count": 440,
+        "count": 441,
         "start": "1990-01-01"
       },
       "points": [
@@ -17639,11 +17643,15 @@
         },
         {
           "t": "2026-07-01",
-          "value": 21
+          "value": -10
         },
         {
           "t": "2026-08-01",
-          "value": 162
+          "value": 133
+        },
+        {
+          "t": "2026-09-01",
+          "value": 29
         }
       ]
     },
@@ -25926,7 +25934,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-10-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -25934,12 +25942,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-30",
-          "value": 5.29,
+          "t": "2026-10-01",
+          "value": 5.24,
           "provisional": false
         },
-        "changeFromPrev": 0.03,
-        "changeFromYearAgo": 1.13,
+        "changeFromPrev": -0.05,
+        "changeFromYearAgo": 1.12,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -25948,7 +25956,7 @@
           "t": "2026-09-30",
           "value": 5.29
         },
-        "count": 2687,
+        "count": 2688,
         "start": "2016-01-04"
       },
       "points": [
@@ -36699,6 +36707,10 @@
         {
           "t": "2026-09-30",
           "value": 5.29
+        },
+        {
+          "t": "2026-10-01",
+          "value": 5.24
         }
       ]
     },
@@ -39022,7 +39034,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-10-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -39030,12 +39042,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-01",
-          "value": 0.46,
+          "t": "2026-10-02",
+          "value": 0.45,
           "provisional": false
         },
-        "changeFromPrev": 0.05,
-        "changeFromYearAgo": -0.11,
+        "changeFromPrev": -0.01,
+        "changeFromYearAgo": -0.1,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -39044,7 +39056,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2688,
+        "count": 2689,
         "start": "2016-01-04"
       },
       "points": [
@@ -49799,6 +49811,10 @@
         {
           "t": "2026-10-01",
           "value": 0.46
+        },
+        {
+          "t": "2026-10-02",
+          "value": 0.45
         }
       ]
     },
@@ -60586,7 +60602,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-10-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -60594,12 +60610,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-01",
-          "value": 7666.45,
+          "t": "2026-10-02",
+          "value": 7722.72,
           "provisional": false
         },
-        "changeFromPrev": 14.91,
-        "changeFromYearAgo": 955.25,
+        "changeFromPrev": 56.27,
+        "changeFromYearAgo": 1007.37,
         "min": {
           "t": "2016-11-04",
           "value": 2085.18
@@ -60608,7 +60624,7 @@
           "t": "2026-08-13",
           "value": 7798.99
         },
-        "count": 2513,
+        "count": 2514,
         "start": "2016-10-03"
       },
       "points": [
@@ -70663,6 +70679,10 @@
         {
           "t": "2026-10-01",
           "value": 7666.45
+        },
+        {
+          "t": "2026-10-02",
+          "value": 7722.72
         }
       ]
     },
@@ -70693,7 +70713,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-10-02",
+      "nextRelease": "2026-10-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -70701,12 +70721,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-30",
-          "value": 16.34,
+          "t": "2026-10-01",
+          "value": 16.39,
           "provisional": false
         },
-        "changeFromPrev": 0.3,
-        "changeFromYearAgo": 0.06,
+        "changeFromPrev": 0.05,
+        "changeFromYearAgo": 0.1,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -70715,7 +70735,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2734,
+        "count": 2735,
         "start": "2016-01-04"
       },
       "points": [
@@ -81654,6 +81674,10 @@
         {
           "t": "2026-09-30",
           "value": 16.34
+        },
+        {
+          "t": "2026-10-01",
+          "value": 16.39
         }
       ]
     }

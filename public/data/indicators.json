@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T11:38:42.611Z",
+  "generatedAt": "2026-10-04T11:48:51.260Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 28,
@@ -67,7 +67,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-04T11:38:42.621Z",
+    "generatedAt": "2026-10-04T11:48:51.269Z",
     "stats": {
       "total": 28,
       "improving": 4,

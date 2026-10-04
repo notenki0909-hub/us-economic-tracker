@@ -14,6 +14,11 @@ export const EVENT_TYPES = {
   speech: { icon: "🎤", label: "講演・発言" },
   testimony: { icon: "⚖️", label: "議会証言" },
   jackson: { icon: "🏔️", label: "ジャクソンホール" },
+  boj: { icon: "🏦", label: "日銀会合" },
+  boj_outlook: { icon: "📘", label: "展望レポート" },
+  boj_opinion: { icon: "💬", label: "主な意見" },
+  boj_minutes: { icon: "📝", label: "議事要旨" },
+  boj_press: { icon: "🎙️", label: "総裁会見" },
 };
 
 const ACTION_LABEL = { hike: "利上げ", cut: "利下げ", hold: "据え置き" };
@@ -74,11 +79,30 @@ function diffHtml(diff) {
   return parts.join(" ");
 }
 
+function voteText(vote) {
+  if (!vote) return "";
+  if (vote.unanimous) return "投票：全員一致";
+  return `投票：賛成 ${vote.for}・反対 ${vote.against}${vote.against ? "（反対者あり）" : "（全会一致）"}`;
+}
+
 function resultHtml(ev) {
   const r = ev.result;
   if (!r) return "";
   let html = "";
-  if (ev.type === "fomc" && r.action && r.rangeLow != null) {
+  if (ev.type === "boj" && r.rate != null) {
+    const delta = r.prevRate != null ? Math.round((r.rate - r.prevRate) * 100) : null;
+    const deltaText = delta ? `${delta > 0 ? "+" : ""}${delta}bp` : "変更なし";
+    html += `
+      <div class="ev-result">
+        <div class="ev-result__label">政策金利（無担保コールレート・オーバーナイト物の誘導目標）</div>
+        <div class="ev-result__main">${r.rate.toFixed(2)}%
+          ${r.action ? `<span class="ev-result__badge ev-result__badge--${r.action}">${ACTION_LABEL[r.action]}（${deltaText}）</span>` : ""}</div>
+        <div class="ev-result__meta">
+          ${r.prevRate != null ? `前回 ${r.prevRate.toFixed(2)}%` : ""}
+          ${r.vote ? `${r.prevRate != null ? "　／　" : ""}${voteText(r.vote)}` : ""}
+        </div>
+      </div>`;
+  } else if (ev.type === "fomc" && r.action && r.rangeLow != null) {
     const prev = r.prevRangeLow != null ? fmtRange(r.prevRangeLow, r.prevRangeHigh) : null;
     const delta = r.prevRangeLow != null ? Math.round((r.rangeHigh - r.prevRangeHigh) * 100) : null;
     const deltaText = delta ? `${delta > 0 ? "+" : ""}${delta}bp` : "変更なし";
@@ -89,7 +113,7 @@ function resultHtml(ev) {
           <span class="ev-result__badge ev-result__badge--${r.action}">${ACTION_LABEL[r.action]}（${deltaText}）</span></div>
         <div class="ev-result__meta">
           ${prev ? `前回 ${prev}` : ""}
-          ${r.vote ? `${prev ? "　／　" : ""}投票：賛成 ${r.vote.for}・反対 ${r.vote.against}${r.vote.against ? "（反対者あり）" : "（全会一致）"}` : ""}
+          ${r.vote ? `${prev ? "　／　" : ""}${voteText(r.vote)}` : ""}
         </div>
       </div>`;
   } else if (r.headline) {
@@ -129,11 +153,12 @@ export function renderEventDetail(ev) {
       : `<span class="ev-status">予定</span>`;
   const dateText =
     ev.endDate && ev.endDate !== ev.date ? `${fmtDate(ev.date)} 〜 ${fmtDate(ev.endDate)}` : fmtDate(ev.date);
+  const isSentenceDiff = ev.diff?.unit === "sentence";
   const diffBlock = ev.diff
     ? `<section class="ev-section">
-        <h3>声明文の変更点（${esc(fmtDate(ev.diff.prevDate))}の声明との比較）</h3>
+        <h3>${isSentenceDiff ? "公表文" : "声明文"}の変更点（${esc(fmtDate(ev.diff.prevDate))}の${isSentenceDiff ? "公表文" : "声明"}との比較）</h3>
         <p class="ev-diff">${diffHtml(ev.diff)}</p>
-        <p class="ev-note">公式の声明文（英語）を単語単位で機械的に比較したもの。<del>取り消し線</del>＝前回にあって削除された文言、<ins>下線</ins>＝今回追加された文言。</p>
+        <p class="ev-note">公式の${isSentenceDiff ? "公表文（日本語）を文単位" : "声明文（英語）を単語単位"}で機械的に比較したもの。<del>取り消し線</del>＝前回にあって削除された文言、<ins>下線</ins>＝今回追加された文言。</p>
       </section>`
     : "";
   const links = (ev.links ?? [])

@@ -964,6 +964,11 @@ a {
 .calendar__pill--ev-speech,
 .calendar__pill--ev-testimony { --ev: var(--cat-物価); }
 .calendar__pill--ev-jackson { --ev: var(--cat-為替・市場); }
+.calendar__pill--ev-boj { --ev: var(--cat-金利); }
+.calendar__pill--ev-boj_outlook { --ev: var(--cat-景気); }
+.calendar__pill--ev-boj_opinion,
+.calendar__pill--ev-boj_minutes { --ev: var(--cat-対外); }
+.calendar__pill--ev-boj_press { --ev: var(--cat-物価); }
 
 /* 発表済み（結果が確認できるもの）は枠を実線で強調 */
 .calendar__pill--event.calendar__pill--done {
@@ -995,6 +1000,11 @@ a {
 .ev-tag--speech,
 .ev-tag--testimony { --ev: var(--cat-物価); }
 .ev-tag--jackson { --ev: var(--cat-為替・市場); }
+.ev-tag--boj { --ev: var(--cat-金利); }
+.ev-tag--boj_outlook { --ev: var(--cat-景気); }
+.ev-tag--boj_opinion,
+.ev-tag--boj_minutes { --ev: var(--cat-対外); }
+.ev-tag--boj_press { --ev: var(--cat-物価); }
 
 .ev-status {
   display: inline-block;

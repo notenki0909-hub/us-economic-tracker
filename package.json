@@ -6,6 +6,7 @@
   "description": "米国の主要経済指標トラッカー（FRED・利用登録不要）",
   "scripts": {
     "fetch": "node scripts/fetch-indicators.mjs",
+    "fetch:events": "node scripts/fetch-events.mjs",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

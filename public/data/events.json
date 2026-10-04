@@ -1,0 +1,2348 @@
+{
+ "generatedAt": "2026-10-04T09:54:54.110Z",
+ "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
+ "eventCount": 52,
+ "events": [
+  {
+   "id": "fomc-20250917",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2025-09-17",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "9/16–9/17の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20250917.htm"
+    },
+    {
+     "label": "経済見通し（SEP・公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20250917.htm"
+    }
+   ],
+   "result": {
+    "action": "cut",
+    "rangeLow": 4,
+    "rangeHigh": 4.25,
+    "vote": {
+     "for": 11,
+     "against": 1
+    },
+    "lead": "Recent indicators suggest that growth of economic activity moderated in the first half of the year. Job gains have slowed, and the unemployment rate has edged up but remains low. Inflation has moved up and remains somewhat elevated.",
+    "prevRangeLow": 4.25,
+    "prevRangeHigh": 4.5
+   },
+   "diff": {
+    "prevDate": "2025-07-30",
+    "segments": [
+     {
+      "t": "del",
+      "s": "Although swings in net exports continue to affect the data, recent"
+     },
+     {
+      "t": "add",
+      "s": "Recent"
+     },
+     {
+      "t": "same",
+      "s": "indicators suggest that growth of economic activity moderated in the first half of the year."
+     },
+     {
+      "t": "del",
+      "s": "The"
+     },
+     {
+      "t": "add",
+      "s": "Job gains have slowed, and the"
+     },
+     {
+      "t": "same",
+      "s": "unemployment rate"
+     },
+     {
+      "t": "add",
+      "s": "has edged up but"
+     },
+     {
+      "t": "same",
+      "s": "remains"
+     },
+     {
+      "t": "del",
+      "s": "low, and labor market conditions remain solid."
+     },
+     {
+      "t": "add",
+      "s": "low."
+     },
+     {
+      "t": "same",
+      "s": "Inflation"
+     },
+     {
+      "t": "add",
+      "s": "has moved up and"
+     },
+     {
+      "t": "same",
+      "s": "remains somewhat elevated. The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual"
+     },
+     {
+      "t": "del",
+      "s": "mandate."
+     },
+     {
+      "t": "add",
+      "s": "mandate and judges that downside risks to employment have risen."
+     },
+     {
+      "t": "same",
+      "s": "In support of its"
+     },
+     {
+      "t": "del",
+      "s": "goals,"
+     },
+     {
+      "t": "add",
+      "s": "goals and in light of"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "add",
+      "s": "shift in the balance of risks, the"
+     },
+     {
+      "t": "same",
+      "s": "Committee decided to"
+     },
+     {
+      "t": "del",
+      "s": "maintain"
+     },
+     {
+      "t": "add",
+      "s": "lower"
+     },
+     {
+      "t": "same",
+      "s": "the target range for the federal funds rate"
+     },
+     {
+      "t": "del",
+      "s": "at 4-1/4"
+     },
+     {
+      "t": "add",
+      "s": "by 1/4 percentage point"
+     },
+     {
+      "t": "same",
+      "s": "to"
+     },
+     {
+      "t": "del",
+      "s": "4-1/2"
+     },
+     {
+      "t": "add",
+      "s": "4 to 4-1/4"
+     },
+     {
+      "t": "same",
+      "s": "percent. In considering"
+     },
+     {
+      "t": "del",
+      "s": "the extent and timing of"
+     },
+     {
+      "t": "same",
+      "s": "additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee will continue reducing its holdings of Treasury securities and agency debt and agency mortgage-backed securities. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     }
+    ]
+   },
+   "sep": {
+    "years": [
+     "2025",
+     "2026",
+     "2027",
+     "2028",
+     "長期"
+    ],
+    "rows": [
+     {
+      "name": "実質GDP成長率",
+      "median": [
+       "1.6",
+       "1.8",
+       "1.9",
+       "1.8",
+       "1.8"
+      ],
+      "prev": [
+       "1.4",
+       "1.6",
+       "1.8",
+       "",
+       "1.8"
+      ]
+     },
+     {
+      "name": "失業率",
+      "median": [
+       "4.5",
+       "4.4",
+       "4.3",
+       "4.2",
+       "4.2"
+      ],
+      "prev": [
+       "4.5",
+       "4.5",
+       "4.4",
+       "",
+       "4.2"
+      ]
+     },
+     {
+      "name": "PCE物価上昇率",
+      "median": [
+       "3.0",
+       "2.6",
+       "2.1",
+       "2.0",
+       "2.0"
+      ],
+      "prev": [
+       "3.0",
+       "2.4",
+       "2.1",
+       "",
+       "2.0"
+      ]
+     },
+     {
+      "name": "コアPCE物価上昇率",
+      "median": [
+       "3.1",
+       "2.6",
+       "2.1",
+       "2.0",
+       ""
+      ],
+      "prev": [
+       "3.1",
+       "2.4",
+       "2.1",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "政策金利（年末の中央値）",
+      "median": [
+       "3.6",
+       "3.4",
+       "3.1",
+       "3.1",
+       "3.0"
+      ],
+      "prev": [
+       "3.9",
+       "3.6",
+       "3.4",
+       "",
+       "3.0"
+      ]
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20250917",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2025-10-08",
+   "title": "FOMC議事要旨",
+   "subtitle": "9/16–9/17会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250917.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "fomc-20251029",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2025-10-29",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "10/28–10/29の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20251029.htm"
+    }
+   ],
+   "result": {
+    "action": "cut",
+    "rangeLow": 3.75,
+    "rangeHigh": 4,
+    "vote": {
+     "for": 10,
+     "against": 2
+    },
+    "lead": "Available indicators suggest that economic activity has been expanding at a moderate pace. Job gains have slowed this year, and the unemployment rate has edged up but remained low through August; more recent indicators are consistent with these developments. Inflation has moved up since earlier in the year and remains somewhat elevated.",
+    "prevRangeLow": 4,
+    "prevRangeHigh": 4.25
+   },
+   "diff": {
+    "prevDate": "2025-09-17",
+    "segments": [
+     {
+      "t": "del",
+      "s": "Recent"
+     },
+     {
+      "t": "add",
+      "s": "Available"
+     },
+     {
+      "t": "same",
+      "s": "indicators suggest that"
+     },
+     {
+      "t": "del",
+      "s": "growth of"
+     },
+     {
+      "t": "same",
+      "s": "economic activity"
+     },
+     {
+      "t": "del",
+      "s": "moderated in the first half of the year."
+     },
+     {
+      "t": "add",
+      "s": "has been expanding at a moderate pace."
+     },
+     {
+      "t": "same",
+      "s": "Job gains have"
+     },
+     {
+      "t": "del",
+      "s": "slowed,"
+     },
+     {
+      "t": "add",
+      "s": "slowed this year,"
+     },
+     {
+      "t": "same",
+      "s": "and the unemployment rate has edged up but"
+     },
+     {
+      "t": "del",
+      "s": "remains low."
+     },
+     {
+      "t": "add",
+      "s": "remained low through August; more recent indicators are consistent with these developments."
+     },
+     {
+      "t": "same",
+      "s": "Inflation has moved up"
+     },
+     {
+      "t": "add",
+      "s": "since earlier in the year"
+     },
+     {
+      "t": "same",
+      "s": "and remains somewhat elevated. The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual mandate and judges that downside risks to employment"
+     },
+     {
+      "t": "del",
+      "s": "have risen."
+     },
+     {
+      "t": "add",
+      "s": "rose in recent months."
+     },
+     {
+      "t": "same",
+      "s": "In support of its goals and in light of the shift in the balance of risks, the Committee decided to lower the target range for the federal funds rate by 1/4 percentage point to"
+     },
+     {
+      "t": "del",
+      "s": "4"
+     },
+     {
+      "t": "add",
+      "s": "3-3/4"
+     },
+     {
+      "t": "same",
+      "s": "to"
+     },
+     {
+      "t": "del",
+      "s": "4-1/4"
+     },
+     {
+      "t": "add",
+      "s": "4"
+     },
+     {
+      "t": "same",
+      "s": "percent. In considering additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee"
+     },
+     {
+      "t": "del",
+      "s": "will continue reducing its holdings"
+     },
+     {
+      "t": "add",
+      "s": "decided to conclude the reduction"
+     },
+     {
+      "t": "same",
+      "s": "of"
+     },
+     {
+      "t": "del",
+      "s": "Treasury"
+     },
+     {
+      "t": "add",
+      "s": "its aggregate"
+     },
+     {
+      "t": "same",
+      "s": "securities"
+     },
+     {
+      "t": "del",
+      "s": "and agency debt and agency mortgage-backed securities."
+     },
+     {
+      "t": "add",
+      "s": "holdings on December 1."
+     },
+     {
+      "t": "same",
+      "s": "The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20251029",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2025-11-19",
+   "title": "FOMC議事要旨",
+   "subtitle": "10/28–10/29会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251029.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "fomc-20251210",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2025-12-10",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "12/9–12/10の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20251210.htm"
+    },
+    {
+     "label": "経済見通し（SEP・公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20251210.htm"
+    }
+   ],
+   "result": {
+    "action": "cut",
+    "rangeLow": 3.5,
+    "rangeHigh": 3.75,
+    "vote": {
+     "for": 9,
+     "against": 3
+    },
+    "lead": "Available indicators suggest that economic activity has been expanding at a moderate pace. Job gains have slowed this year, and the unemployment rate has edged up through September. More recent indicators are consistent with these developments. Inflation has moved up since earlier in the year and remains somewhat elevated.",
+    "prevRangeLow": 3.75,
+    "prevRangeHigh": 4
+   },
+   "diff": {
+    "prevDate": "2025-10-29",
+    "segments": [
+     {
+      "t": "same",
+      "s": "Available indicators suggest that economic activity has been expanding at a moderate pace. Job gains have slowed this year, and the unemployment rate has edged up"
+     },
+     {
+      "t": "del",
+      "s": "but remained low"
+     },
+     {
+      "t": "same",
+      "s": "through"
+     },
+     {
+      "t": "del",
+      "s": "August; more"
+     },
+     {
+      "t": "add",
+      "s": "September. More"
+     },
+     {
+      "t": "same",
+      "s": "recent indicators are consistent with these developments. Inflation has moved up since earlier in the year and remains somewhat elevated. The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual mandate and judges that downside risks to employment rose in recent months. In support of its goals and in light of the shift in the balance of risks, the Committee decided to lower the target range for the federal funds rate by 1/4 percentage point to"
+     },
+     {
+      "t": "del",
+      "s": "3-3/4"
+     },
+     {
+      "t": "add",
+      "s": "3-1/2"
+     },
+     {
+      "t": "same",
+      "s": "to"
+     },
+     {
+      "t": "del",
+      "s": "4"
+     },
+     {
+      "t": "add",
+      "s": "3-3/4"
+     },
+     {
+      "t": "same",
+      "s": "percent. In considering"
+     },
+     {
+      "t": "add",
+      "s": "the extent and timing of"
+     },
+     {
+      "t": "same",
+      "s": "additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee"
+     },
+     {
+      "t": "del",
+      "s": "decided to conclude the reduction of its aggregate securities holdings on December 1. The Committee"
+     },
+     {
+      "t": "same",
+      "s": "is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     },
+     {
+      "t": "add",
+      "s": "The Committee judges that reserve balances have declined to ample levels and will initiate purchases of shorter-term Treasury securities as needed to maintain an ample supply of reserves on an ongoing basis."
+     }
+    ]
+   },
+   "sep": {
+    "years": [
+     "2025",
+     "2026",
+     "2027",
+     "2028",
+     "長期"
+    ],
+    "rows": [
+     {
+      "name": "実質GDP成長率",
+      "median": [
+       "1.7",
+       "2.3",
+       "2.0",
+       "1.9",
+       "1.8"
+      ],
+      "prev": [
+       "1.6",
+       "1.8",
+       "1.9",
+       "1.8",
+       "1.8"
+      ]
+     },
+     {
+      "name": "失業率",
+      "median": [
+       "4.5",
+       "4.4",
+       "4.2",
+       "4.2",
+       "4.2"
+      ],
+      "prev": [
+       "4.5",
+       "4.4",
+       "4.3",
+       "4.2",
+       "4.2"
+      ]
+     },
+     {
+      "name": "PCE物価上昇率",
+      "median": [
+       "2.9",
+       "2.4",
+       "2.1",
+       "2.0",
+       "2.0"
+      ],
+      "prev": [
+       "3.0",
+       "2.6",
+       "2.1",
+       "2.0",
+       "2.0"
+      ]
+     },
+     {
+      "name": "コアPCE物価上昇率",
+      "median": [
+       "3.0",
+       "2.5",
+       "2.1",
+       "2.0",
+       ""
+      ],
+      "prev": [
+       "3.1",
+       "2.6",
+       "2.1",
+       "2.0",
+       ""
+      ]
+     },
+     {
+      "name": "政策金利（年末の中央値）",
+      "median": [
+       "3.6",
+       "3.4",
+       "3.1",
+       "3.1",
+       "3.0"
+      ],
+      "prev": [
+       "3.6",
+       "3.4",
+       "3.1",
+       "3.1",
+       "3.0"
+      ]
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20251210",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2025-12-31",
+   "title": "FOMC議事要旨",
+   "subtitle": "12/9–12/10会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251210.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "beige-20260114",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-01-14",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202601-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20260114.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fomc-20260128",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-01-28",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "1/27–1/28の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260128.htm"
+    }
+   ],
+   "result": {
+    "action": "hold",
+    "rangeLow": 3.5,
+    "rangeHigh": 3.75,
+    "vote": {
+     "for": 10,
+     "against": 2
+    },
+    "lead": "Available indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, and the unemployment rate has shown some signs of stabilization. Inflation remains somewhat elevated.",
+    "prevRangeLow": 3.5,
+    "prevRangeHigh": 3.75
+   },
+   "diff": {
+    "prevDate": "2025-12-10",
+    "segments": [
+     {
+      "t": "same",
+      "s": "Available indicators suggest that economic activity has been expanding at a"
+     },
+     {
+      "t": "del",
+      "s": "moderate"
+     },
+     {
+      "t": "add",
+      "s": "solid"
+     },
+     {
+      "t": "same",
+      "s": "pace. Job gains have"
+     },
+     {
+      "t": "del",
+      "s": "slowed this year,"
+     },
+     {
+      "t": "add",
+      "s": "remained low,"
+     },
+     {
+      "t": "same",
+      "s": "and the unemployment rate has"
+     },
+     {
+      "t": "del",
+      "s": "edged up through September. More recent indicators are consistent with these developments."
+     },
+     {
+      "t": "add",
+      "s": "shown some signs of stabilization."
+     },
+     {
+      "t": "same",
+      "s": "Inflation"
+     },
+     {
+      "t": "del",
+      "s": "has moved up since earlier in the year and"
+     },
+     {
+      "t": "same",
+      "s": "remains somewhat elevated. The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual"
+     },
+     {
+      "t": "del",
+      "s": "mandate and judges that downside risks to employment rose in recent months."
+     },
+     {
+      "t": "add",
+      "s": "mandate."
+     },
+     {
+      "t": "same",
+      "s": "In support of its"
+     },
+     {
+      "t": "del",
+      "s": "goals and in light of the shift in the balance of risks,"
+     },
+     {
+      "t": "add",
+      "s": "goals,"
+     },
+     {
+      "t": "same",
+      "s": "the Committee decided to"
+     },
+     {
+      "t": "del",
+      "s": "lower"
+     },
+     {
+      "t": "add",
+      "s": "maintain"
+     },
+     {
+      "t": "same",
+      "s": "the target range for the federal funds rate"
+     },
+     {
+      "t": "del",
+      "s": "by 1/4 percentage point to"
+     },
+     {
+      "t": "add",
+      "s": "at"
+     },
+     {
+      "t": "same",
+      "s": "3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     },
+     {
+      "t": "del",
+      "s": "The Committee judges that reserve balances have declined to ample levels and will initiate purchases of shorter-term Treasury securities as needed to maintain an ample supply of reserves on an ongoing basis."
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20260128",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-02-18",
+   "title": "FOMC議事要旨",
+   "subtitle": "1/27–1/28会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260128.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "beige-20260304",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-03-04",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202602-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20260304.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fomc-20260318",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-03-18",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "3/17–3/18の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260318.htm"
+    },
+    {
+     "label": "経済見通し（SEP・公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm"
+    }
+   ],
+   "result": {
+    "action": "hold",
+    "rangeLow": 3.5,
+    "rangeHigh": 3.75,
+    "vote": {
+     "for": 11,
+     "against": 1
+    },
+    "lead": "Available indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, and the unemployment rate has been little changed in recent months. Inflation remains somewhat elevated.",
+    "prevRangeLow": 3.5,
+    "prevRangeHigh": 3.75
+   },
+   "diff": {
+    "prevDate": "2026-01-28",
+    "segments": [
+     {
+      "t": "same",
+      "s": "Available indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, and the unemployment rate has"
+     },
+     {
+      "t": "del",
+      "s": "shown some signs of stabilization."
+     },
+     {
+      "t": "add",
+      "s": "been little changed in recent months."
+     },
+     {
+      "t": "same",
+      "s": "Inflation remains somewhat elevated. The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The"
+     },
+     {
+      "t": "add",
+      "s": "implications of developments in the Middle East for the U.S. economy are uncertain. The"
+     },
+     {
+      "t": "same",
+      "s": "Committee is attentive to the risks to both sides of its dual mandate. In support of its goals, the Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     }
+    ]
+   },
+   "sep": {
+    "years": [
+     "2026",
+     "2027",
+     "2028",
+     "長期",
+     "2026"
+    ],
+    "rows": [
+     {
+      "name": "実質GDP成長率",
+      "median": [
+       "2.4",
+       "2.3",
+       "2.1",
+       "2.0",
+       "2.2–2.5"
+      ],
+      "prev": [
+       "2.3",
+       "2.0",
+       "1.9",
+       "1.8",
+       "2.1–2.5"
+      ]
+     },
+     {
+      "name": "失業率",
+      "median": [
+       "4.4",
+       "4.3",
+       "4.2",
+       "4.2",
+       "4.3–4.5"
+      ],
+      "prev": [
+       "4.4",
+       "4.2",
+       "4.2",
+       "4.2",
+       "4.3–4.4"
+      ]
+     },
+     {
+      "name": "PCE物価上昇率",
+      "median": [
+       "2.7",
+       "2.2",
+       "2.0",
+       "2.0",
+       "2.6–3.1"
+      ],
+      "prev": [
+       "2.4",
+       "2.1",
+       "2.0",
+       "2.0",
+       "2.3–2.5"
+      ]
+     },
+     {
+      "name": "コアPCE物価上昇率",
+      "median": [
+       "2.7",
+       "2.2",
+       "2.0",
+       "",
+       "2.5–2.8"
+      ],
+      "prev": [
+       "2.5",
+       "2.1",
+       "2.0",
+       "",
+       "2.4–2.6"
+      ]
+     },
+     {
+      "name": "政策金利（年末の中央値）",
+      "median": [
+       "3.4",
+       "3.1",
+       "3.1",
+       "3.1",
+       "3.1–3.6"
+      ],
+      "prev": [
+       "3.4",
+       "3.1",
+       "3.1",
+       "3.0",
+       "2.9–3.6"
+      ]
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20260318",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-04-08",
+   "title": "FOMC議事要旨",
+   "subtitle": "3/17–3/18会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260318.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "beige-20260415",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-04-15",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202604-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20260415.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fomc-20260429",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-04-29",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "4/28–4/29の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260429.htm"
+    }
+   ],
+   "result": {
+    "action": "hold",
+    "rangeLow": 3.5,
+    "rangeHigh": 3.75,
+    "vote": {
+     "for": 8,
+     "against": 4
+    },
+    "lead": "Recent indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, on average, and the unemployment rate has been little changed in recent months. Inflation is elevated, in part reflecting the recent increase in global energy prices.",
+    "prevRangeLow": 3.5,
+    "prevRangeHigh": 3.75
+   },
+   "diff": {
+    "prevDate": "2026-03-18",
+    "segments": [
+     {
+      "t": "del",
+      "s": "Available"
+     },
+     {
+      "t": "add",
+      "s": "Recent"
+     },
+     {
+      "t": "same",
+      "s": "indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low,"
+     },
+     {
+      "t": "add",
+      "s": "on average,"
+     },
+     {
+      "t": "same",
+      "s": "and the unemployment rate has been little changed in recent months. Inflation"
+     },
+     {
+      "t": "del",
+      "s": "remains somewhat elevated."
+     },
+     {
+      "t": "add",
+      "s": "is elevated, in part reflecting the recent increase in global energy prices."
+     },
+     {
+      "t": "same",
+      "s": "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run."
+     },
+     {
+      "t": "del",
+      "s": "Uncertainty about the economic outlook remains elevated. The implications of developments"
+     },
+     {
+      "t": "add",
+      "s": "Developments"
+     },
+     {
+      "t": "same",
+      "s": "in the Middle East"
+     },
+     {
+      "t": "del",
+      "s": "for the U.S. economy"
+     },
+     {
+      "t": "same",
+      "s": "are"
+     },
+     {
+      "t": "del",
+      "s": "uncertain."
+     },
+     {
+      "t": "add",
+      "s": "contributing to a high level of uncertainty about the economic outlook."
+     },
+     {
+      "t": "same",
+      "s": "The Committee is attentive to the risks to both sides of its dual mandate. In support of its goals, the Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20260429",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-05-20",
+   "title": "FOMC議事要旨",
+   "subtitle": "4/28–4/29会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "beige-20260603",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-06-03",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202605-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20260603.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fomc-20260617",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-06-17",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "6/16–6/17の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260617.htm"
+    },
+    {
+     "label": "経済見通し（SEP・公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm"
+    }
+   ],
+   "result": {
+    "action": "hold",
+    "rangeLow": 3.5,
+    "rangeHigh": 3.75,
+    "vote": {
+     "for": 12,
+     "against": 0
+    },
+    "lead": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Committee reaffirmed its policy of maintaining ample reserves in the banking system.",
+    "prevRangeLow": 3.5,
+    "prevRangeHigh": 3.75
+   },
+   "diff": {
+    "prevDate": "2026-04-29",
+    "segments": [
+     {
+      "t": "del",
+      "s": "Recent indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, on average, and the unemployment rate has been little changed in recent months. Inflation is elevated, in part reflecting the recent increase in global energy prices."
+     },
+     {
+      "t": "same",
+      "s": "The Committee"
+     },
+     {
+      "t": "del",
+      "s": "seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Developments in the Middle East are contributing to a high level of uncertainty about the economic outlook. The Committee is attentive to the risks to both sides of its dual mandate. In support of its goals, the Committee"
+     },
+     {
+      "t": "same",
+      "s": "decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4"
+     },
+     {
+      "t": "del",
+      "s": "percent. In considering the extent and timing"
+     },
+     {
+      "t": "add",
+      "s": "percent, in support"
+     },
+     {
+      "t": "same",
+      "s": "of"
+     },
+     {
+      "t": "del",
+      "s": "additional adjustments to"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "del",
+      "s": "target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks."
+     },
+     {
+      "t": "add",
+      "s": "Federal Reserve's dual mandate."
+     },
+     {
+      "t": "same",
+      "s": "The Committee"
+     },
+     {
+      "t": "del",
+      "s": "is strongly committed to supporting maximum employment and returning inflation to"
+     },
+     {
+      "t": "add",
+      "s": "reaffirmed"
+     },
+     {
+      "t": "same",
+      "s": "its"
+     },
+     {
+      "t": "del",
+      "s": "2 percent objective. In assessing the appropriate stance"
+     },
+     {
+      "t": "add",
+      "s": "policy"
+     },
+     {
+      "t": "same",
+      "s": "of"
+     },
+     {
+      "t": "del",
+      "s": "monetary policy,"
+     },
+     {
+      "t": "add",
+      "s": "maintaining ample reserves in"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "del",
+      "s": "Committee will continue"
+     },
+     {
+      "t": "add",
+      "s": "banking system. Economic activity is expanding at a solid pace despite elevated uncertainty that owes, in part,"
+     },
+     {
+      "t": "same",
+      "s": "to"
+     },
+     {
+      "t": "del",
+      "s": "monitor"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "del",
+      "s": "implications of incoming information for"
+     },
+     {
+      "t": "add",
+      "s": "conflict in"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "del",
+      "s": "economic outlook. The Committee would be prepared to adjust"
+     },
+     {
+      "t": "add",
+      "s": "Middle East. Productivity growth and capital investment are strong. Job gains have kept pace with"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "del",
+      "s": "stance of monetary policy as appropriate if risks emerge that could impede"
+     },
+     {
+      "t": "add",
+      "s": "workforce, and"
+     },
+     {
+      "t": "same",
+      "s": "the"
+     },
+     {
+      "t": "del",
+      "s": "attainment of"
+     },
+     {
+      "t": "add",
+      "s": "unemployment rate has changed little. Inflation remains elevated relative to"
+     },
+     {
+      "t": "same",
+      "s": "the Committee's"
+     },
+     {
+      "t": "del",
+      "s": "goals."
+     },
+     {
+      "t": "add",
+      "s": "2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy."
+     },
+     {
+      "t": "same",
+      "s": "The"
+     },
+     {
+      "t": "del",
+      "s": "Committee's assessments"
+     },
+     {
+      "t": "add",
+      "s": "Committee"
+     },
+     {
+      "t": "same",
+      "s": "will"
+     },
+     {
+      "t": "del",
+      "s": "take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     },
+     {
+      "t": "add",
+      "s": "deliver price stability."
+     }
+    ]
+   },
+   "sep": {
+    "years": [
+     "2026",
+     "2027",
+     "2028",
+     "長期",
+     "2026"
+    ],
+    "rows": [
+     {
+      "name": "実質GDP成長率",
+      "median": [
+       "2.2",
+       "2.3",
+       "2.2",
+       "2.0",
+       "2.0–2.3"
+      ],
+      "prev": [
+       "2.4",
+       "2.3",
+       "2.1",
+       "2.0",
+       "2.2–2.5"
+      ]
+     },
+     {
+      "name": "失業率",
+      "median": [
+       "4.3",
+       "4.3",
+       "4.2",
+       "4.2",
+       "4.3–4.4"
+      ],
+      "prev": [
+       "4.4",
+       "4.3",
+       "4.2",
+       "4.2",
+       "4.3–4.5"
+      ]
+     },
+     {
+      "name": "PCE物価上昇率",
+      "median": [
+       "3.6",
+       "2.3",
+       "2.0",
+       "2.0",
+       "3.5–3.7"
+      ],
+      "prev": [
+       "2.7",
+       "2.2",
+       "2.0",
+       "2.0",
+       "2.6–3.1"
+      ]
+     },
+     {
+      "name": "コアPCE物価上昇率",
+      "median": [
+       "3.3",
+       "2.5",
+       "2.1",
+       "",
+       "3.2–3.5"
+      ],
+      "prev": [
+       "2.7",
+       "2.2",
+       "2.0",
+       "",
+       "2.5–2.8"
+      ]
+     },
+     {
+      "name": "政策金利（年末の中央値）",
+      "median": [
+       "3.8",
+       "3.6",
+       "3.4",
+       "3.1",
+       "3.6–4.1"
+      ],
+      "prev": [
+       "3.4",
+       "3.1",
+       "3.1",
+       "3.1",
+       "3.1–3.6"
+      ]
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20260617",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-07-08",
+   "title": "FOMC議事要旨",
+   "subtitle": "6/16–6/17会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "beige-20260715",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-07-15",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202607-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20260715.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fomc-20260729",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-07-29",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "7/28–7/29の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260729.htm"
+    }
+   ],
+   "result": {
+    "action": "hold",
+    "rangeLow": 3.5,
+    "rangeHigh": 3.75,
+    "vote": {
+     "for": 9,
+     "against": 3
+    },
+    "lead": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.",
+    "prevRangeLow": 3.5,
+    "prevRangeHigh": 3.75
+   },
+   "diff": {
+    "prevDate": "2026-06-17",
+    "segments": [
+     {
+      "t": "same",
+      "s": "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Committee"
+     },
+     {
+      "t": "del",
+      "s": "reaffirmed"
+     },
+     {
+      "t": "add",
+      "s": "is continuing"
+     },
+     {
+      "t": "same",
+      "s": "its policy of maintaining ample reserves in the banking system. Economic activity is expanding at a solid pace despite elevated uncertainty that owes, in part, to the conflict in the Middle East. Productivity growth and capital investment are strong. Job gains have kept pace with the workforce, and the unemployment rate has changed little. Inflation remains elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy. The Committee will deliver price stability."
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "fomc-minutes-20260729",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-08-19",
+   "title": "FOMC議事要旨",
+   "subtitle": "7/28–7/29会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
+    }
+   ],
+   "short": "FOMC議事要旨"
+  },
+  {
+   "id": "jackson-2026",
+   "src": "jackson",
+   "type": "jackson",
+   "date": "2026-08-27",
+   "endDate": "2026-08-29",
+   "title": "ジャクソンホール会議",
+   "subtitle": "カンザスシティ連銀主催の経済政策シンポジウム。FRB議長の講演が金融政策の方向性を示す場として注目される",
+   "time": "",
+   "status": "done",
+   "links": [
+    {
+     "label": "プログラム・講演（カンザスシティ連銀）",
+     "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/2026/"
+    }
+   ]
+  },
+  {
+   "id": "beige-20260902",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-09-02",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202608-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20260902.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fomc-20260916",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-09-16",
+   "title": "FOMC（政策金利の決定）",
+   "subtitle": "9/15–9/16の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm"
+    },
+    {
+     "label": "経済見通し（SEP・公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
+    }
+   ],
+   "result": {
+    "action": "hike",
+    "rangeLow": 3.75,
+    "rangeHigh": 4,
+    "vote": {
+     "for": 12,
+     "against": 0
+    },
+    "lead": "The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.",
+    "prevRangeLow": 3.5,
+    "prevRangeHigh": 3.75
+   },
+   "diff": {
+    "prevDate": "2026-07-29",
+    "segments": [
+     {
+      "t": "same",
+      "s": "The Committee decided to"
+     },
+     {
+      "t": "del",
+      "s": "maintain"
+     },
+     {
+      "t": "add",
+      "s": "raise"
+     },
+     {
+      "t": "same",
+      "s": "the target range for the federal funds rate"
+     },
+     {
+      "t": "del",
+      "s": "at 3-1/2"
+     },
+     {
+      "t": "add",
+      "s": "by 1/4 percentage point"
+     },
+     {
+      "t": "same",
+      "s": "to 3-3/4"
+     },
+     {
+      "t": "add",
+      "s": "to 4"
+     },
+     {
+      "t": "same",
+      "s": "percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system. Economic activity is expanding at a solid"
+     },
+     {
+      "t": "del",
+      "s": "pace despite elevated"
+     },
+     {
+      "t": "add",
+      "s": "pace. While"
+     },
+     {
+      "t": "same",
+      "s": "uncertainty"
+     },
+     {
+      "t": "del",
+      "s": "that owes,"
+     },
+     {
+      "t": "add",
+      "s": "remains elevated owing,"
+     },
+     {
+      "t": "same",
+      "s": "in part, to"
+     },
+     {
+      "t": "del",
+      "s": "the conflict in the Middle East."
+     },
+     {
+      "t": "add",
+      "s": "geopolitical developments, domestic spending has been resilient."
+     },
+     {
+      "t": "same",
+      "s": "Productivity growth"
+     },
+     {
+      "t": "add",
+      "s": "is strong,"
+     },
+     {
+      "t": "same",
+      "s": "and capital investment"
+     },
+     {
+      "t": "del",
+      "s": "are strong."
+     },
+     {
+      "t": "add",
+      "s": "is robust."
+     },
+     {
+      "t": "same",
+      "s": "Job gains have kept pace with the workforce, and the unemployment rate has changed little. Inflation remains"
+     },
+     {
+      "t": "del",
+      "s": "elevated relative"
+     },
+     {
+      "t": "add",
+      "s": "elevated. Today's policy action will support a timelier return"
+     },
+     {
+      "t": "same",
+      "s": "to the Committee's 2 percent"
+     },
+     {
+      "t": "del",
+      "s": "goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy."
+     },
+     {
+      "t": "add",
+      "s": "goal."
+     },
+     {
+      "t": "same",
+      "s": "The Committee will deliver price stability."
+     }
+    ]
+   },
+   "sep": {
+    "years": [
+     "2026",
+     "2027",
+     "2028",
+     "2029",
+     "長期"
+    ],
+    "rows": [
+     {
+      "name": "実質GDP成長率",
+      "median": [
+       "2.3",
+       "2.4",
+       "2.2",
+       "2.1",
+       "2.0"
+      ],
+      "prev": [
+       "2.2",
+       "2.3",
+       "2.2",
+       "",
+       "2.0"
+      ]
+     },
+     {
+      "name": "失業率",
+      "median": [
+       "4.1",
+       "4.1",
+       "4.1",
+       "4.1",
+       "4.2"
+      ],
+      "prev": [
+       "4.3",
+       "4.3",
+       "4.2",
+       "",
+       "4.2"
+      ]
+     },
+     {
+      "name": "PCE物価上昇率",
+      "median": [
+       "3.7",
+       "2.3",
+       "2.1",
+       "2.0",
+       "2.0"
+      ],
+      "prev": [
+       "3.6",
+       "2.3",
+       "2.0",
+       "",
+       "2.0"
+      ]
+     },
+     {
+      "name": "コアPCE物価上昇率",
+      "median": [
+       "3.4",
+       "2.5",
+       "2.2",
+       "2.0",
+       ""
+      ],
+      "prev": [
+       "3.3",
+       "2.5",
+       "2.1",
+       "",
+       ""
+      ]
+     },
+     {
+      "name": "政策金利（年末の中央値）",
+      "median": [
+       "4.1",
+       "4.1",
+       "3.9",
+       "3.6",
+       "3.2"
+      ],
+      "prev": [
+       "3.8",
+       "3.6",
+       "3.4",
+       "",
+       "3.1"
+      ]
+     }
+    ]
+   },
+   "short": "FOMC"
+  },
+  {
+   "id": "speech-20260918-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-09-18",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Stress Testing ／ At a Chat with U.S. Federal Reserve Vice Chair for Supervision Michelle Bowman, London, United Kingdom",
+   "time": "09:30 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm"
+    }
+   ],
+   "result": {
+    "headline": "Initial Findings from Independent Review of Silicon Valley Bank"
+   }
+  },
+  {
+   "id": "speech-20260922-jefferson",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-09-22",
+   "title": "副議長 Jefferson 講演",
+   "short": "副議長 Jefferson",
+   "subtitle": "Discount Window Modernization and Treasury Market Functioning ／ At the 2026 Treasury Market Conference, Federal Reserve Bank of New York, New York. N.Y.",
+   "time": "10:20 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260922a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Discount Window Modernization and Treasury Market Functioning"
+   }
+  },
+  {
+   "id": "speech-20260928-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-09-28",
+   "title": "副議長（監督） Bowman 対談",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Recent Developments in Bank Supervision and Regulation ／ At the Military Banking Summit 2026 (Virtual)",
+   "time": "08:15 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260929a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Opening Remarks"
+   }
+  },
+  {
+   "id": "speech-20260929-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-09-29",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Opening Remarks (via pre-recorded video) ／ At the Federal Reserve System Community Bank Cyber Workshop (Virtual)",
+   "time": "11:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260929a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Opening Remarks"
+   }
+  },
+  {
+   "id": "speech-20261001-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-01",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Modernizing Financial Regulation: Initial Observations from eSLR ／ At the Atlantic Council’s Conversation with Michelle W. Bowman, Washington, D.C.",
+   "time": "15:00 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261001a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Modernizing Financial Regulation: Initial Observations from eSLR"
+   }
+  },
+  {
+   "id": "speech-20261001-jefferson",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-01",
+   "title": "副議長 Jefferson 講演",
+   "short": "副議長 Jefferson",
+   "subtitle": "U.S. Economy and Monetary Policy ／ At a Talk and Q&A with Federal Reserve Board Vice Chair Philip N. Jefferson, Charlottesville, Va.",
+   "time": "13:30 ET",
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm"
+    }
+   ],
+   "result": {
+    "headline": "The U.S. Economy and Monetary Policy"
+   }
+  },
+  {
+   "id": "speech-20261006-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-06",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Modernizing Regulation and Supervision ／ At the 2026 Community Banking Research Conference, St. Louis, Missouri",
+   "time": "10:45 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20260916",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-10-07",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "9/15–9/16会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "beige-20261014",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-10-14",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20261028",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-10-28",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "10/27–10/28の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20261028",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-11-18",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "10/27–10/28会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "beige-20261125",
+   "src": "beige",
+   "type": "beige",
+   "date": "2026-11-25",
+   "title": "ベージュブック（地区連銀経済報告）",
+   "short": "ベージュブック",
+   "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20261209",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2026-12-09",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "12/8–12/9の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20261209",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2026-12-30",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "12/8–12/9会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20270127",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-01-27",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "1/26–1/27の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20270127",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-02-17",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "1/26–1/27会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20270317",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-03-17",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "3/16–3/17の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20270317",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-04-07",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "3/16–3/17会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20270428",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-04-28",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "4/27–4/28の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20270428",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-05-19",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "4/27–4/28会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20270609",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-06-09",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "6/8–6/9の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20270609",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-06-30",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "6/8–6/9会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20270728",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-07-28",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "7/27–7/28の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20270728",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-08-18",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "7/27–7/28会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20270915",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-09-15",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "9/14–9/15の2日間会合・経済見通し（SEP）公表あり",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20270915",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-10-06",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "9/14–9/15会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-20271027",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-10-27",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "10/26–10/27の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "fomc-minutes-20271027",
+   "src": "fomc",
+   "type": "minutes",
+   "date": "2027-11-17",
+   "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
+   "subtitle": "10/26–10/27会合分（決定日の3週間後に公表）",
+   "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  }
+ ]
+}

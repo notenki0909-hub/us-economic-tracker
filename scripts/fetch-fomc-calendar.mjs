@@ -1,5 +1,5 @@
 /**
- * FRB公式のFOMC会合カレンダーから、次回会合の最終日（政策決定発表日）を取得する。
+ * FRB公式のFOMC会合カレンダーから、会合日程を取得する。
  *
  * FEDFUNDS（実効フェデラルファンド金利・月次平均）はFRED上で「H.15 Selected
  * Interest Rates」というほぼ毎営業日更新されるリリースの一部として扱われており、
@@ -7,7 +7,8 @@
  * 日程とも一致しない（単なる次の統計公表日になってしまう）。実際に利用者が
  * 知りたいのは「次はいつ金利が動くかもしれないか＝次回FOMC会合日」のため、
  * FF金利（fed_funds_rate_us）に限り、FRBが公式に公表しているFOMC会合カレンダー
- * ページを直接パースして使う。
+ * ページを直接パースして使う。イベントカレンダー（fetch-fed-events.mjs）も同じ
+ * パース結果を使う。
  *
  * ページのHTML構造（2026年時点で確認済み）：
  *   <div class="fomc-meeting__month ..."><strong>September</strong></div>
@@ -17,9 +18,10 @@
  * （臨時会合）のような表記があり、いずれも「最後の日」が政策決定の発表日
  * （FOMC声明の公表日）に対応する。
  */
+export const FOMC_CALENDAR_URL = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm";
+
 export async function fetchNextFomcDecisionDate() {
-  const url = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm";
-  const res = await fetch(url, { headers: { "User-Agent": "us-economic-tracker" } });
+  const res = await fetch(FOMC_CALENDAR_URL, { headers: { "User-Agent": "us-economic-tracker" } });
   if (!res.ok) return null;
   const html = await res.text();
   return parseNextFomcDecisionDate(html);
@@ -30,14 +32,16 @@ const MONTH_INDEX = {
   July: 6, August: 7, September: 8, October: 9, November: 10, December: 11,
 };
 
-/** テスト容易性のためパース処理を分離（fetchと切り離して単体で検証できる） */
-export function parseNextFomcDecisionDate(html, now = new Date()) {
-  const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-
+/**
+ * カレンダーページから全会合を抽出する。
+ * 戻り値: [{ start: Date, end: Date, sep: boolean, notation: boolean }]（UTC 0時）
+ *   end ＝ 政策決定（声明）の発表日 / sep ＝ 経済見通し（SEP）付きの会合（日付に「*」）
+ */
+export function parseFomcMeetings(html) {
   // 年ごとのセクション（"2026 FOMC Meetings" 等）に分割する。
   // split結果は [前置き, "2026", セクション本文, "2025", セクション本文, ...] の並びになる。
   const yearSections = html.split(/(\d{4})\s+FOMC Meetings/);
-  const dates = [];
+  const meetings = [];
 
   for (let i = 1; i < yearSections.length; i += 2) {
     const year = Number(yearSections[i]);
@@ -53,14 +57,29 @@ export function parseNextFomcDecisionDate(html, now = new Date()) {
       if (mi == null) continue;
       // "27-28" → "27-28" / "17-18*" → "17-18" / "22 (notation vote)" → "22"
       const cleaned = dayRanges[j].replace(/\*/g, "").replace(/\(.*\)/g, "").trim();
-      const parts = cleaned.split("-").map((s) => s.trim());
-      const lastDay = Number(parts[parts.length - 1]);
-      if (!Number.isFinite(lastDay) || lastDay < 1 || lastDay > 31) continue;
-      dates.push(new Date(Date.UTC(year, mi, lastDay)));
+      const parts = cleaned.split("-").map((x) => Number(x.trim()));
+      const firstDay = parts[0];
+      const lastDay = parts[parts.length - 1];
+      if (![firstDay, lastDay].every((n) => Number.isFinite(n) && n >= 1 && n <= 31)) continue;
+      // 月をまたぐ会合（例 "31-1"）は開始日を前月にする
+      meetings.push({
+        start: new Date(Date.UTC(year, firstDay > lastDay ? mi - 1 : mi, firstDay)),
+        end: new Date(Date.UTC(year, mi, lastDay)),
+        sep: dayRanges[j].includes("*"),
+        notation: /notation/i.test(dayRanges[j]),
+      });
     }
   }
+  return meetings;
+}
 
-  const upcoming = dates.filter((d) => d.getTime() >= today.getTime()).sort((a, b) => a - b);
+/** テスト容易性のためパース処理を分離（fetchと切り離して単体で検証できる） */
+export function parseNextFomcDecisionDate(html, now = new Date()) {
+  const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  const upcoming = parseFomcMeetings(html)
+    .map((m) => m.end)
+    .filter((d) => d.getTime() >= today.getTime())
+    .sort((a, b) => a - b);
   if (!upcoming.length) return null;
   const d = upcoming[0];
   const yyyy = d.getUTCFullYear();

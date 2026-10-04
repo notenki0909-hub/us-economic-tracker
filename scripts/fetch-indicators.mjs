@@ -13,6 +13,7 @@ import { dirname, resolve } from "node:path";
 import { INDICATORS, CATEGORY_GUIDES } from "./indicators.config.mjs";
 import { fetchFredSeries } from "./fetch-fred-series.mjs";
 import { fetchNextReleaseDate } from "./fetch-fred-release-date.mjs";
+import { computeChangeWatchFromHistory } from "./change-watch.mjs";
 import { fetchNextFomcDecisionDate } from "./fetch-fomc-calendar.mjs";
 import { fetchNextCensusReleaseDate } from "./fetch-census-calendar.mjs";
 
@@ -121,6 +122,12 @@ function computeSurpriseZ(points) {
   return (latest - mean) / sd;
 }
 
+/** changeWatch を持つ指標について、長期履歴を取得して変化幅チェックを計算する（詳細は change-watch.mjs） */
+async function computeChangeWatch(ind) {
+  const hist = await fetchFredSeries(ind.api.seriesId, "level", ind.changeWatch.historySince ?? "1986-01-01");
+  return computeChangeWatchFromHistory(hist, ind.changeWatch);
+}
+
 /**
  * 「景気回復シグナル」の機械判定に使う4指標（米国版限定）。新規失業保険申請件数・耐久財受注・
  * 長短金利差・S&P500は、いずれもConference Board（全米産業審議委員会）が公式に定めるLEI
@@ -170,6 +177,7 @@ function buildEconSummary(indicators) {
   const neutralList = [];
   const statusFindings = [];
   const surpriseFindings = [];
+  const changeWatchFindings = [];
   const turningSignalFindings = [];
   const byId = new Map();
 
@@ -285,6 +293,31 @@ function buildEconSummary(indicators) {
           text: `${ind.name}は直近（${recentLabel}）${trendWord}方向ですが、その前（${priorLabel}）と比べて勢いが${Math.round(tp.momentumRatio * 100)}%まで弱まっています。${cautionWord}。`,
         });
       }
+    }
+
+    if (ind.changeWatch) {
+      const cw = ind.changeWatch;
+      const months = Math.round(cw.windowDays / 30.4);
+      const amt = `${cw.change > 0 ? "+" : cw.change < 0 ? "−" : ""}${Math.abs(cw.change).toFixed(2)}`;
+      const since = cw.historyStart.slice(0, 4);
+      const head = `${cw.from.t}（${cw.from.value}）→${cw.to.t}（${cw.to.value}）の${months}か月間で${amt}ポイントの変化。`;
+      const tail =
+        cw.level === "alert"
+          ? `${cw.warnDelta}ポイント以上拡大しており、警戒の目安に達しています。${since}年以降の同じ長さの変化のうち、これより大きく拡大したのは約${cw.topPct}%です（z=${cw.z}）。`
+          : cw.level === "watch"
+            ? `警戒の目安（+${cw.warnDelta}ポイント）には届きませんが、${since}年以降の変化と比べるとやや大きな拡大です（z=${cw.z}、上位約${cw.topPct}%）。`
+            : `${since}年以降の${months}か月間の変化と比べて通常の範囲内です（z=${cw.z}）。`;
+      changeWatchFindings.push({
+        id: ind.id,
+        name: ind.name,
+        shortName: ind.shortName,
+        months,
+        level: cw.level,
+        change: cw.change,
+        z: cw.z,
+        warnDelta: cw.warnDelta,
+        text: head + tail,
+      });
     }
 
     const z = computeSurpriseZ(ind.points ?? []);
@@ -428,6 +461,8 @@ function buildEconSummary(indicators) {
     currentNoRefList,
     statusFindings: statusFindings.slice(0, 8),
     surpriseFindings: surpriseFindings.slice(0, 6),
+    // 一定期間の変化幅チェック（changeWatchを持つ指標。常に全件を返し、画面側で通常/注意/警戒を表示する）
+    changeWatchFindings,
     // 表示上限は設けない（フロント側でturningSignalVisibleLimit件まで表示し、
     // 残りは折りたたみで表示する。件数が指標総数を超えることはないため安全）。
     turningSignalFindings,
@@ -445,6 +480,15 @@ async function main() {
     process.stdout.write(`- ${ind.id} ... `);
     try {
       const points = await fetchFredSeries(ind.api.seriesId, ind.api.transform, ind.api.since);
+
+      let changeWatch = null;
+      if (ind.changeWatch) {
+        try {
+          changeWatch = await computeChangeWatch(ind);
+        } catch {
+          // 長期履歴の取得に失敗しても、指標本体の更新は止めない
+        }
+      }
 
       let nextRelease = null;
       try {
@@ -488,6 +532,7 @@ async function main() {
           sourceUrl: `https://fred.stlouisfed.org/series/${ind.api.seriesId}`,
         },
         summary: summarize(points, ind.frequency),
+        changeWatch,
         points: points.map((p) => ({ t: p.t, value: p.value })),
       });
       console.log(`OK (${points.length}点, 最新 ${points.at(-1).t}=${points.at(-1).value})`);

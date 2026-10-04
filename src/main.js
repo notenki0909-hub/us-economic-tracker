@@ -688,6 +688,23 @@ function renderEconSummary() {
       </div>`
     : "";
 
+  // 一定期間の変化幅チェック（例：信用スプレッドの3か月変化）。後退警戒コンボ（4指標の固定判定）には
+  // 含めず、別の注意点として表示する。水準の目安ラインがない指標を、変化の大きさと過去の分布（z値）で見る。
+  const cwLabel = { alert: "警戒の目安に到達", watch: "やや大きな拡大", normal: "通常の範囲内" };
+  const cwIcon = { alert: "🚨", watch: "⚠️", normal: "💳" };
+  const changeWatchHtml = (sum.changeWatchFindings ?? [])
+    .map(
+      (f) => `
+      <div class="econ-summary__recovery ${f.level === "alert" ? "econ-summary__recovery--warning" : ""}">
+        <b>${cwIcon[f.level]} ${f.shortName}の${f.months}か月変化チェック（${cwLabel[f.level]}）</b>
+        <p>${f.text}</p>
+        <div class="econ-summary__combo-items">
+          <button type="button" class="econ-summary__combo-chip" data-id="${f.id}">→ ${f.shortName}の詳細を見る</button>
+        </div>
+      </div>`
+    )
+    .join("");
+
   el.innerHTML = `
     <div class="econ-summary__head">
       <h2>📊 現在の経済状況サマリー</h2>
@@ -712,6 +729,7 @@ function renderEconSummary() {
     ${surpriseHtml}
     ${recoveryHtml}
     ${recessionHtml}
+    ${changeWatchHtml}
     <p class="econ-summary__disclaimer">
       ※ このサマリーは、各指標の前期比・目安ライン・過去の変動幅を毎日機械的に集計したものです
       （AIによる分析ではありません）。因果関係の解説や将来予測、投資助言ではない点にご注意ください。
@@ -985,13 +1003,20 @@ function openDetail(id) {
   const surpriseText = surprise
     ? `${surprise.level !== "low" ? "⚡ " : ""}${surprise.label}（z=${surprise.z.toFixed(1)}）`
     : "算出不可（データ不足）";
+  const cw = ind.changeWatch;
+  const cwSigned = cw ? `${cw.change > 0 ? "+" : cw.change < 0 ? "−" : ""}${Math.abs(cw.change).toFixed(2)}` : "";
+  const cwMonths = cw ? Math.round(cw.windowDays / 30.4) : 0;
+  const cwStatus = cw ? { alert: "🚨 警戒の目安に到達", watch: "⚠️ やや大きな拡大", normal: "通常の範囲内" }[cw.level] : "";
+  const changeWatchStat = cw
+    ? `<div><span>${cwMonths}か月の変化</span><b>${cwSigned} pt（z=${cw.z.toFixed(1)}・${cwStatus}）</b></div>`
+    : "";
   document.getElementById("d-stats").innerHTML = `
     <div><span>最新（${s.latest.t}）</span><b>${f(s.latest.value)}</b></div>
     <div><span>過去最大（${s.max.t}）</span><b>${f(s.max.value)}</b></div>
     <div><span>過去最小（${s.min.t}）</span><b>${f(s.min.value)}</b></div>
     <div><span>データ数</span><b>${s.count}点</b></div>
     <div><span>季節調整</span><b>${ind.seasonalAdjustment}</b></div>
-    <div><span>変化の大きさ</span><b>${surpriseText}</b></div>`;
+    <div><span>変化の大きさ</span><b>${surpriseText}</b></div>${changeWatchStat}`;
   document.getElementById("d-stats-note").textContent =
     "⚡は市場予想との比較ではなく、指標自身の過去の変化幅の分布から見た統計的な目安（|z|≥1.5）です。";
 
@@ -1002,6 +1027,19 @@ function openDetail(id) {
   } else {
     surpriseDetailEl.hidden = true;
     surpriseDetailEl.textContent = "";
+  }
+
+  const cwEl = document.getElementById("d-changewatch");
+  if (cwEl) {
+    if (cw) {
+      cwEl.hidden = false;
+      cwEl.textContent =
+        `📏 ${cwMonths}か月間の変化：${cw.from.t}（${cw.from.value}）→ ${cw.to.t}（${cw.to.value}）で ${cwSigned} ポイント。` +
+        `警戒の目安は『${cwMonths}か月間で +${cw.warnDelta} ポイント以上の拡大』。z値は、${cw.historyStart.slice(0, 4)}年以降の同じ長さの変化の分布と比べた珍しさです（z=${cw.z.toFixed(1)}）。`;
+    } else {
+      cwEl.hidden = true;
+      cwEl.textContent = "";
+    }
   }
 
   const j = ind.judgment;

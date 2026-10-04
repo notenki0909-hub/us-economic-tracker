@@ -591,6 +591,153 @@ export const INDICATORS = [
     releaseSchedule: "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
     api: { provider: "fred", seriesId: "VIXCLS", transform: "level", since: "2016-01-01", statName: "CBOE Volatility Index: VIX (Cboe)" },
   },
+  {
+    id: "building_permits_us",
+    importance: 3,
+    name: "新築住宅建築許可件数",
+    shortName: "建築許可件数",
+    category: "景気",
+    unit: "千戸",
+    unitLabel: "千戸（年率換算・季節調整値）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "新築住宅の建築を自治体が許可した件数（年率換算）。許可を受けてから着工するため、住宅着工や建設活動の" +
+      "『先行指標』とされる。住宅は金利の影響を最も受けやすい分野で、景気先行指数（LEI）の構成要素にも" +
+      "含まれる。",
+    judgment: {
+      summary: "水準そのものより、数か月単位で増えているか減っているかの方向を見る。住宅市場の先行きと、金利が実体経済に効いているかを探る材料になる。",
+      goodWhen: "数か月にわたって増加傾向にある状態（住宅需要や建設意欲が回復している）。",
+      badWhen: "数か月連続で大きく減少している状態（金利の高止まりや景気不安で、建設を控える動きが広がっている）。",
+      caveat: "単月の振れが大きく、後から改定される。大型の集合住宅の許可で単月だけ跳ねることもあるため、3か月程度の傾向で見る。",
+    },
+    referenceLines: [],
+    releaseSchedule: "米国センサス局が、新築住宅着工・許可件数として毎月中旬ごろに公表。",
+    api: { provider: "fred", seriesId: "PERMIT", transform: "level", statName: "New Private Housing Units Authorized by Building Permits (U.S. Census Bureau)" },
+  },
+  {
+    id: "mortgage_rate_us",
+    importance: 3,
+    name: "30年固定住宅ローン金利",
+    shortName: "住宅ローン金利",
+    category: "金利",
+    unit: "%",
+    unitLabel: "%（週次・30年固定の平均）",
+    frequency: "weekly",
+    seasonalAdjustment: "原数値",
+    betterWhen: "neutral",
+    description:
+      "住宅金融機関のフレディマックが毎週調査する、30年固定住宅ローンの平均金利。米国の住宅購入の負担を" +
+      "直接左右し、住宅販売・着工・住宅関連の消費に影響する。",
+    judgment: {
+      summary: "米10年国債利回りに連動して動く。ローン金利が上がると、住宅購入の月々の支払いが増えて住宅市場が冷えやすく、下がると逆の動きになる。",
+      goodWhen: "緩やかな低下、または安定している状態（住宅購入の負担が重くならない）。",
+      badWhen: "急上昇が続く状態（購入負担が急増し、住宅販売や着工が冷え込みやすい）。",
+      caveat: "FRBの政策金利が直接決めるものではなく、10年国債利回りに上乗せされる幅（スプレッド）で決まる。借りる人には低いほど有利、貸す側には高いほど有利と、立場によって『良い』の意味が逆になる。",
+    },
+    referenceLines: [],
+    releaseSchedule: "フレディマックが毎週木曜日に公表。",
+    api: { provider: "fred", seriesId: "MORTGAGE30US", transform: "level", since: "2016-01-01", statName: "30-Year Fixed Rate Mortgage Average in the United States (Freddie Mac)" },
+  },
+  {
+    id: "credit_spread_us",
+    importance: 4,
+    name: "社債の信用スプレッド（Baa社債利回り-米10年債）",
+    shortName: "信用スプレッド",
+    category: "金利",
+    unit: "%",
+    unitLabel: "%ポイント（Baa社債利回り-10年国債利回り、日次）",
+    frequency: "daily",
+    seasonalAdjustment: "原数値",
+    betterWhen: "down",
+    description:
+      "投資適格の中では格付けが低めの社債（Baa格）の利回りから、米10年国債の利回りを引いた差。企業が" +
+      "資金を借りるときに上乗せされる『リスクの上乗せ幅』で、投資家が企業の返済力をどれだけ心配しているかを" +
+      "示す。景気後退や金融不安の局面で広がりやすく、景気先行指数にも信用の指標が含まれる。",
+    judgment: {
+      summary: "差が狭いほど信用環境は良好、急に広がるときは企業の資金繰りへの不安が高まっているサイン。",
+      goodWhen: "低めの水準で安定している状態（投資家が企業向け融資・社債に安心している）。",
+      badWhen: "短期間で急拡大している状態（過去の景気後退や金融不安の局面で大きく広がった）。",
+      caveat: "金利水準そのものではなく『差』のため、国債利回りの動き次第でも変わる。株価・VIXなどの市場指標と合わせて確認すると判断しやすい。",
+    },
+    referenceLines: [],
+    releaseSchedule: "ムーディーズの社債利回りと米財務省の国債利回りから、毎営業日算出。",
+    api: { provider: "fred", seriesId: "BAA10Y", transform: "level", since: "2016-01-01", statName: "Moody's Baa Corporate Bond Yield Relative to 10-Year Treasury (Moody's, FRB)" },
+  },
+  {
+    id: "philly_fed_us",
+    importance: 3,
+    name: "フィラデルフィア連銀 製造業景況指数",
+    shortName: "フィラデルフィア連銀景況",
+    category: "景気",
+    unit: "",
+    unitLabel: "DI（景況判断指数、0が拡大・縮小の分岐）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "フィラデルフィア連銀が管内の製造業者に毎月行う調査から算出する、現在の景況感の指数。『良い』と答えた" +
+      "企業の割合から『悪い』と答えた企業の割合を引いた値で、ISM製造業景況指数のような全国調査が無料で" +
+      "得られないため、全米の製造業の動きを探る代わりの指標として広く参照される。",
+    judgment: {
+      summary: "0を上回れば製造業の活動が拡大していると答える企業が多く、下回れば縮小していると答える企業が多い。",
+      goodWhen: "プラス圏で推移している状態（製造業の受注・生産が拡大している）。",
+      badWhen: "マイナス圏で推移している、または急低下している状態（製造業の景況感が悪化している）。",
+      caveat: "ペンシルベニア東部・ニュージャージー南部・デラウェア州の企業が対象の地域調査で、月ごとの振れが大きい。全米の動きとは一致しないこともあるため、3か月程度の傾向で見る。",
+    },
+    referenceLines: [{ value: 0, label: "0＝拡大・縮小の分岐", kind: "neutral" }],
+    releaseSchedule: "フィラデルフィア連銀が毎月第3木曜日ごろに公表。",
+    api: { provider: "fred", seriesId: "GACDFSA066MSFRBPHI", transform: "level", statName: "Philadelphia Fed Manufacturing Business Outlook Survey: Current General Activity (SA)" },
+  },
+  {
+    id: "breakeven_inflation_us",
+    importance: 4,
+    name: "10年ブレークイーブン・インフレ率",
+    shortName: "期待インフレ率（10年）",
+    category: "物価",
+    unit: "%",
+    unitLabel: "%（今後10年の平均、日次）",
+    frequency: "daily",
+    seasonalAdjustment: "原数値",
+    betterWhen: "neutral",
+    description:
+      "物価連動国債（TIPS）と通常の国債の利回りの差から、債券市場が織り込んでいる『今後10年間の平均物価上昇率』" +
+      "を逆算した値。FRBが物価への信認（インフレ期待が安定しているか）を確認するために重視する市場の指標。",
+    judgment: {
+      summary: "市場が予想する将来のインフレ率。2%前後で安定していれば、物価の先行きに対する信認が保たれていると見られる。",
+      goodWhen: "2%前後で安定している状態（インフレ期待が落ち着いている）。",
+      badWhen: "急上昇している状態（インフレ再加速の織り込み）。逆に急低下も、景気後退やデフレ懸念を織り込んでいる可能性がある。",
+      caveat: "予想というより債券市場の需給や流動性の影響も受ける。CPI連動のため、FRBが目標とするPCE物価より高めに出やすく、2%の線はあくまで参考。",
+    },
+    referenceLines: [{ value: 2, label: "参考：2%（物価安定の目安）", kind: "context" }],
+    releaseSchedule: "FRBが毎営業日、取引終了後に公表。",
+    api: { provider: "fred", seriesId: "T10YIE", transform: "level", since: "2016-01-01", statName: "10-Year Breakeven Inflation Rate (Federal Reserve)" },
+  },
+  {
+    id: "wti_oil_us",
+    importance: 3,
+    name: "WTI原油価格",
+    shortName: "WTI原油",
+    category: "為替・市場",
+    unit: "ドル",
+    unitLabel: "ドル/バレル（日次）",
+    frequency: "daily",
+    seasonalAdjustment: "原数値",
+    betterWhen: "neutral",
+    description:
+      "米国の代表的な原油価格（WTI）。ガソリン・輸送費・電気代などを通じて物価を左右し、家計や企業の負担にも" +
+      "なる。一方でエネルギー産業には追い風になるなど、経済への影響が一方向ではない。",
+    judgment: {
+      summary: "原油高は物価を押し上げて家計・企業の負担になり、原油安は逆。急変動のときは、需要の変化（景気）か供給の変化（産油国・地政学）かを見分けることが大切。",
+      goodWhen: "穏やかな範囲で安定している状態（物価や景気への影響が小さい）。",
+      badWhen: "短期間での急騰（物価上昇と消費の圧迫）、または急落（世界の需要減速を示唆）。",
+      caveat: "景気が良くて上がる場合と、供給不安で上がる場合では、意味が逆になる。産油国の供給調整や地政学リスクでも大きく動く。",
+    },
+    referenceLines: [],
+    releaseSchedule: "米エネルギー情報局（EIA）が毎営業日公表。FREDへの反映は数日遅れることがある。",
+    api: { provider: "fred", seriesId: "DCOILWTICO", transform: "level", since: "2016-01-01", statName: "Crude Oil Prices: West Texas Intermediate (EIA)" },
+  },
 ];
 
 export const CATEGORIES = ["景気", "物価", "雇用・所得", "対外", "金利", "為替・市場"];

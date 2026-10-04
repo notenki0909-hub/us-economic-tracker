@@ -100,6 +100,55 @@ export function parseStatement(html) {
   };
 }
 
+/** 議事要旨HTMLを「見出し（太字）→段落の配列」にする */
+export function parseMinutesSections(html) {
+  const start = html.indexOf('id="article"');
+  const region = start < 0 ? html : html.slice(start);
+  const map = new Map();
+  let cur = null;
+  for (const m of region.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)) {
+    const h = m[1].match(/^\s*<strong>([\s\S]*?)<\/strong>([\s\S]*)$/);
+    if (h) {
+      cur = stripTags(h[1]).replace(/[\u2018\u2019]/g, "'");
+      if (!map.has(cur)) map.set(cur, []);
+      const rest = stripTags(h[2]);
+      if (rest) map.get(cur).push(rest);
+    } else if (cur) {
+      const t = stripTags(m[1]);
+      if (t) map.get(cur).push(t);
+    }
+  }
+  return map;
+}
+
+/** 議事要旨から、決定内容・参加者の見方（冒頭）・スタッフの経済見通しを原文のまま抜き出す */
+export function minutesExcerpt(html) {
+  const map = parseMinutesSections(html);
+  const out = [];
+  const policy = map.get("Committee Policy Actions");
+  if (policy?.length) out.push({ heading: "委員会の決定（Committee Policy Actions）", paragraphs: policy.slice(0, 1) });
+  const views = map.get("Participants' Views on Current Conditions and the Economic Outlook");
+  if (views?.length) out.push({ heading: "参加者の見方（Participants' Views）冒頭の3段落", paragraphs: views.slice(0, 3) });
+  const staff = map.get("Staff Economic Outlook");
+  if (staff?.length) out.push({ heading: "スタッフの経済見通し（Staff Economic Outlook）", paragraphs: staff });
+  return out;
+}
+
+/** ベージュブック要約ページの「全米の概況」（景気全体・雇用・物価）を原文のまま抜き出す */
+export function beigeExcerpt(html) {
+  const names = {
+    "Overall Economic Activity": "景気全体（Overall Economic Activity）",
+    "Labor Markets": "雇用（Labor Markets）",
+    Prices: "物価（Prices）",
+  };
+  const out = [];
+  for (const [en, ja] of Object.entries(names)) {
+    const m = html.match(new RegExp(String.raw`<h4[^>]*>\s*${en}\s*</h4>\s*<p>([\s\S]*?)</p>`));
+    if (m) out.push({ heading: ja, paragraphs: [stripTags(m[1])] });
+  }
+  return out;
+}
+
 const SEP_NAMES_JA = {
   "Change in real GDP": "実質GDP成長率",
   "Unemployment rate": "失業率",
@@ -281,7 +330,7 @@ export async function buildFedEvents(existing, now = new Date()) {
       };
       const old = oldById.get(id);
 
-      if (old?.status === "done" && old.result) {
+      if (old?.status === "done" && old.result && old.excerpt) {
         events.push({ ...old, subtitle: ev.subtitle, short: ev.short });
       } else if (m.end <= today) {
         const st = await fetchText(stmtUrl);
@@ -290,6 +339,7 @@ export async function buildFedEvents(existing, now = new Date()) {
           ev.status = "done";
           ev.links.push({ label: "声明文（公式）", url: stmtUrl });
           ev.links.push({ label: "記者会見（公式）", url: `${BASE}/monetarypolicy/fomcpresconf${code}.htm` });
+          ev.excerpt = [{ heading: "声明文の全文（原文・英語）", paragraphs: parsed.paragraphs }];
           ev.result = {
             action: parsed.action,
             rangeLow: parsed.rangeLow,
@@ -338,7 +388,7 @@ export async function buildFedEvents(existing, now = new Date()) {
         status: "scheduled",
         links: [],
       };
-      if (oldMin?.status === "done") {
+      if (oldMin?.status === "done" && oldMin.excerpt) {
         events.push({ ...oldMin, subtitle: minEv.subtitle, short: minEv.short });
       } else {
         if (minDate <= today) {
@@ -346,6 +396,7 @@ export async function buildFedEvents(existing, now = new Date()) {
           if (r.ok) {
             minEv.status = "done";
             minEv.links.push({ label: "議事要旨（公式）", url: minUrl });
+            minEv.excerpt = minutesExcerpt(r.text);
           }
         }
         events.push(minEv);
@@ -363,8 +414,15 @@ export async function buildFedEvents(existing, now = new Date()) {
       const links = [];
       if (b.htmlUrl) links.push({ label: "要約（公式）", url: b.htmlUrl });
       if (b.pdfUrl) links.push({ label: "全文PDF（公式）", url: b.pdfUrl });
+      const beigeId = `beige-${ymd(b.date)}`;
+      let beigeEx = oldById.get(beigeId)?.excerpt;
+      if (b.htmlUrl && beigeEx === undefined) {
+        const r = await fetchText(b.htmlUrl);
+        beigeEx = r.ok ? beigeExcerpt(r.text) : undefined;
+      }
       events.push({
-        id: `beige-${ymd(b.date)}`,
+        id: beigeId,
+        ...(beigeEx !== undefined ? { excerpt: beigeEx } : {}),
         src: "beige",
         type: "beige",
         date: isoDate(b.date),
@@ -473,6 +531,7 @@ export async function buildFedEvents(existing, now = new Date()) {
       result: e.result ?? old.result,
       diff: e.diff ?? old.diff,
       sep: e.sep ?? old.sep,
+      excerpt: e.excerpt ?? old.excerpt,
     };
   });
   return { events: merged, failedSrc };

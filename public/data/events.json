@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-04T09:54:54.110Z",
+ "generatedAt": "2026-10-04T10:29:08.290Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 52,
  "events": [
@@ -9,6 +9,7 @@
    "type": "fomc",
    "date": "2025-09-17",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "9/16–9/17の2日間会合・経済見通し（SEP）公表あり",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -24,6 +25,17 @@
     {
      "label": "経済見通し（SEP・公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20250917.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "Recent indicators suggest that growth of economic activity moderated in the first half of the year. Job gains have slowed, and the unemployment rate has edged up but remains low. Inflation has moved up and remains somewhat elevated.",
+      "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual mandate and judges that downside risks to employment have risen.",
+      "In support of its goals and in light of the shift in the balance of risks, the Committee decided to lower the target range for the federal funds rate by 1/4 percentage point to 4 to 4-1/4 percent. In considering additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee will continue reducing its holdings of Treasury securities and agency debt and agency mortgage-backed securities. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective.",
+      "In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     ]
     }
    ],
    "result": {
@@ -266,8 +278,7 @@
       ]
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20250917",
@@ -275,6 +286,7 @@
    "type": "minutes",
    "date": "2025-10-08",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "9/16–9/17会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -284,7 +296,30 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250917.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In their discussions of monetary policy for this meeting, members agreed that recent indicators suggested that growth of economic activity had moderated in the first half of the year. To reflect developments in the labor market, they agreed to no longer characterize labor market conditions as solid and instead state that job gains had slowed and that the unemployment rate had edged up but remained low. Members concurred that inflation remained somewhat elevated and agreed to add that inflation had moved up. They agreed that the Committee was attentive to the risks to both sides of its dual mandate and to add that downside risks to employment had risen to reflect their concerns about the labor market."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "In conjunction with this FOMC meeting, participants submitted their projections of the most likely outcomes for real GDP growth, the unemployment rate, and inflation for each year from 2025 through 2028 and over the longer run. The projections were based on participants' individual assessments of appropriate monetary policy, including their projections of the federal funds rate. Participants also provided their individual assessments of the level of uncertainty and the balance of risks associated with their projections. The Summary of Economic Projections was released to the public after the meeting.",
+      "Participants observed that inflation had moved up since the beginning of the year and remained somewhat above the Committee's 2 percent longer-run goal. Although participants generally assessed that this year's tariff increases had put upward pressure on inflation, some remarked that these effects appeared to have been somewhat muted to date relative to expectations from earlier in the year. A few participants suggested that productivity gains may be reducing inflation pressures. A couple of participants expressed the view that, excluding the effects of this year's tariff increases, inflation would be close to target. A few other participants, however, emphasized that progress of inflation toward the Committee's 2 percent objective had stalled, even excluding the effects of this year's tariff increases.",
+      "With regard to the outlook for inflation, participants generally expected that, given appropriate monetary policy, inflation would be somewhat elevated in the near term and would gradually return to 2 percent thereafter. Some participants noted that business contacts had indicated that they would raise prices over time because of higher input costs stemming from tariff increases. Uncertainty remained about the inflation effects of this year's increase in tariffs, though most participants expected these effects to be realized by the end of next year. Some participants remarked that the labor market was not expected to be a source of inflationary pressure. A couple of participants expected that the reduction in net migration would be associated with lower demand and lower inflation, and a couple of participants observed that continued productivity gains would likely reduce inflation pressures. Participants noted that longer-term inflation expectations continued to be well anchored and that it was important they remain so to help return inflation to 2 percent. Various participants stressed the central role of monetary policy in ensuring that longer-term inflation expectations remained well anchored. A majority of participants emphasized upside risks to their outlooks for inflation, pointing to inflation readings moving further from 2 percent, continued uncertainty about the effects of tariffs, the possibility that elevated inflation proves to be more persistent than currently expected even after the inflation effects of this year's tariff increases fade, or the possibility of longer-term inflation expectations moving up after a long period of elevated inflation readings. Some participants remarked that they perceived less upside risk to their outlooks for inflation than earlier in the year."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "Compared with the staff forecast prepared for the July meeting, the projection of real GDP growth was revised up somewhat, on balance, for this year through 2028, primarily reflecting stronger-than-expected data for both consumer spending and business investment as well as financial conditions that were projected to be a little more supportive of output growth. GDP growth was still projected to be faster next year than this year, as the effects of tariff increases and slower net immigration were expected to diminish. The staff continued to expect that the labor market would soften further this year, though the projected path for the unemployment rate in following years was a little lower than in the previous staff forecast. The unemployment rate was projected to move slightly above the staff's estimate of its natural rate through the remainder of this year and then to decline later in the projection as GDP growth picked up.",
+      "The staff's inflation projection was only slightly revised from the one prepared for the July meeting. Tariff increases were still expected to raise inflation this year and to provide some further upward pressure on inflation in 2026. Inflation was projected to decline in 2026, to reach 2 percent in 2027, and to remain there in 2028.",
+      "The staff continued to view the uncertainty around the projection as elevated, primarily reflecting uncertainty regarding changes to economic policies, including those for trade, immigration, fiscal spending, and regulation, and their associated economic effects. Risks to employment and the labor market were judged to have become a little more tilted to the downside, stemming from the recent softening in labor market conditions amid modest real GDP growth. The staff continued to view the risks around the inflation forecast as skewed to the upside, as the projected rise in inflation this year could prove to be more persistent than assumed in the baseline projection."
+     ]
+    }
+   ]
   },
   {
    "id": "fomc-20251029",
@@ -292,6 +327,7 @@
    "type": "fomc",
    "date": "2025-10-29",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "10/28–10/29の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -303,6 +339,17 @@
     {
      "label": "記者会見（公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20251029.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "Available indicators suggest that economic activity has been expanding at a moderate pace. Job gains have slowed this year, and the unemployment rate has edged up but remained low through August; more recent indicators are consistent with these developments. Inflation has moved up since earlier in the year and remains somewhat elevated.",
+      "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual mandate and judges that downside risks to employment rose in recent months.",
+      "In support of its goals and in light of the shift in the balance of risks, the Committee decided to lower the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent. In considering additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee decided to conclude the reduction of its aggregate securities holdings on December 1. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective.",
+      "In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     ]
     }
    ],
    "result": {
@@ -457,8 +504,7 @@
       "s": "The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20251029",
@@ -466,6 +512,7 @@
    "type": "minutes",
    "date": "2025-11-19",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "10/28–10/29会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -475,7 +522,30 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251029.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In their discussions of monetary policy for this meeting, members agreed that available indicators suggested that economic activity had been expanding at a moderate pace. They also agreed that job gains had slowed this year and that the unemployment rate had edged up but remained low through August. Members observed that more recent indicators were consistent with these developments. They noted that inflation had moved up since earlier in the year and remained somewhat elevated. They agreed that the Committee was attentive to the risks to both sides of its dual mandate and that downside risks to employment had risen in recent months."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "In their discussion of inflation, participants observed that overall inflation had moved up since earlier in the year and remained somewhat above the Committee's 2 percent longer-run goal. Participants generally noted that core inflation had remained elevated, as disinflation in housing services had been more than offset by higher goods inflation, reflecting in part the effects of tariff increases implemented earlier in the year. Several participants observed that, setting aside their estimates of tariff effects, inflation was close to the Committee's target. Many participants, however, remarked that overall inflation had been above target for some time and had shown little sign of returning sustainably to the 2 percent objective in a timely manner.",
+      "Participants generally expected inflation to remain somewhat elevated in the near term before moving gradually to 2 percent. Several participants pointed to the persistence in core nonhousing services inflation as a factor that may keep overall inflation above 2 percent in the near term. Many participants expected some additional pickup in core goods inflation over the next few quarters, driven in part by further pass-through of tariffs to firms' pricing. Several participants expressed uncertainty about the timing and magnitude of tariff-related price effects, noting that some businesses were reportedly waiting to adjust prices until tariff policies seemed more settled. Drawing on reports from their District contacts, several participants remarked that businesses, including those not directly affected by tariffs, indicated that they planned to raise prices gradually in response to higher tariff-related input costs. A few participants suggested that potential recent productivity gains achieved through automation and AI may help businesses support their profit margins and limit the extent to which cost increases are passed on to consumers. A few participants commented that the softer labor market would likely help keep inflationary pressures in check. A couple of participants noted that recent changes in immigration policies would lessen housing demand and strengthen the disinflation in housing services prices.",
+      "Participants generally noted that most measures of short-term inflation expectations had eased somewhat from their peaks earlier in the year and that most survey-based and market-based measures of longer-term inflation have shown little net change since the end of last year, which suggested that longer-term inflation expectations remained well anchored. Participants emphasized the importance of maintaining well-anchored inflation expectations to help return inflation to the Committee's 2 percent objective in a timely manner, and many noted concerns that the prolonged period of above-target inflation could risk an increase in longer-term expectations."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "Relative to the forecast prepared for the September meeting, real GDP growth was projected to be modestly stronger, on balance, through 2028, reflecting stronger expected potential output growth and greater projected support from financial conditions. GDP growth after 2025 was expected to remain above potential until 2028 as the drag from higher tariffs waned, with financial conditions becoming a tailwind for spending. As a result, the unemployment rate was expected to decline gradually after this year before flattening out at a level slightly below the staff's estimate of the natural rate of unemployment.",
+      "The staff's inflation forecast was broadly similar to the one prepared for the September meeting, with tariff increases expected to put upward pressure on inflation in 2025 and 2026. Thereafter, inflation was projected to return to its previous disinflationary trend.",
+      "The staff continued to view the uncertainty around the forecast as elevated, citing a cooling labor market, still-elevated inflation, heightened uncertainty about government policy changes and their effects on the economy, and the limited availability of data caused by the government shutdown. Risks around the employment and GDP forecasts continued to be seen as skewed to the downside, as elevated economic uncertainty and a cooling labor market raised the risk of a sharper-than-expected weakening in labor market conditions and output growth. Risks around the inflation forecast continued to be seen as skewed to the upside, as the elevated levels of some measures of expected inflation and more than four consecutive years of actual inflation above 2 percent raised the possibility that this year's projected rise in inflation would prove to be more persistent than the staff anticipated."
+     ]
+    }
+   ]
   },
   {
    "id": "fomc-20251210",
@@ -483,6 +553,7 @@
    "type": "fomc",
    "date": "2025-12-10",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "12/9–12/10の2日間会合・経済見通し（SEP）公表あり",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -498,6 +569,18 @@
     {
      "label": "経済見通し（SEP・公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20251210.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "Available indicators suggest that economic activity has been expanding at a moderate pace. Job gains have slowed this year, and the unemployment rate has edged up through September. More recent indicators are consistent with these developments. Inflation has moved up since earlier in the year and remains somewhat elevated.",
+      "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual mandate and judges that downside risks to employment rose in recent months.",
+      "In support of its goals and in light of the shift in the balance of risks, the Committee decided to lower the target range for the federal funds rate by 1/4 percentage point to 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective.",
+      "In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments.",
+      "The Committee judges that reserve balances have declined to ample levels and will initiate purchases of shorter-term Treasury securities as needed to maintain an ample supply of reserves on an ongoing basis."
+     ]
     }
    ],
    "result": {
@@ -680,8 +763,7 @@
       ]
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20251210",
@@ -689,6 +771,7 @@
    "type": "minutes",
    "date": "2025-12-31",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "12/9–12/10会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -698,10 +781,53 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251210.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In their discussions of the monetary policy decision for this meeting, members agreed that available indicators suggested that economic activity had been expanding at a moderate pace. They also agreed that job gains had slowed this year and that the unemployment rate had edged up through September. Members observed that more recent indicators were consistent with these developments. They noted that inflation had moved up since earlier in the year and remained somewhat elevated. They agreed that the Committee was attentive to the risks to both sides of its dual mandate and that downside risks to employment had risen in recent months."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "In conjunction with this FOMC meeting, participants submitted their projections of the most likely outcomes for real GDP growth, the unemployment rate, and inflation for each year from 2025 through 2028 and over the longer run. The projections were based on participants' individual assessments of appropriate monetary policy, including their projections of the federal funds rate. Participants also provided their individual assessments of the level of uncertainty and the balance of risks associated with their projections. The Summary of Economic Projections was released to the public after the meeting.",
+      "Participants observed that overall inflation had moved up through September since earlier in the year and remained somewhat above the Committee's 2 percent longer-run goal, but more recent inflation data produced by the government were unavailable. Most participants remarked that core inflation had been pushed up by higher tariffs that boosted goods prices, even as some participants noted that housing services inflation had moved down closer to levels seen during previous periods when inflation was near 2 percent. A couple of participants commented that inflation in some nonmarket services categories had been affected by special factors, and thus were unlikely to provide a clear signal about broader inflationary pressures. A majority of participants remarked that overall inflation had been above target for some time and had not moved closer to the 2 percent objective over the past year.",
+      "Regarding the outlook for inflation, participants generally expected inflation to remain somewhat elevated in the near term before moving gradually to 2 percent. Many participants emphasized that they expected that the effects of tariffs on core goods inflation would wane, although some expressed uncertainty about when these effects would diminish or the extent to which tariffs would ultimately be passed through to final goods prices. Some participants stated that their business contacts had reported persistent input cost pressures unrelated to tariffs, although several of these participants noted that weaker demand limited the ability of some firms to raise prices or that business productivity gains might enable some firms to manage these cost pressures. A majority of participants expected continued disinflation in housing services, and a few participants expected continued disinflation in core nonhousing services. Participants generally judged that the risks to inflation remained tilted to the upside, although several participants commented that they considered these upside risks to have decreased. Some participants highlighted the risk that elevated inflation might prove more persistent than expected."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "Relative to the forecast prepared for the October meeting, real GDP growth was projected to be modestly faster, on balance, through 2028, primarily reflecting greater projected support from financial market conditions and somewhat stronger expected potential output growth. After 2025, GDP growth was expected to remain above potential through 2028 as the drag from higher tariffs waned and fiscal policy and financial market conditions continued to support spending. As a result, the unemployment rate was expected to decline gradually after this year and reach a level a little below the staff's estimate of the natural rate of unemployment by 2027.",
+      "The staff's inflation forecast for 2025 and 2026 was a little lower, on balance, than the one prepared for the October meeting but similar for 2027 and 2028. Tariff increases were expected to continue to put upward pressure on inflation this year and next. Thereafter, inflation was projected to return to its previous disinflationary trend and to reach 2 percent in 2028.",
+      "The staff still viewed the uncertainty around the forecast as elevated, given cooling labor market conditions, still-elevated inflation, and the uncertainty about government policy changes and their effects on the economy. Risks around the forecasts for employment and real GDP growth continued to be seen as skewed to the downside, as softening labor market conditions and elevated economic uncertainty raised the risk of a sharper-than-expected weakening in the economy. Risks around the inflation forecast continued to be seen as skewed to the upside, with the upward pressure on inflation this year and next—after more than four years of inflation being above 2 percent—raising the possibility that inflation would prove to be more persistent than the staff expected."
+     ]
+    }
+   ]
   },
   {
    "id": "beige-20260114",
+   "excerpt": [
+    {
+     "heading": "景気全体（Overall Economic Activity）",
+     "paragraphs": [
+      "Overall economic activity increased at a slight to modest pace in eight of the twelve Federal Reserve Districts, with three Districts reporting no change and one reporting a modest decline. This marks an improvement over the last three report cycles where a majority of Districts reported little change. Most banks reported slight to modest growth in consumer spending this cycle, largely attributed to the holiday shopping season. Several Districts also noted that spending was stronger among higher-income consumers with increased spending on luxury goods, travel, tourism, and experiential activities. Meanwhile, low to moderate income consumers were seen to be increasingly price sensitive and hesitant to spend on nonessential goods and services. Auto sales were little changed to down across most Districts. Manufacturing activity varied with five Districts reporting growth and six reporting contraction. Nonfinancial services demand was generally seen as steady to increasing somewhat. Banking conditions were generally reported as stable or improving, with some increased demand coming from credit cards, home equity loans, and commercial lending. Residential real estate sales, construction, and lending activity softened in the majority of Districts that report on the sector. Agriculture conditions were largely unchanged with only Atlanta reporting a modest decline due to weaker demand for exported commodities. Energy demand and production was flat to down slightly. Outlooks for future activity were mildly optimistic with most expecting slight to modest growth in coming months."
+     ]
+    },
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "Employment was mostly unchanged in the most recent period, with eight of the twelve Districts reporting no changes in hiring. Multiple Districts reported an increase in the usage of temporary workers, with one contact reporting this allows them \"to stay flexible in uncertain times.\" When firms were hiring, it was mostly to backfill vacancies rather than create new positions. Firms reported continued challenges finding skilled labor, particularly in engineering, health care, and other trades. Several reports mentioned that fewer workers were switching jobs. Multiple contacts reported exploring AI implementation primarily for productivity enhancement and potential future workforce management. AI's current impact on employment was limited, with more significant effects anticipated in the coming years rather than immediately. Wages grew at a moderate pace, with multiple contacts reporting that wage growth had returned to \"normal\" levels."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Prices grew at a moderate rate across a large majority of Districts, with only two Districts reporting slight price growth. Cost pressures due to tariffs were a consistent theme across all Districts. Several contacts that initially absorbed tariff-related costs were beginning to pass them on to customers as pre-tariff inventories became depleted or as pressures to preserve margins grew more acute. But contacts in a few industries—like retail and restaurants—were reluctant to pass costs along to price-sensitive customers. Energy and insurance costs continued to be a significant strain on margins. Looking ahead, firms expect some moderation in price growth, but anticipated prices to remain elevated as they work through increased costs."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-01-14",
@@ -727,6 +853,7 @@
    "type": "fomc",
    "date": "2026-01-28",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "1/27–1/28の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -738,6 +865,17 @@
     {
      "label": "記者会見（公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260128.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "Available indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, and the unemployment rate has shown some signs of stabilization. Inflation remains somewhat elevated.",
+      "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The Committee is attentive to the risks to both sides of its dual mandate.",
+      "In support of its goals, the Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective.",
+      "In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     ]
     }
    ],
    "result": {
@@ -856,8 +994,7 @@
       "s": "The Committee judges that reserve balances have declined to ample levels and will initiate purchases of shorter-term Treasury securities as needed to maintain an ample supply of reserves on an ongoing basis."
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20260128",
@@ -865,6 +1002,7 @@
    "type": "minutes",
    "date": "2026-02-18",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "1/27–1/28会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -874,10 +1012,53 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260128.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In their discussions of monetary policy for this meeting, members agreed that available indicators suggested that economic activity had been expanding at a solid pace. Almost all members agreed that recent developments in the labor market indicated that job gains had remained low and that the unemployment rate had showed some signs of stabilization. Similarly, reflecting recent data on inflation, members agreed that inflation remained somewhat elevated, and with the turn of the calendar year, they agreed to remove the reference to inflation relative to readings from earlier last year. Members agreed that the Committee was attentive to the risks to both sides of its dual mandate, but almost all members no longer judged that downside risks to employment had risen in recent months."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "Participants observed that overall inflation had eased significantly from its highs in 2022 but remained somewhat elevated relative to the Committee's 2 percent longer-run goal. Participants generally noted that these elevated readings largely reflected inflation in core goods, which appeared to have been boosted by the effects of tariff increases. In contrast to prices for core goods, some participants commented that disinflation appeared to be continuing for core services, particularly for housing services.",
+      "Regarding the outlook for inflation, participants anticipated that inflation would move down toward the Committee's 2 percent objective, though the pace and timing of this decline remained uncertain. Participants generally expected that the effects of tariffs on core goods prices would likely start to diminish this year. Several participants remarked that the ongoing moderation in inflation for housing services was likely to continue to exert downward pressure on overall inflation. Several participants also expected higher productivity growth associated with technological or regulatory developments to put downward pressure on inflation. Consistent with that view, a few participants mentioned reports from business contacts that firms were automating more operations and using other measures to help offset cost increases, which would reduce the need to pass those increases on to consumer prices or to reduce margins. Most participants, however, cautioned that progress toward the Committee's 2 percent objective might be slower and more uneven than generally expected and judged that the risk of inflation running persistently above the Committee's objective was meaningful. Some of these participants cited reports from business contacts who expected to increase prices this year in response to cost pressures, including those related to tariffs. Several participants also raised the possibility that sustained demand pressures could keep inflation elevated relative to the Committee's 2 percent objective.",
+      "Participants noted that most measures of longer-term inflation expectations remained consistent with the Committee's 2 percent objective. In addition, several participants highlighted the fact that market- and survey-based measures of near-term inflation expectations had declined from their peaks in the spring of last year."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "The staff projection for economic activity was stronger than the one prepared for the December meeting, reflecting incoming data, greater expected support from financial conditions, and a small upward revision to the projected path of potential output. Real GDP growth was expected to outpace potential growth through 2028 as the drag from higher tariffs waned and as fiscal policy and financial market conditions continued to support spending. As a result, the unemployment rate was expected to decline gradually starting this year, moving below the staff's estimate of its natural rate by the end of the year and remaining below the natural rate through 2028.",
+      "The staff's inflation forecast was slightly higher, on balance, than the one prepared for the December meeting, reflecting the expectation that resource utilization would be tighter and the path of core import prices would be higher than previously projected. With the effect of higher tariffs on inflation expected to wane starting around the middle of this year, inflation was projected to return to its previous disinflationary trend.",
+      "The staff continued to view the uncertainty around the forecast as elevated in light of ongoing uncertainty about geopolitical developments, government policy changes and their effects, and the effect of AI on the economy. In addition, delays in statistical releases and related data-quality issues were providing an additional source of uncertainty. In an environment of high economic uncertainty, risks around the forecasts for employment and real GDP growth continued to be seen as skewed to the downside. Risks to the inflation projection continued to be viewed as skewed to the upside: With inflation having remained above 2 percent since early 2021, a salient risk was that inflation would prove to be more persistent than the staff anticipated."
+     ]
+    }
+   ]
   },
   {
    "id": "beige-20260304",
+   "excerpt": [
+    {
+     "heading": "景気全体（Overall Economic Activity）",
+     "paragraphs": [
+      "Overall economic activity increased at a slight to moderate pace in seven of the twelve Federal Reserve Districts, while the number of Districts reporting flat or declining activity increased from four in the prior period to five in the current period. Although consumer spending increased slightly on balance, two Districts reported ongoing declines, and many noted that sales were dampened by economic uncertainty, increased price sensitivity, and lower-income consumers pulling back on spending. Districts impacted by winter storms said that retail traffic generally slowed, and one District said immigration enforcement activity negatively affected customer demand in urban areas. Auto sales were mostly down for Districts that reported on them, with many citing continuing affordability issues. Manufacturing activity improved overall since the previous reporting period, with eight Districts reporting varying degrees of growth and two reporting declines. Manufacturing contacts in many Districts reported increases in new orders, and several cited boosts in demand from data centers and, relatedly, energy infrastructure. Transportation activity was mixed across Districts that reported on it, with three reporting contractions and two reporting modest growth. Overall, financial services activity was reported as stable to up, with commercial lending being the primary area of strength. For most Districts that reported on residential real estate and construction, sales and activity decreased slightly, with low inventories and affordability remaining key issues. Nonresidential construction activity was mixed across reporting Districts but increased slightly on net. Among reporting Districts, agricultural conditions were mostly flat, and energy activity grew modestly on balance. Overall, economic expectations were optimistic, with most Districts expecting slight to moderate growth in the coming months."
+     ]
+    },
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "Employment levels were generally stable in recent weeks as seven of the twelve Districts reported no change in hiring. Contacts in several Districts cited rising nonlabor input costs, softer demand, or uncertainty about overall economic conditions as reasons for flat or lower employment levels. Firms in some Districts and in various sectors looked to AI or other forms of automation to gain efficiencies, with most emphasizing the goal of productivity enhancement rather than worker replacement. Wages rose at a modest or moderate pace in most Districts as firms competed for talent in select areas, including the skilled trades. Several Districts continued to report upward pressure on total compensation due to rising health insurance premiums."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Prices increased moderately in recent weeks, with eight Districts reporting moderate price growth and four seeing slight or modest increases. Many Districts reported that costs rose across several nonlabor inputs, including insurance, utilities and energy, and metals and other raw materials. Nine Districts mentioned that tariffs contributed to increased costs. Some firms continued to pass tariff-related cost increases through to their customers, and others began to do so after having absorbed previous increases. Still, most Districts received reports of some firms holding selling prices stable despite higher costs because their customers were increasingly price sensitive. On balance, firms expected prices to rise at a somewhat slower pace in the near term."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-03-04",
@@ -903,6 +1084,7 @@
    "type": "fomc",
    "date": "2026-03-18",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "3/17–3/18の2日間会合・経済見通し（SEP）公表あり",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -918,6 +1100,17 @@
     {
      "label": "経済見通し（SEP・公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "Available indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, and the unemployment rate has been little changed in recent months. Inflation remains somewhat elevated.",
+      "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Uncertainty about the economic outlook remains elevated. The implications of developments in the Middle East for the U.S. economy are uncertain. The Committee is attentive to the risks to both sides of its dual mandate.",
+      "In support of its goals, the Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective.",
+      "In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     ]
     }
    ],
    "result": {
@@ -1056,8 +1249,7 @@
       ]
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20260318",
@@ -1065,6 +1257,7 @@
    "type": "minutes",
    "date": "2026-04-08",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "3/17–3/18会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -1074,10 +1267,53 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260318.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In their discussions of monetary policy for this meeting, members agreed that available indicators suggested that economic activity had been expanding at a solid pace. They noted that job gains had remained low and the unemployment rate had been little changed in recent months. Members agreed that inflation remained somewhat elevated."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "In conjunction with this FOMC meeting, participants submitted their projections of the most likely outcomes for real GDP growth, the unemployment rate, and inflation for each year from 2026 through 2028 and over the longer run. The projections were based on participants' individual assessments of appropriate monetary policy, including their projections of the federal funds rate. Participants also provided their individual assessments of the level of uncertainty and the balance of risks associated with their projections. The Summary of Economic Projections was released to the public following the conclusion of the meeting.",
+      "Participants generally observed that overall inflation remained above the Committee's 2 percent longer-run goal. Some participants remarked that further progress in reducing inflation had been absent in recent months. Some participants noted that the rate of increase in core goods prices remained well above the pace likely to be consistent with the sustainable achievement of the Committee's inflation objective, at least in part reflecting the effects of tariffs. In addition, some participants commented that, although price increases in the housing services category had slowed considerably over the past year and were now close to their pre-pandemic pace, increases in nonhousing core services prices had continued to be elevated relative to their pre-pandemic pace.",
+      "Several participants noted that most measures of longer-term inflation expectations remained consistent with the Committee's 2 percent objective. Several participants observed, however, that measures of near-term inflation expectations had risen in recent weeks, reflecting the substantial rise in oil prices caused by events in the Middle East."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "The staff projection of economic activity was not as strong as the one prepared for the January meeting, primarily reflecting incoming data and less expected support from financial conditions. The staff had built in only a small effect on economic activity of the lower equity prices and higher crude oil prices associated with reactions to developments in the Middle East. All told, real GDP growth was expected to run about in line with potential growth through 2028. As a result, the unemployment rate was expected to remain near its current level through most of next year and then to edge down to the staff's estimate of the longer-run natural rate of unemployment.",
+      "The staff's inflation forecast for this year was slightly higher, on balance, than the one prepared for the January meeting, primarily reflecting incoming data and an expected boost to consumer energy prices given the recent run-up in crude oil prices. With the effects of higher crude oil prices and tariffs on inflation expected to wane later this year, inflation was projected to return to its previous disinflationary trend and to be close to 2 percent by the end of next year.",
+      "The staff continued to view the uncertainty around the forecast as elevated considering the potential economic effects of developments in the Middle East, government policy changes, and the adoption of AI. Risks to the forecasts of employment and real GDP growth were seen as tilted to the downside. Risks to the inflation projection were viewed as a little more skewed to the upside than at the time of the January meeting. With inflation having remained above 2 percent since early 2021, along with the potential effects of Middle East developments, a salient risk was that inflation could prove to be more persistent than the staff anticipated."
+     ]
+    }
+   ]
   },
   {
    "id": "beige-20260415",
+   "excerpt": [
+    {
+     "heading": "景気全体（Overall Economic Activity）",
+     "paragraphs": [
+      "Overall economic activity increased at a slight to modest pace in eight of the twelve Federal Reserve Districts, while two Districts reported little change and two Districts reported slight to modest declines. The conflict in the Middle East was cited as a major source of uncertainty that complicated decision-making around hiring, pricing, and capital investment, with many firms adopting a wait-and-see posture. Manufacturing activity rose slightly to moderately in most Districts. Banking sector activity was generally steady with loan demand stable to up moderately. On balance, consumer spending increased slightly despite harsh winter weather in some regions and higher fuel prices. Many Districts continued to report signs of consumer financial strain, increased price sensitivity, and rising demand at food banks and other social service organizations, while spending among higher-income consumers was resilient. Housing market activity softened across several Districts as heightened uncertainty and rising mortgage rates dampened buyer demand. Commercial real estate markets improved, with strength in industrial properties, especially data center projects. Office markets saw solid demand for Class A space but weaker demand for lower-tier properties. Energy activity was up slightly as oil prices rose, though many producers remained cautious about increasing drilling due to uncertainty about the persistence of higher prices. Agricultural activity was mixed, and several Districts reported that rising crop prices helped offset steep price increases of fertilizer and fuel. Business outlooks varied amid widespread uncertainty about future conditions."
+     ]
+    },
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "On balance, employment was steady to up slightly during this reporting period, though one District noted a slight decline. Most Districts described labor demand as stable, with low turnover, minimal layoffs, and hiring mostly for replacement. Several Districts noted increased demand for temporary or contract workers, as firms remained cautious about committing to permanent hires. Many Districts reported that labor availability had improved, although difficulty finding some skilled workers, especially in the skilled trades, persisted. While most Districts indicated that AI had not yet significantly impacted overall staffing levels, some noted that AI-driven productivity improvements had enabled many firms to delay or reduce hiring. Wages generally continued to rise at a modest to moderate pace. Some Districts noted continued wage pressures for some roles in health care and the skilled trades, though overall wage competition remained muted."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Price growth mostly remained moderate overall, with the vast majority of Districts reporting moderate increases and others pointing to modest growth. Generally, input cost increases outpaced selling price growth, compressing margins. Energy and fuel costs rose sharply in all Districts, attributed to the Middle East conflict, leading to higher freight and shipping costs and higher prices for plastics, fertilizers, and other petroleum-based products. Input cost pressures beyond energy-related increases were also widespread. Several Districts reported rising prices for metals due to tariffs, such as steel, copper, and aluminum. Technology costs rose for both hardware and software. Insurance premiums and health care costs continued to climb."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-04-15",
@@ -1103,6 +1339,7 @@
    "type": "fomc",
    "date": "2026-04-29",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "4/28–4/29の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -1114,6 +1351,17 @@
     {
      "label": "記者会見（公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260429.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "Recent indicators suggest that economic activity has been expanding at a solid pace. Job gains have remained low, on average, and the unemployment rate has been little changed in recent months. Inflation is elevated, in part reflecting the recent increase in global energy prices.",
+      "The Committee seeks to achieve maximum employment and inflation at the rate of 2 percent over the longer run. Developments in the Middle East are contributing to a high level of uncertainty about the economic outlook. The Committee is attentive to the risks to both sides of its dual mandate.",
+      "In support of its goals, the Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective.",
+      "In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
+     ]
     }
    ],
    "result": {
@@ -1196,8 +1444,7 @@
       "s": "The Committee is attentive to the risks to both sides of its dual mandate. In support of its goals, the Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent. In considering the extent and timing of additional adjustments to the target range for the federal funds rate, the Committee will carefully assess incoming data, the evolving outlook, and the balance of risks. The Committee is strongly committed to supporting maximum employment and returning inflation to its 2 percent objective. In assessing the appropriate stance of monetary policy, the Committee will continue to monitor the implications of incoming information for the economic outlook. The Committee would be prepared to adjust the stance of monetary policy as appropriate if risks emerge that could impede the attainment of the Committee's goals. The Committee's assessments will take into account a wide range of information, including readings on labor market conditions, inflation pressures and inflation expectations, and financial and international developments."
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20260429",
@@ -1205,6 +1452,7 @@
    "type": "minutes",
    "date": "2026-05-20",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "4/28–4/29会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -1214,10 +1462,47 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In their discussions of monetary policy for this meeting, members agreed that recent indicators suggested that economic activity had been expanding at a solid pace. They noted that job gains had remained low, on average, and that the unemployment rate had been little changed in recent months. Members agreed that inflation was elevated, in part reflecting the recent increase in global energy prices, and that developments in the Middle East were contributing to a high level of uncertainty about the economic outlook. Members concurred that the Committee was attentive to the risks to both sides of its dual mandate."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "Participants observed that overall inflation had moved up, in part because of recent global energy price increases, and remained above the Committee's 2 percent longer-run goal. Participants generally noted that core inflation had also moved further above 2 percent. Several participants noted that the rate of increase in core goods prices remained elevated, at least in part reflecting the effects of tariffs. Some participants observed that higher fuel prices had caused a number of other prices to increase, including shipping costs and airfares. In addition to energy price increases, several participants noted that supply disruptions associated with the conflict in the Middle East had caused prices for fertilizer and some other non-energy commodities to rise. Some participants noted that recent price increases in the information technology sector had contributed to higher inflation. A few of these participants remarked that, while price increases in the software category were contributing meaningfully to the increase in core inflation, price increases in that category may not be good predictors of future overall inflation.",
+      "Most participants noted that measures of longer-term inflation expectations remained stable. Some participants observed that measures of near-term inflation expectations had risen recently, likely reflecting the recent rise in global energy prices.",
+      "Participants anticipated that high energy prices would continue to put upward pressure on overall inflation in the near term. Participants generally expected that the effects of tariffs on core goods inflation would diminish over the course of this year. Some participants noted, however, that tariff rates could be increased above present levels, leading to additional upward pressure on inflation. Several participants anticipated that higher productivity growth would put downward pressure on inflation, and a few of those participants remarked that the ongoing deceleration in housing services prices was likely to continue to be a source of disinflationary pressure. Several participants observed that price pressures associated with strong AI investment expenditures would likely raise input costs for a range of industries. Several participants highlighted the possibility that, after several years of inflation above 2 percent, elevated inflation rates could begin to have an increased effect on wage- and price-setting decisions. Almost all participants noted that there was a risk that the conflict in the Middle East could persist for an extended period or that, even after the conflict ended, the prices of oil and other commodities could remain elevated for longer than expected. In such scenarios, these participants expected continued upward pressure on inflation arising from supply chain disruptions, high energy prices, or the pass-through of higher input costs to other prices. The vast majority of participants noted an increased risk that inflation would take longer to return to the Committee's 2 percent objective than they had previously expected."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "The staff's outlook for economic activity was slightly stronger than the one prepared for the March meeting. Real GDP was projected to slightly outpace potential in coming years, with growth supported by favorable financial conditions, continued gains in AI-related capital spending, and a reversal of some of the factors that were expected to weigh on activity this year, including weak foreign growth and uncertainty about the outlook. The unemployment rate was expected to remain close to the staff's estimate of its longer-run rate this year and next before edging slightly below it in 2028.",
+      "The staff's inflation forecast for this year was higher than the one prepared for the March meeting, reflecting incoming data, higher energy prices, and other effects of the Middle East conflict that were expected to add to consumer price inflation. Inflation was projected to slow after the first half of this year as the economic effects of the various conflict-related factors dissipated and as the pass-through of higher tariffs to inflation waned; by the end of next year, inflation was expected to be close to 2 percent.",
+      "The staff continued to view the uncertainty around the projection as elevated in light of the conflict in the Middle East and the potential economic consequences of AI adoption. On balance, risks to the forecasts for employment and real GDP growth were seen as tilted to the downside. Risks to the inflation projection were seen as skewed to the upside: With inflation having run significantly above 2 percent over the past five years, with further increases in inflation likely to occur as a result of the conflict in the Middle East, and with emergent price pressures in a few categories that appeared unrelated to tariffs or energy prices, the staff viewed the possibility that inflation would be more persistent than anticipated as a salient risk."
+     ]
+    }
+   ]
   },
   {
    "id": "beige-20260603",
+   "excerpt": [
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "Employment showed little to no change across eleven Districts, while one District experienced modest growth. Manufacturing hiring was the strongest sector in several Districts, supported by defense-related activity and rising data center demand. Wage growth generally remained modest to moderate and largely in line with inflation. That said, Districts reported more frequent wage adjustments and cost-of-living increases to manage increasing fuel and other household cost pressures. Most Districts described a low-hire, low-fire environment, with workers increasingly reluctant to change jobs because of economic uncertainty. Hiring remained selective and primarily focused on critical roles or attrition replacement. Professional services occupations had mixed demand conditions, partly reflecting shifts in technological and operational changes."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Prices increased at a moderate to strong pace overall, with most Districts reporting higher inflation than the previous report. Districts noted that energy-related costs tied to the conflict in the Middle East were the primary driver of inflationary pressures, with spillovers into shipping, packaging, groceries, and fertilizer. Non-labor input costs continued to rise faster than selling prices, contributing to broader concerns about margin compression. The ability to pass on higher costs remained mixed across sectors, particularly among consumer-facing firms. Consumer uncertainty and concerns about fuel prices impacting households were noted by several Districts. Several regions highlighted inflation mitigation strategies of firms that ranged from supply-chain optimization, product adjustments, reduced offerings, and temporarily absorbing higher costs to preserve customer demand."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-06-03",
@@ -1243,6 +1528,7 @@
    "type": "fomc",
    "date": "2026-06-17",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "6/16–6/17の2日間会合・経済見通し（SEP）公表あり",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -1258,6 +1544,16 @@
     {
      "label": "経済見通し（SEP・公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Committee reaffirmed its policy of maintaining ample reserves in the banking system.",
+      "Economic activity is expanding at a solid pace despite elevated uncertainty that owes, in part, to the conflict in the Middle East. Productivity growth and capital investment are strong. Job gains have kept pace with the workforce, and the unemployment rate has changed little.",
+      "Inflation remains elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy. The Committee will deliver price stability."
+     ]
     }
    ],
    "result": {
@@ -1556,8 +1852,7 @@
       ]
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20260617",
@@ -1565,6 +1860,7 @@
    "type": "minutes",
    "date": "2026-07-08",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "6/16–6/17会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -1574,10 +1870,53 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In support of the Committee's dual-mandate goals, all members agreed to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent and to reaffirm the FOMC's policy of maintaining ample reserves in the banking system. Members also agreed that the statement would not repeat the language that had suggested an easing bias regarding the likely direction of the Committee's future interest rate decisions. Members noted that there had been little change in the unemployment rate and solid growth in economic activity, but that inflation remained elevated relative to the Committee's 2 percent goal. Against this backdrop, members concurred that the postmeeting statement would convey the Committee's commitment to achieving its dual-mandate goals and emphasize that the Committee will deliver price stability."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "In conjunction with this FOMC meeting, almost all participants submitted their projections of the most likely outcomes for real GDP growth, the unemployment rate, and inflation for each year from 2026 through 2028 and over the longer run. The projections were based on participants' individual assessments of appropriate monetary policy, including their projections of the federal funds rate. Almost all participants also provided their individual assessments of the level of uncertainty and the balance of risks associated with their projections. The Summary of Economic Projections was released to the public following the conclusion of the meeting.",
+      "Participants generally noted that inflation had increased further and remained well above the Committee's 2 percent longer-run objective. They observed that both core and total inflation had moved higher and generally attributed these increases to the lingering effects of tariffs, supply chain disruptions related to the closure of the Strait of Hormuz, and strength in demand for some goods and services stemming from robust AI-related investment. Several participants commented that price pressures had become more broad based, with a large share of goods and services—including transportation, airfares, petrochemical products, and agricultural inputs—experiencing substantial increases. Several participants remarked that services price inflation excluding housing had declined little and remained high.",
+      "The majority of participants commented that most measures of medium- and longer-term inflation expectations remained at levels consistent with the Committee's 2 percent objective. Participants noted the importance of stable longer-term inflation expectations and emphasized the Committee's role in keeping those expectations anchored at levels consistent with 2 percent inflation."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "The staff's inflation forecast for this year and the next was higher than the one prepared for the April meeting, reflecting incoming data, higher energy prices and other input costs due to the conflict in the Middle East, and the effects of the AI buildout on consumer prices. Total inflation was projected to slow over the second half of this year from its recent pace, as retail gasoline prices were expected to decline, although core inflation was forecast to change little over the rest of the year. Inflation was projected to step down next year, as some of the factors lifting inflation this year—such as tariffs—were expected to wane, and then move down further to about 2 percent in 2028.",
+      "The staff's outlook for real GDP growth was a bit lower than the one prepared for the previous meeting, mostly reflecting incoming data. Real GDP was forecast to expand at about the same pace as potential this year and to slightly outpace potential over the next two years, buttressed by persistently strong productivity growth, continued gains in AI-related capital spending, and supportive financial conditions. The unemployment rate was expected to remain close to the staff's estimate of its longer-run rate this year and next before edging slightly below it in 2028.",
+      "The staff continued to view the uncertainty around their forecast as elevated, importantly because of uncertainty about the conflict in the Middle East and about the potential economic effects of AI investment and adoption. On balance, risks to the forecasts for employment and real GDP growth were seen as tilted somewhat to the downside. Risks to the inflation projection were seen as more skewed to the upside. With inflation having run significantly above 2 percent over the past five years and in light of some emergent price pressures that appeared unrelated to tariffs or energy prices, the staff continued to view the possibility that inflation would be more persistent than projected as a salient risk."
+     ]
+    }
+   ]
   },
   {
    "id": "beige-20260715",
+   "excerpt": [
+    {
+     "heading": "景気全体（Overall Economic Activity）",
+     "paragraphs": [
+      "Economic activity increased at a slight to moderate pace in eleven of twelve Federal Reserve Districts in late May and June, while one District reported no change. The pace of growth was quite close to that of last period, when activity expanded in ten Districts, was flat in one, and down in one. Consumer spending edged up as higher prices, particularly for fuel, dampened sales in other categories. Several Districts noted declines in spending on discretionary items or trading down to more affordable varieties. Tourism was up, with some Districts receiving a boost from World Cup visitors. Auto dealers reported little change in sales, but spending on repairs grew as consumers held onto vehicles for longer. Agricultural conditions deteriorated due to lower commodity prices, higher input costs, and tighter credit. In the energy sector, oil and gas drilling increased. Manufacturing production grew modestly to moderately in most Districts, led by stronger orders from the data center, machinery, and defense sectors. Manufacturers in several Districts said supply chain issues were more common. Construction and real estate activity increased slightly overall, with several Districts noting growth in data center building. Financial conditions were stable on net, and commercial and consumer loan volumes were both up modestly. Commercial loan quality was stable, but consumer loan quality ticked down. Transportation activity increased modestly amidst ongoing supply chain changes related to higher tariffs and the conflict in the Middle East. Overall, activity in other service industries also was up modestly, with Districts highlighting growth in health care and professional services. Social service providers were adjusting to funding declines while demand for basic supports—housing, food, health care—remained high. Contacts generally expected the economy to continue to expand in the coming months, but several Districts noted elevated uncertainty in the outlook for fuel costs."
+     ]
+    },
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "Employment rose on balance, with five Districts showing modest, moderate, or solid gains in employment, and with seven Districts experiencing little to no change. In the previous report, only one District had modest, moderate, or solid employment gains. Employment rose in a variety of industries, including manufacturing, construction, and retail. Skilled workers were difficult to find in a range of fields, notably technicians and tradespeople. Though there were reports of lower employment in a couple of Districts, the declines were small. Wage growth was modest to moderate in most Districts, though two saw only slight wage increases. Some wage increases were attributed to increased competition for skilled workers. A few Districts noted that firms had increased their usage of AI, either in the hiring and screening of potential employees or to boost worker productivity."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Prices increased moderately overall, with nine Districts reporting moderate growth, two robust growth, and one slight growth; compared with the last reporting period, price growth was the same or slower in all Districts. Non-labor input costs increased for a variety of industries—including services, construction, and manufacturing—and reflected in part higher costs for energy, transportation, and raw materials. Some contacts tied these cost increases to the conflict in the Middle East; others mentioned tariffs. Consumer prices continued to rise, and a few Districts said contacts saw greater price sensitivity among their customers. A couple of Districts reported that selling prices grew less than input costs over the period, crimping margins. Expectations for price growth over the coming months varied across Districts, with contacts in some expecting inflation to continue at its current pace, while contacts in others expected inflation to slow, in part due to falling fuel prices."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-07-15",
@@ -1603,6 +1942,7 @@
    "type": "fomc",
    "date": "2026-07-29",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "7/28–7/29の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -1614,6 +1954,16 @@
     {
      "label": "記者会見（公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260729.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "The Committee decided to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.",
+      "Economic activity is expanding at a solid pace despite elevated uncertainty that owes, in part, to the conflict in the Middle East. Productivity growth and capital investment are strong. Job gains have kept pace with the workforce, and the unemployment rate has changed little.",
+      "Inflation remains elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy. The Committee will deliver price stability."
+     ]
     }
    ],
    "result": {
@@ -1648,8 +1998,7 @@
       "s": "its policy of maintaining ample reserves in the banking system. Economic activity is expanding at a solid pace despite elevated uncertainty that owes, in part, to the conflict in the Middle East. Productivity growth and capital investment are strong. Job gains have kept pace with the workforce, and the unemployment rate has changed little. Inflation remains elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy. The Committee will deliver price stability."
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "fomc-minutes-20260729",
@@ -1657,6 +2006,7 @@
    "type": "minutes",
    "date": "2026-08-19",
    "title": "FOMC議事要旨",
+   "short": "FOMC議事要旨",
    "subtitle": "7/28–7/29会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "done",
@@ -1666,7 +2016,30 @@
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
     }
    ],
-   "short": "FOMC議事要旨"
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In support of the Committee's dual-mandate goals, nine members agreed to maintain the target range for the federal funds rate at 3-1/2 to 3-3/4 percent and also reaffirmed the FOMC's policy of maintaining ample reserves in the banking system. Members noted that the unemployment rate was largely unchanged and that solid growth in economic activity had continued, while inflation remained elevated relative to the Committee's 2 percent goal. In June, the Committee had underlined its continuing resolve to achieve its dual-mandate goals by indicating in its postmeeting statement that it \"will deliver price stability.\" Almost all members agreed that it was appropriate to retain this language in July's postmeeting statement. Three members voted against the decision to maintain the target range for the federal funds rate, preferring an increase of 25 basis points in the target range at this meeting."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "Participants acknowledged that inflation remained elevated. They noted that estimates based on available data indicated that, on a 12-month basis, total PCE inflation moved down in June, largely reflecting a sharp drop in energy prices, and that core inflation edged down. Several participants noted that price increases over the past year were broad based, spanning various categories of goods and services. Some participants remarked that price increases remained elevated in core services excluding housing. Some participants noted that, even after excluding prices of items most directly affected by tariffs and energy prices, underlying inflation appeared to be elevated. Some participants observed that materials for data centers, such as chips and steel, had registered large price increases and that consumer items such as smartphones, computer equipment, software, and electricity had also been subject to price pressures.",
+      "Participants assessed that market- and survey-based indicators of medium- and longer-term inflation expectations remained at levels consistent with the Committee's 2 percent objective. Several participants remarked that survey-based measures of relatively short-term inflation expectations were higher than they were before the conflict in the Middle East.",
+      "Most participants anticipated that inflation would step down over the rest of the year as the effects of tariffs and earlier energy price increases wane, but many participants noted the possibility that inflation might be more persistently elevated. Several participants assessed that the pass-through of past increases in tariffs into the level of prices was now largely complete and that the effects of recently announced tariffs on measured inflation would likely be modest. A couple of participants reported that their business contacts had been largely absorbing elevated input costs by compressing their profit margins, but that continued conflict in the Middle East or new supply shocks could make it difficult for them to avoid raising prices charged to consumers. A couple of other participants noted, however, that some of their business contacts judged that consumers would resist further price increases."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "Total inflation was expected to decline over the second half of the year, as retail gasoline prices were forecast to move lower and as core inflation was projected to slow modestly. Inflation was expected to step down next year, as the effects of tariffs and the Middle East conflict wane, and to be about 2 percent in 2028. The staff's inflation forecast was similar to the one prepared for the June meeting.",
+      "Real GDP was projected to slightly outpace potential next year, supported by financial conditions and AI-related investment. The unemployment rate was expected to remain close to the staff's estimate of its longer-run rate this year and to edge lower next year, ending slightly below its longer-run rate in 2028. The staff's outlook for economic activity was a touch weaker than the one prepared for the June meeting, mostly in response to incoming data.",
+      "The staff continued to view the uncertainty around their projection as substantial in light of the uncertainty surrounding ongoing geopolitical developments and the potential economic effects of AI investment and adoption. On balance, risks to the forecasts for employment and real GDP growth were seen as skewed to the downside. Risks to the inflation forecast were seen as skewed to the upside, with the possibility that inflation would prove to be more persistent than the staff anticipated."
+     ]
+    }
+   ]
   },
   {
    "id": "jackson-2026",
@@ -1675,6 +2048,7 @@
    "date": "2026-08-27",
    "endDate": "2026-08-29",
    "title": "ジャクソンホール会議",
+   "short": "ジャクソンホール",
    "subtitle": "カンザスシティ連銀主催の経済政策シンポジウム。FRB議長の講演が金融政策の方向性を示す場として注目される",
    "time": "",
    "status": "done",
@@ -1687,6 +2061,26 @@
   },
   {
    "id": "beige-20260902",
+   "excerpt": [
+    {
+     "heading": "景気全体（Overall Economic Activity）",
+     "paragraphs": [
+      "Economic activity increased modestly since early July. Ten of the twelve Federal Reserve Districts reported growth in the slight to moderate range; two Districts reported no change. Consumer spending grew slightly on balance; reports reflected both heightened price sensitivity on the one hand and solid high-end purchases on the other. Auto sales were mostly subdued, dampened by downbeat consumer confidence, high fuel prices, and rising financing costs. Tourism activity increased. Notably, airlines reported strong demand despite higher airfares. Manufacturing activity picked up across most Districts, with some highlighting ongoing strength in demand for defense and data center-related orders. Services firms reported slight to modest increases in activity. Financial conditions improved slightly as loan volumes remained solid or increased across most Districts. Residential construction declined while nonresidential construction increased on balance, with some Districts noting a high concentration of activity related to data center projects. Agriculture conditions saw slight improvement but generally remained strained; the livestock sector was strong while conditions were stressed among crop producers. The general outlook for the coming months was positive, but sentiment was mixed across sectors, with contacts reporting heightened uncertainty surrounding the effects of higher energy prices, policy, and international conflict."
+     ]
+    },
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "Employment rose very slightly overall, with three Districts showing modest gains in employment, four reporting slight gains, and five Districts experiencing no change. Eight Districts saw a change in their pace of growth from the previous report, but there was less overall dispersion among Districts. Healthy labor demand was seen most frequently in manufacturing, construction, and some service sectors, while retail and hospitality sectors saw falling labor demand. Labor availability was mixed. Skilled trades and technical workers were difficult to find. Districts also reported both positive and negative effects of artificial intelligence on labor demand. Wage growth was modest to moderate in most Districts. Significant wage increases were most often connected to demand for skilled workers in construction and manufacturing."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Prices increased moderately in eight Districts, with two Districts reporting modest increases, one slight increases, and one robust increases. Compared with the previous reporting period, the pace of price increases was the same in eight Districts, decreased in three, and increased in one. Input price pressures were notably elevated in manufacturing and construction across multiple Districts, with widespread reports of price increases for energy, transportation, and raw materials, particularly metals and petrochemicals. Retail and manufacturing contacts continued to note tariff-related impacts in multiple Districts. Firms also broadly reported significant health care and insurance cost pressures. Consumer-facing contacts in a few Districts noted that heightened price sensitivity among customers was putting a limit on their ability to pass through input price increases."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-09-02",
@@ -1712,6 +2106,7 @@
    "type": "fomc",
    "date": "2026-09-16",
    "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
    "subtitle": "9/15–9/16の2日間会合・経済見通し（SEP）公表あり",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "done",
@@ -1727,6 +2122,16 @@
     {
      "label": "経済見通し（SEP・公式）",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.",
+      "Economic activity is expanding at a solid pace. While uncertainty remains elevated owing, in part, to geopolitical developments, domestic spending has been resilient. Productivity growth is strong, and capital investment is robust. Job gains have kept pace with the workforce, and the unemployment rate has changed little.",
+      "Inflation remains elevated. Today's policy action will support a timelier return to the Committee's 2 percent goal. The Committee will deliver price stability."
+     ]
     }
    ],
    "result": {
@@ -1957,8 +2362,7 @@
       ]
      }
     ]
-   },
-   "short": "FOMC"
+   }
   },
   {
    "id": "speech-20260918-bowman",

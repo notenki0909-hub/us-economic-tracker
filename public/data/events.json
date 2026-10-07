@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-06T02:03:04.200Z",
+ "generatedAt": "2026-10-07T01:11:54.287Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 52,
  "events": [
@@ -2493,8 +2493,16 @@
    "short": "副議長（監督） Bowman",
    "subtitle": "Modernizing Regulation and Supervision ／ At the 2026 Community Banking Research Conference, St. Louis, Missouri",
    "time": "10:45 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Modernizing the Regulatory and Supervisory Landscape"
+   }
   },
   {
    "id": "fomc-minutes-20260916",

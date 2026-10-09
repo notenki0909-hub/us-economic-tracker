@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-08T01:32:25.536Z",
+ "generatedAt": "2026-10-09T01:42:47.010Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
- "eventCount": 52,
+ "eventCount": 55,
  "events": [
   {
    "id": "fomc-20250917",
@@ -2378,10 +2378,14 @@
     {
      "label": "講演原稿（公式）",
      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm"
+    },
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm"
     }
    ],
    "result": {
-    "headline": "Initial Findings from Independent Review of Silicon Valley Bank"
+    "headline": "The Final Chapter on Modernizing Bank Regulatory Stress Testing"
    }
   },
   {
@@ -2554,6 +2558,42 @@
    "short": "ベージュブック",
    "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
    "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261014-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-14",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "To be announced. ／ At the Bangkok Economic Festival 2026",
+   "time": "22:55 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261014-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-14",
+   "title": "副議長（監督） Bowman 対談",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Supervision and Regulation ／ At the 2026 IIF Annual Membership Summit, Bangkok, Thailand",
+   "time": "05:40 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261015-warsh",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-15",
+   "title": "議長 Warsh 対談",
+   "short": "議長 Warsh",
+   "subtitle": "Conversation between IMF Managing Director Georgieva and Federal Reserve Chaiman Warsh ／ At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
+   "time": "23:30 ET",
    "status": "scheduled",
    "links": []
   },

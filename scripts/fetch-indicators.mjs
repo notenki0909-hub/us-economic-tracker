@@ -479,7 +479,7 @@ async function main() {
   for (const ind of INDICATORS) {
     process.stdout.write(`- ${ind.id} ... `);
     try {
-      const points = await fetchFredSeries(ind.api.seriesId, ind.api.transform, ind.api.since);
+      const points = await fetchFredSeries(ind.api.seriesId, ind.api.transform, ind.api.since, ind.api.scale);
 
       let changeWatch = null;
       if (ind.changeWatch) {

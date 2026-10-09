@@ -3,7 +3,8 @@
  * https://fred.stlouisfed.org/ 　利用登録不要・APIキー不要。
  *
  * api.transform: "level"（そのまま）/ "yoy"（前年同月・同期比%を自前計算）/
- *                "mom_diff"（前月差、水準の変化量）
+ *                "mom_diff"（前月差、水準の変化量）/ "mom_pct"（前月比%）
+ * api.scale: 変換後の値に掛ける係数（任意。人数を千人単位にする場合 0.001 など）
  *
  * betterWhen / judgment / referenceLines / releaseSchedule / importance は
  * 日本版（keizai-shihyo-tracker）と同じ設計思想。詳細は各ファイルのコメント参照。
@@ -739,6 +740,234 @@ export const INDICATORS = [
     referenceLines: [],
     releaseSchedule: "米エネルギー情報局（EIA）が毎営業日公表。FREDへの反映は数日遅れることがある。",
     api: { provider: "fred", seriesId: "DCOILWTICO", transform: "level", since: "2016-01-01", statName: "Crude Oil Prices: West Texas Intermediate (EIA)" },
+  },
+  {
+    id: "avg_hourly_earnings_yoy_us",
+    importance: 4,
+    name: "平均時給（民間部門・前年比）",
+    shortName: "平均時給",
+    category: "雇用・所得",
+    unit: "%",
+    unitLabel: "前年同月比 %",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "neutral",
+    description:
+      "BLSが雇用統計で毎月公表する、民間部門の労働者1人あたりの平均時給（名目）の前年同月比。賃金の上がり方を" +
+      "示し、物価（特にサービス価格）の先行きを占う材料としてFRBも注視する。雇用統計の発表日に、雇用者数・" +
+      "失業率とあわせて市場が反応する。",
+    judgment: {
+      summary: "賃金が伸びれば家計の購買力は高まるが、伸びすぎると企業のコスト増を通じて物価上昇につながる。物価（CPI・コアPCE）の伸びとの差で『実質的に増えているか』を確認する。",
+      goodWhen: "物価上昇率を上回るペースで、落ち着いて伸びている状態（暮らし向きが改善し、物価への圧力も限定的）。",
+      badWhen: "急に伸びが加速して物価再燃の懸念が強まる場合、または伸びが急減速して雇用や所得の悪化が疑われる場合。",
+      caveat: "名目値のため、物価上昇分は差し引かれていない。賃金の高い職種の雇用が減ると平均が見かけ上上がる（構成効果）ことがある。FREDの収録は2006年以降。",
+    },
+    referenceLines: [],
+    releaseSchedule: "BLSが雇用統計（毎月第1金曜日8:30 ET）で非農業部門雇用者数と同時に公表。",
+    api: { provider: "fred", seriesId: "CES0500000003", transform: "yoy", statName: "Average Hourly Earnings of All Employees, Total Private (BLS)" },
+  },
+  {
+    id: "real_pce_mom_us",
+    importance: 4,
+    name: "実質個人消費支出（前月比）",
+    shortName: "実質個人消費",
+    category: "景気",
+    unit: "%",
+    unitLabel: "前月比 %（物価調整後）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "BEAが毎月公表する、家計の消費支出から物価の影響を除いた『実質』の前月比。個人消費はGDPの約7割を占める" +
+      "ため、景気の底堅さを見る中心的な指標。小売売上高がモノ中心なのに対し、サービス（医療・住居・外食など）まで" +
+      "含む広い範囲をカバーする。",
+    judgment: {
+      summary: "プラスが続いていれば、物価上昇を差し引いても消費が増えており、景気の下支えになっている。",
+      goodWhen: "月0.1〜0.3%程度のプラスが続く状態（消費が緩やかに拡大）。",
+      badWhen: "マイナスが続く、または急減速している状態（消費者が支出を絞り、景気後退の入り口になりやすい）。",
+      caveat: "実質値は物価の改定や季節調整の影響で、後から修正される。単月の振れは大きいため、3か月ほどの傾向で見る。FREDの収録は2007年以降。",
+    },
+    referenceLines: [{ value: 0, label: "0＝増加・減少の分岐", kind: "neutral" }],
+    movingAverage: { window: 3, label: "3か月移動平均" },
+    releaseSchedule: "BEAが個人所得・支出統計として毎月下旬に公表（コアPCE物価指数と同日）。",
+    api: { provider: "fred", seriesId: "PCEC96", transform: "mom_pct", statName: "Real Personal Consumption Expenditures (BEA)" },
+  },
+  {
+    id: "personal_income_mom_us",
+    importance: 3,
+    name: "個人所得（前月比）",
+    shortName: "個人所得",
+    category: "雇用・所得",
+    unit: "%",
+    unitLabel: "前月比 %（名目）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "BEAが毎月公表する、家計が受け取る所得（賃金・事業収入・財産所得・社会保障給付など）全体の前月比。" +
+      "消費の元手にあたり、個人消費支出と同日に発表される。所得が伸びていないのに消費だけが増えている場合は、" +
+      "貯蓄の取り崩しや借入に頼っている可能性がある。",
+    judgment: {
+      summary: "所得が安定して伸びていれば、消費を支える土台が保たれている。消費の伸びと並べて見ると、無理のない消費かどうかが分かる。",
+      goodWhen: "月0.2〜0.5%程度のプラスが続く状態（賃金や雇用の改善が所得を押し上げている）。",
+      badWhen: "マイナスや伸び悩みが続く状態（消費の元手が細り、先行きの消費が弱まりやすい）。",
+      caveat: "名目値のため物価上昇分は差し引かれていない。政府の給付金や給付の打ち切りで一時的に大きく振れることがあり、賃金だけの動きを表すものではない。",
+    },
+    referenceLines: [{ value: 0, label: "0＝増加・減少の分岐", kind: "neutral" }],
+    movingAverage: { window: 3, label: "3か月移動平均" },
+    releaseSchedule: "BEAが個人所得・支出統計として毎月下旬に公表（コアPCE物価指数と同日）。",
+    api: { provider: "fred", seriesId: "PI", transform: "mom_pct", statName: "Personal Income (BEA)" },
+  },
+  {
+    id: "empire_state_us",
+    importance: 3,
+    name: "ニューヨーク連銀 製造業景気指数",
+    shortName: "NY連銀景況（エンパイア）",
+    category: "景気",
+    unit: "",
+    unitLabel: "DI（景況判断指数、0が拡大・縮小の分岐）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "ニューヨーク連銀が管内の製造業者に毎月行う調査から算出する、現在の景況感の指数（通称エンパイア指数）。" +
+      "毎月、全米の製造業景況感の中で最も早く出る調査の一つで、その月の製造業の方向感をいち早く確認できる。" +
+      "フィラデルフィア連銀の指数と合わせて、ISM製造業景況指数の代わりに参照される。",
+    judgment: {
+      summary: "0を上回れば製造業の活動が拡大していると答える企業が多く、下回れば縮小していると答える企業が多い。",
+      goodWhen: "プラス圏で推移している状態（製造業の受注・生産が拡大している）。",
+      badWhen: "マイナス圏で推移している、または急低下している状態（製造業の景況感が悪化している）。",
+      caveat: "ニューヨーク州の企業が対象の地域調査で、月ごとの振れが非常に大きい。全米の動きとは一致しないこともあるため、3か月程度の傾向と、フィラデルフィア連銀の指数との併読が望ましい。",
+    },
+    referenceLines: [{ value: 0, label: "0＝拡大・縮小の分岐", kind: "neutral" }],
+    movingAverage: { window: 3, label: "3か月移動平均" },
+    releaseSchedule: "ニューヨーク連銀が毎月15日ごろ（休日の場合は翌営業日）に公表。",
+    api: { provider: "fred", seriesId: "GACDISA066MSFRBNY", transform: "level", statName: "Current General Business Conditions; Diffusion Index for New York (SA)" },
+  },
+  {
+    id: "capacity_utilization_us",
+    importance: 3,
+    name: "設備稼働率（鉱工業全体）",
+    shortName: "設備稼働率",
+    category: "景気",
+    unit: "%",
+    unitLabel: "%（工場・鉱業・公益事業の設備の稼働割合）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "neutral",
+    description:
+      "FRBが鉱工業生産指数と同時に公表する、工場・鉱山・電力会社などの生産設備がどれだけ使われているかの割合。" +
+      "高いほど設備に余力がなく、需要が強い（過熱・物価上昇の圧力）ことを示し、低いほど需要が弱く余力がある" +
+      "ことを示す。",
+    judgment: {
+      summary: "長期平均（約79%）を大きく上回ると設備に余力がなく物価が上がりやすい。大きく下回ると需要不足・景気減速のサイン。",
+      goodWhen: "長期平均前後（約77〜80%）で安定している状態（需要と供給のバランスが取れている）。",
+      badWhen: "長期平均を大きく下回って低下が続く状態（景気後退局面で大きく低下する）、または80%台後半まで高まり過熱を示す状態。",
+      caveat: "製造業の構造変化で、近年は長期平均より低めの水準で推移しやすい。単月の振れは小さく改定もあるため、傾向で見る。",
+    },
+    referenceLines: [{ value: 79.4, label: "1972年以降の平均 約79.4%", kind: "target" }],
+    releaseSchedule: "FRBが鉱工業生産指数（G.17）と同時に、毎月中旬ごろに公表。",
+    api: { provider: "fred", seriesId: "TCU", transform: "level", statName: "Capacity Utilization: Total Index (Federal Reserve Board)" },
+  },
+  {
+    id: "ppi_core_yoy_us",
+    importance: 4,
+    name: "生産者物価指数（PPI・コア）",
+    shortName: "PPI（コア）",
+    category: "物価",
+    unit: "%",
+    unitLabel: "前年同月比 %（食品・エネルギー除く）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "down",
+    description:
+      "BLSが毎月公表する、企業が出荷・販売する段階の価格（卸売物価）の前年同月比で、変動の大きい食品とエネルギーを" +
+      "除いたもの。消費者物価（CPI）より手前の段階の価格で、企業のコスト上昇が小売価格に転嫁されるかを占う" +
+      "材料となる。CPIの前後に発表され、市場の反応も大きい。",
+    judgment: {
+      summary: "企業間の取引価格の上昇は、時間差で消費者物価に波及しやすい。伸びが高止まる・加速するほど、物価の先行き不安が強まる。",
+      goodWhen: "伸びが落ち着き、2〜3%台程度に収まっている状態（企業のコスト増が小さく、物価への波及圧力も限定的）。",
+      badWhen: "伸びが加速している、または高い水準が続いている状態（コスト増が消費者物価へ波及しやすい）。",
+      caveat: "原材料の費用だけでなく、卸・小売の利幅（マージン）の変動も含まれ、振れが大きい。CPI・コアPCEと必ずしも連動しない。FREDの収録は2010年末以降。",
+    },
+    referenceLines: [],
+    releaseSchedule: "BLSが毎月中旬ごろ（CPIの前後）に公表。",
+    api: { provider: "fred", seriesId: "PPIFES", transform: "yoy", statName: "Producer Price Index by Commodity: Final Demand: Final Demand Less Foods and Energy (BLS)" },
+  },
+  {
+    id: "case_shiller_20_yoy_us",
+    importance: 3,
+    name: "S&Pケースシラー住宅価格（20都市・前年比）",
+    shortName: "ケースシラー住宅価格",
+    category: "景気",
+    unit: "%",
+    unitLabel: "前年同月比 %（20大都市圏、原数値）",
+    frequency: "monthly",
+    seasonalAdjustment: "原数値",
+    betterWhen: "neutral",
+    description:
+      "米国の主要20大都市圏の住宅の再販価格を、同じ物件の価格変化で追跡した指数（S&Pケースシラー）の前年同月比。" +
+      "住宅は家計の資産の大部分を占めるため、価格の動きは資産効果（値上がりで消費が増える）や金融システムの" +
+      "安定に影響する。",
+    judgment: {
+      summary: "緩やかなプラスは健全だが、急な上昇は割高感（バブル）、マイナスは家計資産の目減りと景気後退の懸念につながる。",
+      goodWhen: "前年比が緩やかなプラス（概ね0〜6%程度）で推移している状態。",
+      badWhen: "前年比がマイナスに転じて下落が続く状態、または急騰が続き割高感が強まる状態。",
+      caveat: "約2か月遅れで公表される遅行指標で、3か月移動平均の指数をもとにするため動きがなだらか。住宅ローン金利の変化などは、すぐには反映されない。20大都市圏が対象で、全米の平均とは異なる。",
+    },
+    referenceLines: [{ value: 0, label: "0＝上昇・下落の分岐", kind: "neutral" }],
+    releaseSchedule: "S&Pダウ・ジョーンズが毎月最終火曜日に、2か月前のデータを公表。",
+    api: { provider: "fred", seriesId: "SPCS20RNSA", transform: "yoy", statName: "S&P Cotality Case-Shiller 20-City Composite Home Price Index (NSA)" },
+  },
+  {
+    id: "new_home_sales_us",
+    importance: 3,
+    name: "新築住宅販売件数",
+    shortName: "新築住宅販売",
+    category: "景気",
+    unit: "千戸",
+    unitLabel: "千戸（年率換算・季節調整値）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "米国センサス局が毎月公表する、新築一戸建て住宅の販売契約件数（年率換算）。住宅ローン金利の影響を" +
+      "受けやすく、住宅市場の勢いを示す。販売の増加は、家具・家電や建設関連の消費・雇用にも波及する。",
+    judgment: {
+      summary: "数か月単位で増えているか減っているかの方向を見る。住宅ローン金利の上下が、住宅需要にどう効いているかを探る材料になる。",
+      goodWhen: "数か月にわたって増加傾向にある状態（住宅需要が回復し、建設・関連消費にも追い風）。",
+      badWhen: "数か月連続で大きく減少している状態（金利高止まりや景気不安で、購入が控えられている）。",
+      caveat: "標本調査に基づくため単月の振れと後からの改定がともに大きい（前月比の信頼区間が±10%を超えることもある）。新築のみが対象で、取引の大半を占める中古は含まれない。",
+    },
+    referenceLines: [],
+    movingAverage: { window: 3, label: "3か月移動平均" },
+    releaseSchedule: "米国センサス局が、新築住宅販売として毎月下旬ごろに公表。",
+    api: { provider: "fred", seriesId: "HSN1F", transform: "level", statName: "New One Family Houses Sold: United States (U.S. Census Bureau)" },
+  },
+  {
+    id: "adp_employment_us",
+    importance: 3,
+    name: "ADP全米雇用者数（民間・前月差）",
+    shortName: "ADP雇用者数",
+    category: "雇用・所得",
+    unit: "千人",
+    unitLabel: "前月差（千人）",
+    frequency: "monthly",
+    seasonalAdjustment: "季節調整値",
+    betterWhen: "up",
+    description:
+      "給与計算大手のADP社が、自社が処理する給与データをもとに毎月公表する、民間部門の雇用者数の前月からの増減。" +
+      "公式の雇用統計（非農業部門雇用者数）の2日前に発表されるため、雇用統計の『前哨戦』として注目される。",
+    judgment: {
+      summary: "プラスが続けば民間の雇用が拡大している。公式の雇用統計と合わせて見ることで、雇用の方向感を確認できる。",
+      goodWhen: "月間10万〜20万人程度の増加が続く、景気を支えつつ過熱しない状態。",
+      badWhen: "急激な減少・マイナス転換（民間雇用の急速な悪化）。",
+      caveat: "ADP社の顧客企業のデータに基づく民間統計で、公式の雇用統計とは月ごとに大きくずれることが多い。後から改定される。FREDの収録は2010年以降。",
+    },
+    referenceLines: [{ value: 0, label: "0＝増加・減少の分岐", kind: "neutral" }],
+    movingAverage: { window: 3, label: "3か月移動平均" },
+    releaseSchedule: "ADP社が毎月、雇用統計の2日前（通常は第1水曜日）に公表。",
+    api: { provider: "fred", seriesId: "ADPMNUSNERSA", transform: "mom_diff", scale: 0.001, statName: "Total Nonfarm Private Payroll Employment (ADP)" },
   },
 ];
 

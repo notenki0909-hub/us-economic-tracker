@@ -45,12 +45,13 @@ function findClosestOnOrBefore(points, fromIdx, targetMs) {
  *   mom_pct  : 1つ前の点との変化率(%)。例：小売売上高の前月比
  * @param {string} [since] 収録下限日（省略時 DEFAULT_SINCE）。日次・週次系列はデータ量が
  *   非常に多くなるため、個別に短い期間を指定することを想定。
+ * @param {number} [scale] 変換後の値に掛ける係数（例：人数を千人単位にするなら 0.001）。省略時は 1。
  */
-export async function fetchFredSeries(seriesId, transform = "level", since = DEFAULT_SINCE) {
+export async function fetchFredSeries(seriesId, transform = "level", since = DEFAULT_SINCE, scale = 1) {
   const raw = await fetchRaw(seriesId);
   if (!raw.length) throw new Error("有効なデータ点を1件も取得できませんでした");
   if (transform === "level") {
-    return raw.map((p) => ({ t: p.date, date: p.date, value: p.value })).filter((p) => p.date >= since);
+    return raw.map((p) => ({ t: p.date, date: p.date, value: applyScale(p.value, scale) })).filter((p) => p.date >= since);
   }
 
   const out = [];
@@ -70,5 +71,9 @@ export async function fetchFredSeries(seriesId, transform = "level", since = DEF
       out.push({ t: raw[i].date, date: raw[i].date, value: Math.round(pct * 100) / 100 });
     }
   }
-  return out.filter((p) => p.date >= since);
+  return out.filter((p) => p.date >= since).map((p) => ({ ...p, value: applyScale(p.value, scale) }));
+}
+
+function applyScale(value, scale) {
+  return scale === 1 ? value : Math.round(value * scale * 1000) / 1000;
 }

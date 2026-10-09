@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-04T10:29:08.290Z",
+ "generatedAt": "2026-10-09T13:50:33.641Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
- "eventCount": 52,
+ "eventCount": 55,
  "events": [
   {
    "id": "fomc-20250917",
@@ -2378,10 +2378,14 @@
     {
      "label": "講演原稿（公式）",
      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm"
+    },
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm"
     }
    ],
    "result": {
-    "headline": "Initial Findings from Independent Review of Silicon Valley Bank"
+    "headline": "The Final Chapter on Modernizing Bank Regulatory Stress Testing"
    }
   },
   {
@@ -2493,8 +2497,16 @@
    "short": "副議長（監督） Bowman",
    "subtitle": "Modernizing Regulation and Supervision ／ At the 2026 Community Banking Research Conference, St. Louis, Missouri",
    "time": "10:45 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Modernizing the Regulatory and Supervisory Landscape"
+   }
   },
   {
    "id": "fomc-minutes-20260916",
@@ -2505,8 +2517,37 @@
    "short": "FOMC議事要旨",
    "subtitle": "9/15–9/16会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "議事要旨（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "委員会の決定（Committee Policy Actions）",
+     "paragraphs": [
+      "In support of the Committee's dual-mandate goals, all members agreed to raise the target range for the federal funds rate 1/4 percentage point to 3-3/4 to 4 percent and reaffirmed the FOMC's policy of maintaining ample reserves in the banking system. Members noted that the unemployment rate was largely unchanged and that solid growth in economic activity had continued amid resilient domestic spending, while inflation remained elevated relative to the Committee's 2 percent goal. The Committee underlined its continuing resolve to achieve its dual-mandate goals by indicating in its postmeeting statement that it \"will deliver price stability.\" Members agreed that the policy action taken would support a timelier return of inflation to the Committee's 2 percent goal."
+     ]
+    },
+    {
+     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
+     "paragraphs": [
+      "In conjunction with this FOMC meeting, 18 participants submitted projections of the most likely outcomes for real GDP growth, the unemployment rate, and inflation. One participant submitted projections through 2027 and over the longer run, while the others submitted through 2029 and over the longer run. The projections were based on participants' individual assessments of appropriate monetary policy, including their projections of the federal funds rate. Participants who submitted projections also provided their individual assessments of the level of uncertainty and the balance of risks associated with their projections. The Summary of Economic Projections was released to the public following the conclusion of the meeting.",
+      "Participants noted that inflation remained elevated and that they had not seen sufficient progress on lowering inflation in recent months. They noted that ongoing geopolitical developments, which had pushed up prices for crude oil and refined fuel products, and surging AI-related investments were contributing to inflation pressures. Several participants observed that the rate of price increases in core services excluding housing remained elevated. Several participants observed that the rate of price increases in the core goods category also remained elevated, as effects of the AI buildout appeared to increase while the effects of tariff increases waned. A few participants noted that certain items in the PCE price index—software and portfolio management fees in particular—had made relatively large contributions to recent PCE inflation readings, and that those contributions would likely be reduced somewhat with the upcoming changes to the BEA's methodology. Some participants noted that, according to various modeling approaches, underlying inflation appeared to be above the Committee's 2 percent objective and to have moved sideways in recent months. A few participants observed that the 3-month change measure of core PCE inflation showed a material decline since the start of the year but cautioned that this measure is more volatile than the 12-month change measure and has shown a strong tendency to understate inflation in the second half of the year compared with the first half.",
+      "Participants judged that market- and survey-based indicators of medium- and longer-term inflation expectations remained at levels consistent with the Committee's 2 percent objective. Several participants noted that market- and survey-based measures of short-term inflation expectations were elevated."
+     ]
+    },
+    {
+     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
+     "paragraphs": [
+      "Total inflation was expected to decline over the remainder of the year, as retail gasoline prices were projected to move lower and core inflation was forecast to edge down. Inflation was projected to step down over the next two years, as the effects of tariffs, geopolitical developments, and the AI buildout were expected to wane, and to reach 2 percent in 2029. The staff's inflation forecast was somewhat higher for 2026 through 2028 than the one prepared for the July meeting.",
+      "Real GDP growth was projected to pick up over the second half of this year and to outpace potential through 2028, reflecting strong business investment, solid consumer spending, and supportive financial conditions. The unemployment rate was expected to remain below the staff's estimate of the longer-run rate through 2029. The staff's outlook for economic activity and the labor market was stronger than the one prepared for the July meeting, mostly in response to incoming information.",
+      "The staff continued to view the uncertainty around its projection as substantial, considering the unknowns related to persistently elevated inflation, the potential economic effects of AI investment and adoption, and geopolitical developments. The risks around the forecasts for employment and real GDP growth were seen as roughly balanced. Risks to the inflation forecast were seen as skewed to the upside, given the possibility that inflation could prove to be more persistent than the staff anticipated."
+     ]
+    }
+   ]
   },
   {
    "id": "beige-20261014",
@@ -2517,6 +2558,42 @@
    "short": "ベージュブック",
    "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
    "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261014-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-14",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "To be announced. ／ At the Bangkok Economic Festival 2026",
+   "time": "22:55 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261014-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-14",
+   "title": "副議長（監督） Bowman 対談",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Supervision and Regulation ／ At the 2026 IIF Annual Membership Summit, Bangkok, Thailand",
+   "time": "05:40 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261015-warsh",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-10-15",
+   "title": "議長 Warsh 対談",
+   "short": "議長 Warsh",
+   "subtitle": "Conversation between IMF Managing Director Georgieva and Federal Reserve Chaiman Warsh ／ At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
+   "time": "23:30 ET",
    "status": "scheduled",
    "links": []
   },

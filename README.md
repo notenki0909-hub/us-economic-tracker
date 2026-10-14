@@ -128,7 +128,7 @@ npm run preview   # ビルド結果を確認
    （自動データ更新のコミットに必要）。
 4. [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) が
    - `push`（main）… ビルドして公開
-   - 平日毎日 22:00 UTC（米東部17〜18時ごろ）／手動実行 … FREDからデータを取り直し、
+   - 平日毎日 22:00 UTC（米東部17〜18時ごろ）＋火〜土 15:30 UTC（FREDの前営業日分の反映後）／手動実行 … FREDからデータを取り直し、
      変化があればコミット → 公開
    を自動で行う。
 

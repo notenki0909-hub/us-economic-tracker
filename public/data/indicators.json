@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T06:20:45.563Z",
+  "generatedAt": "2026-10-15T19:20:37.440Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 37,
@@ -67,15 +67,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-15T06:20:45.569Z",
+    "generatedAt": "2026-10-15T19:20:37.448Z",
     "stats": {
       "total": 37,
-      "improving": 6,
-      "worsening": 19,
+      "improving": 5,
+      "worsening": 20,
       "neutral": 12,
-      "surpriseCount": 2
+      "surpriseCount": 3
     },
-    "headline": "37指標中、改善傾向が6件、悪化傾向が19件、横ばい・中立が12件です。",
+    "headline": "37指標中、改善傾向が5件、悪化傾向が20件、横ばい・中立が12件です。",
     "improvingList": [
       {
         "id": "industrial_production_us",
@@ -87,30 +87,21 @@
         }
       },
       {
-        "id": "retail_sales_us",
-        "name": "小売売上高",
-        "category": "景気",
-        "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
-        }
-      },
-      {
-        "id": "jobless_claims_us",
-        "name": "新規失業保険申請件数",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-09-26",
-          "to": "2026-10-03"
-        }
-      },
-      {
         "id": "real_pce_mom_us",
         "name": "実質個人消費支出（前月比）",
         "category": "景気",
         "period": {
           "from": "2026-07-01",
           "to": "2026-08-01"
+        }
+      },
+      {
+        "id": "empire_state_us",
+        "name": "ニューヨーク連銀 製造業景気指数",
+        "category": "景気",
+        "period": {
+          "from": "2026-09-01",
+          "to": "2026-10-01"
         }
       },
       {
@@ -161,6 +152,15 @@
         }
       },
       {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気",
+        "period": {
+          "from": "2026-08-01",
+          "to": "2026-09-01"
+        }
+      },
+      {
         "id": "unemployment_rate_us",
         "name": "失業率",
         "category": "雇用・所得",
@@ -194,6 +194,15 @@
         "period": {
           "from": "2026-01-01",
           "to": "2026-04-01"
+        }
+      },
+      {
+        "id": "jobless_claims_us",
+        "name": "新規失業保険申請件数",
+        "category": "雇用・所得",
+        "period": {
+          "from": "2026-10-03",
+          "to": "2026-10-10"
         }
       },
       {
@@ -246,8 +255,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-10-12",
-          "to": "2026-10-13"
+          "from": "2026-10-13",
+          "to": "2026-10-14"
         }
       },
       {
@@ -273,8 +282,8 @@
         "name": "フィラデルフィア連銀 製造業景況指数",
         "category": "景気",
         "period": {
-          "from": "2026-08-01",
-          "to": "2026-09-01"
+          "from": "2026-09-01",
+          "to": "2026-10-01"
         }
       },
       {
@@ -287,21 +296,12 @@
         }
       },
       {
-        "id": "empire_state_us",
-        "name": "ニューヨーク連銀 製造業景気指数",
-        "category": "景気",
-        "period": {
-          "from": "2026-08-01",
-          "to": "2026-09-01"
-        }
-      },
-      {
         "id": "ppi_core_yoy_us",
         "name": "生産者物価指数（PPI・コア）",
         "category": "物価",
         "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
+          "from": "2026-08-01",
+          "to": "2026-09-01"
         }
       }
     ],
@@ -365,8 +365,8 @@
         "name": "30年固定住宅ローン金利",
         "category": "金利",
         "period": {
-          "from": "2026-10-01",
-          "to": "2026-10-08"
+          "from": "2026-10-08",
+          "to": "2026-10-15"
         }
       },
       {
@@ -417,15 +417,6 @@
     ],
     "continuingImprovingList": [
       {
-        "id": "jobless_claims_us",
-        "name": "新規失業保険申請件数",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-09-12",
-          "to": "2026-10-03"
-        }
-      },
-      {
         "id": "sp500_us",
         "name": "S&P500種株価指数",
         "category": "為替・市場",
@@ -435,21 +426,21 @@
         }
       },
       {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-09-30",
-          "to": "2026-10-13"
-        }
-      },
-      {
         "id": "real_pce_mom_us",
         "name": "実質個人消費支出（前月比）",
         "category": "景気",
         "period": {
           "from": "2026-06-01",
           "to": "2026-08-01"
+        }
+      },
+      {
+        "id": "empire_state_us",
+        "name": "ニューヨーク連銀 製造業景気指数",
+        "category": "景気",
+        "period": {
+          "from": "2026-08-01",
+          "to": "2026-10-01"
         }
       },
       {
@@ -592,7 +583,7 @@
         "reference": {
           "label": "0%＝増加・減少の分岐",
           "value": 0,
-          "current": 1.13
+          "current": 0.77
         }
       },
       {
@@ -632,7 +623,7 @@
         "reference": {
           "label": "景気後退の警戒目安 30万件",
           "value": 300000,
-          "current": 197000
+          "current": 199000
         }
       },
       {
@@ -652,7 +643,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 15.27
+          "current": 16.87
         }
       },
       {
@@ -662,7 +653,7 @@
         "reference": {
           "label": "0＝拡大・縮小の分岐",
           "value": 0,
-          "current": 37.8
+          "current": 20.9
         }
       },
       {
@@ -692,7 +683,7 @@
         "reference": {
           "label": "0＝拡大・縮小の分岐",
           "value": 0,
-          "current": 7.6
+          "current": 25.5
         }
       },
       {
@@ -907,6 +898,15 @@
         "level": "mid",
         "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.0）。",
         "text": "S&P500種株価指数でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.0）。"
+      },
+      {
+        "id": "empire_state_us",
+        "name": "ニューヨーク連銀 製造業景気指数",
+        "category": "景気",
+        "z": 1.5,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.5）。",
+        "text": "ニューヨーク連銀 製造業景気指数でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.5）。"
       }
     ],
     "changeWatchFindings": [
@@ -964,6 +964,46 @@
         "text": "ミシガン大学消費者信頼感指数は、直近（2026-06-01〜2026-08-01）の傾向が、その前（2026-03-01〜2026-05-01）から改善方向に転じました（転換点を通過）。"
       },
       {
+        "id": "retail_sales_us",
+        "name": "小売売上高",
+        "category": "景気",
+        "favorable": true,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-07-01",
+            "to": "2026-09-01"
+          },
+          "prior": {
+            "from": "2026-04-01",
+            "to": "2026-06-01"
+          }
+        },
+        "detail": "直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から改善方向に転じました（転換点を通過）。",
+        "text": "小売売上高は、直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から改善方向に転じました（転換点を通過）。"
+      },
+      {
+        "id": "jobless_claims_us",
+        "name": "新規失業保険申請件数",
+        "category": "雇用・所得",
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-09-19",
+            "to": "2026-10-10"
+          },
+          "prior": {
+            "from": "2026-08-22",
+            "to": "2026-09-12"
+          }
+        },
+        "detail": "直近（2026-09-19〜2026-10-10）の傾向が、その前（2026-08-22〜2026-09-12）から悪化方向に転じました（転換点を通過）。",
+        "text": "新規失業保険申請件数は、直近（2026-09-19〜2026-10-10）の傾向が、その前（2026-08-22〜2026-09-12）から悪化方向に転じました（転換点を通過）。"
+      },
+      {
         "id": "job_openings_us",
         "name": "JOLTS求人件数",
         "category": "雇用・所得",
@@ -1004,24 +1044,44 @@
         "text": "経常収支は、直近（2026-01-01〜2026-04-01）の傾向が、その前（2025-07-01〜2025-10-01）から悪化方向に転じました（転換点を通過）。"
       },
       {
-        "id": "philly_fed_us",
-        "name": "フィラデルフィア連銀 製造業景況指数",
-        "category": "景気",
-        "favorable": true,
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "favorable": false,
         "flipped": true,
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-07-01",
-            "to": "2026-09-01"
+            "from": "2026-10-01",
+            "to": "2026-10-14"
           },
           "prior": {
-            "from": "2026-04-01",
-            "to": "2026-06-01"
+            "from": "2026-09-17",
+            "to": "2026-09-30"
           }
         },
-        "detail": "直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から改善方向に転じました（転換点を通過）。",
-        "text": "フィラデルフィア連銀 製造業景況指数は、直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から改善方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-10-01〜2026-10-14）の傾向が、その前（2026-09-17〜2026-09-30）から悪化方向に転じました（転換点を通過）。",
+        "text": "VIX指数（恐怖指数）は、直近（2026-10-01〜2026-10-14）の傾向が、その前（2026-09-17〜2026-09-30）から悪化方向に転じました（転換点を通過）。"
+      },
+      {
+        "id": "philly_fed_us",
+        "name": "フィラデルフィア連銀 製造業景況指数",
+        "category": "景気",
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-08-01",
+            "to": "2026-10-01"
+          },
+          "prior": {
+            "from": "2026-05-01",
+            "to": "2026-07-01"
+          }
+        },
+        "detail": "直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から悪化方向に転じました（転換点を通過）。",
+        "text": "フィラデルフィア連銀 製造業景況指数は、直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から悪化方向に転じました（転換点を通過）。"
       },
       {
         "id": "personal_income_mom_us",
@@ -1109,19 +1169,19 @@
         "category": "物価",
         "favorable": false,
         "flipped": false,
-        "proximity": 84,
+        "proximity": 80,
         "period": {
           "recent": {
-            "from": "2026-06-01",
-            "to": "2026-08-01"
+            "from": "2026-07-01",
+            "to": "2026-09-01"
           },
           "prior": {
-            "from": "2026-03-01",
-            "to": "2026-05-01"
+            "from": "2026-04-01",
+            "to": "2026-06-01"
           }
         },
-        "detail": "直近（2026-06-01〜2026-08-01）は悪化方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが16%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
-        "text": "生産者物価指数（PPI・コア）は直近（2026-06-01〜2026-08-01）悪化方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが16%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
+        "detail": "直近（2026-07-01〜2026-09-01）は悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが20%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
+        "text": "生産者物価指数（PPI・コア）は直近（2026-07-01〜2026-09-01）悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが20%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
       },
       {
         "id": "durable_goods_orders_us",
@@ -1142,46 +1202,6 @@
         },
         "detail": "直近（2026-06-01〜2026-08-01）は改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが26%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
         "text": "耐久財受注は直近（2026-06-01〜2026-08-01）改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが26%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
-      },
-      {
-        "id": "empire_state_us",
-        "name": "ニューヨーク連銀 製造業景気指数",
-        "category": "景気",
-        "favorable": true,
-        "flipped": false,
-        "proximity": 68,
-        "period": {
-          "recent": {
-            "from": "2026-07-01",
-            "to": "2026-09-01"
-          },
-          "prior": {
-            "from": "2026-04-01",
-            "to": "2026-06-01"
-          }
-        },
-        "detail": "直近（2026-07-01〜2026-09-01）は改善方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが32%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
-        "text": "ニューヨーク連銀 製造業景気指数は直近（2026-07-01〜2026-09-01）改善方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが32%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
-      },
-      {
-        "id": "retail_sales_us",
-        "name": "小売売上高",
-        "category": "景気",
-        "favorable": true,
-        "flipped": false,
-        "proximity": 47,
-        "period": {
-          "recent": {
-            "from": "2026-06-01",
-            "to": "2026-08-01"
-          },
-          "prior": {
-            "from": "2026-03-01",
-            "to": "2026-05-01"
-          }
-        },
-        "detail": "直近（2026-06-01〜2026-08-01）は改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが53%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
-        "text": "小売売上高は直近（2026-06-01〜2026-08-01）改善方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが53%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
       },
       {
         "id": "sahm_rule_us",
@@ -1225,14 +1245,14 @@
       }
     ],
     "recoverySignal": {
-      "active": true,
-      "count": 3,
+      "active": false,
+      "count": 2,
       "total": 4,
       "items": [
         {
           "id": "jobless_claims_us",
           "name": "新規失業保険申請件数",
-          "contributing": true
+          "contributing": false
         },
         {
           "id": "durable_goods_orders_us",
@@ -1250,7 +1270,7 @@
           "contributing": true
         }
       ],
-      "text": "景気回復局面で先行して改善するとされる米国景気先行指数（LEI）準拠の4指標（新規失業保険申請件数・耐久財受注・長短金利差（10年-2年国債利回り）・S&P500種株価指数）のうち3件が同時に改善方向にあり、景気回復を示唆するシグナルが重なっています。 この4指標はConference Board（全米産業審議委員会）が公式に定めるLEI（米国景気先行指数）の構成系列に対応しており、実際に生産・雇用へ波及する前の“気配”の段階です。一致・遅行指標（⚠️注目ポイント・🔄トレンド転換シグナル）で裏付けを確認してください。"
+      "text": "米国景気先行指数（LEI）準拠の4指標（新規失業保険申請件数・耐久財受注・長短金利差（10年-2年国債利回り）・S&P500種株価指数）のうち、同時に改善方向にあるのは2件にとどまり、明確な回復シグナルの重なりは見られません。 この4指標はConference Board（全米産業審議委員会）が公式に定めるLEI（米国景気先行指数）の構成系列に対応しており、実際に生産・雇用へ波及する前の“気配”の段階です。一致・遅行指標（⚠️注目ポイント・🔄トレンド転換シグナル）で裏付けを確認してください。"
     },
     "recessionSignal": {
       "active": false,
@@ -5578,7 +5598,7 @@
         "label": "3か月移動平均"
       },
       "releaseSchedule": "Census Bureauが対象月の翌月下旬ごろに公表。",
-      "nextRelease": "2027-01-27",
+      "nextRelease": null,
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Manufacturers' New Orders: Durable Goods (Census Bureau)",
@@ -7294,7 +7314,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "Census Bureauが対象月の翌月中旬ごろ8:30 ETに公表。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-11-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Advance Retail Sales: Retail Trade and Food Services (Census Bureau)",
@@ -7302,12 +7322,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": 1.13,
+          "t": "2026-09-01",
+          "value": 0.77,
           "provisional": false
         },
-        "changeFromPrev": 1.59,
-        "changeFromYearAgo": 0.85,
+        "changeFromPrev": -0.52,
+        "changeFromYearAgo": 0.69,
         "min": {
           "t": "2020-04-01",
           "value": -14.18
@@ -7316,7 +7336,7 @@
           "t": "2020-05-01",
           "value": 19.42
         },
-        "count": 415,
+        "count": 416,
         "start": "1992-02-01"
       },
       "changeWatch": null,
@@ -8931,15 +8951,15 @@
         },
         {
           "t": "2025-08-01",
-          "value": 0.28
+          "value": 0.3
         },
         {
           "t": "2025-09-01",
-          "value": 0.18
+          "value": 0.08
         },
         {
           "t": "2025-10-01",
-          "value": -0.09
+          "value": -0.02
         },
         {
           "t": "2025-11-01",
@@ -8975,11 +8995,15 @@
         },
         {
           "t": "2026-07-01",
-          "value": -0.46
+          "value": -0.41
         },
         {
           "t": "2026-08-01",
-          "value": 1.13
+          "value": 1.29
+        },
+        {
+          "t": "2026-09-01",
+          "value": 0.77
         }
       ]
     },
@@ -18748,7 +18772,7 @@
         "color": "accent"
       },
       "releaseSchedule": "米国労働省が毎週木曜日8:30 ETに公表。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-10-22",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Initial Claims (U.S. Department of Labor)",
@@ -18756,12 +18780,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-03",
-          "value": 197000,
+          "t": "2026-10-10",
+          "value": 199000,
           "provisional": false
         },
-        "changeFromPrev": -2000,
-        "changeFromYearAgo": -28000,
+        "changeFromPrev": 1000,
+        "changeFromYearAgo": -34000,
         "min": {
           "t": "2026-07-18",
           "value": 189000
@@ -18770,7 +18794,7 @@
           "t": "2020-04-04",
           "value": 6137000
         },
-        "count": 562,
+        "count": 563,
         "start": "2016-01-02"
       },
       "changeWatch": null,
@@ -21021,7 +21045,11 @@
         },
         {
           "t": "2026-10-03",
-          "value": 197000
+          "value": 198000
+        },
+        {
+          "t": "2026-10-10",
+          "value": 199000
         }
       ]
     },
@@ -71250,7 +71278,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-10-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -71258,12 +71286,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-13",
-          "value": 15.27,
+          "t": "2026-10-14",
+          "value": 16.87,
           "provisional": false
         },
-        "changeFromPrev": 0.06,
-        "changeFromYearAgo": -3.76,
+        "changeFromPrev": 1.6,
+        "changeFromYearAgo": -3.94,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -71272,7 +71300,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2743,
+        "count": 2744,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -82248,6 +82276,10 @@
         {
           "t": "2026-10-13",
           "value": 15.27
+        },
+        {
+          "t": "2026-10-14",
+          "value": 16.87
         }
       ]
     },
@@ -84082,7 +84114,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "フレディマックが毎週木曜日に公表。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-10-22",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "30-Year Fixed Rate Mortgage Average in the United States (Freddie Mac)",
@@ -84090,12 +84122,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-08",
+          "t": "2026-10-15",
           "value": 7.4,
           "provisional": false
         },
-        "changeFromPrev": 0.12,
-        "changeFromYearAgo": 1.06,
+        "changeFromPrev": 0,
+        "changeFromYearAgo": 1.1,
         "min": {
           "t": "2021-01-07",
           "value": 2.65
@@ -84104,7 +84136,7 @@
           "t": "2023-10-26",
           "value": 7.79
         },
-        "count": 562,
+        "count": 563,
         "start": "2016-01-07"
       },
       "changeWatch": null,
@@ -86355,6 +86387,10 @@
         },
         {
           "t": "2026-10-08",
+          "value": 7.4
+        },
+        {
+          "t": "2026-10-15",
           "value": 7.4
         }
       ]
@@ -97213,7 +97249,7 @@
       ],
       "movingAverage": null,
       "releaseSchedule": "フィラデルフィア連銀が毎月第3木曜日ごろに公表。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-11-19",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Philadelphia Fed Manufacturing Business Outlook Survey: Current General Activity (SA)",
@@ -97221,12 +97257,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-01",
-          "value": 37.8,
+          "t": "2026-10-01",
+          "value": 20.9,
           "provisional": false
         },
-        "changeFromPrev": -9.6,
-        "changeFromYearAgo": 18.3,
+        "changeFromPrev": -16.9,
+        "changeFromYearAgo": 31,
         "min": {
           "t": "2020-04-01",
           "value": -58.7
@@ -97235,7 +97271,7 @@
           "t": "2021-04-01",
           "value": 48.8
         },
-        "count": 441,
+        "count": 442,
         "start": "1990-01-01"
       },
       "changeWatch": null,
@@ -99003,6 +99039,10 @@
         {
           "t": "2026-09-01",
           "value": 37.8
+        },
+        {
+          "t": "2026-10-01",
+          "value": 20.9
         }
       ]
     },
@@ -124502,7 +124542,7 @@
         "label": "3か月移動平均"
       },
       "releaseSchedule": "ニューヨーク連銀が毎月15日ごろ（休日の場合は翌営業日）に公表。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-11-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Current General Business Conditions; Diffusion Index for New York (SA)",
@@ -124510,12 +124550,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-01",
-          "value": 7.6,
+          "t": "2026-10-01",
+          "value": 25.5,
           "provisional": false
         },
-        "changeFromPrev": -13,
-        "changeFromYearAgo": 14.6,
+        "changeFromPrev": 17.9,
+        "changeFromYearAgo": 17.7,
         "min": {
           "t": "2020-04-01",
           "value": -80
@@ -124524,7 +124564,7 @@
           "t": "2004-04-01",
           "value": 39
         },
-        "count": 303,
+        "count": 304,
         "start": "2001-07-01"
       },
       "changeWatch": null,
@@ -125740,6 +125780,10 @@
         {
           "t": "2026-09-01",
           "value": 7.6
+        },
+        {
+          "t": "2026-10-01",
+          "value": 25.5
         }
       ]
     },
@@ -127580,7 +127624,7 @@
       "referenceLines": [],
       "movingAverage": null,
       "releaseSchedule": "BLSが毎月中旬ごろ（CPIの前後）に公表。",
-      "nextRelease": "2026-10-15",
+      "nextRelease": "2026-11-13",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Producer Price Index by Commodity: Final Demand: Final Demand Less Foods and Energy (BLS)",
@@ -127588,12 +127632,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": 4.62,
+          "t": "2026-09-01",
+          "value": 4.98,
           "provisional": false
         },
-        "changeFromPrev": 0.36,
-        "changeFromYearAgo": 1.71,
+        "changeFromPrev": 0.17,
+        "changeFromYearAgo": 1.99,
         "min": {
           "t": "2020-05-01",
           "value": 0.17
@@ -127602,7 +127646,7 @@
           "t": "2022-03-01",
           "value": 9.68
         },
-        "count": 185,
+        "count": 186,
         "start": "2011-04-01"
       },
       "changeWatch": null,
@@ -128337,15 +128381,19 @@
         },
         {
           "t": "2026-06-01",
-          "value": 4.8
+          "value": 4.81
         },
         {
           "t": "2026-07-01",
-          "value": 4.26
+          "value": 4.35
         },
         {
           "t": "2026-08-01",
-          "value": 4.62
+          "value": 4.81
+        },
+        {
+          "t": "2026-09-01",
+          "value": 4.98
         }
       ]
     },

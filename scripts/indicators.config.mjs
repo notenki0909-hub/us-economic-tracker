@@ -987,6 +987,44 @@ export const INDICATORS = [
     releaseSchedule: "ADP社が毎月、雇用統計の2日前（通常は第1水曜日）に公表。",
     api: { provider: "fred", seriesId: "ADPMNUSNERSA", transform: "mom_diff", scale: 0.001, statName: "Total Nonfarm Private Payroll Employment (ADP)" },
   },
+  {
+    id: "core_cpi_yoy_us",
+    importance: 5,
+    name: "コアCPI（食品・エネルギー除く）",
+    shortName: "コアCPI",
+    category: "物価",
+    unit: "%",
+    unitLabel: "前年同月比 %（食品・エネルギー除く）",
+    frequency: "monthly",
+    seasonalAdjustment: "原数値",
+    betterWhen: "neutral",
+    description:
+      "米国労働統計局（BLS）が公表する消費者物価指数（CPI）のうち、価格変動の大きい食品とエネルギーを除いた" +
+      "前年同月比。ガソリンや食料品の一時的な値動きを除いた『物価の基調』を示し、総合CPIと並んで、" +
+      "FRBの利上げ・利下げ観測と市場の反応を左右する。FRBが政策運営で重視するコアPCEより早く（CPIの発表日に）出る。",
+    // 波及ルート（代表例）：詳細画面の説明欄の下に表示する。一般的な教科書的な流れの例で、必ずそうなるとは限らない
+    ripple: {
+      trigger: "米CPI（消費者物価）が予想より上振れ",
+      route: "FRBの利下げ観測が後退 → 米金利が上昇 → ドル高・円安／米ハイテク株安",
+      sectors: "輸出株（プラスになり得る）／半導体・成長株（マイナスになり得る）",
+    },
+    judgment: {
+      summary:
+        "FRBは『物価安定の目標』として2%（PCEベース）を掲げている。コアは総合より基調を表すため、高止まり・加速すると" +
+        "利下げが遠のくとの見方につながりやすい。CPIは算出方法の違いからPCEより高めに出やすいとされる。",
+      goodWhen: "2%台前半で安定的に推移している状態（基調的な物価圧力が落ち着いている）。",
+      badWhen: "3%を大きく上回って高止まり・再加速している状態（利下げ観測の後退、高金利の長期化につながりやすい）。",
+      caveat: "家賃・住居費など反応の遅い項目の比重が大きく、総合CPIと動きがずれることがある。コアPCE・総合CPIと合わせて見る。",
+    },
+    referenceLines: [{ value: 2, label: "FRBの物価目標 2%の目安", kind: "target" }],
+    releaseSchedule: "BLSが対象月の翌月中旬ごろ8:30 ET（日本時間 夜〜深夜）に、総合CPIと同時に公表。",
+    api: {
+      provider: "fred",
+      seriesId: "CPILFENS",
+      transform: "yoy",
+      statName: "Consumer Price Index for All Urban Consumers: All Items Less Food and Energy (BLS)",
+    },
+  },
 ];
 
 export const CATEGORIES = ["景気", "物価", "雇用・所得", "対外", "金利", "為替・市場"];

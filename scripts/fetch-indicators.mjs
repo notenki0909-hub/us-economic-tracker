@@ -17,6 +17,7 @@ import { computeChangeWatchFromHistory } from "./change-watch.mjs";
 import { fetchNextFomcDecisionDate } from "./fetch-fomc-calendar.mjs";
 import { fetchNextCensusReleaseDate } from "./fetch-census-calendar.mjs";
 import { updateReleaseHistory, dateInTz } from "./release-history.mjs";
+import { IMPACT } from "./impact.config.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = resolve(__dirname, "../public/data");
@@ -531,6 +532,7 @@ async function main() {
         referenceLines: ind.referenceLines ?? [],
         movingAverage: ind.movingAverage ?? null,
         ripple: ind.ripple ?? undefined,
+        impact: IMPACT[ind.id] ?? undefined,
         releaseSchedule: ind.releaseSchedule,
         nextRelease, // "YYYY-MM-DD" または null（未定）。FREDのNext Release Dateから取得
         // 市場予想（コンセンサス）は掲載しない：政府統計機関ではなく民間データベンダーの商用データで、

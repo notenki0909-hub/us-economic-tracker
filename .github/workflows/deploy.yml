@@ -17,6 +17,8 @@ on:
     - cron: "30 15 * * 1-6"
     # 01:30 UTC（日本時間 10:30）火〜土：前日夕方（米時間）に出る S&P500 の当日終値・国債利回りを反映。
     - cron: "30 1 * * 2-6"
+    # 14:00 UTC（日本時間 23:00）平日：マーケットボードの日経平均（FRED経由で当日分が 12:02 UTC ごろに反映）を取り込む。
+    - cron: "0 14 * * 1-5"
 
 permissions:
   contents: write
@@ -50,6 +52,12 @@ jobs:
         if: github.event_name != 'push'
         continue-on-error: true
         run: npm run fetch:events
+
+      # 経済状況サマリー最上部のマーケットボード（主要6銘柄）。失敗しても指標データの更新・公開は止めない
+      - name: マーケットボードのデータを取得
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: npm run fetch:market
 
       - name: 変更があればコミット
         if: github.event_name != 'push'

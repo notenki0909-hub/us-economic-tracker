@@ -1,0 +1,254 @@
+{
+ "generatedAt": "2026-10-16T11:14:12.591Z",
+ "retentionDays": 365,
+ "releases": {
+  "cpi_yoy_us": [
+   {
+    "date": "2026-09-11",
+    "t": "2026-08-01",
+    "value": 3.35,
+    "kind": "official",
+    "prev": 3.3
+   },
+   {
+    "date": "2026-10-14",
+    "t": "2026-09-01",
+    "value": 3.72,
+    "kind": "official",
+    "prev": 3.35
+   }
+  ],
+  "retail_sales_us": [
+   {
+    "date": "2026-09-16",
+    "t": "2026-08-01",
+    "value": 1.24,
+    "kind": "official",
+    "prev": -0.54
+   },
+   {
+    "date": "2026-10-15",
+    "t": "2026-09-01",
+    "value": 0.77,
+    "kind": "official",
+    "prev": 1.29
+   }
+  ],
+  "jobless_claims_us": [
+   {
+    "date": "2026-09-17",
+    "t": "2026-09-12",
+    "value": 196000,
+    "kind": "official",
+    "prev": 206000
+   },
+   {
+    "date": "2026-09-24",
+    "t": "2026-09-19",
+    "value": 197000,
+    "kind": "official",
+    "prev": 198000
+   },
+   {
+    "date": "2026-10-01",
+    "t": "2026-09-26",
+    "value": 197000,
+    "kind": "official",
+    "prev": 198000
+   },
+   {
+    "date": "2026-10-08",
+    "t": "2026-10-03",
+    "value": 197000,
+    "kind": "official",
+    "prev": 199000
+   },
+   {
+    "date": "2026-10-15",
+    "t": "2026-10-10",
+    "value": 199000,
+    "kind": "official",
+    "prev": 198000
+   }
+  ],
+  "fed_balance_sheet_us": [
+   {
+    "date": "2026-09-17",
+    "t": "2026-09-16",
+    "value": 6746548,
+    "kind": "official",
+    "prev": 6740619
+   },
+   {
+    "date": "2026-09-24",
+    "t": "2026-09-23",
+    "value": 6747704,
+    "kind": "official",
+    "prev": 6746548
+   },
+   {
+    "date": "2026-10-01",
+    "t": "2026-09-30",
+    "value": 6743031,
+    "kind": "official",
+    "prev": 6747704
+   },
+   {
+    "date": "2026-10-08",
+    "t": "2026-10-07",
+    "value": 6747560,
+    "kind": "official",
+    "prev": 6743031
+   },
+   {
+    "date": "2026-10-15",
+    "t": "2026-10-14",
+    "value": 6755639,
+    "kind": "official",
+    "prev": 6747560
+   }
+  ],
+  "industrial_production_us": [
+   {
+    "date": "2026-09-18",
+    "t": "2026-08-01",
+    "value": 103.0682,
+    "kind": "official",
+    "prev": 103.0454
+   }
+  ],
+  "current_account_us": [
+   {
+    "date": "2026-09-24",
+    "t": "2026-04-01",
+    "value": -246023,
+    "kind": "official",
+    "prev": -212597
+   }
+  ],
+  "consumer_sentiment_us": [
+   {
+    "date": "2026-09-25",
+    "t": "2026-08-01",
+    "value": 51.7,
+    "kind": "official",
+    "prev": 55.2
+   }
+  ],
+  "durable_goods_orders_us": [
+   {
+    "date": "2026-09-25",
+    "t": "2026-08-01",
+    "value": 338604,
+    "kind": "official",
+    "prev": 338662
+   }
+  ],
+  "job_openings_us": [
+   {
+    "date": "2026-09-29",
+    "t": "2026-08-01",
+    "value": 7079,
+    "kind": "official",
+    "prev": 7335
+   }
+  ],
+  "core_pce_yoy_us": [
+   {
+    "date": "2026-09-30",
+    "t": "2026-08-01",
+    "value": 3.01,
+    "kind": "official",
+    "prev": 2.98
+   }
+  ],
+  "fed_funds_rate_us": [
+   {
+    "date": "2026-10-02",
+    "t": "2026-09-01",
+    "value": 3.75,
+    "kind": "detected",
+    "prev": 3.63
+   }
+  ],
+  "unemployment_rate_us": [
+   {
+    "date": "2026-10-02",
+    "t": "2026-09-01",
+    "value": 4.2,
+    "kind": "official",
+    "prev": 4.1
+   }
+  ],
+  "sahm_rule_us": [
+   {
+    "date": "2026-10-02",
+    "t": "2026-09-01",
+    "value": 0,
+    "kind": "official",
+    "prev": -0.07
+   }
+  ],
+  "nonfarm_payrolls_us": [
+   {
+    "date": "2026-10-02",
+    "t": "2026-09-01",
+    "value": 29,
+    "kind": "official",
+    "prev": 133
+   }
+  ],
+  "trade_balance_us": [
+   {
+    "date": "2026-10-06",
+    "t": "2026-08-01",
+    "value": -105572,
+    "kind": "official",
+    "prev": -92826
+   }
+  ],
+  "mortgage_rate_us": [
+   {
+    "date": "2026-10-08",
+    "t": "2026-10-08",
+    "value": 7.4,
+    "kind": "official",
+    "prev": 7.28
+   },
+   {
+    "date": "2026-10-15",
+    "t": "2026-10-15",
+    "value": 7.4,
+    "kind": "official",
+    "prev": 7.4
+   }
+  ],
+  "philly_fed_us": [
+   {
+    "date": "2026-10-15",
+    "t": "2026-10-01",
+    "value": 20.9,
+    "kind": "official",
+    "prev": 37.8
+   }
+  ],
+  "empire_state_us": [
+   {
+    "date": "2026-10-15",
+    "t": "2026-10-01",
+    "value": 25.5,
+    "kind": "official",
+    "prev": 7.6
+   }
+  ],
+  "ppi_core_yoy_us": [
+   {
+    "date": "2026-10-15",
+    "t": "2026-09-01",
+    "value": 4.98,
+    "kind": "official",
+    "prev": 4.81
+   }
+  ]
+ }
+}

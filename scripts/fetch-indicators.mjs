@@ -18,6 +18,7 @@ import { fetchNextFomcDecisionDate } from "./fetch-fomc-calendar.mjs";
 import { fetchNextCensusReleaseDate } from "./fetch-census-calendar.mjs";
 import { updateReleaseHistory, dateInTz } from "./release-history.mjs";
 import { IMPACT } from "./impact.config.mjs";
+import { writeJsonIfChanged } from "./write-json-if-changed.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = resolve(__dirname, "../public/data");
@@ -571,7 +572,7 @@ async function main() {
   };
 
   const file = resolve(OUT_DIR, "indicators.json");
-  await writeFile(file, JSON.stringify(payload, null, 2) + "\n", "utf8");
+  const wrote = await writeJsonIfChanged(file, payload, 2); // 内容に変化がなければ書き換えない（generatedAtのみの差は変化なし）
 
   // 発表履歴（過去1年分）の更新。失敗しても指標データの更新は止めない
   try {
@@ -586,7 +587,7 @@ async function main() {
   } catch (err) {
     console.log(`発表履歴の更新に失敗（指標データには影響なし）: ${err.message}`);
   }
-  console.log(`\n書き出し: ${file}`);
+  console.log(wrote ? `\n書き出し: ${file}` : "\n変更なし（indicators.json は書き換えない）");
   console.log(`成功 ${out.length} / ${INDICATORS.length} 指標`);
   if (failures.length) {
     console.log(`失敗: ${failures.map((f) => f.id).join(", ")}`);

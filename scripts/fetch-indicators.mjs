@@ -534,6 +534,7 @@ async function main() {
         movingAverage: ind.movingAverage ?? null,
         ripple: ind.ripple ?? undefined,
         impact: IMPACT[ind.id] ?? undefined,
+        releaseTimeET: ind.releaseTimeET ?? undefined,
         compare: ind.compare ?? undefined,
         releaseSchedule: ind.releaseSchedule,
         nextRelease, // "YYYY-MM-DD" または null（未定）。FREDのNext Release Dateから取得

@@ -11,6 +11,7 @@ Chart.register(annotationPlugin, zoomPlugin);
 import { loadEvents, loadReleases, groupEventsByDate, eventPillHtml, renderEventDetail } from "./events.js";
 import { loadMarket, marketBoardHtml } from "./market.js";
 import { showFetchStatus } from "./fetch-status.js";
+import { etToJst, jstLabel, convertEventTime } from "./jst.js";
 
 const DATA_URL = import.meta.env.BASE_URL + "data/indicators.json";
 const CATEGORIES = ["景気", "物価", "雇用・所得", "対外", "金利", "為替・市場"];
@@ -656,21 +657,21 @@ function usIntroHtml() {
       names: [link("nonfarm_payrolls_us", "非農業部門雇用者数"), link("unemployment_rate_us", "失業率"), link("avg_hourly_earnings_yoy_us", "平均時給")],
       effect:
         "米国の雇用の強さを示す、市場が最も注目する指標。強いと米景気への自信から米金利・ドルが上がり、円安方向に動きやすい。弱いと景気減速への懸念で株安・円高方向になりやすい。ただし強すぎると、利下げ観測が後退して株価の重荷になることもある。",
-      when: "毎月第1金曜日 8:30（米東部時間）。日本時間では夜〜深夜",
+      when: "毎月第1金曜日 日本時間 21:30（米国の冬時間は22:30）",
     },
     {
       title: "PCE・CPI（米国の物価）",
       names: [link("core_pce_yoy_us", "コアPCE物価指数"), link("cpi_yoy_us", "消費者物価指数（CPI）"), link("core_cpi_yoy_us", "コアCPI")],
       effect:
         "物価が上振れると、FRBの利下げ観測が後退し、米金利の上昇・ドル高・米ハイテク株安につながりやすく、日本の半導体・成長株にも波及する。下振れはその逆。FRBが政策判断で重視するのはコアPCE、発表時の市場の反応が大きいのはCPI。",
-      when: "CPIは毎月中旬ごろ、PCEは毎月下旬ごろ（いずれも8:30 ET）",
+      when: "CPIは毎月中旬ごろ、PCEは毎月下旬ごろ（いずれも日本時間 21:30、冬時間は22:30）",
     },
     {
       title: "FOMC（米連邦公開市場委員会）",
       names: [link("fed_funds_rate_us", "FF金利（政策金利）")],
       effect:
         "FRBが政策金利を決める会合。利上げ・利下げの決定、声明、経済見通し、議長の会見が、米金利・ドル円・世界の株価を動かす。日米の金利差の変化は円相場を通じて、輸出株をはじめ日本株全体に影響する。",
-      when: "年8回。日程は<a href=\"#release-calendar\">発表予定カレンダー</a>の🏛️イベントで確認",
+      when: "年8回。声明は日本時間の翌3:00（冬時間は翌4:00）。日程は<a href=\"#release-calendar\">発表予定カレンダー</a>の🏛️イベントで確認（日本時間で表示）",
     },
   ];
   const items = rows
@@ -948,12 +949,29 @@ function fmtReleasePeriod(t, ind) {
   return t;
 }
 
+/**
+ * 米国の発表を日本時間に換算する（米国版）。FREDなどが返す発表日は米国の現地の日付で、発表時刻（releaseTimeET）を持つ指標は
+ * 日本時間の日付・時刻に直す（例：FOMC 10/28 14:00 ET → 日本時間 10/29 3:00）。時刻を持たない指標（日次・随時更新）は null。
+ */
+function nextReleaseJst(ind) {
+  if (!ind.nextRelease || !ind.releaseTimeET || ind.frequency === "daily") return null;
+  return etToJst(ind.nextRelease, ind.releaseTimeET);
+}
+
+/** 発表履歴1件の日本時間への換算。公式の発表日（kind: official）だけが対象（反映日 detected は実行日なので換算しない） */
+function releasedJst(ind, r) {
+  if (r.kind !== "official" || !ind.releaseTimeET) return null;
+  return etToJst(r.date, ind.releaseTimeET);
+}
+
 /** 発表済みの指標のカレンダー用ピル。kind が detected の日付は「データの反映日」（実際の発表日と数日ずれうる） */
 function releasedPillHtml({ ind, r }) {
   const color = catColor(ind.category);
   const { num, unit } = fmtValue(r.value, ind);
   const note = r.kind === "detected" ? "（データ反映日）" : "";
-  const title = `${ind.name}　発表済み${note}：${fmtReleasePeriod(r.t, ind)}分 ${num} ${unit}${r.provisional ? "（速報）" : ""}`;
+  const j = releasedJst(ind, r);
+  const when = j ? `（${j.time} JST発表）` : "";
+  const title = `${ind.name}　発表済み${note}${when}：${fmtReleasePeriod(r.t, ind)}分 ${num} ${unit}${r.provisional ? "（速報）" : ""}`;
   return `<button type="button" class="calendar__pill calendar__pill--released" style="color:${color};border-color:${color}55" data-id="${ind.id}" title="${title}">✓ ${ind.shortName}</button>`;
 }
 
@@ -965,7 +983,8 @@ function releaseHistoryHtml(ind) {
     .map((r) => {
       const v = fmtValue(r.value, ind);
       const prev = r.prev != null ? fmtValue(r.prev, ind) : null;
-      return `<li><span class="rh-date">${fmtJpDateWithWeekday(r.date)}</span><span class="rh-t">${fmtReleasePeriod(r.t, ind)}分</span><b>${v.num} ${v.unit}</b>${
+      const j = releasedJst(ind, r); // 米国の発表日を日本時間の日付にする
+      return `<li><span class="rh-date">${fmtJpDateWithWeekday(j ? j.date : r.date)}${j ? ` ${j.time}` : ""}</span><span class="rh-t">${fmtReleasePeriod(r.t, ind)}分</span><b>${v.num} ${v.unit}</b>${
         r.provisional ? `<span class="rh-note">速報</span>` : ""
       }${prev ? `<span class="rh-prev">前回 ${prev.num} ${prev.unit}</span>` : ""}${
         r.kind === "detected" ? `<span class="rh-note">反映日</span>` : ""
@@ -983,16 +1002,18 @@ function renderCalendar() {
   const eventsByDate = state.calShowEvents ? groupEventsByDate(state.events) : new Map();
   (state.calShowIndicators ? state.data.indicators : []).forEach((ind) => {
     if (!ind.nextRelease) return;
-    if (!byDate.has(ind.nextRelease)) byDate.set(ind.nextRelease, []);
-    byDate.get(ind.nextRelease).push(ind);
+    const key = nextReleaseJst(ind)?.date ?? ind.nextRelease; // 日本時間の日付に置く（時刻が分かる指標のみ）
+    if (!byDate.has(key)) byDate.set(key, []);
+    byDate.get(key).push(ind);
   });
   // 発表済み（過去1年分の履歴）。次回発表予定日は発表後に次回へ切り替わるため、履歴から別に表示する
   const releasedByDate = new Map();
   if (state.calShowIndicators) {
     state.data.indicators.forEach((ind) => {
       (state.releases[ind.id] || []).forEach((r) => {
-        if (!releasedByDate.has(r.date)) releasedByDate.set(r.date, []);
-        releasedByDate.get(r.date).push({ ind, r });
+        const key = releasedJst(ind, r)?.date ?? r.date;
+        if (!releasedByDate.has(key)) releasedByDate.set(key, []);
+        releasedByDate.get(key).push({ ind, r });
       });
     });
   }
@@ -1000,7 +1021,7 @@ function renderCalendar() {
   const year = state.calMonth.getUTCFullYear();
   const month = state.calMonth.getUTCMonth();
   const startOffset = new Date(Date.UTC(year, month, 1)).getUTCDay(); // 0=日
-  const todayStr = new Date().toISOString().slice(0, 10);
+  const todayStr = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); // 日本時間の今日
 
   const cells = [];
   for (let i = 0; i < 42; i++) {
@@ -1039,7 +1060,9 @@ function renderCalendar() {
       const pills = c.items
         .map((ind) => {
           const color = catColor(ind.category);
-          return `<button type="button" class="calendar__pill" style="background:${color}22;color:${color};border-color:${color}66" data-id="${ind.id}" title="${ind.name}">${ind.shortName}</button>`;
+          const j = nextReleaseJst(ind);
+          const when = j ? `（${jstLabel(j)}）` : "";
+          return `<button type="button" class="calendar__pill" style="background:${color}22;color:${color};border-color:${color}66" data-id="${ind.id}" title="${ind.name}${when}">${ind.shortName}</button>`;
         })
         .join("");
       return `
@@ -1065,6 +1088,7 @@ function renderCalendar() {
     </div>
     <div class="calendar__weekdays">${weekdayHtml}</div>
     <div class="calendar__grid">${cellsHtml}</div>
+    <p class="calendar__note">🕘 米国の発表は<b>日本時間（JST）</b>の日付で表示しています（例：FOMCの声明は米国で14:00 ET＝日本では翌日の3:00）。ピルにポインターを乗せると、日本時間の発表時刻と米国時刻が分かります。時刻は通常の目安で、変更されることがあります。日次・随時更新の指標は、時刻がないため日付のみです。</p>
     <p class="calendar__note">✓ は発表済みの指標です（過去1年分の履歴。2026年9月11日以降の分から蓄積）。クリックすると詳細と発表履歴を見られます。</p>`;
 
   el.querySelectorAll(".calendar__pill").forEach((btn) => {
@@ -1300,7 +1324,13 @@ function openDetail(id) {
     <p class="judgment__caveat">⚠️ ${j.caveat}</p>`
     : "";
 
-  const nextReleaseText = ind.nextRelease ? fmtJpDateWithWeekday(ind.nextRelease) : "未定";
+  // 日本時間で表示（時刻が分かる指標）：「2026年11月6日（金）22:30 JST（米国 11/6 8:30 ET）」
+  const nj = nextReleaseJst(ind);
+  const nextReleaseText = ind.nextRelease
+    ? nj
+      ? `${fmtJpDateWithWeekday(nj.date)} ${nj.time} JST</b><small>（米国 ${Number(nj.etDate.slice(5, 7))}/${Number(nj.etDate.slice(8, 10))} ${nj.etTime} ET）</small><b>`
+      : fmtJpDateWithWeekday(ind.nextRelease)
+    : "未定";
   document.getElementById("d-release").innerHTML =
     `<p>📅 次回発表予定日：<b>${nextReleaseText}</b>${ind.releaseSchedule ? `　（目安：${ind.releaseSchedule}）` : ""}</p>` +
     releaseHistoryHtml(ind);
@@ -1765,7 +1795,11 @@ async function init() {
     `データの最終更新 ${genStr}　／　${state.data.indicatorCount} 指標　／　毎回 FRED から全期間を再取得<span id="fetch-status"></span>`;
   showFetchStatus("us-economic-tracker");
 
-  state.events = await eventsPromise;
+  // イベント（FOMC・議事要旨・講演など）の日付・時刻も日本時間に直す（米国の日付＋ET時刻 → 日本時間）。ET時刻が無いものはそのまま
+  state.events = (await eventsPromise).map((ev) => {
+    const c = convertEventTime(ev.date, ev.time);
+    return c ? { ...ev, date: c.jstDate, time: c.text, usDate: ev.date } : ev;
+  });
   state.releases = await releasesPromise;
   state.market = await marketPromise;
   renderGrid();

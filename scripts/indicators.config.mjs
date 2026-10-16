@@ -13,6 +13,7 @@ export const INDICATORS = [
   {
     id: "gdp_growth_us",
     importance: 4,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "実質GDP成長率",
     shortName: "実質GDP",
     category: "景気",
@@ -38,6 +39,7 @@ export const INDICATORS = [
   {
     id: "consumer_sentiment_us",
     importance: 2,
+    releaseTimeET: "10:00", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "ミシガン大学消費者信頼感指数",
     shortName: "消費者信頼感",
     category: "景気",
@@ -62,6 +64,7 @@ export const INDICATORS = [
   {
     id: "industrial_production_us",
     importance: 3,
+    releaseTimeET: "09:15", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "鉱工業生産指数",
     shortName: "鉱工業生産",
     category: "景気",
@@ -86,6 +89,7 @@ export const INDICATORS = [
   {
     id: "durable_goods_orders_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "耐久財受注",
     shortName: "耐久財受注",
     category: "景気",
@@ -116,6 +120,7 @@ export const INDICATORS = [
   {
     id: "retail_sales_us",
     importance: 5,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "小売売上高",
     shortName: "小売売上高",
     category: "景気",
@@ -141,6 +146,7 @@ export const INDICATORS = [
   {
     id: "cpi_yoy_us",
     importance: 5,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "消費者物価指数（CPI）",
     shortName: "CPI",
     category: "物価",
@@ -176,6 +182,7 @@ export const INDICATORS = [
   {
     id: "core_pce_yoy_us",
     importance: 5,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "コアPCE物価指数",
     shortName: "コアPCE",
     category: "物価",
@@ -201,6 +208,7 @@ export const INDICATORS = [
   {
     id: "unemployment_rate_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "失業率",
     shortName: "失業率",
     category: "雇用・所得",
@@ -234,6 +242,7 @@ export const INDICATORS = [
   {
     id: "sahm_rule_us",
     importance: 4,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "サーム・ルール（景気後退シグナル）",
     shortName: "サーム・ルール",
     category: "雇用・所得",
@@ -275,6 +284,7 @@ export const INDICATORS = [
   {
     id: "nonfarm_payrolls_us",
     importance: 5,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "非農業部門雇用者数",
     shortName: "非農業部門雇用者数",
     category: "雇用・所得",
@@ -305,6 +315,7 @@ export const INDICATORS = [
   {
     id: "real_earnings_yoy_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "実質週給（フルタイム労働者）",
     shortName: "実質週給",
     category: "雇用・所得",
@@ -329,6 +340,7 @@ export const INDICATORS = [
   {
     id: "jobless_claims_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "新規失業保険申請件数",
     shortName: "新規失業保険申請",
     category: "雇用・所得",
@@ -356,6 +368,7 @@ export const INDICATORS = [
   {
     id: "job_openings_us",
     importance: 4,
+    releaseTimeET: "10:00", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "JOLTS求人件数",
     shortName: "JOLTS求人件数",
     category: "雇用・所得",
@@ -381,6 +394,7 @@ export const INDICATORS = [
   {
     id: "current_account_us",
     importance: 2,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "経常収支",
     shortName: "経常収支",
     category: "対外",
@@ -405,6 +419,7 @@ export const INDICATORS = [
   {
     id: "trade_balance_us",
     importance: 2,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "貿易収支",
     shortName: "貿易収支",
     category: "対外",
@@ -427,6 +442,7 @@ export const INDICATORS = [
   {
     id: "fed_funds_rate_us",
     importance: 5,
+    releaseTimeET: "14:00", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "FF金利（政策金利）",
     shortName: "FF金利",
     category: "金利",
@@ -482,6 +498,7 @@ export const INDICATORS = [
   {
     id: "fed_balance_sheet_us",
     importance: 3,
+    releaseTimeET: "16:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "FRBバランスシート（総資産）",
     shortName: "FRB総資産",
     category: "金利",
@@ -607,6 +624,7 @@ export const INDICATORS = [
   {
     id: "building_permits_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "新築住宅建築許可件数",
     shortName: "建築許可件数",
     category: "景気",
@@ -632,6 +650,7 @@ export const INDICATORS = [
   {
     id: "mortgage_rate_us",
     importance: 3,
+    releaseTimeET: "12:00", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "30年固定住宅ローン金利",
     shortName: "住宅ローン金利",
     category: "金利",
@@ -683,6 +702,7 @@ export const INDICATORS = [
   {
     id: "philly_fed_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "フィラデルフィア連銀 製造業景況指数",
     shortName: "フィラデルフィア連銀景況",
     category: "景気",
@@ -762,6 +782,7 @@ export const INDICATORS = [
   {
     id: "avg_hourly_earnings_yoy_us",
     importance: 4,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "平均時給（民間部門・前年比）",
     shortName: "平均時給",
     category: "雇用・所得",
@@ -787,6 +808,7 @@ export const INDICATORS = [
   {
     id: "real_pce_mom_us",
     importance: 4,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "実質個人消費支出（前月比）",
     shortName: "実質個人消費",
     category: "景気",
@@ -813,6 +835,7 @@ export const INDICATORS = [
   {
     id: "personal_income_mom_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "個人所得（前月比）",
     shortName: "個人所得",
     category: "雇用・所得",
@@ -839,6 +862,7 @@ export const INDICATORS = [
   {
     id: "empire_state_us",
     importance: 3,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "ニューヨーク連銀 製造業景気指数",
     shortName: "NY連銀景況（エンパイア）",
     category: "景気",
@@ -865,6 +889,7 @@ export const INDICATORS = [
   {
     id: "capacity_utilization_us",
     importance: 3,
+    releaseTimeET: "09:15", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "設備稼働率（鉱工業全体）",
     shortName: "設備稼働率",
     category: "景気",
@@ -890,6 +915,7 @@ export const INDICATORS = [
   {
     id: "ppi_core_yoy_us",
     importance: 4,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "生産者物価指数（PPI・コア）",
     shortName: "PPI（コア）",
     category: "物価",
@@ -915,6 +941,7 @@ export const INDICATORS = [
   {
     id: "case_shiller_20_yoy_us",
     importance: 3,
+    releaseTimeET: "09:00", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "S&Pケースシラー住宅価格（20都市・前年比）",
     shortName: "ケースシラー住宅価格",
     category: "景気",
@@ -940,6 +967,7 @@ export const INDICATORS = [
   {
     id: "new_home_sales_us",
     importance: 3,
+    releaseTimeET: "10:00", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "新築住宅販売件数",
     shortName: "新築住宅販売",
     category: "景気",
@@ -965,6 +993,7 @@ export const INDICATORS = [
   {
     id: "adp_employment_us",
     importance: 3,
+    releaseTimeET: "08:15", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "ADP全米雇用者数（民間・前月差）",
     shortName: "ADP雇用者数",
     category: "雇用・所得",
@@ -990,6 +1019,7 @@ export const INDICATORS = [
   {
     id: "core_cpi_yoy_us",
     importance: 5,
+    releaseTimeET: "08:30", // 発表時刻（米国東部時間の目安）。日本時間への換算に使う
     name: "コアCPI（食品・エネルギー除く）",
     shortName: "コアCPI",
     category: "物価",

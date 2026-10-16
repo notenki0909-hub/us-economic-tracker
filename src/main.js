@@ -557,7 +557,19 @@ function renderCategoryGuide() {
           <button class="category-guide__link" data-id="${ind.id}">${ind.name}　${starsText(ind.importance)}</button>${(entry.externals ?? [])
             .map((e) => `<a class="category-guide__ext category-guide__ext--inline" href="${e.url}" target="_blank" rel="noopener" title="${e.label}（Investing.com 日本版の外部ページ）">${e.label} ↗</a>`)
             .join("")}
-          <p>${entry.reason}</p>
+          <p>${entry.reason}</p>${
+            entry.compare
+              ? `
+          <details class="category-guide__compare" open>
+            <summary>🔀 ${entry.compare.title}</summary>
+            <div class="detail__versus-scroll"><table class="category-guide__table">
+              <thead><tr>${entry.compare.headers.map((h) => `<th>${h}</th>`).join("")}</tr></thead>
+              <tbody>${entry.compare.rows.map((r) => `<tr><th scope="row">${r[0]}</th>${r.slice(1).map((v) => `<td>${v}</td>`).join("")}</tr>`).join("")}</tbody>
+            </table></div>
+            <p class="category-guide__comparenote">${entry.compare.note ?? ""}</p>
+          </details>`
+              : ""
+          }
         </div>
       </div>`;
   };

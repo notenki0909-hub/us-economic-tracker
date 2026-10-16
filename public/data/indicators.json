@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:17:40.418Z",
+  "generatedAt": "2026-10-16T12:14:21.731Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 37,
@@ -67,7 +67,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-16T11:17:40.427Z",
+    "generatedAt": "2026-10-16T12:14:21.737Z",
     "stats": {
       "total": 37,
       "improving": 7,
@@ -9046,6 +9046,11 @@
         }
       ],
       "movingAverage": null,
+      "ripple": {
+        "trigger": "米CPI（消費者物価）が予想より上振れ",
+        "route": "FRBの利下げ観測が後退 → 米金利が上昇 → ドル高・円安／米ハイテク株安",
+        "sectors": "輸出株（プラスになり得る）／半導体・成長株（マイナスになり得る）"
+      },
       "releaseSchedule": "BLSが対象月の翌月中旬ごろ8:30 ET（日本時間 夜〜深夜）に公表。",
       "nextRelease": "2026-11-10",
       "source": {
@@ -16319,6 +16324,11 @@
         }
       ],
       "movingAverage": null,
+      "ripple": {
+        "trigger": "米雇用統計が予想より上振れ",
+        "route": "景気の強さが意識される → 米金利が上昇 → ドル高・円安。物価高の局面では「金融引き締めの長期化」が意識され、株安になることもある",
+        "sectors": "米CPIが上振れしたときと同じ（輸出株はプラス、半導体・成長株はマイナスになり得る）。市場予想との差が重要"
+      },
       "releaseSchedule": "BLSが毎月第1金曜日8:30 ETに公表。",
       "nextRelease": "2026-11-06",
       "source": {
@@ -109938,6 +109948,11 @@
       },
       "referenceLines": [],
       "movingAverage": null,
+      "ripple": {
+        "trigger": "原油高",
+        "route": "輸入コストが上昇 → 電気代・物流費が上昇 → 家計・企業の負担が増える（日本から見た場合）",
+        "sectors": "商社・資源（プラスになり得る）／空運・電力・化学（マイナスになり得る）"
+      },
       "releaseSchedule": "米エネルギー情報局（EIA）が毎営業日公表。FREDへの反映は数日遅れることがある。",
       "nextRelease": "2026-10-21",
       "source": {

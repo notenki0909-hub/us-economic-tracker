@@ -534,6 +534,7 @@ async function main() {
         movingAverage: ind.movingAverage ?? null,
         ripple: ind.ripple ?? undefined,
         impact: IMPACT[ind.id] ?? undefined,
+        compare: ind.compare ?? undefined,
         releaseSchedule: ind.releaseSchedule,
         nextRelease, // "YYYY-MM-DD" または null（未定）。FREDのNext Release Dateから取得
         // 市場予想（コンセンサス）は掲載しない：政府統計機関ではなく民間データベンダーの商用データで、

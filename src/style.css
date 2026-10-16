@@ -2521,3 +2521,14 @@ a {
   font-size: 0.72rem;
   color: var(--text-faint);
 }
+
+/* ---------- カテゴリガイド：外部リンク（データ未収録の指標。指標名の右隣に表示） ---------- */
+.category-guide__ext {
+  font-size: 0.84rem;
+  color: var(--accent);
+}
+
+.category-guide__ext--inline {
+  margin-left: 14px;
+  white-space: nowrap;
+}

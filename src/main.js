@@ -554,7 +554,9 @@ function renderCategoryGuide() {
       <div class="category-guide__row">
         <span class="category-guide__badge ${cls}">${label}</span>
         <div class="category-guide__body">
-          <button class="category-guide__link" data-id="${ind.id}">${ind.name}　${starsText(ind.importance)}</button>
+          <button class="category-guide__link" data-id="${ind.id}">${ind.name}　${starsText(ind.importance)}</button>${(entry.externals ?? [])
+            .map((e) => `<a class="category-guide__ext category-guide__ext--inline" href="${e.url}" target="_blank" rel="noopener" title="${e.label}（Investing.com 日本版の外部ページ）">${e.label} ↗</a>`)
+            .join("")}
           <p>${entry.reason}</p>
         </div>
       </div>`;

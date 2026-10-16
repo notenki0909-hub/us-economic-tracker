@@ -1041,7 +1041,14 @@ export const CATEGORY_GUIDES = {
     },
     second: {
       id: "industrial_production_us",
-      reason: "GDPは速報性に欠けるため、毎月発表される鉱工業生産指数で補う。製造業を中心とした実体経済の動きを、次のGDP発表までの『空白期間』も追いかけられる。",
+      // ISM景況指数はFREDから取得できない（2016年に削除）ため、データは収録せず外部リンクのみ。指標名の右隣に表示する
+      externals: [
+        { url: "https://jp.investing.com/economic-calendar/ism-manufacturing-pmi-173", label: "ISM製造業景況指数" },
+        { url: "https://jp.investing.com/economic-calendar/ism-non-manufacturing-pmi-176", label: "ISM非製造業景況指数" },
+      ],
+      reason:
+        "GDPは速報性に欠けるため、毎月発表される鉱工業生産指数で補う。製造業を中心とした実体経済の動きを、次のGDP発表までの『空白期間』も追いかけられる。" +
+        "右のISM製造業・非製造業景況指数（購買担当者へのアンケートで、50が拡大・縮小の分かれ目。月初に出る先行指標）は、データを収録していないため、外部ページ（Investing.com 日本版）で確認できる。",
     },
   },
   物価: {

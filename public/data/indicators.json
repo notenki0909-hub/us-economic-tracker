@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T19:45:32.018Z",
+  "generatedAt": "2026-10-19T20:41:48.486Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,13 +113,13 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-19T19:45:32.027Z",
+    "generatedAt": "2026-10-19T20:41:48.494Z",
     "stats": {
       "total": 38,
       "improving": 6,
       "worsening": 18,
       "neutral": 14,
-      "surpriseCount": 5
+      "surpriseCount": 4
     },
     "headline": "38指標中、改善傾向が6件、悪化傾向が18件、横ばい・中立が14件です。",
     "improvingList": [
@@ -375,8 +375,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-10-14",
-          "to": "2026-10-15"
+          "from": "2026-10-15",
+          "to": "2026-10-16"
         }
       },
       {
@@ -393,8 +393,8 @@
         "name": "貿易加重ドル指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-10-08",
-          "to": "2026-10-09"
+          "from": "2026-10-15",
+          "to": "2026-10-16"
         }
       },
       {
@@ -971,15 +971,6 @@
         "level": "mid",
         "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.8）。",
         "text": "VIX指数（恐怖指数）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.8）。"
-      },
-      {
-        "id": "treasury_10y_us",
-        "name": "米10年国債利回り",
-        "category": "金利",
-        "z": -1.7,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。",
-        "text": "米10年国債利回りでやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。"
       },
       {
         "id": "empire_state_us",
@@ -26636,7 +26627,7 @@
         "home": "新規の固定の住宅ローン金利（30年固定は10年国債利回りに連動）・自動車ローンの金利に直結する。"
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-10-19",
+      "nextRelease": "2026-10-20",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -26644,12 +26635,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-15",
-          "value": 5.1,
+          "t": "2026-10-16",
+          "value": 5.09,
           "provisional": false
         },
-        "changeFromPrev": -0.09,
-        "changeFromYearAgo": 1.05,
+        "changeFromPrev": -0.01,
+        "changeFromYearAgo": 1.1,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -26658,7 +26649,7 @@
           "t": "2026-10-05",
           "value": 5.31
         },
-        "count": 2697,
+        "count": 2698,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -37450,6 +37441,10 @@
         {
           "t": "2026-10-15",
           "value": 5.1
+        },
+        {
+          "t": "2026-10-16",
+          "value": 5.09
         }
       ]
     },
@@ -50649,7 +50644,7 @@
         "home": "海外旅行や輸入品（電子機器・衣料）の値段に表れる。"
       },
       "releaseSchedule": "FRBが毎営業日（H.10統計）に公表。",
-      "nextRelease": "2026-10-19",
+      "nextRelease": "2026-10-26",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Trade Weighted U.S. Dollar Index: Broad (Federal Reserve H.10)",
@@ -50657,12 +50652,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-09",
-          "value": 121.6023,
+          "t": "2026-10-16",
+          "value": 121.4048,
           "provisional": false
         },
-        "changeFromPrev": 0.1554,
-        "changeFromYearAgo": 0.5121,
+        "changeFromPrev": -0.1645,
+        "changeFromYearAgo": 0.735,
         "min": {
           "t": "2018-02-01",
           "value": 106.4877
@@ -50671,7 +50666,7 @@
           "t": "2025-01-13",
           "value": 130.0413
         },
-        "count": 2687,
+        "count": 2691,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -61423,6 +61418,22 @@
         {
           "t": "2026-10-09",
           "value": 121.6023
+        },
+        {
+          "t": "2026-10-13",
+          "value": 121.4433
+        },
+        {
+          "t": "2026-10-14",
+          "value": 122.0037
+        },
+        {
+          "t": "2026-10-15",
+          "value": 121.5693
+        },
+        {
+          "t": "2026-10-16",
+          "value": 121.4048
         }
       ]
     },

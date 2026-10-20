@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T06:28:59.768Z",
+  "generatedAt": "2026-10-20T18:24:40.757Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,15 +113,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-20T06:28:59.777Z",
+    "generatedAt": "2026-10-20T18:24:40.764Z",
     "stats": {
       "total": 38,
-      "improving": 7,
-      "worsening": 18,
+      "improving": 8,
+      "worsening": 17,
       "neutral": 13,
-      "surpriseCount": 3
+      "surpriseCount": 2
     },
-    "headline": "38指標中、改善傾向が7件、悪化傾向が18件、横ばい・中立が13件です。",
+    "headline": "38指標中、改善傾向が8件、悪化傾向が17件、横ばい・中立が13件です。",
     "improvingList": [
       {
         "id": "industrial_production_us",
@@ -144,6 +144,15 @@
       {
         "id": "sp500_us",
         "name": "S&P500種株価指数",
+        "category": "為替・市場",
+        "period": {
+          "from": "2026-10-16",
+          "to": "2026-10-19"
+        }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
           "from": "2026-10-16",
@@ -297,21 +306,12 @@
         }
       },
       {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-10-15",
-          "to": "2026-10-16"
-        }
-      },
-      {
         "id": "building_permits_us",
         "name": "新築住宅建築許可件数",
         "category": "景気",
         "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
+          "from": "2026-08-01",
+          "to": "2026-09-01"
         }
       },
       {
@@ -481,6 +481,15 @@
         }
       },
       {
+        "id": "building_permits_us",
+        "name": "新築住宅建築許可件数",
+        "category": "景気",
+        "period": {
+          "from": "2026-07-01",
+          "to": "2026-09-01"
+        }
+      },
+      {
         "id": "real_pce_mom_us",
         "name": "実質個人消費支出（前月比）",
         "category": "景気",
@@ -532,8 +541,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-10-05",
-          "to": "2026-10-16"
+          "from": "2026-10-06",
+          "to": "2026-10-19"
         }
       }
     ],
@@ -701,7 +710,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 19.99
+          "current": 18.44
         }
       },
       {
@@ -953,15 +962,6 @@
         "level": "mid",
         "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.1）。",
         "text": "貿易収支でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.1）。"
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "z": 1.8,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.8）。",
-        "text": "VIX指数（恐怖指数）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.8）。"
       },
       {
         "id": "empire_state_us",
@@ -1246,26 +1246,6 @@
         },
         "detail": "直近（2026-07-01〜2026-09-01）は悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが1%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
         "text": "非農業部門雇用者数は直近（2026-07-01〜2026-09-01）悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが1%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
-      },
-      {
-        "id": "building_permits_us",
-        "name": "新築住宅建築許可件数",
-        "category": "景気",
-        "favorable": false,
-        "flipped": false,
-        "proximity": 95,
-        "period": {
-          "recent": {
-            "from": "2026-06-01",
-            "to": "2026-08-01"
-          },
-          "prior": {
-            "from": "2026-03-01",
-            "to": "2026-05-01"
-          }
-        },
-        "detail": "直近（2026-06-01〜2026-08-01）は悪化方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが5%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
-        "text": "新築住宅建築許可件数は直近（2026-06-01〜2026-08-01）悪化方向ですが、その前（2026-03-01〜2026-05-01）と比べて勢いが5%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
       },
       {
         "id": "ppi_core_yoy_us",
@@ -71569,7 +71549,7 @@
         "home": "投資信託・年金の評価額が短期的に大きく動く。"
       },
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-10-20",
+      "nextRelease": "2026-10-21",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -71577,12 +71557,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-16",
-          "value": 19.99,
+          "t": "2026-10-19",
+          "value": 18.44,
           "provisional": false
         },
-        "changeFromPrev": 3.53,
-        "changeFromYearAgo": -5.32,
+        "changeFromPrev": -1.55,
+        "changeFromYearAgo": -2.34,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -71591,7 +71571,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2746,
+        "count": 2747,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -82579,6 +82559,10 @@
         {
           "t": "2026-10-16",
           "value": 19.99
+        },
+        {
+          "t": "2026-10-19",
+          "value": 18.44
         }
       ]
     },
@@ -82610,7 +82594,7 @@
       },
       "releaseTimeET": "08:30",
       "releaseSchedule": "米国センサス局が、新築住宅着工・許可件数として毎月中旬ごろに公表。",
-      "nextRelease": "2026-10-20",
+      "nextRelease": "2026-10-27",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "New Private Housing Units Authorized by Building Permits (U.S. Census Bureau)",
@@ -82618,12 +82602,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": 1403,
+          "t": "2026-09-01",
+          "value": 1400,
           "provisional": false
         },
-        "changeFromPrev": -30,
-        "changeFromYearAgo": 56,
+        "changeFromPrev": -3,
+        "changeFromYearAgo": -44,
         "min": {
           "t": "2009-03-01",
           "value": 513
@@ -82632,7 +82616,7 @@
           "t": "2005-09-01",
           "value": 2263
         },
-        "count": 440,
+        "count": 441,
         "start": "1990-01-01"
       },
       "changeWatch": null,
@@ -84396,6 +84380,10 @@
         {
           "t": "2026-08-01",
           "value": 1403
+        },
+        {
+          "t": "2026-09-01",
+          "value": 1400
         }
       ]
     },

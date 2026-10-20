@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-16T14:07:26.238Z",
+ "generatedAt": "2026-10-20T18:24:40.843Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -264,6 +264,15 @@
     "value": 76.8504,
     "kind": "official",
     "prev": 76.4184
+   }
+  ],
+  "building_permits_us": [
+   {
+    "date": "2026-10-20",
+    "t": "2026-09-01",
+    "value": 1400,
+    "kind": "official",
+    "prev": 1403
    }
   ]
  }

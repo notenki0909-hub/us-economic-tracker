@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-20T18:24:40.843Z",
+ "generatedAt": "2026-10-22T06:31:23.506Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -273,6 +273,15 @@
     "value": 1400,
     "kind": "official",
     "prev": 1403
+   }
+  ],
+  "real_earnings_yoy_us": [
+   {
+    "date": "2026-10-21",
+    "t": "2026-07-01",
+    "value": -1.6,
+    "kind": "official",
+    "prev": 0.53
    }
   ]
  }

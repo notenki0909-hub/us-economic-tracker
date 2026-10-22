@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T06:31:23.506Z",
+ "generatedAt": "2026-10-22T18:26:10.671Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -69,6 +69,13 @@
     "value": 199000,
     "kind": "official",
     "prev": 198000
+   },
+   {
+    "date": "2026-10-22",
+    "t": "2026-10-17",
+    "value": 194000,
+    "kind": "official",
+    "prev": 200000
    }
   ],
   "fed_balance_sheet_us": [
@@ -226,6 +233,13 @@
     "date": "2026-10-15",
     "t": "2026-10-15",
     "value": 7.4,
+    "kind": "official",
+    "prev": 7.4
+   },
+   {
+    "date": "2026-10-22",
+    "t": "2026-10-22",
+    "value": 7.32,
     "kind": "official",
     "prev": 7.4
    }

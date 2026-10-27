@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23T18:12:17.261Z",
+ "generatedAt": "2026-10-27T19:18:17.078Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -170,6 +170,13 @@
     "value": 338604,
     "kind": "official",
     "prev": 338662
+   },
+   {
+    "date": "2026-10-27",
+    "t": "2026-09-01",
+    "value": 345371,
+    "kind": "detected",
+    "prev": 339117
    }
   ],
   "job_openings_us": [
@@ -310,6 +317,15 @@
     "value": -1.6,
     "kind": "official",
     "prev": 0.53
+   }
+  ],
+  "new_home_sales_us": [
+   {
+    "date": "2026-10-27",
+    "t": "2026-09-01",
+    "value": 676,
+    "kind": "official",
+    "prev": 680
    }
   ]
  }

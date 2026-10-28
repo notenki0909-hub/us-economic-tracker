@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23T06:26:14.215Z",
+ "generatedAt": "2026-10-28T19:24:49.802Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 54,
  "events": [
@@ -2374,8 +2374,128 @@
    "short": "FOMC",
    "subtitle": "10/27–10/28の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "声明文（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+    },
+    {
+     "label": "記者会見（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm"
+    }
+   ],
+   "excerpt": [
+    {
+     "heading": "声明文の全文（原文・英語）",
+     "paragraphs": [
+      "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.",
+      "Economic activity is expanding at a strong pace. While uncertainty remains elevated owing, in part, to geopolitical developments, domestic spending has been resilient. Productivity growth is strong, and capital investment is robust. Job gains have kept pace with the workforce, and the unemployment rate has changed little.",
+      "Inflation remains elevated. The accumulation of more information will help the Committee determine the policy stance appropriate to ensure a timely return of inflation to the Committee's 2 percent goal. The Committee will deliver price stability."
+     ]
+    }
+   ],
+   "result": {
+    "action": "hold",
+    "rangeLow": 3.75,
+    "rangeHigh": 4,
+    "vote": {
+     "for": 10,
+     "against": 2
+    },
+    "lead": "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system.",
+    "prevRangeLow": 3.75,
+    "prevRangeHigh": 4
+   },
+   "diff": {
+    "prevDate": "2026-09-16",
+    "segments": [
+     {
+      "t": "same",
+      "s": "The Committee decided to"
+     },
+     {
+      "t": "del",
+      "s": "raise"
+     },
+     {
+      "t": "add",
+      "s": "maintain"
+     },
+     {
+      "t": "same",
+      "s": "the target range for the federal funds rate"
+     },
+     {
+      "t": "del",
+      "s": "by 1/4 percentage point to"
+     },
+     {
+      "t": "add",
+      "s": "at"
+     },
+     {
+      "t": "same",
+      "s": "3-3/4 to 4 percent, in support of the Federal Reserve's dual mandate. The Committee is continuing its policy of maintaining ample reserves in the banking system. Economic activity is expanding at a"
+     },
+     {
+      "t": "del",
+      "s": "solid"
+     },
+     {
+      "t": "add",
+      "s": "strong"
+     },
+     {
+      "t": "same",
+      "s": "pace. While uncertainty remains elevated owing, in part, to geopolitical developments, domestic spending has been resilient. Productivity growth is strong, and capital investment is robust. Job gains have kept pace with the workforce, and the unemployment rate has changed little. Inflation remains elevated."
+     },
+     {
+      "t": "del",
+      "s": "Today's policy action"
+     },
+     {
+      "t": "add",
+      "s": "The accumulation of more information"
+     },
+     {
+      "t": "same",
+      "s": "will"
+     },
+     {
+      "t": "del",
+      "s": "support"
+     },
+     {
+      "t": "add",
+      "s": "help the Committee determine the policy stance appropriate to ensure"
+     },
+     {
+      "t": "same",
+      "s": "a"
+     },
+     {
+      "t": "del",
+      "s": "timelier"
+     },
+     {
+      "t": "add",
+      "s": "timely"
+     },
+     {
+      "t": "same",
+      "s": "return"
+     },
+     {
+      "t": "add",
+      "s": "of inflation"
+     },
+     {
+      "t": "same",
+      "s": "to the Committee's 2 percent goal. The Committee will deliver price stability."
+     }
+    ]
+   }
   },
   {
    "id": "fomc-minutes-20261028",

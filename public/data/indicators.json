@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T19:28:47.055Z",
+  "generatedAt": "2026-10-29T20:29:34.346Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,7 +113,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-10-29T19:28:47.060Z",
+    "generatedAt": "2026-10-29T20:29:34.352Z",
     "stats": {
       "total": 38,
       "improving": 10,
@@ -384,8 +384,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-10-26",
-          "to": "2026-10-27"
+          "from": "2026-10-27",
+          "to": "2026-10-28"
         }
       },
       {
@@ -26625,7 +26625,7 @@
         "home": "新規の固定の住宅ローン金利（30年固定は10年国債利回りに連動）・自動車ローンの金利に直結する。"
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-10-29",
+      "nextRelease": "2026-10-30",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -26633,12 +26633,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-27",
-          "value": 4.99,
+          "t": "2026-10-28",
+          "value": 5.05,
           "provisional": false
         },
-        "changeFromPrev": -0.01,
-        "changeFromYearAgo": 0.98,
+        "changeFromPrev": 0.06,
+        "changeFromYearAgo": 1.06,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -26647,7 +26647,7 @@
           "t": "2026-10-05",
           "value": 5.31
         },
-        "count": 2705,
+        "count": 2706,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -37471,6 +37471,10 @@
         {
           "t": "2026-10-27",
           "value": 4.99
+        },
+        {
+          "t": "2026-10-28",
+          "value": 5.05
         }
       ]
     },

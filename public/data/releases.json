@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T20:12:21.618Z",
+ "generatedAt": "2026-10-29T19:28:47.123Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -76,6 +76,13 @@
     "value": 194000,
     "kind": "official",
     "prev": 200000
+   },
+   {
+    "date": "2026-10-29",
+    "t": "2026-10-24",
+    "value": 194000,
+    "kind": "official",
+    "prev": 195000
    }
   ],
   "fed_balance_sheet_us": [
@@ -195,6 +202,13 @@
     "value": 3.01,
     "kind": "official",
     "prev": 2.98
+   },
+   {
+    "date": "2026-10-29",
+    "t": "2026-09-01",
+    "value": 3.12,
+    "kind": "official",
+    "prev": 3.03
    }
   ],
   "fed_funds_rate_us": [
@@ -263,6 +277,13 @@
     "value": 7.32,
     "kind": "official",
     "prev": 7.4
+   },
+   {
+    "date": "2026-10-29",
+    "t": "2026-10-29",
+    "value": 7.24,
+    "kind": "official",
+    "prev": 7.32
    }
   ],
   "philly_fed_us": [
@@ -335,6 +356,33 @@
     "value": 2.65,
     "kind": "detected",
     "prev": 2.47
+   }
+  ],
+  "gdp_growth_us": [
+   {
+    "date": "2026-10-29",
+    "t": "2026-07-01",
+    "value": 3.4,
+    "kind": "official",
+    "prev": 2.2
+   }
+  ],
+  "real_pce_mom_us": [
+   {
+    "date": "2026-10-29",
+    "t": "2026-09-01",
+    "value": 0.02,
+    "kind": "official",
+    "prev": 0.55
+   }
+  ],
+  "personal_income_mom_us": [
+   {
+    "date": "2026-10-29",
+    "t": "2026-09-01",
+    "value": 0.2,
+    "kind": "official",
+    "prev": 0.3
    }
   ]
  }

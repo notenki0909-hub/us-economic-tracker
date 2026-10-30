@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29T19:28:47.123Z",
+ "generatedAt": "2026-10-30T07:41:48.792Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -127,6 +127,13 @@
     "value": 6753604,
     "kind": "official",
     "prev": 6755639
+   },
+   {
+    "date": "2026-10-29",
+    "t": "2026-10-28",
+    "value": 6745635,
+    "kind": "official",
+    "prev": 6753604
    }
   ],
   "industrial_production_us": [

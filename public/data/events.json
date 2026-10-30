@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-28T19:24:49.802Z",
+ "generatedAt": "2026-10-30T07:41:52.928Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
- "eventCount": 54,
+ "eventCount": 55,
  "events": [
   {
    "id": "fomc-minutes-20250917",
@@ -2496,6 +2496,18 @@
      }
     ]
    }
+  },
+  {
+   "id": "speech-20261106-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-11-06",
+   "title": "副議長（監督） Bowman 対談",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Supervision and Regulation ／ At the University of Mississippi Banking and Finance Symposium, Oxford, Miss.",
+   "time": "12:15 ET",
+   "status": "scheduled",
+   "links": []
   },
   {
    "id": "fomc-minutes-20261028",

@@ -850,7 +850,7 @@ function renderEconSummary() {
     ${helpPanel("summary", helpCtx)}
     ${marketBoardHtml(state.market, (id) => state.data.indicators.some((i) => i.id === id))}
     <p class="econ-summary__headline">${sum.headline}</p>
-    ${quickRefHtml({ site: "us", has: (id) => state.data.indicators.some((i) => i.id === id) })}
+    ${quickRefHtml({ site: "us", has: (id) => state.data.indicators.some((i) => i.id === id), indicators: state.data.indicators })}
     ${usIntroHtml()}
     ${helpHeading("status", "📍 現在の指標の状況", { className: "econ-summary__section-title" })}
     ${helpPanel("status", helpCtx)}

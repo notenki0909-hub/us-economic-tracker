@@ -11,6 +11,8 @@
  * 一般的な波及の考え方を整理した静的な文章。「必ずそうなる」とは書かず、「〜しやすい」「〜とされる」とする。
  * 参考資料は guide.html「波及の説明について」に掲載。米国版と日本版で共通の考え方は同じ文面を使う。
  */
+import { SECTORS } from "./impact-sectors.config.mjs";
+
 export const IMPACT = {
   gdp_growth_us: {
     flow: "国全体の生産・所得（GDP）が伸びる → 企業の売上・利益が増える → 採用・設備投資が増える → 賃金・雇用が改善 → 家計の消費が増える（逆の動きも同じ経路）",
@@ -241,3 +243,9 @@ export const IMPACT = {
     home: "雇用統計と同様、仕事・収入の動きを映す。",
   },
 };
+
+// 業種ごとの追い風・向かい風（impact-sectors.config.mjs）を、各指標の impact.sectors として取り込む
+for (const [id, sectors] of Object.entries(SECTORS)) {
+  if (!IMPACT[id]) throw new Error(`impact-sectors.config.mjs に、impact.config.mjs にない指標があります: ${id}`);
+  IMPACT[id].sectors = sectors;
+}

@@ -474,7 +474,10 @@ function renderGrid() {
         <div class="card__valrow">
           <span class="card__value">${num}</span>
           <span class="card__unit">${unit}</span>
-          <span class="card__period">${s.latest.t}${s.latest.provisional ? "（速報）" : ""}</span>
+          <span class="card__period">${fmtObsPeriod(s.latest.t, ind)}${s.latest.provisional ? "（速報）" : ""}${(() => {
+            const rel = latestRelease(ind);
+            return rel ? `<span class="card__released" title="${rel.title}">${rel.label}</span>` : "";
+          })()}</span>
         </div>
         ${sparkline(ind.points, color, ind.referenceLines)}
         <div class="card__changes">
@@ -1063,6 +1066,34 @@ function releasedJst(ind, r) {
   return etToJst(r.date, ind.releaseTimeET);
 }
 
+/**
+ * 最新値の「対象期間」の表示。月次は「2026年9月分」、四半期は「2026年Q3分」にする
+ * （FREDの月次の日付は「その月の1日」で、発表日ではなく対象の月を表すため、日付のまま出すと発表日と取り違えやすい）。
+ * 日次・週次は日付のまま。
+ */
+function fmtObsPeriod(t, ind) {
+  if (ind.frequency === "monthly" || ind.frequency === "quarterly") return `${fmtReleasePeriod(t, ind)}分`;
+  return t;
+}
+
+/**
+ * 最新値が発表（またはデータに反映）された日。発表履歴に、最新値の対象期間と同じ記録があるときだけ返す。
+ * 日付は日本時間に直す（公式の発表日のみ。「反映」は、データがこのツールに反映された日で、実際の発表日と数日ずれうる）。
+ */
+function latestRelease(ind) {
+  const t = ind.summary?.latest?.t;
+  const r = [...(state.releases[ind.id] || [])].reverse().find((x) => x.t === t);
+  if (!r) return null;
+  const j = releasedJst(ind, r);
+  const m = /^\d{4}-(\d{2})-(\d{2})$/.exec(j ? j.date : r.date);
+  if (!m) return null;
+  const detected = r.kind === "detected";
+  return {
+    label: `${Number(m[1])}/${Number(m[2])}${detected ? "反映" : "発表"}`,
+    title: detected ? "データがこのツールに反映された日（実際の発表日と数日ずれることがあります）" : "この数字が発表された日（日本時間）",
+  };
+}
+
 /** 発表済みの指標のカレンダー用ピル。kind が detected の日付は「データの反映日」（実際の発表日と数日ずれうる） */
 function releasedPillHtml({ ind, r }) {
   const color = catColor(ind.category);
@@ -1382,9 +1413,9 @@ function openDetail(id) {
     ? `<div><span>${cwMonths}か月の変化</span><b>${cwSigned} pt（z=${cw.z.toFixed(1)}・${cwStatus}）</b></div>`
     : "";
   document.getElementById("d-stats").innerHTML = `
-    <div><span>最新（${s.latest.t}）</span><b>${f(s.latest.value)}</b></div>
-    <div><span>過去最大（${s.max.t}）</span><b>${f(s.max.value)}</b></div>
-    <div><span>過去最小（${s.min.t}）</span><b>${f(s.min.value)}</b></div>
+    <div><span>最新（${fmtObsPeriod(s.latest.t, ind)}${latestRelease(ind) ? `・${latestRelease(ind).label}` : ""}）</span><b>${f(s.latest.value)}</b></div>
+    <div><span>過去最大（${fmtObsPeriod(s.max.t, ind)}）</span><b>${f(s.max.value)}</b></div>
+    <div><span>過去最小（${fmtObsPeriod(s.min.t, ind)}）</span><b>${f(s.min.value)}</b></div>
     <div><span>データ数</span><b>${s.count}点</b></div>
     <div><span>季節調整</span><b>${ind.seasonalAdjustment}</b></div>
     <div><span>変化の大きさ</span><b>${surpriseText}</b></div>${changeWatchStat}`;

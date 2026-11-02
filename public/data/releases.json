@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-30T07:41:48.792Z",
+ "generatedAt": "2026-11-02T22:39:54.936Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -225,6 +225,13 @@
     "value": 3.75,
     "kind": "detected",
     "prev": 3.63
+   },
+   {
+    "date": "2026-11-02",
+    "t": "2026-10-01",
+    "value": 3.88,
+    "kind": "detected",
+    "prev": 3.75
    }
   ],
   "unemployment_rate_us": [

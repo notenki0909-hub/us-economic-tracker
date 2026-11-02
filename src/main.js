@@ -749,7 +749,7 @@ function renderEconSummary() {
     : "";
 
   const surpriseHtml = sum.surpriseFindings.length
-    ? `<div class="econ-summary__block">
+    ? `<div class="econ-summary__block econ-island">
         ${helpHeading("surprise", "⚡ 直近の大きな変化")}
         ${helpPanel("surprise", helpCtx)}
         <ul>${sum.surpriseFindings.map(findingRow).join("")}</ul>
@@ -769,7 +769,7 @@ function renderEconSummary() {
     </li>`;
 
   const continuingHtml = sum.continuingImprovingList
-    ? `<div class="econ-summary__block">
+    ? `<div class="econ-summary__block econ-island">
         ${helpHeading("trend", "🔁 トレンドの向き（継続中）", {
           collapsible: true,
           hint: `（改善継続${sum.continuingImprovingList.length}・悪化継続${sum.continuingWorseningList.length}）`,
@@ -799,7 +799,7 @@ function renderEconSummary() {
               <ul class="econ-summary__momentum-list">${rest.map(turningSignalRow).join("")}</ul>
             </details>`
           : "";
-        return `<div class="econ-summary__block">
+        return `<div class="econ-summary__block econ-island">
           ${helpHeading("turning", `🔄 トレンド転換シグナル <span class="econ-summary__group-basis">（直近複数期間の平均的な傾向）</span>`, {
             collapsible: true,
             hint: `（${sum.turningSignalFindings.length}件）`,
@@ -867,6 +867,7 @@ function renderEconSummary() {
     <p class="econ-summary__headline">${sum.headline}</p>
     ${quickRefHtml({ site: "us", has: (id) => state.data.indicators.some((i) => i.id === id), indicators: state.data.indicators })}
     ${usIntroHtml()}
+    <section class="econ-island">
     ${helpHeading("status", "📍 現在の指標の状況", {
       className: "econ-summary__section-title",
       collapsible: true,
@@ -881,6 +882,7 @@ function renderEconSummary() {
       ${group("該当なし", sum.currentNoRefList, "neutral", "（目安ラインを持たない、または良し悪しの方向がない指標）")}
     </div>`
     )}
+    </section>
     ${statusHtml}
     ${continuingHtml}
     ${turningSignalHtml}

@@ -741,7 +741,7 @@ function renderEconSummary() {
   const helpCtx = { site: "us", n: state.data.indicators.length };
 
   const statusHtml = sum.statusFindings.length
-    ? `<div class="econ-summary__block">
+    ? `<div class="econ-summary__block econ-island">
         ${helpHeading("attention", "⚠️ 注目ポイント（目安ラインとの比較）")}
         ${helpPanel("attention", helpCtx)}
         <ul>${sum.statusFindings.map(findingRow).join("")}</ul>
@@ -886,6 +886,7 @@ function renderEconSummary() {
     ${statusHtml}
     ${continuingHtml}
     ${turningSignalHtml}
+    <section class="econ-island">
     ${helpHeading("compare", "前回数値との比較", {
       className: "econ-summary__section-title",
       collapsible: true,
@@ -900,6 +901,7 @@ function renderEconSummary() {
       ${group("横ばい・中立", sum.neutralList, "neutral", "（前回から不変、または良し悪しの方向がない指標）")}
     </div>`
     )}
+    </section>
     ${surpriseHtml}
     ${recoveryHtml}
     ${recessionHtml}

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T20:27:42.200Z",
+ "generatedAt": "2026-11-04T20:42:49.287Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -275,6 +275,13 @@
     "value": -105572,
     "kind": "official",
     "prev": -92826
+   },
+   {
+    "date": "2026-11-04",
+    "t": "2026-09-01",
+    "value": -105047,
+    "kind": "official",
+    "prev": -105737
    }
   ],
   "mortgage_rate_us": [
@@ -404,6 +411,15 @@
     "value": 0.2,
     "kind": "official",
     "prev": 0.3
+   }
+  ],
+  "adp_employment_us": [
+   {
+    "date": "2026-11-04",
+    "t": "2026-10-01",
+    "value": 86,
+    "kind": "official",
+    "prev": 86
    }
   ]
  }

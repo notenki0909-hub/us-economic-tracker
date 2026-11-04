@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T07:56:07.902Z",
+  "generatedAt": "2026-11-04T20:42:49.223Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,15 +113,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-04T07:56:07.910Z",
+    "generatedAt": "2026-11-04T20:42:49.228Z",
     "stats": {
       "total": 38,
-      "improving": 8,
-      "worsening": 16,
-      "neutral": 14,
-      "surpriseCount": 2
+      "improving": 10,
+      "worsening": 13,
+      "neutral": 15,
+      "surpriseCount": 1
     },
-    "headline": "38指標中、改善傾向が8件、悪化傾向が16件、横ばい・中立が14件です。",
+    "headline": "38指標中、改善傾向が10件、悪化傾向が13件、横ばい・中立が15件です。",
     "improvingList": [
       {
         "id": "gdp_growth_us",
@@ -169,9 +169,36 @@
         }
       },
       {
+        "id": "trade_balance_us",
+        "name": "貿易収支",
+        "category": "対外",
+        "period": {
+          "from": "2026-08-01",
+          "to": "2026-09-01"
+        }
+      },
+      {
         "id": "yield_curve_spread_us",
         "name": "長短金利差（10年-2年国債利回り）",
         "category": "金利",
+        "period": {
+          "from": "2026-11-02",
+          "to": "2026-11-03"
+        }
+      },
+      {
+        "id": "sp500_us",
+        "name": "S&P500種株価指数",
+        "category": "為替・市場",
+        "period": {
+          "from": "2026-11-02",
+          "to": "2026-11-03"
+        }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
         "period": {
           "from": "2026-11-02",
           "to": "2026-11-03"
@@ -184,15 +211,6 @@
         "period": {
           "from": "2026-09-01",
           "to": "2026-10-01"
-        }
-      },
-      {
-        "id": "adp_employment_us",
-        "name": "ADP全米雇用者数（民間・前月差）",
-        "category": "雇用・所得",
-        "period": {
-          "from": "2026-08-01",
-          "to": "2026-09-01"
         }
       }
     ],
@@ -258,33 +276,6 @@
         "period": {
           "from": "2026-01-01",
           "to": "2026-04-01"
-        }
-      },
-      {
-        "id": "trade_balance_us",
-        "name": "貿易収支",
-        "category": "対外",
-        "period": {
-          "from": "2026-07-01",
-          "to": "2026-08-01"
-        }
-      },
-      {
-        "id": "sp500_us",
-        "name": "S&P500種株価指数",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-10-30",
-          "to": "2026-11-02"
-        }
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-10-30",
-          "to": "2026-11-02"
         }
       },
       {
@@ -429,8 +420,8 @@
         "name": "WTI原油価格",
         "category": "為替・市場",
         "period": {
-          "from": "2026-10-26",
-          "to": "2026-10-27"
+          "from": "2026-11-02",
+          "to": "2026-11-03"
         }
       },
       {
@@ -458,6 +449,15 @@
         "period": {
           "from": "2026-07-01",
           "to": "2026-08-01"
+        }
+      },
+      {
+        "id": "adp_employment_us",
+        "name": "ADP全米雇用者数（民間・前月差）",
+        "category": "雇用・所得",
+        "period": {
+          "from": "2026-09-01",
+          "to": "2026-10-01"
         }
       },
       {
@@ -541,8 +541,8 @@
         "name": "貿易収支",
         "category": "対外",
         "period": {
-          "from": "2026-06-01",
-          "to": "2026-08-01"
+          "from": "2026-07-01",
+          "to": "2026-09-01"
         }
       },
       {
@@ -550,8 +550,8 @@
         "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-10-20",
-          "to": "2026-11-02"
+          "from": "2026-10-21",
+          "to": "2026-11-03"
         }
       },
       {
@@ -559,8 +559,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-10-20",
-          "to": "2026-11-02"
+          "from": "2026-10-21",
+          "to": "2026-11-03"
         }
       }
     ],
@@ -758,7 +758,7 @@
         "reference": {
           "label": "0＝増加・減少の分岐",
           "value": 0,
-          "current": 90
+          "current": 86
         }
       }
     ],
@@ -800,7 +800,7 @@
         "reference": {
           "label": "0＝黒字・赤字の分岐",
           "value": 0,
-          "current": -105572
+          "current": -105047
         }
       },
       {
@@ -810,7 +810,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 21.15
+          "current": 20.83
         }
       }
     ],
@@ -986,15 +986,6 @@
       }
     ],
     "surpriseFindings": [
-      {
-        "id": "trade_balance_us",
-        "name": "貿易収支",
-        "category": "対外",
-        "z": -2.1,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.1）。",
-        "text": "貿易収支でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.1）。"
-      },
       {
         "id": "empire_state_us",
         "name": "ニューヨーク連銀 製造業景気指数",
@@ -1183,21 +1174,21 @@
         "id": "adp_employment_us",
         "name": "ADP全米雇用者数（民間・前月差）",
         "category": "雇用・所得",
-        "favorable": false,
+        "favorable": true,
         "flipped": true,
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-07-01",
-            "to": "2026-09-01"
+            "from": "2026-08-01",
+            "to": "2026-10-01"
           },
           "prior": {
-            "from": "2026-04-01",
-            "to": "2026-06-01"
+            "from": "2026-05-01",
+            "to": "2026-07-01"
           }
         },
-        "detail": "直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から悪化方向に転じました（転換点を通過）。",
-        "text": "ADP全米雇用者数（民間・前月差）は、直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から悪化方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から改善方向に転じました（転換点を通過）。",
+        "text": "ADP全米雇用者数（民間・前月差）は、直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "nonfarm_payrolls_us",
@@ -23800,7 +23791,7 @@
       },
       "releaseTimeET": "08:30",
       "releaseSchedule": "Census Bureau・BEAが対象月の翌々月上旬ごろに公表。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-12-08",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Trade Balance: Goods and Services (Census Bureau/BEA)",
@@ -23808,12 +23799,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-08-01",
-          "value": -105572,
+          "t": "2026-09-01",
+          "value": -105047,
           "provisional": false
         },
-        "changeFromPrev": -12746,
-        "changeFromYearAgo": -45930,
+        "changeFromPrev": 690,
+        "changeFromYearAgo": -45655,
         "min": {
           "t": "2025-03-01",
           "value": -132983
@@ -23822,7 +23813,7 @@
           "t": "1992-02-01",
           "value": -831
         },
-        "count": 416,
+        "count": 417,
         "start": "1992-01-01"
       },
       "changeWatch": null,
@@ -25489,7 +25480,11 @@
         },
         {
           "t": "2026-08-01",
-          "value": -105572
+          "value": -105737
+        },
+        {
+          "t": "2026-09-01",
+          "value": -105047
         }
       ]
     },
@@ -62595,7 +62590,7 @@
         }
       },
       "releaseSchedule": "取引時間中は常時更新。本ツールは日次終値を採用。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-11-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "S&P 500 (S&P Dow Jones Indices)",
@@ -62603,29 +62598,25 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-02",
-          "value": 7541.4,
+          "t": "2026-11-03",
+          "value": 7568.92,
           "provisional": false
         },
-        "changeFromPrev": -38.67,
-        "changeFromYearAgo": 701.2,
+        "changeFromPrev": 27.52,
+        "changeFromYearAgo": 716.95,
         "min": {
-          "t": "2016-11-04",
-          "value": 2085.18
+          "t": "2016-11-07",
+          "value": 2131.52
         },
         "max": {
           "t": "2026-10-06",
           "value": 7818.93
         },
         "count": 2511,
-        "start": "2016-11-04"
+        "start": "2016-11-07"
       },
       "changeWatch": null,
       "points": [
-        {
-          "t": "2016-11-04",
-          "value": 2085.18
-        },
         {
           "t": "2016-11-07",
           "value": 2131.52
@@ -72665,6 +72656,10 @@
         {
           "t": "2026-11-02",
           "value": 7541.4
+        },
+        {
+          "t": "2026-11-03",
+          "value": 7568.92
         }
       ]
     },
@@ -72748,7 +72743,7 @@
         }
       },
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-11-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -72756,12 +72751,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-02",
-          "value": 21.15,
+          "t": "2026-11-03",
+          "value": 20.83,
           "provisional": false
         },
-        "changeFromPrev": 1.73,
-        "changeFromYearAgo": 3.71,
+        "changeFromPrev": -0.32,
+        "changeFromYearAgo": 3.66,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -72770,7 +72765,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2757,
+        "count": 2758,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -83802,6 +83797,10 @@
         {
           "t": "2026-11-02",
           "value": 21.15
+        },
+        {
+          "t": "2026-11-03",
+          "value": 20.83
         }
       ]
     },
@@ -111852,7 +111851,7 @@
         }
       },
       "releaseSchedule": "米エネルギー情報局（EIA）が毎営業日公表。FREDへの反映は数日遅れることがある。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-11-12",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Crude Oil Prices: West Texas Intermediate (EIA)",
@@ -111860,12 +111859,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-27",
-          "value": 103.37,
+          "t": "2026-11-03",
+          "value": 99.64,
           "provisional": false
         },
-        "changeFromPrev": -1.88,
-        "changeFromYearAgo": 41.24,
+        "changeFromPrev": -0.42,
+        "changeFromYearAgo": 37.85,
         "min": {
           "t": "2020-04-20",
           "value": -36.98
@@ -111874,7 +111873,7 @@
           "t": "2022-03-08",
           "value": 123.64
         },
-        "count": 2707,
+        "count": 2712,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -122706,6 +122705,26 @@
         {
           "t": "2026-10-27",
           "value": 103.37
+        },
+        {
+          "t": "2026-10-28",
+          "value": 106.25
+        },
+        {
+          "t": "2026-10-29",
+          "value": 105.51
+        },
+        {
+          "t": "2026-10-30",
+          "value": 107.56
+        },
+        {
+          "t": "2026-11-02",
+          "value": 100.06
+        },
+        {
+          "t": "2026-11-03",
+          "value": 99.64
         }
       ]
     },
@@ -133990,7 +134009,7 @@
       },
       "releaseTimeET": "08:15",
       "releaseSchedule": "ADP社が毎月、雇用統計の2日前（通常は第1水曜日）に公表。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-12-02",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Total Nonfarm Private Payroll Employment (ADP)",
@@ -133998,12 +134017,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-01",
-          "value": 90,
+          "t": "2026-10-01",
+          "value": 86,
           "provisional": false
         },
-        "changeFromPrev": 54,
-        "changeFromYearAgo": 2,
+        "changeFromPrev": 0,
+        "changeFromYearAgo": 66,
         "min": {
           "t": "2020-05-01",
           "value": -1828
@@ -134012,7 +134031,7 @@
           "t": "2021-12-01",
           "value": 947
         },
-        "count": 200,
+        "count": 201,
         "start": "2010-02-01"
       },
       "changeWatch": null,
@@ -134815,7 +134834,11 @@
         },
         {
           "t": "2026-09-01",
-          "value": 90
+          "value": 86
+        },
+        {
+          "t": "2026-10-01",
+          "value": 86
         }
       ]
     },

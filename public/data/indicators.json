@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T21:27:11.557Z",
+  "generatedAt": "2026-11-05T08:23:37.248Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,15 +113,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-04T21:27:11.565Z",
+    "generatedAt": "2026-11-05T08:23:37.255Z",
     "stats": {
       "total": 38,
-      "improving": 10,
-      "worsening": 13,
-      "neutral": 15,
+      "improving": 9,
+      "worsening": 15,
+      "neutral": 14,
       "surpriseCount": 1
     },
-    "headline": "38指標中、改善傾向が10件、悪化傾向が13件、横ばい・中立が15件です。",
+    "headline": "38指標中、改善傾向が9件、悪化傾向が15件、横ばい・中立が14件です。",
     "improvingList": [
       {
         "id": "gdp_growth_us",
@@ -175,15 +175,6 @@
         "period": {
           "from": "2026-08-01",
           "to": "2026-09-01"
-        }
-      },
-      {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
-        "category": "金利",
-        "period": {
-          "from": "2026-11-02",
-          "to": "2026-11-03"
         }
       },
       {
@@ -279,12 +270,30 @@
         }
       },
       {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "period": {
+          "from": "2026-11-03",
+          "to": "2026-11-04"
+        }
+      },
+      {
         "id": "building_permits_us",
         "name": "新築住宅建築許可件数",
         "category": "景気",
         "period": {
           "from": "2026-08-01",
           "to": "2026-09-01"
+        }
+      },
+      {
+        "id": "credit_spread_us",
+        "name": "社債の信用スプレッド（Baa社債利回り-米10年債）",
+        "category": "金利",
+        "period": {
+          "from": "2026-11-02",
+          "to": "2026-11-03"
         }
       },
       {
@@ -398,21 +407,12 @@
         }
       },
       {
-        "id": "credit_spread_us",
-        "name": "社債の信用スプレッド（Baa社債利回り-米10年債）",
-        "category": "金利",
-        "period": {
-          "from": "2026-10-30",
-          "to": "2026-11-02"
-        }
-      },
-      {
         "id": "breakeven_inflation_us",
         "name": "10年ブレークイーブン・インフレ率",
         "category": "物価",
         "period": {
-          "from": "2026-11-02",
-          "to": "2026-11-03"
+          "from": "2026-11-03",
+          "to": "2026-11-04"
         }
       },
       {
@@ -602,6 +602,12 @@
         "period": null
       },
       {
+        "id": "yield_curve_spread_us",
+        "name": "長短金利差（10年-2年国債利回り）",
+        "category": "金利",
+        "period": null
+      },
+      {
         "id": "dollar_index_us",
         "name": "貿易加重ドル指数",
         "category": "為替・市場",
@@ -708,7 +714,7 @@
         "reference": {
           "label": "0＝逆イールド（景気後退シグナル）との分岐",
           "value": 0,
-          "current": 0.34
+          "current": 0.32
         }
       },
       {
@@ -1003,10 +1009,10 @@
         "shortName": "信用スプレッド",
         "months": 3,
         "level": "normal",
-        "change": -0.08,
+        "change": -0.1,
         "z": -0.2,
         "warnDelta": 0.5,
-        "text": "2026-08-03（1.61）→2026-11-02（1.53）の3か月間で−0.08ポイントの変化。1986年以降の3か月間の変化と比べて通常の範囲内です（z=-0.2）。"
+        "text": "2026-08-04（1.64）→2026-11-03（1.54）の3か月間で−0.10ポイントの変化。1986年以降の3か月間の変化と比べて通常の範囲内です（z=-0.2）。"
       }
     ],
     "turningSignalFindings": [
@@ -1071,10 +1077,10 @@
         "text": "経常収支は、直近（2026-01-01〜2026-04-01）の傾向が、その前（2025-07-01〜2025-10-01）から悪化方向に転じました（転換点を通過）。"
       },
       {
-        "id": "yield_curve_spread_us",
-        "name": "長短金利差（10年-2年国債利回り）",
+        "id": "credit_spread_us",
+        "name": "社債の信用スプレッド（Baa社債利回り-米10年債）",
         "category": "金利",
-        "favorable": true,
+        "favorable": false,
         "flipped": true,
         "proximity": 100,
         "period": {
@@ -1087,28 +1093,8 @@
             "to": "2026-10-20"
           }
         },
-        "detail": "直近（2026-10-21〜2026-11-03）の傾向が、その前（2026-10-06〜2026-10-20）から改善方向に転じました（転換点を通過）。",
-        "text": "長短金利差（10年-2年国債利回り）は、直近（2026-10-21〜2026-11-03）の傾向が、その前（2026-10-06〜2026-10-20）から改善方向に転じました（転換点を通過）。"
-      },
-      {
-        "id": "credit_spread_us",
-        "name": "社債の信用スプレッド（Baa社債利回り-米10年債）",
-        "category": "金利",
-        "favorable": false,
-        "flipped": true,
-        "proximity": 100,
-        "period": {
-          "recent": {
-            "from": "2026-10-20",
-            "to": "2026-11-02"
-          },
-          "prior": {
-            "from": "2026-10-05",
-            "to": "2026-10-19"
-          }
-        },
-        "detail": "直近（2026-10-20〜2026-11-02）の傾向が、その前（2026-10-05〜2026-10-19）から悪化方向に転じました（転換点を通過）。",
-        "text": "社債の信用スプレッド（Baa社債利回り-米10年債）は、直近（2026-10-20〜2026-11-02）の傾向が、その前（2026-10-05〜2026-10-19）から悪化方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-10-21〜2026-11-03）の傾向が、その前（2026-10-06〜2026-10-20）から悪化方向に転じました（転換点を通過）。",
+        "text": "社債の信用スプレッド（Baa社債利回り-米10年債）は、直近（2026-10-21〜2026-11-03）の傾向が、その前（2026-10-06〜2026-10-20）から悪化方向に転じました（転換点を通過）。"
       },
       {
         "id": "philly_fed_us",
@@ -1292,8 +1278,8 @@
       }
     ],
     "recoverySignal": {
-      "active": true,
-      "count": 3,
+      "active": false,
+      "count": 2,
       "total": 4,
       "items": [
         {
@@ -1309,7 +1295,7 @@
         {
           "id": "yield_curve_spread_us",
           "name": "長短金利差（10年-2年国債利回り）",
-          "contributing": true
+          "contributing": false
         },
         {
           "id": "sp500_us",
@@ -1317,7 +1303,7 @@
           "contributing": false
         }
       ],
-      "text": "景気回復局面で先行して改善するとされる米国景気先行指数（LEI）準拠の4指標（新規失業保険申請件数・耐久財受注・長短金利差（10年-2年国債利回り）・S&P500種株価指数）のうち3件が同時に改善方向にあり、景気回復を示唆するシグナルが重なっています。 この4指標はConference Board（全米産業審議委員会）が公式に定めるLEI（米国景気先行指数）の構成系列に対応しており、実際に生産・雇用へ波及する前の“気配”の段階です。一致・遅行指標（⚠️注目ポイント・🔄トレンド転換シグナル）で裏付けを確認してください。"
+      "text": "米国景気先行指数（LEI）準拠の4指標（新規失業保険申請件数・耐久財受注・長短金利差（10年-2年国債利回り）・S&P500種株価指数）のうち、同時に改善方向にあるのは2件にとどまり、明確な回復シグナルの重なりは見られません。 この4指標はConference Board（全米産業審議委員会）が公式に定めるLEI（米国景気先行指数）の構成系列に対応しており、実際に生産・雇用へ波及する前の“気配”の段階です。一致・遅行指標（⚠️注目ポイント・🔄トレンド転換シグナル）で裏付けを確認してください。"
     },
     "recessionSignal": {
       "active": false,
@@ -40743,7 +40729,7 @@
         }
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-11-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -40751,12 +40737,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-03",
-          "value": 0.34,
+          "t": "2026-11-04",
+          "value": 0.32,
           "provisional": false
         },
-        "changeFromPrev": 0.02,
-        "changeFromYearAgo": -0.19,
+        "changeFromPrev": -0.02,
+        "changeFromYearAgo": -0.2,
         "min": {
           "t": "2023-07-03",
           "value": -1.08
@@ -40765,7 +40751,7 @@
           "t": "2021-03-29",
           "value": 1.59
         },
-        "count": 2710,
+        "count": 2711,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -51609,6 +51595,10 @@
         {
           "t": "2026-11-03",
           "value": 0.34
+        },
+        {
+          "t": "2026-11-04",
+          "value": 0.32
         }
       ]
     },
@@ -88089,7 +88079,7 @@
         }
       },
       "releaseSchedule": "ムーディーズの社債利回りと米財務省の国債利回りから、毎営業日算出。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-11-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Moody's Baa Corporate Bond Yield Relative to 10-Year Treasury (Moody's, FRB)",
@@ -88097,12 +88087,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-02",
-          "value": 1.53,
+          "t": "2026-11-03",
+          "value": 1.54,
           "provisional": false
         },
-        "changeFromPrev": 0,
-        "changeFromYearAgo": -0.16,
+        "changeFromPrev": 0.01,
+        "changeFromYearAgo": -0.17,
         "min": {
           "t": "2024-11-12",
           "value": 1.36
@@ -88111,26 +88101,26 @@
           "t": "2020-03-23",
           "value": 4.31
         },
-        "count": 2704,
+        "count": 2705,
         "start": "2016-01-04"
       },
       "changeWatch": {
         "windowDays": 91,
         "warnDelta": 0.5,
         "from": {
-          "t": "2026-08-03",
-          "value": 1.61
+          "t": "2026-08-04",
+          "value": 1.64
         },
         "to": {
-          "t": "2026-11-02",
-          "value": 1.53
+          "t": "2026-11-03",
+          "value": 1.54
         },
-        "change": -0.08,
+        "change": -0.1,
         "z": -0.2,
-        "topPct": 59.6,
+        "topPct": 61.9,
         "level": "normal",
         "historyStart": "1986-01-02",
-        "historyCount": 10146
+        "historyCount": 10147
       },
       "points": [
         {
@@ -98948,6 +98938,10 @@
         {
           "t": "2026-11-02",
           "value": 1.53
+        },
+        {
+          "t": "2026-11-03",
+          "value": 1.54
         }
       ]
     },
@@ -100900,7 +100894,7 @@
         }
       },
       "releaseSchedule": "FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-04",
+      "nextRelease": "2026-11-05",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Breakeven Inflation Rate (Federal Reserve)",
@@ -100908,12 +100902,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-03",
-          "value": 2.3,
+          "t": "2026-11-04",
+          "value": 2.26,
           "provisional": false
         },
-        "changeFromPrev": 0.01,
-        "changeFromYearAgo": -0.01,
+        "changeFromPrev": -0.04,
+        "changeFromYearAgo": -0.03,
         "min": {
           "t": "2020-03-19",
           "value": 0.5
@@ -100922,7 +100916,7 @@
           "t": "2022-04-21",
           "value": 3.02
         },
-        "count": 2710,
+        "count": 2711,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -111766,6 +111760,10 @@
         {
           "t": "2026-11-03",
           "value": 2.3
+        },
+        {
+          "t": "2026-11-04",
+          "value": 2.26
         }
       ]
     },

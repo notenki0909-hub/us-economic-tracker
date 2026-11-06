@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-06T08:26:45.869Z",
+ "generatedAt": "2026-11-06T20:19:00.293Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -262,6 +262,13 @@
     "value": 4.2,
     "kind": "official",
     "prev": 4.1
+   },
+   {
+    "date": "2026-11-06",
+    "t": "2026-10-01",
+    "value": 4.1,
+    "kind": "official",
+    "prev": 4.2
    }
   ],
   "sahm_rule_us": [
@@ -271,6 +278,13 @@
     "value": 0,
     "kind": "official",
     "prev": -0.07
+   },
+   {
+    "date": "2026-11-06",
+    "t": "2026-10-01",
+    "value": 0,
+    "kind": "official",
+    "prev": 0
    }
   ],
   "nonfarm_payrolls_us": [
@@ -280,6 +294,13 @@
     "value": 29,
     "kind": "official",
     "prev": 133
+   },
+   {
+    "date": "2026-11-06",
+    "t": "2026-10-01",
+    "value": 165,
+    "kind": "official",
+    "prev": 60
    }
   ],
   "trade_balance_us": [
@@ -441,6 +462,15 @@
     "value": 86,
     "kind": "official",
     "prev": 86
+   }
+  ],
+  "avg_hourly_earnings_yoy_us": [
+   {
+    "date": "2026-11-06",
+    "t": "2026-10-01",
+    "value": 3.12,
+    "kind": "official",
+    "prev": 3.16
    }
   ]
  }

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-06T20:19:00.293Z",
+ "generatedAt": "2026-11-10T20:44:57.224Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -16,6 +16,13 @@
     "value": 3.72,
     "kind": "official",
     "prev": 3.35
+   },
+   {
+    "date": "2026-11-10",
+    "t": "2026-10-01",
+    "value": 4.08,
+    "kind": "official",
+    "prev": 3.72
    }
   ],
   "retail_sales_us": [
@@ -471,6 +478,15 @@
     "value": 3.12,
     "kind": "official",
     "prev": 3.16
+   }
+  ],
+  "core_cpi_yoy_us": [
+   {
+    "date": "2026-11-10",
+    "t": "2026-10-01",
+    "value": 2.76,
+    "kind": "official",
+    "prev": 2.56
    }
   ]
  }

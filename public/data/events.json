@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T08:47:32.137Z",
+ "generatedAt": "2026-11-10T20:45:01.080Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 62,
  "events": [
@@ -2519,7 +2519,15 @@
    "subtitle": "Community Banking ／ At the Mutual Board Summit Conference, Boston, Mass.",
    "time": "08:40 ET",
    "status": "done",
-   "links": []
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm"
+    }
+   ],
+   "result": {
+    "headline": "The U.S. Economy and Considerations for Monetary Policy"
+   }
   },
   {
    "id": "speech-20261110-bowman",
@@ -2530,8 +2538,16 @@
    "short": "副議長（監督） Bowman",
    "subtitle": "Economic Outlook ／ At A View from the Federal Reserve Board (virtual)",
    "time": "18:30 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm"
+    }
+   ],
+   "result": {
+    "headline": "The U.S. Economy and Considerations for Monetary Policy"
+   }
   },
   {
    "id": "speech-20261110-bowman",
@@ -2542,8 +2558,16 @@
    "short": "副議長（監督） Bowman",
    "subtitle": "Economic Outlook ／ At the C. Peter McColough Series on International Economics with Michelle Bowman, Washington, D.C.",
    "time": "15:30 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm"
+    }
+   ],
+   "result": {
+    "headline": "The U.S. Economy and Considerations for Monetary Policy"
+   }
   },
   {
    "id": "speech-20261113-bowman",

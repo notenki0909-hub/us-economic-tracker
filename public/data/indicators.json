@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T20:44:57.164Z",
+  "generatedAt": "2026-11-10T21:23:54.220Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,7 +113,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-10T20:44:57.169Z",
+    "generatedAt": "2026-11-10T21:23:54.225Z",
     "stats": {
       "total": 38,
       "improving": 12,
@@ -27498,7 +27498,7 @@
         }
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-10",
+      "nextRelease": "2026-11-12",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",

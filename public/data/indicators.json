@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T21:23:26.128Z",
+  "generatedAt": "2026-11-12T21:54:05.323Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,13 +113,13 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-12T21:23:26.135Z",
+    "generatedAt": "2026-11-12T21:54:05.331Z",
     "stats": {
       "total": 38,
       "improving": 11,
       "worsening": 12,
       "neutral": 15,
-      "surpriseCount": 4
+      "surpriseCount": 5
     },
     "headline": "38指標中、改善傾向が11件、悪化傾向が12件、横ばい・中立が15件です。",
     "improvingList": [
@@ -375,8 +375,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-11-06",
-          "to": "2026-11-09"
+          "from": "2026-11-09",
+          "to": "2026-11-10"
         }
       },
       {
@@ -384,8 +384,8 @@
         "name": "FRBバランスシート（総資産）",
         "category": "金利",
         "period": {
-          "from": "2026-10-28",
-          "to": "2026-11-04"
+          "from": "2026-11-04",
+          "to": "2026-11-11"
         }
       },
       {
@@ -981,6 +981,15 @@
         "level": "mid",
         "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.1）。",
         "text": "S&P500種株価指数でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.1）。"
+      },
+      {
+        "id": "treasury_10y_us",
+        "name": "米10年国債利回り",
+        "category": "金利",
+        "z": 1.9,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.9）。",
+        "text": "米10年国債利回りでやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.9）。"
       },
       {
         "id": "yield_curve_spread_us",
@@ -27516,12 +27525,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-09",
-          "value": 4.88,
+          "t": "2026-11-10",
+          "value": 4.98,
           "provisional": false
         },
-        "changeFromPrev": 0.02,
-        "changeFromYearAgo": 0.77,
+        "changeFromPrev": 0.1,
+        "changeFromYearAgo": 0.85,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -27530,7 +27539,7 @@
           "t": "2026-10-05",
           "value": 5.31
         },
-        "count": 2714,
+        "count": 2715,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -38390,6 +38399,10 @@
         {
           "t": "2026-11-09",
           "value": 4.88
+        },
+        {
+          "t": "2026-11-10",
+          "value": 4.98
         }
       ]
     },
@@ -38451,7 +38464,7 @@
       },
       "releaseTimeET": "16:30",
       "releaseSchedule": "FRBが毎週木曜日（H.4.1統計）に公表。",
-      "nextRelease": "2026-11-12",
+      "nextRelease": "2026-11-19",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Total Assets (Federal Reserve H.4.1)",
@@ -38459,12 +38472,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-04",
-          "value": 6748145,
+          "t": "2026-11-11",
+          "value": 6758867,
           "provisional": false
         },
-        "changeFromPrev": 2510,
-        "changeFromYearAgo": 161111,
+        "changeFromPrev": 10722,
+        "changeFromYearAgo": 186135,
         "min": {
           "t": "2019-08-28",
           "value": 3759946
@@ -38473,7 +38486,7 @@
           "t": "2022-04-13",
           "value": 8965487
         },
-        "count": 566,
+        "count": 567,
         "start": "2016-01-06"
       },
       "changeWatch": null,
@@ -40741,6 +40754,10 @@
         {
           "t": "2026-11-04",
           "value": 6748145
+        },
+        {
+          "t": "2026-11-11",
+          "value": 6758867
         }
       ]
     },

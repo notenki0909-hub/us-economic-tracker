@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T20:44:57.224Z",
+ "generatedAt": "2026-11-12T21:23:26.228Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -97,6 +97,13 @@
     "value": 189000,
     "kind": "official",
     "prev": 195000
+   },
+   {
+    "date": "2026-11-12",
+    "t": "2026-11-07",
+    "value": 200000,
+    "kind": "official",
+    "prev": 191000
    }
   ],
   "fed_balance_sheet_us": [
@@ -361,6 +368,13 @@
     "value": 7.18,
     "kind": "official",
     "prev": 7.24
+   },
+   {
+    "date": "2026-11-12",
+    "t": "2026-11-12",
+    "value": 7.11,
+    "kind": "official",
+    "prev": 7.18
    }
   ],
   "philly_fed_us": [

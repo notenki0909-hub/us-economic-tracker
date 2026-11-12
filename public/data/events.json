@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T20:45:01.080Z",
+ "generatedAt": "2026-11-12T21:23:31.490Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 62,
  "events": [
@@ -2672,7 +2672,7 @@
    "date": "2027-03-17",
    "title": "FOMC（政策金利の決定）",
    "short": "FOMC",
-   "subtitle": "3/16–3/17の2日間会合・経済見通し（SEP）公表あり",
+   "subtitle": "3/16–3/17の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "scheduled",
    "links": []
@@ -2720,7 +2720,7 @@
    "date": "2027-06-09",
    "title": "FOMC（政策金利の決定）",
    "short": "FOMC",
-   "subtitle": "6/8–6/9の2日間会合・経済見通し（SEP）公表あり",
+   "subtitle": "6/8–6/9の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "scheduled",
    "links": []
@@ -2768,7 +2768,7 @@
    "date": "2027-09-15",
    "title": "FOMC（政策金利の決定）",
    "short": "FOMC",
-   "subtitle": "9/14–9/15の2日間会合・経済見通し（SEP）公表あり",
+   "subtitle": "9/14–9/15の2日間会合",
    "time": "14:00 ET（声明）／14:30 ET（記者会見）",
    "status": "scheduled",
    "links": []
@@ -2798,6 +2798,18 @@
    "links": []
   },
   {
+   "id": "fomc-20271117",
+   "src": "fomc",
+   "type": "fomc",
+   "date": "2027-11-17",
+   "title": "FOMC（政策金利の決定）",
+   "short": "FOMC",
+   "subtitle": "11/16–11/17の2日間会合",
+   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
+   "status": "scheduled",
+   "links": []
+  },
+  {
    "id": "fomc-minutes-20271027",
    "src": "fomc",
    "type": "minutes",
@@ -2810,25 +2822,13 @@
    "links": []
   },
   {
-   "id": "fomc-20271208",
-   "src": "fomc",
-   "type": "fomc",
-   "date": "2027-12-08",
-   "title": "FOMC（政策金利の決定）",
-   "short": "FOMC",
-   "subtitle": "12/7–12/8の2日間会合・経済見通し（SEP）公表あり",
-   "time": "14:00 ET（声明）／14:30 ET（記者会見）",
-   "status": "scheduled",
-   "links": []
-  },
-  {
-   "id": "fomc-minutes-20271208",
+   "id": "fomc-minutes-20271117",
    "src": "fomc",
    "type": "minutes",
-   "date": "2027-12-29",
+   "date": "2027-12-08",
    "title": "FOMC議事要旨",
    "short": "FOMC議事要旨",
-   "subtitle": "12/7–12/8会合分（決定日の3週間後に公表）",
+   "subtitle": "11/16–11/17会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
    "status": "scheduled",
    "links": []

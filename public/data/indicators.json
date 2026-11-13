@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T20:48:39.870Z",
+  "generatedAt": "2026-11-13T21:31:20.562Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,7 +113,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-13T20:48:39.876Z",
+    "generatedAt": "2026-11-13T21:31:20.570Z",
     "stats": {
       "total": 38,
       "improving": 8,
@@ -366,8 +366,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-11-09",
-          "to": "2026-11-10"
+          "from": "2026-11-10",
+          "to": "2026-11-12"
         }
       },
       {
@@ -980,10 +980,10 @@
         "id": "treasury_10y_us",
         "name": "米10年国債利回り",
         "category": "金利",
-        "z": 1.9,
+        "z": 2.3,
         "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.9）。",
-        "text": "米10年国債利回りでやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.9）。"
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.3）。",
+        "text": "米10年国債利回りでやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=2.3）。"
       },
       {
         "id": "empire_state_us",
@@ -27493,7 +27493,7 @@
         }
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-13",
+      "nextRelease": "2026-11-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -27501,12 +27501,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-10",
-          "value": 4.98,
+          "t": "2026-11-12",
+          "value": 5.1,
           "provisional": false
         },
-        "changeFromPrev": 0.1,
-        "changeFromYearAgo": 0.85,
+        "changeFromPrev": 0.12,
+        "changeFromYearAgo": 1.02,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -27515,7 +27515,7 @@
           "t": "2026-10-05",
           "value": 5.31
         },
-        "count": 2715,
+        "count": 2716,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -38379,6 +38379,10 @@
         {
           "t": "2026-11-10",
           "value": 4.98
+        },
+        {
+          "t": "2026-11-12",
+          "value": 5.1
         }
       ]
     },

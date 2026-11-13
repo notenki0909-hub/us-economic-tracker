@@ -1,49 +1,8 @@
 {
- "generatedAt": "2026-11-12T21:23:31.490Z",
+ "generatedAt": "2026-11-13T08:40:47.658Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 62,
  "events": [
-  {
-   "id": "fomc-minutes-20250917",
-   "src": "fomc",
-   "type": "minutes",
-   "date": "2025-10-08",
-   "title": "FOMC議事要旨",
-   "short": "FOMC議事要旨",
-   "subtitle": "9/16–9/17会合分（決定日の3週間後に公表）",
-   "time": "14:00 ET",
-   "status": "done",
-   "links": [
-    {
-     "label": "議事要旨（公式）",
-     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20250917.htm"
-    }
-   ],
-   "excerpt": [
-    {
-     "heading": "委員会の決定（Committee Policy Actions）",
-     "paragraphs": [
-      "In their discussions of monetary policy for this meeting, members agreed that recent indicators suggested that growth of economic activity had moderated in the first half of the year. To reflect developments in the labor market, they agreed to no longer characterize labor market conditions as solid and instead state that job gains had slowed and that the unemployment rate had edged up but remained low. Members concurred that inflation remained somewhat elevated and agreed to add that inflation had moved up. They agreed that the Committee was attentive to the risks to both sides of its dual mandate and to add that downside risks to employment had risen to reflect their concerns about the labor market."
-     ]
-    },
-    {
-     "heading": "参加者の見方（Participants' Views）冒頭の3段落",
-     "paragraphs": [
-      "In conjunction with this FOMC meeting, participants submitted their projections of the most likely outcomes for real GDP growth, the unemployment rate, and inflation for each year from 2025 through 2028 and over the longer run. The projections were based on participants' individual assessments of appropriate monetary policy, including their projections of the federal funds rate. Participants also provided their individual assessments of the level of uncertainty and the balance of risks associated with their projections. The Summary of Economic Projections was released to the public after the meeting.",
-      "Participants observed that inflation had moved up since the beginning of the year and remained somewhat above the Committee's 2 percent longer-run goal. Although participants generally assessed that this year's tariff increases had put upward pressure on inflation, some remarked that these effects appeared to have been somewhat muted to date relative to expectations from earlier in the year. A few participants suggested that productivity gains may be reducing inflation pressures. A couple of participants expressed the view that, excluding the effects of this year's tariff increases, inflation would be close to target. A few other participants, however, emphasized that progress of inflation toward the Committee's 2 percent objective had stalled, even excluding the effects of this year's tariff increases.",
-      "With regard to the outlook for inflation, participants generally expected that, given appropriate monetary policy, inflation would be somewhat elevated in the near term and would gradually return to 2 percent thereafter. Some participants noted that business contacts had indicated that they would raise prices over time because of higher input costs stemming from tariff increases. Uncertainty remained about the inflation effects of this year's increase in tariffs, though most participants expected these effects to be realized by the end of next year. Some participants remarked that the labor market was not expected to be a source of inflationary pressure. A couple of participants expected that the reduction in net migration would be associated with lower demand and lower inflation, and a couple of participants observed that continued productivity gains would likely reduce inflation pressures. Participants noted that longer-term inflation expectations continued to be well anchored and that it was important they remain so to help return inflation to 2 percent. Various participants stressed the central role of monetary policy in ensuring that longer-term inflation expectations remained well anchored. A majority of participants emphasized upside risks to their outlooks for inflation, pointing to inflation readings moving further from 2 percent, continued uncertainty about the effects of tariffs, the possibility that elevated inflation proves to be more persistent than currently expected even after the inflation effects of this year's tariff increases fade, or the possibility of longer-term inflation expectations moving up after a long period of elevated inflation readings. Some participants remarked that they perceived less upside risk to their outlooks for inflation than earlier in the year."
-     ]
-    },
-    {
-     "heading": "スタッフの経済見通し（Staff Economic Outlook）",
-     "paragraphs": [
-      "Compared with the staff forecast prepared for the July meeting, the projection of real GDP growth was revised up somewhat, on balance, for this year through 2028, primarily reflecting stronger-than-expected data for both consumer spending and business investment as well as financial conditions that were projected to be a little more supportive of output growth. GDP growth was still projected to be faster next year than this year, as the effects of tariff increases and slower net immigration were expected to diminish. The staff continued to expect that the labor market would soften further this year, though the projected path for the unemployment rate in following years was a little lower than in the previous staff forecast. The unemployment rate was projected to move slightly above the staff's estimate of its natural rate through the remainder of this year and then to decline later in the projection as GDP growth picked up.",
-      "The staff's inflation projection was only slightly revised from the one prepared for the July meeting. Tariff increases were still expected to raise inflation this year and to provide some further upward pressure on inflation in 2026. Inflation was projected to decline in 2026, to reach 2 percent in 2027, and to remain there in 2028.",
-      "The staff continued to view the uncertainty around the projection as elevated, primarily reflecting uncertainty regarding changes to economic policies, including those for trade, immigration, fiscal spending, and regulation, and their associated economic effects. Risks to employment and the labor market were judged to have become a little more tilted to the downside, stemming from the recent softening in labor market conditions amid modest real GDP growth. The staff continued to view the risks around the inflation forecast as skewed to the upside, as the projected rise in inflation this year could prove to be more persistent than assumed in the baseline projection."
-     ]
-    }
-   ]
-  },
   {
    "id": "fomc-20251029",
    "src": "fomc",
@@ -2590,6 +2549,18 @@
    "short": "副議長 Jefferson",
    "subtitle": "New Technology, Old Questions: Assessing Productivity Puzzles and Their Implications for Macroeconomic Activity ／ At the University of California San Diego Economics Roundtable, La Jolla, Calif.",
    "time": "19:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261116-warsh",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-11-16",
+   "title": "議長 Warsh 講演",
+   "short": "議長 Warsh",
+   "subtitle": "Opening Remarks ／ At the Federal Reserve’s Productivity and Jobs Task Force Conference, Federal Reserve Bank of San Francisco, San Francisco, Calif.",
+   "time": "12:00 ET",
    "status": "scheduled",
    "links": []
   },

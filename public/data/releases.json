@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-12T21:54:05.418Z",
+ "generatedAt": "2026-11-13T20:48:39.948Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -409,6 +409,13 @@
     "value": 4.98,
     "kind": "official",
     "prev": 4.81
+   },
+   {
+    "date": "2026-11-13",
+    "t": "2026-10-01",
+    "value": 5.04,
+    "kind": "official",
+    "prev": 5.02
    }
   ],
   "capacity_utilization_us": [

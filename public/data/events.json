@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-13T08:40:47.658Z",
+ "generatedAt": "2026-11-13T20:48:44.708Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
- "eventCount": 62,
+ "eventCount": 63,
  "events": [
   {
    "id": "fomc-20251029",
@@ -2573,6 +2573,18 @@
    "short": "FOMC議事要旨",
    "subtitle": "10/27–10/28会合分（決定日の3週間後に公表）",
    "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261119-jefferson",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-11-19",
+   "title": "副議長 Jefferson 対談",
+   "short": "副議長 Jefferson",
+   "subtitle": "Economic Shocks ／ At the International Monetary Fund (IMF) and Central Bank of Brazil conference \"A Quarter Century of Inflation Targeting in Latin America: Progress, Challenges, and the Road Ahead\" (virtual)",
+   "time": "09:25 ET",
    "status": "scheduled",
    "links": []
   },

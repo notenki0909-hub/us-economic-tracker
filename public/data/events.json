@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T20:48:44.708Z",
+ "generatedAt": "2026-11-14T07:57:09.666Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 63,
  "events": [
@@ -2537,7 +2537,7 @@
    "short": "副議長（監督） Bowman",
    "subtitle": "Supervision and Regulation ／ At the Connecticut Bankers Association Annual Meeting and Conference 2026 (virtual)",
    "time": "10:50 ET",
-   "status": "scheduled",
+   "status": "done",
    "links": []
   },
   {
@@ -2549,8 +2549,16 @@
    "short": "副議長 Jefferson",
    "subtitle": "New Technology, Old Questions: Assessing Productivity Puzzles and Their Implications for Macroeconomic Activity ／ At the University of California San Diego Economics Roundtable, La Jolla, Calif.",
    "time": "19:00 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm"
+    }
+   ],
+   "result": {
+    "headline": "New Technology, Old Questions: Productivity Puzzles and the Macroeconomy"
+   }
   },
   {
    "id": "speech-20261116-warsh",

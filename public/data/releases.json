@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T20:48:39.948Z",
+ "generatedAt": "2026-11-16T23:16:26.755Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -400,6 +400,13 @@
     "value": 25.5,
     "kind": "official",
     "prev": 7.6
+   },
+   {
+    "date": "2026-11-16",
+    "t": "2026-11-01",
+    "value": 7.8,
+    "kind": "official",
+    "prev": 25.5
    }
   ],
   "ppi_core_yoy_us": [

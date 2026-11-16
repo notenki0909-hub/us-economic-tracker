@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-14T07:57:09.666Z",
+ "generatedAt": "2026-11-16T23:16:32.414Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 63,
  "events": [
@@ -2569,8 +2569,16 @@
    "short": "議長 Warsh",
    "subtitle": "Opening Remarks ／ At the Federal Reserve’s Productivity and Jobs Task Force Conference, Federal Reserve Bank of San Francisco, San Francisco, Calif.",
    "time": "12:00 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Opening Remarks"
+   }
   },
   {
    "id": "fomc-minutes-20261028",

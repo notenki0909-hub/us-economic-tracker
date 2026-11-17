@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T09:44:01.234Z",
+  "generatedAt": "2026-11-17T22:07:53.278Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,15 +113,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-17T09:44:01.243Z",
+    "generatedAt": "2026-11-17T22:07:53.285Z",
     "stats": {
       "total": 38,
-      "improving": 9,
-      "worsening": 14,
+      "improving": 8,
+      "worsening": 15,
       "neutral": 15,
-      "surpriseCount": 2
+      "surpriseCount": 3
     },
-    "headline": "38指標中、改善傾向が9件、悪化傾向が14件、横ばい・中立が15件です。",
+    "headline": "38指標中、改善傾向が8件、悪化傾向が15件、横ばい・中立が15件です。",
     "improvingList": [
       {
         "id": "gdp_growth_us",
@@ -130,15 +130,6 @@
         "period": {
           "from": "2026-04-01",
           "to": "2026-07-01"
-        }
-      },
-      {
-        "id": "industrial_production_us",
-        "name": "鉱工業生産指数",
-        "category": "景気",
-        "period": {
-          "from": "2026-08-01",
-          "to": "2026-09-01"
         }
       },
       {
@@ -216,12 +207,21 @@
         }
       },
       {
+        "id": "industrial_production_us",
+        "name": "鉱工業生産指数",
+        "category": "景気",
+        "period": {
+          "from": "2026-09-01",
+          "to": "2026-10-01"
+        }
+      },
+      {
         "id": "retail_sales_us",
         "name": "小売売上高",
         "category": "景気",
         "period": {
-          "from": "2026-08-01",
-          "to": "2026-09-01"
+          "from": "2026-09-01",
+          "to": "2026-10-01"
         }
       },
       {
@@ -265,8 +265,8 @@
         "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
-          "from": "2026-11-12",
-          "to": "2026-11-13"
+          "from": "2026-11-13",
+          "to": "2026-11-16"
         }
       },
       {
@@ -375,8 +375,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-11-12",
-          "to": "2026-11-13"
+          "from": "2026-11-13",
+          "to": "2026-11-16"
         }
       },
       {
@@ -438,8 +438,8 @@
         "name": "設備稼働率（鉱工業全体）",
         "category": "景気",
         "period": {
-          "from": "2026-08-01",
-          "to": "2026-09-01"
+          "from": "2026-09-01",
+          "to": "2026-10-01"
         }
       },
       {
@@ -471,15 +471,6 @@
       }
     ],
     "continuingImprovingList": [
-      {
-        "id": "industrial_production_us",
-        "name": "鉱工業生産指数",
-        "category": "景気",
-        "period": {
-          "from": "2026-07-01",
-          "to": "2026-09-01"
-        }
-      },
       {
         "id": "durable_goods_orders_us",
         "name": "耐久財受注",
@@ -530,6 +521,15 @@
       {
         "id": "sp500_us",
         "name": "S&P500種株価指数",
+        "category": "為替・市場",
+        "period": {
+          "from": "2026-11-03",
+          "to": "2026-11-16"
+        }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
         "category": "為替・市場",
         "period": {
           "from": "2026-11-03",
@@ -647,7 +647,7 @@
         "reference": {
           "label": "0%＝増加・減少の分岐",
           "value": 0,
-          "current": 0.77
+          "current": 0.21
         }
       },
       {
@@ -688,16 +688,6 @@
           "label": "0＝逆イールド（景気後退シグナル）との分岐",
           "value": 0,
           "current": 0.29
-        }
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "reference": {
-          "label": "平常時の目安 20",
-          "value": 20,
-          "current": 19.3
         }
       },
       {
@@ -790,6 +780,16 @@
           "label": "0＝黒字・赤字の分岐",
           "value": 0,
           "current": -105047
+        }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "reference": {
+          "label": "平常時の目安 20",
+          "value": 20,
+          "current": 22.91
         }
       }
     ],
@@ -955,6 +955,13 @@
         "category": "対外",
         "detail": "目安「0＝黒字・赤字の分岐」を下回っており、注意が必要な水準です。",
         "text": "貿易収支は現在、目安「0＝黒字・赤字の分岐」を下回っており、注意が必要な水準です。"
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "detail": "目安「平常時の目安 20」を上回っており、注意が必要な水準です。",
+        "text": "VIX指数（恐怖指数）は現在、目安「平常時の目安 20」を上回っており、注意が必要な水準です。"
       }
     ],
     "surpriseFindings": [
@@ -966,6 +973,15 @@
         "level": "mid",
         "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.4）。",
         "text": "S&P500種株価指数でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-2.4）。"
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "z": 1.9,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.9）。",
+        "text": "VIX指数（恐怖指数）でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.9）。"
       },
       {
         "id": "empire_state_us",
@@ -1020,16 +1036,16 @@
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-07-01",
-            "to": "2026-09-01"
+            "from": "2026-08-01",
+            "to": "2026-10-01"
           },
           "prior": {
-            "from": "2026-04-01",
-            "to": "2026-06-01"
+            "from": "2026-05-01",
+            "to": "2026-07-01"
           }
         },
-        "detail": "直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から改善方向に転じました（転換点を通過）。",
-        "text": "小売売上高は、直近（2026-07-01〜2026-09-01）の傾向が、その前（2026-04-01〜2026-06-01）から改善方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から改善方向に転じました（転換点を通過）。",
+        "text": "小売売上高は、直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から改善方向に転じました（転換点を通過）。"
       },
       {
         "id": "sahm_rule_us",
@@ -1272,26 +1288,6 @@
         "text": "個人所得（前月比）は直近（2026-07-01〜2026-09-01）悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが7%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
       },
       {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "favorable": true,
-        "flipped": false,
-        "proximity": 79,
-        "period": {
-          "recent": {
-            "from": "2026-11-02",
-            "to": "2026-11-13"
-          },
-          "prior": {
-            "from": "2026-10-19",
-            "to": "2026-10-30"
-          }
-        },
-        "detail": "直近（2026-11-02〜2026-11-13）は改善方向ですが、その前（2026-10-19〜2026-10-30）と比べて勢いが21%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
-        "text": "VIX指数（恐怖指数）は直近（2026-11-02〜2026-11-13）改善方向ですが、その前（2026-10-19〜2026-10-30）と比べて勢いが21%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
-      },
-      {
         "id": "consumer_sentiment_us",
         "name": "ミシガン大学消費者信頼感指数",
         "category": "景気",
@@ -1310,6 +1306,26 @@
         },
         "detail": "直近（2026-07-01〜2026-09-01）は悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが37%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。",
         "text": "ミシガン大学消費者信頼感指数は直近（2026-07-01〜2026-09-01）悪化方向ですが、その前（2026-04-01〜2026-06-01）と比べて勢いが37%まで弱まっています。悪化の勢いが鈍化しており、改善に転じる兆しの可能性があります。"
+      },
+      {
+        "id": "industrial_production_us",
+        "name": "鉱工業生産指数",
+        "category": "景気",
+        "favorable": true,
+        "flipped": false,
+        "proximity": 61,
+        "period": {
+          "recent": {
+            "from": "2026-08-01",
+            "to": "2026-10-01"
+          },
+          "prior": {
+            "from": "2026-05-01",
+            "to": "2026-07-01"
+          }
+        },
+        "detail": "直近（2026-08-01〜2026-10-01）は改善方向ですが、その前（2026-05-01〜2026-07-01）と比べて勢いが39%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。",
+        "text": "鉱工業生産指数は直近（2026-08-01〜2026-10-01）改善方向ですが、その前（2026-05-01〜2026-07-01）と比べて勢いが39%まで弱まっています。改善の勢いが鈍化しており、今後の反転に注意が必要です。"
       }
     ],
     "recoverySignal": {
@@ -1342,7 +1358,7 @@
     },
     "recessionSignal": {
       "active": false,
-      "count": 0,
+      "count": 1,
       "total": 4,
       "items": [
         {
@@ -1358,7 +1374,7 @@
         {
           "id": "vix_us",
           "name": "VIX指数（恐怖指数）",
-          "contributing": false
+          "contributing": true
         },
         {
           "id": "jobless_claims_us",
@@ -1366,7 +1382,7 @@
           "contributing": false
         }
       ],
-      "text": "景気後退の警戒シグナルとされる4指標（サーム・ルール（景気後退シグナル）・長短金利差（10年-2年国債利回り）・VIX指数（恐怖指数）・新規失業保険申請件数）のうち、同時に警戒水準にあるのは0件にとどまり、明確な後退警戒シグナルの重なりは見られません。 この4指標は先行指標に限定していません。サーム・ルール（遅行）・長短金利差（先行）・VIX（一致）・新規失業保険申請件数（先行）と分類が混在する、個別に確立された著名な警戒シグナルを束ねたものです。"
+      "text": "景気後退の警戒シグナルとされる4指標（サーム・ルール（景気後退シグナル）・長短金利差（10年-2年国債利回り）・VIX指数（恐怖指数）・新規失業保険申請件数）のうち、同時に警戒水準にあるのは1件にとどまり、明確な後退警戒シグナルの重なりは見られません。 この4指標は先行指標に限定していません。サーム・ルール（遅行）・長短金利差（先行）・VIX（一致）・新規失業保険申請件数（先行）と分類が混在する、個別に確立された著名な警戒シグナルを束ねたものです。"
     }
   },
   "indicators": [
@@ -4050,7 +4066,7 @@
       },
       "releaseTimeET": "09:15",
       "releaseSchedule": "FRBが対象月の翌月中旬ごろに公表。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-12-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Industrial Production Index (Federal Reserve)",
@@ -4058,12 +4074,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-01",
-          "value": 103.9506,
+          "t": "2026-10-01",
+          "value": 103.3954,
           "provisional": false
         },
-        "changeFromPrev": 0.6842,
-        "changeFromYearAgo": 2.2826,
+        "changeFromPrev": -0.4504,
+        "changeFromYearAgo": 2.1759,
         "min": {
           "t": "1991-03-01",
           "value": 60.3346
@@ -4072,7 +4088,7 @@
           "t": "2018-09-01",
           "value": 104.1004
         },
-        "count": 441,
+        "count": 442,
         "start": "1990-01-01"
       },
       "changeWatch": null,
@@ -5823,23 +5839,27 @@
         },
         {
           "t": "2026-05-01",
-          "value": 102.7232
+          "value": 102.6925
         },
         {
           "t": "2026-06-01",
-          "value": 102.961
+          "value": 102.9673
         },
         {
           "t": "2026-07-01",
-          "value": 103.2006
+          "value": 103.1675
         },
         {
           "t": "2026-08-01",
-          "value": 103.2664
+          "value": 103.0954
         },
         {
           "t": "2026-09-01",
-          "value": 103.9506
+          "value": 103.8458
+        },
+        {
+          "t": "2026-10-01",
+          "value": 103.3954
         }
       ]
     },
@@ -7689,7 +7709,7 @@
       },
       "releaseTimeET": "08:30",
       "releaseSchedule": "Census Bureauが対象月の翌月中旬ごろ8:30 ETに公表。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-12-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Advance Retail Sales: Retail Trade and Food Services (Census Bureau)",
@@ -7697,12 +7717,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-01",
-          "value": 0.77,
+          "t": "2026-10-01",
+          "value": 0.21,
           "provisional": false
         },
-        "changeFromPrev": -0.52,
-        "changeFromYearAgo": 0.69,
+        "changeFromPrev": -0.62,
+        "changeFromYearAgo": 0.24,
         "min": {
           "t": "2020-04-01",
           "value": -14.18
@@ -7711,7 +7731,7 @@
           "t": "2020-05-01",
           "value": 19.42
         },
-        "count": 416,
+        "count": 417,
         "start": "1992-02-01"
       },
       "changeWatch": null,
@@ -9330,15 +9350,15 @@
         },
         {
           "t": "2025-09-01",
-          "value": 0.08
+          "value": 0.03
         },
         {
           "t": "2025-10-01",
-          "value": -0.02
+          "value": -0.03
         },
         {
           "t": "2025-11-01",
-          "value": 0.67
+          "value": 0.72
         },
         {
           "t": "2025-12-01",
@@ -9374,11 +9394,15 @@
         },
         {
           "t": "2026-08-01",
-          "value": 1.29
+          "value": 1.45
         },
         {
           "t": "2026-09-01",
-          "value": 0.77
+          "value": 0.83
+        },
+        {
+          "t": "2026-10-01",
+          "value": 0.21
         }
       ]
     },
@@ -27515,7 +27539,7 @@
         }
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-11-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -27523,12 +27547,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-13",
-          "value": 5.15,
+          "t": "2026-11-16",
+          "value": 5.12,
           "provisional": false
         },
-        "changeFromPrev": 0.05,
-        "changeFromYearAgo": 1.04,
+        "changeFromPrev": -0.03,
+        "changeFromYearAgo": 0.98,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -27537,7 +27561,7 @@
           "t": "2026-10-05",
           "value": 5.31
         },
-        "count": 2717,
+        "count": 2718,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -38409,6 +38433,10 @@
         {
           "t": "2026-11-13",
           "value": 5.15
+        },
+        {
+          "t": "2026-11-16",
+          "value": 5.12
         }
       ]
     },
@@ -40824,7 +40852,7 @@
         }
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-11-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Minus 2-Year Treasury (Federal Reserve)",
@@ -63856,7 +63884,7 @@
         }
       },
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-11-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -63864,12 +63892,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-13",
-          "value": 19.3,
+          "t": "2026-11-16",
+          "value": 22.91,
           "provisional": false
         },
-        "changeFromPrev": 0.6,
-        "changeFromYearAgo": -0.7,
+        "changeFromPrev": 3.61,
+        "changeFromYearAgo": 3.08,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -63878,7 +63906,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2766,
+        "count": 2767,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -74946,6 +74974,10 @@
         {
           "t": "2026-11-13",
           "value": 19.3
+        },
+        {
+          "t": "2026-11-16",
+          "value": 22.91
         }
       ]
     },
@@ -79238,7 +79270,7 @@
         }
       },
       "releaseSchedule": "ムーディーズの社債利回りと米財務省の国債利回りから、毎営業日算出。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-11-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Moody's Baa Corporate Bond Yield Relative to 10-Year Treasury (Moody's, FRB)",
@@ -92081,7 +92113,7 @@
         }
       },
       "releaseSchedule": "FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-11-18",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Breakeven Inflation Rate (Federal Reserve)",
@@ -119337,7 +119369,7 @@
       },
       "releaseTimeET": "09:15",
       "releaseSchedule": "FRBが鉱工業生産指数（G.17）と同時に、毎月中旬ごろに公表。",
-      "nextRelease": "2026-11-17",
+      "nextRelease": "2026-12-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Capacity Utilization: Total Index (Federal Reserve Board)",
@@ -119345,12 +119377,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-09-01",
-          "value": 76.8504,
+          "t": "2026-10-01",
+          "value": 76.3633,
           "provisional": false
         },
-        "changeFromPrev": 0.432,
-        "changeFromYearAgo": 0.8043,
+        "changeFromPrev": -0.4096,
+        "changeFromYearAgo": 0.7439,
         "min": {
           "t": "2020-04-01",
           "value": 64.0847
@@ -119359,7 +119391,7 @@
           "t": "1994-12-01",
           "value": 84.9892
         },
-        "count": 441,
+        "count": 442,
         "start": "1990-01-01"
       },
       "changeWatch": null,
@@ -121110,23 +121142,27 @@
         },
         {
           "t": "2026-05-01",
-          "value": 76.2225
+          "value": 76.1997
         },
         {
           "t": "2026-06-01",
-          "value": 76.3321
+          "value": 76.3367
         },
         {
           "t": "2026-07-01",
-          "value": 76.4409
+          "value": 76.4164
         },
         {
           "t": "2026-08-01",
-          "value": 76.4184
+          "value": 76.2918
         },
         {
           "t": "2026-09-01",
-          "value": 76.8504
+          "value": 76.7729
+        },
+        {
+          "t": "2026-10-01",
+          "value": 76.3633
         }
       ]
     },

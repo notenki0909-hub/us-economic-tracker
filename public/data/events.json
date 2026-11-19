@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T21:45:28.902Z",
+ "generatedAt": "2026-11-19T22:02:05.695Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 63,
  "events": [
@@ -2622,8 +2622,16 @@
    "short": "副議長 Jefferson",
    "subtitle": "Economic Shocks ／ At the International Monetary Fund (IMF) and Central Bank of Brazil conference \"A Quarter Century of Inflation Targeting in Latin America: Progress, Challenges, and the Road Ahead\" (virtual)",
    "time": "09:25 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Monetary Policy amid Frequent and Complex Shocks"
+   }
   },
   {
    "id": "beige-20261125",

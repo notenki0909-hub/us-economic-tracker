@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T09:22:45.862Z",
+  "generatedAt": "2026-11-19T22:02:00.934Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,15 +113,15 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-19T09:22:45.868Z",
+    "generatedAt": "2026-11-19T22:02:00.941Z",
     "stats": {
       "total": 38,
-      "improving": 6,
-      "worsening": 17,
+      "improving": 7,
+      "worsening": 16,
       "neutral": 15,
-      "surpriseCount": 2
+      "surpriseCount": 3
     },
-    "headline": "38指標中、改善傾向が6件、悪化傾向が17件、横ばい・中立が15件です。",
+    "headline": "38指標中、改善傾向が7件、悪化傾向が16件、横ばい・中立が15件です。",
     "improvingList": [
       {
         "id": "gdp_growth_us",
@@ -176,6 +176,15 @@
           "from": "2026-08-01",
           "to": "2026-09-01"
         }
+      },
+      {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "period": {
+          "from": "2026-11-17",
+          "to": "2026-11-18"
+        }
       }
     ],
     "worseningList": [
@@ -220,8 +229,8 @@
         "name": "新規失業保険申請件数",
         "category": "雇用・所得",
         "period": {
-          "from": "2026-10-31",
-          "to": "2026-11-07"
+          "from": "2026-11-07",
+          "to": "2026-11-14"
         }
       },
       {
@@ -252,15 +261,6 @@
         }
       },
       {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-11-16",
-          "to": "2026-11-17"
-        }
-      },
-      {
         "id": "building_permits_us",
         "name": "新築住宅建築許可件数",
         "category": "景気",
@@ -283,8 +283,8 @@
         "name": "フィラデルフィア連銀 製造業景況指数",
         "category": "景気",
         "period": {
-          "from": "2026-09-01",
-          "to": "2026-10-01"
+          "from": "2026-10-01",
+          "to": "2026-11-01"
         }
       },
       {
@@ -375,8 +375,8 @@
         "name": "米10年国債利回り",
         "category": "金利",
         "period": {
-          "from": "2026-11-16",
-          "to": "2026-11-17"
+          "from": "2026-11-17",
+          "to": "2026-11-18"
         }
       },
       {
@@ -384,8 +384,8 @@
         "name": "FRBバランスシート（総資産）",
         "category": "金利",
         "period": {
-          "from": "2026-11-04",
-          "to": "2026-11-11"
+          "from": "2026-11-11",
+          "to": "2026-11-18"
         }
       },
       {
@@ -402,8 +402,8 @@
         "name": "30年固定住宅ローン金利",
         "category": "金利",
         "period": {
-          "from": "2026-11-05",
-          "to": "2026-11-12"
+          "from": "2026-11-12",
+          "to": "2026-11-19"
         }
       },
       {
@@ -517,15 +517,6 @@
           "from": "2026-11-05",
           "to": "2026-11-18"
         }
-      },
-      {
-        "id": "vix_us",
-        "name": "VIX指数（恐怖指数）",
-        "category": "為替・市場",
-        "period": {
-          "from": "2026-11-04",
-          "to": "2026-11-17"
-        }
       }
     ],
     "continuingNeutralList": [
@@ -544,12 +535,6 @@
       {
         "id": "unemployment_rate_us",
         "name": "失業率",
-        "category": "雇用・所得",
-        "period": null
-      },
-      {
-        "id": "jobless_claims_us",
-        "name": "新規失業保険申請件数",
         "category": "雇用・所得",
         "period": null
       },
@@ -674,7 +659,7 @@
         "reference": {
           "label": "景気後退の警戒目安 30万件",
           "value": 300000,
-          "current": 200000
+          "current": 203000
         }
       },
       {
@@ -694,7 +679,7 @@
         "reference": {
           "label": "0＝拡大・縮小の分岐",
           "value": 0,
-          "current": 20.9
+          "current": 6.3
         }
       },
       {
@@ -786,7 +771,7 @@
         "reference": {
           "label": "平常時の目安 20",
           "value": 20,
-          "current": 25.46
+          "current": 24.56
         }
       }
     ],
@@ -963,6 +948,15 @@
     ],
     "surpriseFindings": [
       {
+        "id": "mortgage_rate_us",
+        "name": "30年固定住宅ローン金利",
+        "category": "金利",
+        "z": 1.7,
+        "level": "mid",
+        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.7）。",
+        "text": "30年固定住宅ローン金利でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=1.7）。"
+      },
+      {
         "id": "building_permits_us",
         "name": "新築住宅建築許可件数",
         "category": "景気",
@@ -1076,6 +1070,26 @@
         "text": "非農業部門雇用者数は、直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から改善方向に転じました（転換点を通過）。"
       },
       {
+        "id": "jobless_claims_us",
+        "name": "新規失業保険申請件数",
+        "category": "雇用・所得",
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-10-24",
+            "to": "2026-11-14"
+          },
+          "prior": {
+            "from": "2026-09-26",
+            "to": "2026-10-17"
+          }
+        },
+        "detail": "直近（2026-10-24〜2026-11-14）の傾向が、その前（2026-09-26〜2026-10-17）から悪化方向に転じました（転換点を通過）。",
+        "text": "新規失業保険申請件数は、直近（2026-10-24〜2026-11-14）の傾向が、その前（2026-09-26〜2026-10-17）から悪化方向に転じました（転換点を通過）。"
+      },
+      {
         "id": "current_account_us",
         "name": "経常収支",
         "category": "対外",
@@ -1116,6 +1130,26 @@
         "text": "長短金利差（10年-2年国債利回り）は、直近（2026-11-04〜2026-11-18）の傾向が、その前（2026-10-21〜2026-11-03）から悪化方向に転じました（転換点を通過）。"
       },
       {
+        "id": "vix_us",
+        "name": "VIX指数（恐怖指数）",
+        "category": "為替・市場",
+        "favorable": false,
+        "flipped": true,
+        "proximity": 100,
+        "period": {
+          "recent": {
+            "from": "2026-11-05",
+            "to": "2026-11-18"
+          },
+          "prior": {
+            "from": "2026-10-22",
+            "to": "2026-11-04"
+          }
+        },
+        "detail": "直近（2026-11-05〜2026-11-18）の傾向が、その前（2026-10-22〜2026-11-04）から悪化方向に転じました（転換点を通過）。",
+        "text": "VIX指数（恐怖指数）は、直近（2026-11-05〜2026-11-18）の傾向が、その前（2026-10-22〜2026-11-04）から悪化方向に転じました（転換点を通過）。"
+      },
+      {
         "id": "building_permits_us",
         "name": "新築住宅建築許可件数",
         "category": "景気",
@@ -1144,16 +1178,16 @@
         "proximity": 100,
         "period": {
           "recent": {
-            "from": "2026-08-01",
-            "to": "2026-10-01"
+            "from": "2026-09-01",
+            "to": "2026-11-01"
           },
           "prior": {
-            "from": "2026-05-01",
-            "to": "2026-07-01"
+            "from": "2026-06-01",
+            "to": "2026-08-01"
           }
         },
-        "detail": "直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から悪化方向に転じました（転換点を通過）。",
-        "text": "フィラデルフィア連銀 製造業景況指数は、直近（2026-08-01〜2026-10-01）の傾向が、その前（2026-05-01〜2026-07-01）から悪化方向に転じました（転換点を通過）。"
+        "detail": "直近（2026-09-01〜2026-11-01）の傾向が、その前（2026-06-01〜2026-08-01）から悪化方向に転じました（転換点を通過）。",
+        "text": "フィラデルフィア連銀 製造業景況指数は、直近（2026-09-01〜2026-11-01）の傾向が、その前（2026-06-01〜2026-08-01）から悪化方向に転じました（転換点を通過）。"
       },
       {
         "id": "real_pce_mom_us",
@@ -19611,7 +19645,7 @@
       },
       "releaseTimeET": "08:30",
       "releaseSchedule": "米国労働省が毎週木曜日8:30 ETに公表。",
-      "nextRelease": "2026-11-19",
+      "nextRelease": "2026-11-25",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Initial Claims (U.S. Department of Labor)",
@@ -19619,12 +19653,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-07",
-          "value": 200000,
+          "t": "2026-11-14",
+          "value": 203000,
           "provisional": false
         },
-        "changeFromPrev": 9000,
-        "changeFromYearAgo": -28000,
+        "changeFromPrev": 1000,
+        "changeFromYearAgo": -25000,
         "min": {
           "t": "2026-07-18",
           "value": 189000
@@ -19633,7 +19667,7 @@
           "t": "2020-04-04",
           "value": 6137000
         },
-        "count": 567,
+        "count": 568,
         "start": "2016-01-02"
       },
       "changeWatch": null,
@@ -21904,7 +21938,11 @@
         },
         {
           "t": "2026-11-07",
-          "value": 200000
+          "value": 202000
+        },
+        {
+          "t": "2026-11-14",
+          "value": 203000
         }
       ]
     },
@@ -27527,7 +27565,7 @@
         }
       },
       "releaseSchedule": "米財務省・FRBが毎営業日、取引終了後に公表。",
-      "nextRelease": "2026-11-19",
+      "nextRelease": "2026-11-20",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "10-Year Treasury Constant Maturity Rate (Federal Reserve)",
@@ -27535,12 +27573,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-17",
-          "value": 5.1,
+          "t": "2026-11-18",
+          "value": 5.07,
           "provisional": false
         },
-        "changeFromPrev": -0.02,
-        "changeFromYearAgo": 0.97,
+        "changeFromPrev": -0.03,
+        "changeFromYearAgo": 0.95,
         "min": {
           "t": "2020-08-04",
           "value": 0.52
@@ -27549,7 +27587,7 @@
           "t": "2026-10-05",
           "value": 5.31
         },
-        "count": 2719,
+        "count": 2720,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -38429,6 +38467,10 @@
         {
           "t": "2026-11-17",
           "value": 5.1
+        },
+        {
+          "t": "2026-11-18",
+          "value": 5.07
         }
       ]
     },
@@ -38490,7 +38532,7 @@
       },
       "releaseTimeET": "16:30",
       "releaseSchedule": "FRBが毎週木曜日（H.4.1統計）に公表。",
-      "nextRelease": "2026-11-19",
+      "nextRelease": "2026-11-27",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Total Assets (Federal Reserve H.4.1)",
@@ -38498,12 +38540,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-11",
-          "value": 6758867,
+          "t": "2026-11-18",
+          "value": 6741452,
           "provisional": false
         },
-        "changeFromPrev": 10722,
-        "changeFromYearAgo": 186135,
+        "changeFromPrev": -17415,
+        "changeFromYearAgo": 160990,
         "min": {
           "t": "2019-08-28",
           "value": 3759946
@@ -38512,7 +38554,7 @@
           "t": "2022-04-13",
           "value": 8965487
         },
-        "count": 567,
+        "count": 568,
         "start": "2016-01-06"
       },
       "changeWatch": null,
@@ -40784,6 +40826,10 @@
         {
           "t": "2026-11-11",
           "value": 6758867
+        },
+        {
+          "t": "2026-11-18",
+          "value": 6741452
         }
       ]
     },
@@ -72928,7 +72974,7 @@
         }
       },
       "releaseSchedule": "CBOEが取引時間中常時算出。本ツールは日次終値を採用。",
-      "nextRelease": "2026-11-19",
+      "nextRelease": "2026-11-20",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "CBOE Volatility Index: VIX (Cboe)",
@@ -72936,12 +72982,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-17",
-          "value": 25.46,
+          "t": "2026-11-18",
+          "value": 24.56,
           "provisional": false
         },
-        "changeFromPrev": 2.55,
-        "changeFromYearAgo": 3.08,
+        "changeFromPrev": -0.9,
+        "changeFromYearAgo": -0.13,
         "min": {
           "t": "2017-11-03",
           "value": 9.14
@@ -72950,7 +72996,7 @@
           "t": "2020-03-16",
           "value": 82.69
         },
-        "count": 2768,
+        "count": 2769,
         "start": "2016-01-04"
       },
       "changeWatch": null,
@@ -84026,6 +84072,10 @@
         {
           "t": "2026-11-17",
           "value": 25.46
+        },
+        {
+          "t": "2026-11-18",
+          "value": 24.56
         }
       ]
     },
@@ -85952,7 +86002,7 @@
       },
       "releaseTimeET": "12:00",
       "releaseSchedule": "フレディマックが毎週木曜日に公表。",
-      "nextRelease": "2026-11-19",
+      "nextRelease": "2026-11-25",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "30-Year Fixed Rate Mortgage Average in the United States (Freddie Mac)",
@@ -85960,12 +86010,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-12",
-          "value": 7.11,
+          "t": "2026-11-19",
+          "value": 7.28,
           "provisional": false
         },
-        "changeFromPrev": -0.07,
-        "changeFromYearAgo": 0.89,
+        "changeFromPrev": 0.17,
+        "changeFromYearAgo": 1.04,
         "min": {
           "t": "2021-01-07",
           "value": 2.65
@@ -85974,7 +86024,7 @@
           "t": "2023-10-26",
           "value": 7.79
         },
-        "count": 567,
+        "count": 568,
         "start": "2016-01-07"
       },
       "changeWatch": null,
@@ -88246,6 +88296,10 @@
         {
           "t": "2026-11-12",
           "value": 7.11
+        },
+        {
+          "t": "2026-11-19",
+          "value": 7.28
         }
       ]
     },
@@ -99300,7 +99354,7 @@
       },
       "releaseTimeET": "08:30",
       "releaseSchedule": "フィラデルフィア連銀が毎月第3木曜日ごろに公表。",
-      "nextRelease": "2026-11-19",
+      "nextRelease": "2026-12-17",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Philadelphia Fed Manufacturing Business Outlook Survey: Current General Activity (SA)",
@@ -99308,12 +99362,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-10-01",
-          "value": 20.9,
+          "t": "2026-11-01",
+          "value": 6.3,
           "provisional": false
         },
-        "changeFromPrev": -16.9,
-        "changeFromYearAgo": 31,
+        "changeFromPrev": -14.6,
+        "changeFromYearAgo": 5.7,
         "min": {
           "t": "2020-04-01",
           "value": -58.7
@@ -99322,7 +99376,7 @@
           "t": "2021-04-01",
           "value": 48.8
         },
-        "count": 442,
+        "count": 443,
         "start": "1990-01-01"
       },
       "changeWatch": null,
@@ -101094,6 +101148,10 @@
         {
           "t": "2026-10-01",
           "value": 20.9
+        },
+        {
+          "t": "2026-11-01",
+          "value": 6.3
         }
       ]
     },
@@ -128453,7 +128511,7 @@
       },
       "releaseTimeET": "09:15",
       "releaseSchedule": "FRBが鉱工業生産指数（G.17）と同時に、毎月中旬ごろに公表。",
-      "nextRelease": "2026-11-24",
+      "nextRelease": "2026-12-16",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Capacity Utilization: Total Index (Federal Reserve Board)",

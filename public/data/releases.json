@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T21:45:25.116Z",
+ "generatedAt": "2026-11-19T22:02:01.017Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -111,6 +111,13 @@
     "value": 200000,
     "kind": "official",
     "prev": 191000
+   },
+   {
+    "date": "2026-11-19",
+    "t": "2026-11-14",
+    "value": 203000,
+    "kind": "official",
+    "prev": 202000
    }
   ],
   "fed_balance_sheet_us": [
@@ -176,6 +183,13 @@
     "value": 6758867,
     "kind": "official",
     "prev": 6748145
+   },
+   {
+    "date": "2026-11-19",
+    "t": "2026-11-18",
+    "value": 6741452,
+    "kind": "official",
+    "prev": 6758867
    }
   ],
   "industrial_production_us": [
@@ -396,6 +410,13 @@
     "value": 7.11,
     "kind": "official",
     "prev": 7.18
+   },
+   {
+    "date": "2026-11-19",
+    "t": "2026-11-19",
+    "value": 7.28,
+    "kind": "official",
+    "prev": 7.11
    }
   ],
   "philly_fed_us": [
@@ -405,6 +426,13 @@
     "value": 20.9,
     "kind": "official",
     "prev": 37.8
+   },
+   {
+    "date": "2026-11-19",
+    "t": "2026-11-01",
+    "value": 6.3,
+    "kind": "official",
+    "prev": 20.9
    }
   ],
   "empire_state_us": [

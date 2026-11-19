@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T22:40:36.570Z",
+  "generatedAt": "2026-11-19T09:22:45.862Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,13 +113,13 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-18T22:40:36.576Z",
+    "generatedAt": "2026-11-19T09:22:45.868Z",
     "stats": {
       "total": 38,
       "improving": 6,
       "worsening": 17,
       "neutral": 15,
-      "surpriseCount": 3
+      "surpriseCount": 2
     },
     "headline": "38指標中、改善傾向が6件、悪化傾向が17件、横ばい・中立が15件です。",
     "improvingList": [
@@ -247,8 +247,8 @@
         "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-11-16",
-          "to": "2026-11-17"
+          "from": "2026-11-17",
+          "to": "2026-11-18"
         }
       },
       {
@@ -514,8 +514,8 @@
         "name": "S&P500種株価指数",
         "category": "為替・市場",
         "period": {
-          "from": "2026-11-04",
-          "to": "2026-11-17"
+          "from": "2026-11-05",
+          "to": "2026-11-18"
         }
       },
       {
@@ -962,15 +962,6 @@
       }
     ],
     "surpriseFindings": [
-      {
-        "id": "sp500_us",
-        "name": "S&P500種株価指数",
-        "category": "為替・市場",
-        "z": -1.7,
-        "level": "mid",
-        "detail": "やや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。",
-        "text": "S&P500種株価指数でやや大きな変化が見られました（過去の変動幅と比べて統計的に珍しい動き、z=-1.7）。"
-      },
       {
         "id": "building_permits_us",
         "name": "新築住宅建築許可件数",
@@ -62788,12 +62779,12 @@
       },
       "summary": {
         "latest": {
-          "t": "2026-11-17",
-          "value": 7340.53,
+          "t": "2026-11-18",
+          "value": 7323.63,
           "provisional": false
         },
-        "changeFromPrev": -76.06,
-        "changeFromYearAgo": 668.12,
+        "changeFromPrev": -16.9,
+        "changeFromYearAgo": 706.31,
         "min": {
           "t": "2016-12-01",
           "value": 2191.08
@@ -62802,7 +62793,7 @@
           "t": "2026-10-06",
           "value": 7818.93
         },
-        "count": 2511,
+        "count": 2512,
         "start": "2016-11-21"
       },
       "changeWatch": null,
@@ -72850,6 +72841,10 @@
         {
           "t": "2026-11-17",
           "value": 7340.53
+        },
+        {
+          "t": "2026-11-18",
+          "value": 7323.63
         }
       ]
     },

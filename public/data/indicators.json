@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T22:19:16.181Z",
+  "generatedAt": "2026-11-21T21:00:32.456Z",
   "source": "FRED（セントルイス連邦準備銀行） https://fred.stlouisfed.org/",
   "note": "各系列は毎回全期間を再取得しています（速報値の改定を反映）。",
   "indicatorCount": 38,
@@ -113,7 +113,7 @@
     }
   },
   "econSummary": {
-    "generatedAt": "2026-11-20T22:19:16.191Z",
+    "generatedAt": "2026-11-21T21:00:32.461Z",
     "stats": {
       "total": 38,
       "improving": 7,
@@ -4135,7 +4135,7 @@
       },
       "releaseTimeET": "09:15",
       "releaseSchedule": "FRBが対象月の翌月中旬ごろに公表。",
-      "nextRelease": "2026-12-16",
+      "nextRelease": "2026-11-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Industrial Production Index (Federal Reserve)",
@@ -128594,7 +128594,7 @@
       },
       "releaseTimeET": "09:15",
       "releaseSchedule": "FRBが鉱工業生産指数（G.17）と同時に、毎月中旬ごろに公表。",
-      "nextRelease": "2026-12-16",
+      "nextRelease": "2026-11-24",
       "source": {
         "provider": "FRED（セントルイス連邦準備銀行）",
         "statName": "Capacity Utilization: Total Index (Federal Reserve Board)",

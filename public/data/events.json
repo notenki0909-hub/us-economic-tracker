@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-19T22:02:05.695Z",
+ "generatedAt": "2026-11-24T23:26:18.152Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
- "eventCount": 63,
+ "eventCount": 64,
  "events": [
   {
    "id": "fomc-20251029",
@@ -2642,6 +2642,18 @@
    "short": "ベージュブック",
    "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
    "time": "14:00 ET",
+   "status": "scheduled",
+   "links": []
+  },
+  {
+   "id": "speech-20261125-bowman",
+   "src": "fedpage",
+   "type": "speech",
+   "date": "2026-11-25",
+   "title": "副議長（監督） Bowman 講演",
+   "short": "副議長（監督） Bowman",
+   "subtitle": "Modernizing Banking Supervision: A Shared Agenda for the Americas (via pre-recorded video) ／ At a meeting with the Association of Supervisors of Banks of the Americas, Basel Committee on Banking Supervision, and Financial Stability Institute",
+   "time": "07:25 ET",
    "status": "scheduled",
    "links": []
   },

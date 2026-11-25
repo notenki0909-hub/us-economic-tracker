@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T23:26:18.152Z",
+ "generatedAt": "2026-11-25T23:00:03.420Z",
  "source": "FRB（連邦準備制度理事会）・カンザスシティ連銀の公式ページ",
  "eventCount": 64,
  "events": [
@@ -2635,6 +2635,26 @@
   },
   {
    "id": "beige-20261125",
+   "excerpt": [
+    {
+     "heading": "景気全体（Overall Economic Activity）",
+     "paragraphs": [
+      "Eight of the twelve Federal Reserve Districts reported growth in the slight to moderate range, while four Districts reported no change. Consumer spending was little changed, as households remained price sensitive and were increasingly selective in discretionary purchases. Tourism and travel activity was solid while entertainment and hospitality spending was mixed overall. Auto sales softened, which contacts attributed to elevated fuel prices and higher interest rates. Residential real estate activity weakened as affordability challenges suppressed demand, while commercial real estate activity was mixed. Construction activity declined amid higher borrowing costs and elevated construction costs. Manufacturing activity grew modestly overall, as robust demand in several industrial segments offset weakness in consumer-facing and housing-related goods. Overall transportation activity grew modestly despite uneven demand, persistent capacity and infrastructure constraints, and rising cost pressures. Port volumes were slightly lower due to weather-driven disruptions, even as data center–related imports rose. Energy activity grew modestly but investment in this sector remained restrained by elevated geopolitical, policy, and cost uncertainties. Banking conditions were little changed overall, as loan demand remained subdued, while nonfinancial services activity increased slightly. High costs for housing and other essentials strained household budgets, increased demand for social services, and stretched nonprofit capacity. Overall, the majority of Districts expected slight to moderate growth."
+     ]
+    },
+    {
+     "heading": "雇用（Labor Markets）",
+     "paragraphs": [
+      "Employment levels rose slightly on balance, with many firms reporting stable head counts and hiring primarily to replace for attrition, while only a minority noted meaningful increases. Contacts across several sectors cited steady or rising labor demand, though many also described hesitancy to hire amid uncertainty and weakened consumer spending. Labor supply generally remained stable, and while it was often relatively easy to find workers, persistent hiring difficulties continued for skilled and technical roles. Employers focused on utilizing existing staff more efficiently, even as some added workers to support expansion. Wages and benefits rose moderately, an uptick from modest increases in the previous report, driven by upward pressure concentrated in hard-to-fill positions and influenced by cost-of-living adjustments and increases in benefit costs."
+     ]
+    },
+    {
+     "heading": "物価（Prices）",
+     "paragraphs": [
+      "Prices increased moderately overall, as in the prior reporting period. Contacts across a range of sectors reported sustained cost pressure from energy, transportation, healthcare, insurance, and tariff-related expenses. Raw materials, metals, freight, and specialized imports also contributed to operating cost pressures. Input cost growth generally outpaced increases in selling prices, as competitive pressures and customer price sensitivity limited firms' ability to fully pass through higher costs. Contacts expected both expenses and prices to continue rising in the coming months."
+     ]
+    }
+   ],
    "src": "beige",
    "type": "beige",
    "date": "2026-11-25",
@@ -2642,8 +2662,17 @@
    "short": "ベージュブック",
    "subtitle": "各地区連銀の景況感をまとめた報告。FOMCの約2週間前に公表",
    "time": "14:00 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "要約（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm"
+    },
+    {
+     "label": "全文PDF（公式）",
+     "url": "https://www.federalreserve.gov/monetarypolicy/files/BeigeBook_20261125.pdf"
+    }
+   ]
   },
   {
    "id": "speech-20261125-bowman",
@@ -2654,8 +2683,16 @@
    "short": "副議長（監督） Bowman",
    "subtitle": "Modernizing Banking Supervision: A Shared Agenda for the Americas (via pre-recorded video) ／ At a meeting with the Association of Supervisors of Banks of the Americas, Basel Committee on Banking Supervision, and Financial Stability Institute",
    "time": "07:25 ET",
-   "status": "scheduled",
-   "links": []
+   "status": "done",
+   "links": [
+    {
+     "label": "講演原稿（公式）",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm"
+    }
+   ],
+   "result": {
+    "headline": "Modernizing Banking Supervision: A Shared Agenda for the Americas"
+   }
   },
   {
    "id": "fomc-20261209",

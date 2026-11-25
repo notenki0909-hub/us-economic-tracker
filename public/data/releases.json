@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T23:26:12.396Z",
+ "generatedAt": "2026-11-25T22:59:58.556Z",
  "retentionDays": 365,
  "releases": {
   "cpi_yoy_us": [
@@ -116,6 +116,13 @@
     "date": "2026-11-19",
     "t": "2026-11-14",
     "value": 203000,
+    "kind": "official",
+    "prev": 202000
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-11-21",
+    "value": 189000,
     "kind": "official",
     "prev": 202000
    }
@@ -261,6 +268,13 @@
     "value": 345371,
     "kind": "detected",
     "prev": 339117
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-10-01",
+    "value": 346717,
+    "kind": "detected",
+    "prev": 345942
    }
   ],
   "job_openings_us": [
@@ -293,6 +307,13 @@
     "value": 3.12,
     "kind": "official",
     "prev": 3.03
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-10-01",
+    "value": 3.26,
+    "kind": "official",
+    "prev": 3.14
    }
   ],
   "fed_funds_rate_us": [
@@ -424,6 +445,13 @@
     "value": 7.28,
     "kind": "official",
     "prev": 7.11
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-11-25",
+    "value": 7.21,
+    "kind": "official",
+    "prev": 7.28
    }
   ],
   "philly_fed_us": [
@@ -522,6 +550,13 @@
     "value": 676,
     "kind": "official",
     "prev": 680
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-10-01",
+    "value": 701,
+    "kind": "official",
+    "prev": 614
    }
   ],
   "case_shiller_20_yoy_us": [
@@ -556,6 +591,13 @@
     "value": 0.02,
     "kind": "official",
     "prev": 0.55
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-10-01",
+    "value": -0.03,
+    "kind": "official",
+    "prev": 0.11
    }
   ],
   "personal_income_mom_us": [
@@ -565,6 +607,13 @@
     "value": 0.2,
     "kind": "official",
     "prev": 0.3
+   },
+   {
+    "date": "2026-11-25",
+    "t": "2026-10-01",
+    "value": 0.73,
+    "kind": "official",
+    "prev": 0.28
    }
   ],
   "adp_employment_us": [
